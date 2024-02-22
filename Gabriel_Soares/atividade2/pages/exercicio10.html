@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../imagens/livro.png" rel="icon">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <style>
+        body{
+            padding: 15px;
+        }
+    </style>
+    <h1>Neste Exercício você deve criar uma página HTML com os seguintes componentes:</h1>
+    <h3>Preencher as informações:</h3>
+    <form>
+        <p><label>Insira uma Imagem:</label> <input type="file"></p>
+        <p><label>Nome: </label> <input type="text" placeholder="Insira seu nome" maxlength="250"></p>
+        <p>Sobrenome: <input type="text" placeholder="Insira seu sobrenome" maxlength="250"></p>
+        <p>Data de Nascimento: <input type="date"></p>
+        <p>Idade: <input type="number" min="1"></p>
+        <p>Email: <input type="email"></p>
+        <label>Formação acadêmica: <br>
+            <input type="radio" name="escolha_formacao"><label>Ensino Fundamental</label><br>
+            <input type="radio" name="escolha_formacao"><label>Ensino Médio</label><br>
+            <input type="radio" name="escolha_formacao"><label>Ensino Superior</label><br>
+            <input type="radio" name="escolha_formacao"><label>Pós Graduação - Especialização</label><br>
+            <input type="radio" name="escolha_formacao"><label>Pós Graduação - Mestrado</label><br>
+            <input type="radio" name="escolha_formacao"><label>Pós Graduação - Doutorado</label><br>
+        </label>
+        <p>Nome do Curso: 
+            <select disabled="disabled">
+                <option>Desenvolvimento de Sistemas</option>
+                <option>Mecânica</option>
+                <option>Elétrica</option>
+            </select>
+        </p>
+        <label>Situação <br>
+            <input type="radio" name="escolha_situacao" disabled="disabled"><label>Em andamento</label><br>
+            <input type="radio" name="escolha_situacao" disabled="disabled"><label>Completo</label><br>
+            <input type="radio" name="escolha_situacao" disabled="disabled"><label>Incompleto</label><br>
+        </label>
+        <p>Qual sua satisfação em relação ao curso? <input type="range"></p>
+        <p>Descreva como está sua experiência até o momento:</p>
+        <textarea placeholder="Descreva aqui..."></textarea>
+        <p>Escolha uma senha: <input type="password" placeholder="Digite sua Senha"></p>
+        <p>Confirme sua senha: <input type="password" placeholder="Digite sua Senha"></p>
+        <label>Confirme: <br>
+            <input type="checkbox"><label>Você concorda com os termos?</label><br>
+            <input type="checkbox"><label>Você gostaria de receber e-mails com notificações?</label><br>
+        </label>
+        <br>
+        <input type="button" value="Salvar">
+    </form>
+</body>
+</html>
