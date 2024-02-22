@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site 10</title>
+</head>
+<body>
+    <h1>Neste Exercício você deve criar uma página HTML com os seguintes componentes:</h1>
+    <h4>Preencher as informações:</h4>
+    <form>
+        <p>
+            <label>Insira uma imagem:
+            <input type="file" name="imagem" id="imagem">
+            </label>
+        </p>
+        <p>
+            <label>Nome:
+            <input type="text" name="nome" id="nome" placeholder="Insira seu nome" size="250" required>
+            </label>
+        </p>
+        <p>
+            <label>Sobrenome:
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Insira seu sobrenome" size="250" required>
+            </label>
+        </p>
+        <p>
+            <label>Data de nascimento:
+            <input type="date" name="datanascimento" id="datanascimento" placeholder="dd/mm/aaaa">
+            </label>
+        </p>
+        <p>
+            <label>Idade:
+            <input type="number" name="idade" id="idade" min="1">
+            </label>
+        </p>
+        <p>
+            <label>E-mail:
+            <input type="email" name="email" id="email" required>
+            </label>
+        </p>
+        <p>
+            <label>Formação Acadêmica:
+            <input type="radio" name="escolhaformacao" id="escolhaformacao"><label>Ensino Fundamental</label><br>
+            <input type="radio" name="escolhaformacao" id="escolhaformacao"><label>Ensino Médio</label><br>
+            <input type="radio" name="escolhaformacao" id="escolhaformacao"><label>Ensino Superior</label><br>
+            <input type="radio" name="escolhaformacao" id="escolhaformacao"><label>Pós Graduação - Especialização</label><br>
+            <input type="radio" name="escolhaformacao" id="escolhaformacao"><label>Pós Graduação - Mestrado</label><br>
+            <input type="radio" name="escolhaformacao" id="escolhaformacao"><label>Pós Graduação - Doutorado</label><br>
+            </label>
+        </p>
+        <p>
+            <label>Nome do Curso:
+            <select disabled="disabled">
+                <option>Desenvolvimento e Análise de Sistemas</option>
+                <option>Engenharia de Software</option>
+                <option>Ciência de Dados</option>
+                <option>Engenharia Mecânica</option>
+                <option>Psicologia</option>
+                <option>Enfermagem</option>
+                <option>Física</option>
+                <option>História</option>
+                <option>Medicina</option>
+                <option>Direito</option>
+            </select>
+            </label>
+        </p>
+        <p>
+            <label>Situação:
+            <input type="radio" name="situacao" id="situacao"><label>Em Andamento</label>
+            <input type="radio" name="situacao" id="situacao"><label>Completo</label>
+            <input type="radio" name="situacao" id="situacao"><label>Incompleto</label>
+            </label>
+        </p>
+        <p>
+            <label>Qual sua satisfação em relação ao curso?
+            <input type="range" id="satisfacao" value="90">
+            </label>
+        </p>
+        <p>
+            <label>Descreva aqui como está sendo sua experiência até o momento:<br>
+            <textarea placeholder="Descreva aqui..."></textarea> 
+            </label>
+        </p>
+        <p>
+            <label>Escolha uma senha:
+            <input type="text" placeholder="Digite sua Senha" required>
+            </label>
+        </p>
+        <p>
+            <label>Confirme sua senha:
+            <input type="text" placeholder="Digite sua Senha" required>
+            </label>
+        </p>
+        <p>
+            <label>Confirme:<br>
+            <input type="checkbox" name="termos" id="termos" required><label>Você concorda com os termos?</label><br>
+            <input type="checkbox" name="notificacoes" id="notificacoes" required><label>Você gostaria de receber e-mails com notificações?</label><br>
+            </label>
+        </p>
+        <input type="submit" placeholder="Salvar" required>
+    </form>
+</body>
+</html>
