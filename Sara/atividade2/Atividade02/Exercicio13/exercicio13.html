@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13</title>
+</head>
+<body>
+    <h1> Neste Exercício você deve criar uma página HTML com os seguintes componentes: </h1>
+    <p><strong> Preencha as informações: </strong></p>
+    <form>
+        <label> Insira uma imagem: </label><input type="file"><br><br>
+        <label> Nome: </label><input type="text" maxlength="250" placeholder="Insira seu nome"> <br><br>
+        <label> Nome: </label><input type="text" maxlength="250" placeholder="Insira seu sobrenome"> <br><br>
+        <label> Data de nascimento: </label><input type="date"> <br><br>
+        <label> Idade: </label><input type="number"><br><br>
+        <label> E-mail: </label><input type="email" required placeholder="Insira seu e-mail" required> <br><br>
+        <label> Formação Acadêmica </label> <br>
+        <input type="radio" name="opcao_formacao"> <label>Ensino Fundamental</label> <br>
+        <input type="radio" name="opcao_formacao"> <label>Ensino Médio</label> <br>
+        <input type="radio" name="opcao_formacao"> <label>Ensino Superior</label> <br>
+        <input type="radio" name="opcao_formacao"> <label>Pós Graduação - Especialização</label> <br>
+        <input type="radio" name="opcao_formacao"> <label>Pós Graduação - Mestrado</label> <br>
+        <input type="radio" name="opcao_formacao"> <label>Pós Graduação - Doutorado</label> <br><br>
+
+        <label>Nome do Curso: </label>  
+            <select disabled>
+                <option> Desenvolvimento e Análise de Sistemas</option>
+            </select><br><br>
+
+        <label>Situação:</label><br>
+        <input type="radio" name="opcao_situacao_curso" disabled> <label>Em andamento</label> <br>
+        <input type="radio" name="opcao_situacao_curso" disabled> <label>Completo</label> <br>
+        <input type="radio" name="opcao_situacao_curso" disabled> <label>Incompleto</label> <br><br>
+
+        <labeL> Qual sua satisfação em relação ao curso? </labeL> <input type="range"><br><br>
+
+        <label> Descreva como está sendo sua experiência até o momento:</label><br>
+        <textarea rows="5" cols="50" placeholder="Descreva aqui..."></textarea><br><br>
+
+        <label> Escolha uma senha: </label><input type="password" placeholder="Digite sua senha"> <br><br>
+
+        <label> Confirme sua senha: </label><input type="password" placeholder="Digite sua senha"> <br><br>
+
+        <label> Confirme: </label><br>
+        <input type="checkbox"><label>Você concorda com os termos?</label><br>
+        <input type="checkbox"><label>Você gostaria de receber e-mails com notificações?</label><br><br>
+
+        <button type="submit"> Salvar </button>
+    </form>
+</body>
+</html>
