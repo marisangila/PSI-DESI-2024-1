@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex8</title>
+</head>
+
+<body>
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e
+        diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(min-width:1050px)" srcset="../static/imgs/monet-impressao-do-nascer-do-sol.jpg" type="image/jpg" alt="imagem pequena" >
+        <source media="(min-width:850px)" srcset="../static/imgs/mulher-com-sombinha-claude-monet.jpg">
+        <img src="../static/imgs/pintura-Puente-De-Waterloo-Tiempo-Nublado.jpg" alt="">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio autoplay="autoplay" controls="controls">
+        <source src="../static/audio/polonaise_fantasie-chopin_op61.mp3" type="audio/mp3" />
+        seu navegador não suporta HTML5
+    </audio>
+
+</body>
+
+</html>
