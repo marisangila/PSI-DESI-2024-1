@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 10</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    
+    <h3>Preencha as informações</h3>
+    <label>Insira uma imagem:</label>
+    <input type="file">
+    <br> <br>
+    
+    <label>Nome:</label>
+    <input type="text" placeholder="Insira seu nome." maxlength="250">
+    <br> <br>
+
+    <label>Sobrenome:</label>
+    <input type="text" placeholder="Insira seu sobrenome." maxlength="250">
+    <br> <br>
+
+    <label>Data de nascimento:</label>
+    <input type="date">
+    <br> <br>
+
+    <label>Idade:</label>
+    <input type="number" placeholder="Insira sua idade.">
+    <br> <br>
+
+    <label>E-mail:</label>
+    <input type="text" placeholder="Insira seu e-mail." required> 
+    <br> <br>
+
+    <label>Formação acadêmica</label> <br>
+    <input type="radio" name="opcao_formacao"><label>Ensino Fundamental</label><br>
+    <input type="radio" name="opcao_formacao"><label>Ensino Médio</label><br>
+    <input type="radio" name="opcao_formacao"><label>Ensino Superior</label><br>
+    <input type="radio" name="opcao_formacao"><label>Pós Graduação - Especialização</label><br>
+    <input type="radio" name="opcao_formacao"><label>Pós Graduação - Mestrado</label><br>
+    <input type="radio" name="opcao_formacao"><label>Pós Graduação - Doutorado</label><br><br>
+
+    <label>Nome do curso:</label><br>
+    <select name="curso" id="curso" disabled>
+        <option value="">Análise e Desenvolvimento de Sistemas</option>
+    </select>
+    <br> <br>
+
+    <label>Situação</label><br>
+    <input type="radio" name="opcao_situacao" disabled><label>Em andamento</label><br>
+    <input type="radio" name="opcao_situacao" disabled><label>Completo</label><br>
+    <input type="radio" name="opcao_situacao" disabled><label>Incompleto</label><br>
+
+    <label>Qual sua satisfação em relação ao curso?</label>
+    <input type="range"> <br> <br>
+
+    <label>Descreva como está sendo sua experiência até o momento</label><br>
+    <textarea name="" id="" cols="50" rows="3" placeholder="Descreva aqui..."></textarea> <br><br>
+
+    <label>Escolha uma senha</label>
+    <input type="password" placeholder="Digite sua senha."><br><br>
+
+    <label>Confirme sua senha</label>
+    <input type="password" placeholder="Confirme sua senha."><br><br>
+
+    <label>Confirme:</label><br>
+    <input type="checkbox"><label>Você concorda com os termos?</label><br>
+    <input type="checkbox"><label>Você gostaria de receber e-mails com notificações?</label><br><br>
+
+    <input type="submit">
+
+</body>
+</html>
