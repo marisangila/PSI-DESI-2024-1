@@ -1,0 +1,10 @@
+h1{
+    padding: 0.5em;
+    color: white;
+    background-color: rgb(31, 31, 31);
+}
+
+p{
+    background-color: rgba(0, 0, 0, 0.123);
+    padding: 10px;
+}
