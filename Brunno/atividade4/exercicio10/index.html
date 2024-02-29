@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <div class="formulario">
+        <form>
+            <h1>Formulário de Cadastro</h1>
+            <p>
+                <label>Nome:</label>
+            </p>
+            <p>
+                <input type="text" name="nome">
+            </p>
+            <p>
+                <label>Email:</label>
+            </p>
+            <p>
+                <input type="text" name="email">
+            </p>
+            <p>
+                <label>Idade:</label>
+            </p>
+            <p>
+                <input type="number" name="idade">
+            </p>
+            <p>
+                <label>Cidade:</label>
+            </p>
+            <p>
+                <input type="text" name="cidade">
+            </p>
+            <p>
+                <label>Estado:</label>
+            </p>
+            <p>
+                <select disabled="disabled">
+                    <option value="yarr" disabled selected>Selecione</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+    </div>
+    <div class="registro">
+        <h2>Dados Cadastrados</h2>
+        <table border="1">
+            <th>Nome</th>
+            <th colspan="2">Email</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td colspan="2">joao@example.com</td>
+                    <td>25</td>
+                    <td>São Paulo</td>
+                    <td>SP</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
