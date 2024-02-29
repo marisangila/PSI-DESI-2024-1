@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            height: 100%;
+            background-color: rgba(235, 235, 235, 0.795);
+        }
+    </style>
+    <title>Index</title>
+</head>
+<body>
+    <p style="color: chocolate;" >CSS class</p>
+    <input type="button" value="OK" style="border: none">
+    <p id="flip" style="width: 100%; background-color: rgba(0, 0, 0, 0.089); padding: 10px; text-align: center; font-weight: bolder; cursor: pointer;">Click me</p>
+    <p id="panel" style="width: 100%; background-color: rgba(0, 0, 0, 0.089); padding: 10px; display: none; text-align: center; font-weight: bolder; cursor: pointer; height: 5em;">hello world</p>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+</body>
+</html>
