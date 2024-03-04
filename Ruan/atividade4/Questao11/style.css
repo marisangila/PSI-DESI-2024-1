@@ -1,0 +1,43 @@
+#fundo{
+    background-color: rgb(236, 236, 236);
+    margin: 0 auto;
+    border-radius: 2px;
+    width: 550px;
+    height: 750px;
+    font-family: Arial;
+    padding: 10px;
+    
+}
+.titulo{
+    text-align: center;
+    padding-top: 30px;
+}
+#formulario{
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}
+#formularioTabela{
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+}
+#tabela{
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+.valorTabelaTh{
+    border: 1px solid black;
+    background-color: rgb(221, 221, 221);
+}
+.valorTabelaTd{
+    border: 1px solid black;
+}
+.entrada{
+    width: 450px;
+    height: 30px;
+}
