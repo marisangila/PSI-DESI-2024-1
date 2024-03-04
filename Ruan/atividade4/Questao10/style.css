@@ -1,0 +1,21 @@
+.formulario{
+    background-image: linear-gradient(to right, #00da42, #00d0a2, #00beea, #00a4ff, #2880f2);
+    border-radius: 1%;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.tituloFormulario{
+    color: #ffffff;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 45px;
+}
+#caixas{
+
+}
+.enviar{
+
+}
