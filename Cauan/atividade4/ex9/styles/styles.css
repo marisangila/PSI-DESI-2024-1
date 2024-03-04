@@ -1,0 +1,38 @@
+*{
+    margin: 5px;
+    color: #fff;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+form{
+    margin: 10% 25% 0px 25%;
+    display: inline-block;
+    background-image: linear-gradient(to left, #2877d1, #6bce5e);
+    border-radius: 5px;
+    padding: 20px;
+    width: 480px;
+    height: 480px;
+    text-align: center;
+}
+input,textarea,select{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #ffffff10;
+    width: 90%;
+    padding: 10px;
+}
+form > input::placeholder,textarea::placeholder{
+    color:#fff;
+}
+h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#botao{
+    background-color: #3a3a3a;
+    border: none;
+    width: 90%;
+    padding: 10px;
+}
