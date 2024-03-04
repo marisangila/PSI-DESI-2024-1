@@ -1,0 +1,42 @@
+/* p{
+    color: blue;
+    background-color: black;
+    width: 50%;
+} */
+
+.minhaClassePSI{
+    color: blue;
+    background: red;
+}
+
+.minhaClasseDESI{
+    color: red;
+    background: blue;
+}
+
+#db{
+    color: brown;
+    background: cornflowerblue;
+}
+
+.div1{
+    background: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border-color: black;
+    border-style: dashed;
+    display: inline-block;
+    margin-left: 50px;
+}
+.div2{
+    background:aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: inline-block;
+}
+.btn{
+    background-color: blueviolet;
+    padding-left: 50px;
+}

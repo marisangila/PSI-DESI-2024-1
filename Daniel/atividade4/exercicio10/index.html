@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <h1>Formulário de Cadastro</h1>
+            <section id="inputs_section" >
+                <div class="input_container" >
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" class="inputs" id="nome">
+                </div>
+                <div class="input_container">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" class="inputs" >
+                </div>
+                <div class="input_container">
+                    <label for="idade">Idade:</label><br>
+                    <input type="number" id="idade" class="inputs">
+                </div>
+                <div class="input_container">
+                    <label for="cidade">Cidade:</label><br>
+                    <input type="text" id="cidade" class="inputs">
+                </div>
+                <div class="input_container">
+                    <label for="estado">Estado:</label><br>
+                    <select id="estado">
+                        <option>Selecione um assunto</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </select> 
+                </div>
+            </section>
+            <input type="submit" value="Enviar" id="but_submit" >
+        </form>
+        <section id="table_section" >
+            <h2>Formulário de Cadastro</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>joao@example.com</td>
+                    <td>25</td>
+                    <td>São Paulo</td>
+                    <td>SP</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

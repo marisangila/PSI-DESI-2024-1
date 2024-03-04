@@ -1,0 +1,50 @@
+.campos {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 250px;
+    padding: 30px;
+    /*
+    * Created with https://www.css-gradient.com
+    * Gradient link: https://www.css-gradient.com/?c1=e9c415&c2=9b1610&gt=l&gd=dtl
+    */
+    background: rgb(195, 47, 224);
+    background: linear-gradient(135deg, rgb(64, 233, 255), rgb(158, 62, 202));
+    width: 500px;
+    border-radius: 3px;
+    
+}
+
+.campos h1 {
+    color: white;
+    padding: 10px;
+}
+
+.campos input, select {
+    /* background: rgb(15, 82, 43);
+    background: linear-gradient(135deg, rgba(233, 196, 21, 1.0), rgba(155, 22, 16, 1.0)); */
+    width: 100%;
+    height: 40px;
+    /*
+    box-shadow: 0 0 0;
+    border: 0 none; */
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 5px;
+    color: white;
+    border-color: white;
+    
+}
+
+.campos button {
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-style: solid;
+    background-color: rgb(21, 78, 131);
+    border-radius: 5px;
+    color: white;
+    border-color: white;
+}
+
