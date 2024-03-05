@@ -1,0 +1,129 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial;
+    padding: 15px;
+    background-color: rgb(223, 222, 222);
+}
+
+h1{
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+p{
+    margin: 8px 0px;
+}
+
+.formulario{
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 610px;
+    border-radius: 5px;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.nome{
+    margin: 5px 0px;
+    padding: 5px;
+    width: 480px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(221, 220, 220);
+}
+
+.gmail{
+    margin: 5px 0px;
+    padding: 5px;
+    width: 480px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(221, 220, 220);
+}
+
+.idade{
+    margin: 5px 0px;
+    padding: 5px;
+    width: 480px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(221, 220, 220);
+}
+
+.cidade{
+    margin: 5px 0px;
+    padding: 5px;
+    width: 480px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(221, 220, 220);
+}
+
+.estado{
+    margin: 5px 0px;
+    padding: 5px;
+    width: 495px;
+    height: 35px;  
+    border-width: 1px;
+    border-radius: 5px; 
+}
+
+.btn_enviar{
+    margin: 10px 0px;
+    padding: 5px;
+    width: 495px;
+    height: 35px;
+    background-color: rgb(32, 117, 58);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+h2{
+    margin-left: 155px;
+    padding: 20px;
+}
+
+th{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(223, 219, 219);
+    text-align: left;
+    padding-left: 5px;
+    border: 1px black solid;
+}
+
+td{
+    padding: 5px;
+    border: 1px black solid;
+}
+
+table{
+    border: 1px black solid;
+}
+
+.div_tabela{
+    background-color: white;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 580px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: white;
+    border-radius: 5px;
+    width: 570px;
+}
