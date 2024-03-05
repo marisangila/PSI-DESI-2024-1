@@ -49,13 +49,88 @@
     border-color: green;
     margin: 50px;
 }
-.atv10_div02{
-    background-image: linear-gradient(to right, #7036f6, #008aff, #00b0ff, #00c69a, #13d300);
-    width: 400px;
-    height: 500px;
+#forms{
+    background-image: linear-gradient(to right top, #00deff, #00bcff, #0094ff, #0065ff, #6501d3);
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+}
+.texto_div_10{
     text-align: center;
 }
-.atv10_p{
+.caixas{
+    width: 400px;
+    height: 30px;
+    border-radius: 15px;
+}
+.caixas_2{
+    width: 400px;
+    height: 75px;
+    border-radius: 15px;
+}
+.caixas_3{
+    width: 400px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: blue;
+    color: white;
+}
+#borda_11{
+    background-color: rgb(214, 212, 212);
+    padding: 10px;
+    width: 610px;
+}
+#form_11{
+    padding: 5px;
     text-align: center;
+    background-color: white;
+    width: 600px;
+    height: 600px;
+    border-radius: 15px;
+}
+.boxes_11{
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    width: 580px;
+    height: 30px;
+}
+.boxes2_11{
+    color: white;
+    background-color: rgb(9, 206, 9);
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    width: 580px;
+    height: 30px;
+}
+.info_11{
+    text-align: left;
+}
+.info2_11{
+    text-align: center;
+    width: 580px;
+    height: 30px;
+}
+#forms2_11{
+    background-color: white;
     margin-top: 10px;
+    width: 590px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+#tabela_11{
+    width: 590px;
+}
+.lista_11{
+    width: 400px;
+    background-color: aqua;
+}
+#tabelaP_11{
+    border-collapse: collapse;
+}
+#body_11{
+    font-family: Arial;
 }

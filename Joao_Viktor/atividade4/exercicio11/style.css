@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+form{
+    font-family: Arial;
+    padding: 1%;
+    margin: 3%;
+    border-radius: 10px;
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+label{
+    text-align: left;
+}
+
+input{
+    width: 99%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(228, 228, 228);
+    padding: 5px;
+}
+
+select{
+    width: 99%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(228, 228, 228);
+    background-color: rgb(233, 233, 237);
+    color: black;
+    padding: 5px;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 3%;
+    width: 100%;
+    background-color: rgb(76, 174, 80);
+    color: white;
+}
+
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: rgb(204, 204, 204);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+thead{
+    border: 1px solid;
+    background-color: rgb(240, 240, 240);
+}
+
+tbody, td, th{
+    border: solid 1px;
+    padding: 5px;
+}
+
+.div{
+    font-family: Arial;
+    background-color: white;
+    padding: 3%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
