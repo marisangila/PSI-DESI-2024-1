@@ -1,0 +1,257 @@
+.fundo_cinza
+{
+    background-color: gray;
+    color: black;
+}
+
+.fundo_preto
+{
+    background-color: black;
+    color: white;
+}
+
+.arial16
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.frank22
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+}
+
+.margem10
+{
+    margin: 10px;
+    padding: 20px;
+    border: solid darkcyan 1px;
+}
+
+.margem20
+{
+    margin: 20px;
+    padding: 10px;
+    border: solid green 1px;
+}
+
+.txt_centro
+{
+    text-align: center;
+}
+
+.txt_just
+{
+    text-align: justify;
+    padding: 5px;
+    border: solid black 2px;
+    max-width: 300px;
+}
+
+.bordas_duplas
+{
+    text-align: center;
+    border: double black 3px;
+    max-width: 350px;
+}
+
+.borda_ranhurada
+{
+    text-align: center;
+    border: groove lightblue 15px;
+    max-width: 350px;
+    margin: 20px;
+}
+
+.cor_cin
+{
+   background-color: rgb(180, 175, 175);
+   border: 0px;
+}
+
+.cor_cin_cla
+{
+   background-color: rgb(236, 236, 236);
+   border: 0px;
+}
+
+.cor_bra
+{
+    background-color: white;
+}
+
+.cor_verm
+{
+    background-color: red;
+}
+
+.cor_lar
+{
+    background-color: orange;
+}
+
+.cor_ama
+{
+    background-color: yellow;
+}
+
+.cor_verd
+{
+    background-color: green;
+}
+
+.cor_azu
+{
+    background-color: lightblue;
+}
+
+.cor_azue
+{
+    background-color: blue;
+}
+
+.cor_vio
+{
+    background-color: blueviolet;
+}
+
+.l:link
+{
+    color: black;
+    text-decoration: overline;
+    background-color: lavender;
+}
+
+.l:visited
+{
+    background-color: orchid;
+    color: pink;
+}
+
+.l:hover
+{
+    background-color: black;
+    color: white;
+}
+
+.n_clique
+{
+    color: crimson;
+    background-color: #7c3c15;
+    box-shadow: 0 6px #999;
+    border: 4px solid black;
+    border-radius: 9px;
+}
+
+.n_clique:hover
+{
+    background-color: #b66532;
+}
+
+.n_clique:active
+{
+    color: darkred;
+    background-color: #fd6100;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
+
+.arco_iris
+{
+    padding: 1%;
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 35;
+    text-shadow: 0 0 12px #d900ff, 0 0 5px #6c0876;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0.645), rgba(255, 166, 0, 0.645), rgba(255, 255, 0, 0.645), rgba(0, 128, 0, 0.645), rgba(0, 0, 255, 0.645), rgba(76, 0, 130, 0.645), rgba(238, 130, 238, 0.645));
+}
+
+.bloco
+{
+    text-align: center;
+}
+
+.canto
+{
+    text-align: left;
+}
+
+.bloco_b
+{
+    display: block;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.salvar
+{
+    width: 60%;
+    height: 29px;
+    border: 2px solid black;
+    border-radius: 11px;
+    color:white;
+    background-color: black;
+}
+
+.enviar
+{
+    width: 100%;
+    height: 29px;
+    border: 2px solid green;
+    border-radius: 11px;
+    color:white;
+    background-color: green;
+}
+
+.tabela
+{
+   border:1px solid black;
+   border-collapse: collapse;
+}
+
+.tabela2
+{
+   border:1px solid rgb(255, 255, 255);
+}
+
+.suave
+{
+    border-radius: 15px;
+}
+
+.tabela_inv
+{
+   border:1px solid white;
+}
+
+.ajuste
+{
+    max-width: fit-content;
+}
+
+.centro
+{
+    width: 100%;
+    margin: auto;
+}
+
+.area
+{
+   font-family: Arial, Helvetica, sans-serif;font-size: 13px;
+}
+
+.in_largura
+{
+    width: 100%;
+    padding: 3px;
+    margin: auto;    
+}
+
+.espaco
+{
+    padding: 20px;
+}
