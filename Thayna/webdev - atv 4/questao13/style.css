@@ -1,0 +1,20 @@
+.head{
+    margin: auto;
+    width: 600px;
+}
+.head,label{
+    text-align: center;
+}
+.head,h1{
+    font-family: Arial;
+}
+.div1{
+    text-align: left;
+}
+.div2{
+    text-align: left;
+}
+.bottom{
+    margin-top: 45px;
+    text-align: center;
+}
