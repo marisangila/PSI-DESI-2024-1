@@ -1,0 +1,71 @@
+body{
+    font-family: Arial;
+}
+.cabecalho{
+    height: 50px;
+    width: 870px;
+}
+#boas_vindas{
+
+    font-size: 40px;
+}
+#texto_azul_e_espacamento{
+    color: blue;
+    margin-left: 40px;
+}
+.texto_azul{
+    color: blue;
+}
+#espacamento_dir{
+    margin-right: 15px;
+}
+#espacamento_alto{
+    margin-left: 300px;
+}
+.azul_espacamento{
+    margin-left: 15px;
+    color: blue;
+}
+#espacamento_baixo{
+    margin-left: 15px;
+}
+.btn1{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(236, 247, 221);
+    border: rgb(236, 247, 221);
+    border-top: 5px solid green;
+    
+}
+.btn2{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(224, 248, 248);
+    border: rgb(224, 248, 248);
+    border-top: 5px solid blue;
+}
+.btn3{
+    width: 90px;
+    height: 40px;
+    background-color: rgb(247, 188, 188);
+    border: rgb(247, 188, 188);
+    border-top: 5px solid purple;
+}
+#espacamento{
+    margin-left: 250px;
+    font-size: 20px;
+}
+#espaco_pequeno{
+    margin-left: 15px;
+    font-size: 20px;
+}
+#div_principal{
+    width: 900px;
+}
+#div_segunda{
+    padding: 5px;
+    background-color: rgb(240, 236, 232);
+}
+#div_terceira{
+    font-size: 12px;
+}
