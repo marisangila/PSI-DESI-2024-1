@@ -1,21 +1,40 @@
-.formulario{
+#formulario{
     background-image: linear-gradient(to right, #00da42, #00d0a2, #00beea, #00a4ff, #2880f2);
     border-radius: 1%;
     width: 500px;
-    height: 500px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    height: 485px;
+    margin: 0 auto;
 }
-.tituloFormulario{
+#tituloFormulario{
     color: #ffffff;
     font-family: Arial;
     text-align: center;
-    padding-top: 45px;
+    padding-top: 30px;
+    padding-top: 50px;
 }
-#caixas{
-
+.caixas{
+    background-color: transparent;
+    backdrop-filter: saturate(80%);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: #ffffff;
+    width: 450px;
+    height: 30px;
 }
-.enviar{
-
+#mensagem{
+    height: 40px;
+}
+.opcaoCaixa{
+    color: black;
+}
+#enviar{
+    background-color: black;
+    color: #ffffff;
+    width: 450px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.alinhaTexto{
+    text-align: center;
 }
