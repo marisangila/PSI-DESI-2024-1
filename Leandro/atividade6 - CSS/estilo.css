@@ -162,3 +162,24 @@
 #body_12{
     font-family: Arial;
 }
+#formP_13{
+    padding: 5px;
+    background-color: rgb(189, 187, 187);
+    width: 700px;
+    height: 900px;
+}
+#form_13{
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+.text2_13{
+    text-align: left;
+}
+#body_13{
+    font-family: Arial;
+}
+.label_13{
+    padding: 10px;
+}
