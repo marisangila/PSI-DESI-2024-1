@@ -134,3 +134,52 @@
 #body_11{
     font-family: Arial;
 }
+#formP_12{
+    padding: 5px;
+    background-color: rgb(179, 175, 175);
+    width: 600px;
+    height: 700px;
+    text-align: center;
+}
+#form_12{
+    border-radius: 10px;
+    background-color: white;
+}
+#messi_12{
+    border-radius: 15px;
+    height: 400px;
+    width: 400px;
+}
+.btn_12{
+    margin: 5px;
+    width: 125px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:rgb(11, 138, 0);
+    border: 1px solid gray;
+    color: white;
+}
+#body_12{
+    font-family: Arial;
+}
+#formP_13{
+    padding: 5px;
+    background-color: rgb(189, 187, 187);
+    width: 700px;
+    height: 900px;
+}
+#form_13{
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+}
+.text2_13{
+    text-align: left;
+}
+#body_13{
+    font-family: Arial;
+}
+.label_13{
+    padding: 10px;
+}

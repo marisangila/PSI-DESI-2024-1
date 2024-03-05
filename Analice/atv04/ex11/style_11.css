@@ -1,0 +1,83 @@
+html {
+    background-color: rgba(231, 221, 221, 0.788);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.formulario {
+    margin: auto;
+    width: 450px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.formulario input {
+    align-items: center;
+    border-radius: 5px;
+    width: 445px;
+    height: 30px;
+    border-color: grey;
+    background-color: transparent;
+    border-style: solid;
+    border-width: thin;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+.formulario .btn {
+    width: 450px;
+    height: 40px;
+    color: white;
+    background-color: green;
+}
+
+.formulario select {
+    margin-top: 10px;
+    width: 450px;
+    height: 35px;
+    font-family: Arial;
+    background-color: lightgray;
+    border-color: rgba(106, 116, 124, 0.664);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.dados_cadastrados {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    width: 550px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-collapse: collapse;
+}
+
+.dados_cadastrados h1 {
+    padding-top:30px ;
+}
+
+.dados_cadastrados table thead {
+    background-color:rgb(223, 222, 222);
+    
+}
+
+.tabela ,th, td {
+    margin-left: 5px;
+    padding: 3px;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    height: 30px;
+    border: 1px solid;
+    border-color: rgb(235, 228, 220);
+    border-collapse: collapse;
+}
+
+
+

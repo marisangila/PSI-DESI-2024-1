@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #0b0d0e;
+    color: #fff;
+}
+#content{
+    display: flex;
+}
+header{
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border: 2px solid #282a2c;
+}
+.header-buttons{
+    margin: 10px 50px;
+}
+#direita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 650px;
+    border-collapse: collapse;
+}
+#esquerda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+#esquerda > *{
+    margin: 15px;
+}
+aside{
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    left: 0;
+    background-color: #0d1117;
+    height: 100%;
+    width: 15%;
+    border-right: 2px solid #282a2c;
+}
+aside > *{
+    margin: 10px;
+}
+#repositories > *{
+    margin: 10px;
+    font-size: 15px;
+}
+#top-repositories{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#top-repositories > button{
+    background-color: #1d7c1a;
+    padding: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#search{
+    padding: 8px;
+    width: 93%;
+    background-color: #0b0d0e;
+    border: 1px solid #282a2c;
+    border-radius: 5px;
+    color: #fff;
+}
+#recent-activity{
+    margin-top: 30px;
+}
+#recent-activity h5{
+    margin-bottom: 10px;
+}
+#textarea{
+    padding: 15px 15px;
+    border: 1px dashed #282a2c;
+    border-radius: 10px;
+    font-size: 13px;
+    color: #828385;
+}
+section{
+    width: 80%;
+    position: absolute;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#central-section{
+    width: 60%;
+    height: 100%;
+    margin: 50px;
+}
+#heading-content{
+    display: flex;
+    justify-content: space-between;
+}
+

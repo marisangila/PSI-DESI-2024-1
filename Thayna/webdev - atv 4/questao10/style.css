@@ -3,10 +3,21 @@
     text-align: center;
     border-radius: 1%;
     background: linear-gradient(90deg, rgb(164, 212, 164), rgb(122, 224, 216));
-    width: 50%;
+    width: 30%;
     padding-top: 3%;
     padding-bottom: 3%;
 }
+
+.Forms ::placeholder{
+    color: white;
+    opacity: 0.6 ;
+    padding: 5px;
+}
+
+.Forms input {
+    border-radius: 5px;
+}
+
 
 .titulo{
     font-family: Arial;
@@ -19,7 +30,6 @@
     height: 35px;
     font-family: Arial;
     background-color: transparent;
-    border-radius: 1%;
     border-color: aliceblue;
     border-style: solid;
 }
@@ -28,7 +38,6 @@
     height: 35px;
     font-family: Arial;
     background-color: transparent;
-    border-radius: 1%;
     border-color: aliceblue;
     border-style: solid;
 }
@@ -37,7 +46,6 @@
     height: 35px;
     font-family: Arial;
     background-color: transparent;
-    border-radius: 1%;
     border-color: aliceblue;
     border-style: solid;
 }
@@ -46,7 +54,6 @@
     height: 35px;
     font-family: Arial;
     background-color: transparent;
-    border-radius: 1%;
     border-color: aliceblue;
     border-style: solid;
 }
@@ -54,23 +61,25 @@
     width: 350px;
     font-family: Arial;
     background-color: transparent;
-    border-radius: 1%;
+    border-radius: 5px;
     border-color: aliceblue;
     border-style: solid;
+    color:aliceblue;
 }
 .select{
+    color: aliceblue;
     width: 350px;
     height: 35px;
     font-family: Arial;
     background-color: transparent;
-    border-radius: 1%;
     border-color: aliceblue;
     border-style: solid;
+    border-radius: 5px;
 }
 .btn{
     font-family: Arial;
-   background-color: rgb(46, 46, 46);
-   color:aliceblue;
-   width: 350px;
-   height: 35px;
+    background-color: rgb(57, 68, 63);
+    color:aliceblue;
+    width: 350px;
+    height: 35px;
 }
