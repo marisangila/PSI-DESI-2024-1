@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="fundo">
+        <div id="formulario">
+            <h1 class="titulo">Formulário de Cadastro</h1>
+            <p>
+                <label class="tipoEntrada">Nome:</label> <br>
+                <input type="text" class="entrada">
+            </p>
+            <p>
+                <label class="tipoEntrada">Email:</label> <br>
+                <input type="text" class="entrada">
+            </p>
+            <p>
+                <label class="tipoEntrada">Idade:</label> <br>
+                <input type="number" class="entrada"> 
+            </p>
+            <p>
+                <label class="tipoEntrada">Cidade:</label> <br>
+                <input type="text" class="entrada">
+            </p>
+            <p>
+                <label class="tipoEntrada">Estado:</label> <br>
+                <select class="entrada" id="selecionaEstado">
+                    <option>Selecione</option>
+                    <option>SP</option>
+                    <option>RJ</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" value="Enviar" id="enviar">
+            </p>
+        </div>
+        <div id="formularioTabela">
+            <h2 class="titulo">Dados Cadastros</h2>
+                <table id="tabela">
+                    <thead>
+                        <th class="valorTabelaTh">Nome</th>
+                        <th class="valorTabelaTh">Email</th>
+                        <th class="valorTabelaTh">Idade</th>
+                        <th class="valorTabelaTh">Cidade</th>
+                        <th class="valorTabelaTh">Estado</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="valorTabelaTd">João</td>
+                            <td class="valorTabelaTd">joao@example.com</td>
+                            <td class="valorTabelaTd">25</td>
+                            <td class="valorTabelaTd">São Paulo</td>
+                            <td class="valorTabelaTd">SP</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+</body>
+
+</html>
