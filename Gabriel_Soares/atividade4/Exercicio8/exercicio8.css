@@ -1,0 +1,12 @@
+body{
+    padding: 15px;
+}
+
+.botao{
+    font-size: 16px;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    background-color: rgb(85, 197, 85);
+    padding: 15px 30px 15px 30px;
+}

@@ -1,0 +1,63 @@
+.center
+ {
+    border: 5px solid;
+    text-align: center;
+  }
+
+h3.titulo
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+p.subtitulo
+  {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-style: italic;
+  }
+
+p.importante
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div.container_focus
+ {
+    width: 1200px;
+ }
+
+ div.container_focus
+ {
+    width: 700px;
+    padding: 50px;
+ }
+
+div.container
+ {
+    width: 637px;
+ }
+
+div.item_container
+ {
+    width: 270px;
+    float: left;
+ }
+
+ div.container_uno
+ {
+    width: 637px;
+ }
+
+ div.item_container_uno
+ {
+    width: 270px;
+    float: left;
+ }
