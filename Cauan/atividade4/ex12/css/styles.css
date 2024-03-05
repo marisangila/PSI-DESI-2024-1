@@ -1,0 +1,39 @@
+body{
+    background-color: #dddddd;
+}
+#atividade{
+    background-color: #fff;
+    width: 800px;
+    height: 750px;
+    padding: 15px;
+    margin: 30px 600px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+}
+.botoes{
+    background-color: #3fa73f;
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+#superiores{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#inferiores{
+    margin-top: 10px;
+    text-align: center;
+}
+img{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+}
+h1{
+    margin: 20px 50px;
+}
+
+

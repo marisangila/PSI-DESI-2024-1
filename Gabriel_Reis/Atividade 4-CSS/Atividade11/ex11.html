@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+<body>
+    <div class="formulario">
+        <form>
+            <h1>Formulário de Cadastro</h1>
+            <p>
+                <label>Nome:</label>
+            </p>
+            <p>
+                <input type="text" name="nome">
+            </p>
+            <p>
+                <label>E-mail:</label>
+            </p>
+            <p>
+                <input type="text" name="email">
+            </p>
+            <p>
+                <label>Idade:</label>
+            </p>
+            <p>
+                <input type="number" name="idade">
+            </p>
+            <p>
+                <label>Cidade:</label>
+            </p>
+            <p>
+                <input type="text" name="cidade">
+            </p>
+            <p>
+                <label>Estado:</label>
+            </p>
+            <p>
+                <select disabled="disabled">
+                    <option value="SP" disabled selected>Selecione</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+    </div>
+    <div class="registro">
+        <h2>Dados Cadastrados</h2>
+        <table border="1">
+            <th>Nome</th>
+            <th colspan="2">E-mail</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <tbody>
+                <tr>
+                    <td>Anonimo</td>
+                    <td colspan="2">email@email.com</td>
+                    <td>22</td>
+                    <td>Andradina</td>
+                    <td>SP</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

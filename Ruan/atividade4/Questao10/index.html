@@ -9,21 +9,36 @@
 </head>
 
 <body>
-    <div class="formulario">
-        <h1 class="tituloFormulario">Formulário de Contato</h1>
-        <P><input id="caixas" type="text" placeholder="Nome"></P>
-        <p><input id="caixas" type="text" placeholder="E-mail"></P>
-        <p><input id="caixas" type="text" placeholder="Senha"></P>
-        <p><input id="caixas" type="number" placeholder="Idade"></P>
-        <p><textarea id="caixas" cols="30" rows="10" placeholder="Mensagem"></textarea></p>
+    <div id="formulario">
+        <h1 id="tituloFormulario">Formulário de Contato</h1>
         <P>
-            <select id="caixas">
-                <option>Selecione um assunto</option>
-                <option>Desenvolvimento de Sistemas</option>
-                <option>Lógica de Programação</option>
-            </select>
+            <div class="alinhaTexto"><input class="caixas" type="text" placeholder="Nome"></div>
         </P>
-        <p><input type="button" value="Enviar" class="enviar"></p>
+        <p>
+            <div class="alinhaTexto"><input class="caixas" type="text" placeholder="E-mail"></div>
+        </P>
+        <p>
+            <div class="alinhaTexto"><input class="caixas" type="text" placeholder="Senha"></div>
+        </P>
+        <p>
+            <div class="alinhaTexto"><input class="caixas" type="number" placeholder="Idade"></div>
+        </P>
+        <p>
+            <div class="alinhaTexto"><textarea class="caixas" id="mensagem" cols="30" rows="10"
+                placeholder="Mensagem"></textarea></div>
+        </p>
+        <P>
+            <div class="alinhaTexto">
+                <select class="caixas">
+                    <option class="opcaoCaixa">Selecione um assunto</option>
+                    <option class="opcaoCaixa">Desenvolvimento de Sistemas</option>
+                    <option class="opcaoCaixa">Lógica de Programação</option>
+                </select>
+            </div>
+        </P>
+        <p>
+            <div class="alinhaTexto"><input type="button" value="Enviar" id="enviar"></div>
+        </p>
     </div>
 </body>
 

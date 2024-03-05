@@ -10,38 +10,55 @@
     <main>
         <form action="">
             <h1>Formulário de Cadastro</h1>
-            <div id="inputs" >
+            <section id="inputs_section" >
                 <div class="input_container" >
                     <label for="nome">Nome:</label><br>
-                    <input type="text" placeholder="Nome">
+                    <input type="text" class="inputs" id="nome">
                 </div>
                 <div class="input_container">
                     <label for="email">Email:</label><br>
-                    <input type="text" placeholder="Nome" id="email">
+                    <input type="email" id="email" class="inputs" >
                 </div>
                 <div class="input_container">
                     <label for="idade">Idade:</label><br>
-                    <input type="text" placeholder="Nome" id="idade">
+                    <input type="number" id="idade" class="inputs">
                 </div>
                 <div class="input_container">
                     <label for="cidade">Cidade:</label><br>
-                    <input type="text" placeholder="Nome" id="cidade">
+                    <input type="text" id="cidade" class="inputs">
                 </div>
                 <div class="input_container">
-                    <label for="estado">Nome:</label><br>
+                    <label for="estado">Estado:</label><br>
                     <select id="estado">
-                        <option value="">Selecione um assunto</option>
-                        <option value="">Morango</option>
-                        <option value="">Maçã</option>
-                        <option value="">Melancia</option>
-                        <option value="">Banana</option>
+                        <option>Selecione um assunto</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Paraná</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
                     </select> 
                 </div>
-               
-            </div>
-            
+            </section>
             <input type="submit" value="Enviar" id="but_submit" >
         </form>
+        <section id="table_section" >
+            <h2>Formulário de Cadastro</h2>
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Idade</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>joao@example.com</td>
+                    <td>25</td>
+                    <td>São Paulo</td>
+                    <td>SP</td>
+                </tr>
+            </table>
+        </section>
     </main>
 </body>
 </html>
