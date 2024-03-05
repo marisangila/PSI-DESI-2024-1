@@ -29,15 +29,40 @@
 #tabela{
     border-collapse: collapse;
     margin: 0 auto;
+    width: 460px;
 }
 .valorTabelaTh{
-    border: 1px solid black;
+    border: 1px solid gray;
     background-color: rgb(221, 221, 221);
 }
 .valorTabelaTd{
-    border: 1px solid black;
+    border: 1px solid gray;
 }
 .entrada{
     width: 450px;
     height: 30px;
+    margin-left: 22px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+}
+.tipoEntrada{
+    margin-left: 22px;
+}
+#enviar{
+    width: 460px;
+    height: 40px;
+    margin-left: 22px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    background-color: green;
+    cursor: pointer;
+}
+#selecionaEstado{
+    width: 460px;
+    height: 40px;
+    margin-left: 22px;
+    border-radius: 5px;
+    border: 1px solid rgb(211, 211, 211);
+    background-color: rgb(223, 223, 223);
 }
