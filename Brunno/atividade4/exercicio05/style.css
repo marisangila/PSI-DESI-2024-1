@@ -1,0 +1,8 @@
+h1 {
+    border-bottom: 5px solid black;
+}
+p {
+    padding: 5px;
+    border: dotted;
+    border-width: 1px;
+}
