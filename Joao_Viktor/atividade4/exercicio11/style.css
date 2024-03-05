@@ -1,31 +1,64 @@
-h1{
-    text-align: center;
-    font-size: 26px;
+body{
+    background-color: rgb(240, 240, 240);
 }
 
 form{
+    font-family: Arial;
+    padding: 1%;
+    margin: 3%;
+    border-radius: 10px;
     background-color: white;
-    border-radius: 5px;
-    margin: 2% 10% 3% 10%;
-    padding: 5px;
-    box-shadow: 5px 5px 20px #aaaaaa;
 }
 
-input{
-    width: 90%;
-    border: 1px solid;
-    border-color: rgb(221, 221, 221);
-    border-radius: 5px;
-    margin-right: 0%;
-    padding: 3px;
+h1{
+    text-align: center;
 }
 
 label{
-    margin-left: 5px;
+    text-align: left;
 }
 
-.div1{
+input{
+    width: 98%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(228, 228, 228);
+    padding: 5px;
+}
+
+select{
+    width: 100%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(228, 228, 228);
+    background-color: rgb(233, 233, 237);
+    color: black;
+    padding: 5px;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 3%;
+    width: 100%;
+    background-color: rgb(76, 174, 80);
+    color: white;
+}
+
+table{
+    border: solid 1px;
+    border-color: rgb(204, 204, 204);
+    width: 100%;
+    text-align: left;
+}
+
+thead, th{
     background-color: rgb(240, 240, 240);
-    margin: 5%;
-    padding: 1%;
+}
+tbody{
+    border: solid 1px;
 }
