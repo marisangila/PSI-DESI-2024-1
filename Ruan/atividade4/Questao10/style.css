@@ -23,6 +23,7 @@
 }
 #mensagem{
     height: 40px;
+    resize: none;
 }
 .opcaoCaixa{
     color: black;

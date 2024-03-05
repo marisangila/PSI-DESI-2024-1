@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+    <link rel="icon" href="assets/images/icons/jotapegue.png">
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+
+<body>
+    <div class="container_focus">
+        <div class="item_container_focus">
+            <p>
+            <h3 class="titulo">Formulário:</h3>
+            <p class="subtitulo">
+                preencha as informações do formulário abaixo.
+            </p>
+            </p>
+        </div>
+        <form action="formulario_salvar.html" method="get">
+            <div>
+                <p class="importante">
+                    <label for="id_foto">Insira sua imagem aqui:</label>
+                    <br><br>
+                    <input type="file" name="n_foto" id="id_foto">
+                </p>
+            </div>
+            <div class="container">
+                <div class="item_container">
+                    <p class="importante">
+                        <label for="id_nome">Insira o nome:</label>
+                        <br><br>
+                        <input type="text" name="n_nome" id="id_nome" placeholder="...">
+                    </p>
+                </div>
+
+                <div class="item_container">
+                    <p class="importante">
+                        <label id="id_sobrenome">Insira o sobrenome:</label>
+                        <br><br>
+                        <input type="text" name="n_sobrenome" id="id_sobrenome" placeholder="...">
+                    </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="item_container">
+                    <p class="importante">
+                        <label for="id_idade">Insira a idade:</label>
+                        <br><br>
+                        <input type="text" name="n_idade" id="id_idade" placeholder="...">
+                    </p>
+                </div>
+
+                <div class="item_container">
+                    <p class="importante">
+                        <label id="id_email">Insira o e-mail:</label>
+                        <br><br>
+                        <input type="email" name="n_email" id="id_email" placeholder="...">
+                    </p>
+                </div>
+            </div>
+
+            <div class="container_uno" style="min-height: 320px;">
+                <div class="item_container_uno">
+                    <p class="importante">
+                        <label id="id_formacao">Formação acadêmica:</label>
+                        <br>
+                    </p>
+
+                    <input type="radio" name="n_formacao" id="id_fund">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" id="id_fund"> Ensino fundamental</label>
+                    <br>
+                    <input type="radio" name="n_formacao" id="id_medi">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" for="id_fund"> Ensino médio</label>
+                    <br>
+                    <input type="radio" name="n_formacao" id="id_supe">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" for="id_fund"> Ensino superior</label>
+                    <br>
+                    <input type="radio" name="n_formacao" id="id_espe">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" for="id_fund"> Ensino superior - Especialização</label>
+                    <br>
+                    <input type="radio" name="n_formacao" id="id_mest">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" for="id_fund"> Ensino superior - Mestrado</label>
+                    <br>
+                    <input type="radio" name="n_formacao" id="id_dout">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" for="id_fund"> Ensino superior - Doutorado</label>
+                    <br>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="item_container">
+                    <p class="importante">
+                        Nome do curso:
+                    </p>
+                    <select name="n_curso" id="id_curso" disabled="disabled">
+                        <option value="">Análise e Desenvolvimento de Sistemas</option>
+                        <option value="">Mecatrônica</option>
+                        <option value="">Ciência da Computação</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="item_container">
+                    <p class="importante">
+                        <label for="">Situação do curso:</label>
+                    </p>
+                    <select name="n_situacoes" id="id_situacoes">
+                        <option value="">Em andamento</option>
+                        <option value="">Completo</option>
+                        <option value="">Incompleto</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container_uno" style="min-height: 150px;">
+                <div class="item_container_uno">
+                    <p class="importante" style="width: 657px;">
+                        <label for="">
+                            Qual sua satisfação em relação ao curso?
+                        </label>
+                    </p>
+
+                    <div style="width: 200px; height: 10px; border: solid black">
+                        <div style="width: 50%; height: 75%; border: solid black; background-color: black;">
+                            <label style="text-align:center;color: white; font-size: 5px;">00%</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_uno" style="min-height: 175px;">
+                <div class="item_container_uno">
+                    <p class="importante" style="width: 657px;">
+                        <label for="">
+                            Descreva sua experiência até o momento:
+                        </label>
+                    </p>
+
+                    <div>
+                        <textarea name="n_experiencia" id="id_experiencia" cols="30" rows="7"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container_uno" style="min-height: 85px;">
+                <div class="item_container_uno" style="width: 175px;">
+                    <p class="importante">
+                        <label for="id_nome">Insira sua senha:</label>
+                        <br><br>
+                        <input type="password" name="n_senha" id="id_senha" placeholder="●●●">
+                    </p>
+                </div>
+                <div class="item_container_uno">
+                    <p class="importante">
+                        <label for="id_nome">Repita a senha:</label>
+                        <br><br>
+                        <input type="password" name="n_re_senha" id="id_re_senha" placeholder="●●●">
+                    </p>
+                </div>
+            </div>
+
+            <div class="container_uno" style="min-height: 65px;">
+                <div class="item_container_uno">
+                    <input type="checkbox" name="n_check" id="id_termos">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" for="id_termos">Aceito os termos e condições</label>
+                    <br>
+                    <input type="checkbox" name="n_check" id="id_notificacoes">
+                    <label style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" for="id_notificacoes">Quero receber notificações por e-mail</label>
+                </div>
+            </div>
+
+
+            <div class="container_uno">
+                <div class="item_container_uno">
+                    <input type="submit" value="Salvar">
+                </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <a href="assets/pages/ativ1.html">1º PDF</a>
+        <a href="assets/pages/ativ2.html">2º PDF</a>
+        <a href="assets/pages/ativ3.html">3º PDF</a>
+        <a href="assets/pages/ativ4.html">4º PDF</a>
+        <a href="assets/pages/ativ5.html">5º PDF</a>
+        <a href="assets/pages/ativ6.html">6º PDF</a>
+        <a href="assets/pages/ativ7.html">7º PDF</a>
+        <a href="assets/pages/ativ8.html">8º PDF</a>
+        <a href="assets/pages/ativ9.html">9º PDF</a>
+
+    </div>
+</body>
+
+<script src="">
+
+</script>
+
+</html>
