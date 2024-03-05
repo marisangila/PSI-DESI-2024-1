@@ -1,0 +1,31 @@
+#fundo{
+    font-family: Arial;
+    font-size: large;
+    background-color: rgb(184, 184, 184);
+    width: 800px;
+    height: 1000px;
+    margin: auto;
+    padding-top: 10px;
+}
+#fundoImagem{
+    background-color: white;
+    width: 790px;
+    height: 700px;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+#titulo{
+    padding-top: 40px;
+}
+.botao{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(40, 168, 40);
+    color: white;
+    width: 100px;
+    height: 40px;
+}
+#imagem{
+    border-radius: 10px;
+}
