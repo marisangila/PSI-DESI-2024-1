@@ -1,0 +1,55 @@
+.formulario{
+    background-image: linear-gradient(to right, rgb(76, 175, 81), rgb(60, 162, 243));
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.titulo{
+    color: white;
+    font-family: Arial;
+    padding-top: 20px;
+    font-size: 26px;
+}
+
+
+.input{
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: white;
+    opacity: 75%;
+}
+
+.select{
+    width: 95%;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: white;
+    opacity: 75%;
+}
+
+.botao{
+    width: 95%;
+    border:none;
+    border-radius: 5px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+ }
