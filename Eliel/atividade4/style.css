@@ -1,0 +1,257 @@
+.grayBackground{
+    background-color: rgb(172, 172, 172);
+    color: black;
+}
+
+.arial16px{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.arialTitle{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.marginPadding{
+    margin: 20px;;
+    padding: 10px;
+}
+
+.titleAlignCenter{
+    text-align: center;
+}
+
+.textAlignJustified{
+    text-align: justify;
+}
+
+.bottomBorder{
+    border-bottom-style: solid;
+}
+
+.dashedBorder{
+    border: 1px dashed black;
+    padding: 5px;
+}
+
+.titleBackground{
+    background-color: black;
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+    border-bottom: 1px dashed blue;
+}
+
+.greenButton{
+    font-size: 20px;
+    color: white;
+    background-color: rgb(80, 209, 101);
+    border-radius: 10px;
+    border-color: rgb(80, 209, 101);
+    border: none;
+    width: 150px;
+    height: 50px;
+}
+
+.divGradient{
+    margin-top: 100px;
+    margin-right: 610px;
+    margin-left: 610px;
+    width: 600px;
+    height: 600px;
+    background: rgb(186,101,255);
+    background: linear-gradient(90deg, rgba(186,101,255,1) 37%, rgba(106,0,255,1) 91%);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.whiteCenteredTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.blackCenteredTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+}
+
+.textBox{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.233);
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: white;
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.submitButton{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.divAlignCenter{
+    margin-top: 80px;
+    margin-right: 610px;
+    margin-left: 610px;
+    border-radius: 10px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 5px rgb(124, 124, 124);
+}
+
+.backgroundColorGray{
+    background-color: rgb(202, 202, 202);
+}
+
+.whiteInputBox{
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
+    border-color: rgb(184, 184, 184);
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.greenSubmitButton{
+    background-color: rgb(65, 172, 38);
+    color: white;
+    width: 500px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 50px;
+}
+
+.labelMargin{
+    margin-left: 50px;
+}
+
+.optionBox{
+    background-color:rgb(202, 202, 202);
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border-radius: 5px;
+    border-color: rgb(184, 184, 184);
+    outline: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.divAlignCenterTable{
+    margin-top: 80px;
+    margin-left: 560px;
+    border-radius: 10px;
+    width: 700px;
+    height: 250px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 5px rgb(124, 124, 124);
+}
+
+h1{
+    text-align: center;
+}
+    
+table, th, td {
+    border: 1px solid rgb(141, 141, 141);
+}
+    
+table {
+    border-collapse: collapse;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+    
+th, td{
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+}
+    
+th{
+    font-weight: bold;
+    background-color: rgb(180, 180, 180);
+}
+
+.imageAlign{
+    margin-left: 200px;
+    margin-top: 10px;
+}
+    
+.mainDiv{
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    width: 800px;
+    height: 800px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 5px rgb(124, 124, 124);
+}
+
+.sixButtons{
+    border-radius: 10px;
+    width: 117px;
+    height: 50px;
+    border: none;
+    background-color: rgb(24, 187, 24);
+    color: white;
+    margin-top: 10px;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+
+.divAlignCenter2{
+    margin-top: 80px;
+    margin-right: 610px;
+    margin-left: 610px;
+    border-radius: 10px;
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 5px rgb(124, 124, 124);
+}
+
+.buttonDiv{
+    
+    margin-left: 260px;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.transparentButton{
+    border: none;
+    border-color: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.textMargin{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.textAlignCenter{
+    text-align: center;
+    margin-top: 50px;
+}

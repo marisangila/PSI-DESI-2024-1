@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade 10</title>
+</head>
+<body class = "background">
+    <div class =  "divBranco">
+        <h1 class = "tituloFormulario">Formulário de Cadastro</h1>
+        <label class = "conteudoFormulario"> Nome: </label>
+        <br>
+        <input class = "inputVazio" type = "text" name = "nome">
+        <br>
+        <label class = "conteudoFormulario">Email: </label>
+        <br>
+        <input class = "inputVazio" type = "text" name = "email">
+        <br>
+        <label class = "conteudoFormulario ">Idade: </label>
+        <br>
+        <input class = "inputVazio" type = "number" name = "idade">
+        <br>
+        <label class = "conteudoFormulario">Cidade: </label>
+        <br>
+        <input class = "inputVazio" type = "text" name = "cidade">
+        <br>
+        <label class = "conteudoFormulario">Estado: </label>
+        <br>
+        <select class = "selecaoEstado" name = "estado">
+            <option value = "">Selecione</option>
+        </select>
+        <br>
+        <input class = "botaoEnviarVerde" type = "submit" value="Enviar">
+    </div>
+    <div class = "divTabela">
+        <h1 class = "tituloTabela">Dados Cadastrados</h1>
+        <table border = "1">
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+            <thead>
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>joao@example.com</td>
+                        <td>25</td>
+                        <td>São Paulo</td>
+                        <td>SP</td>
+                    </tr>
+                </tbody>
+            </thead>
+
+        </table>
+    </div>
+</body>
+</html>
