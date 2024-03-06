@@ -1,0 +1,36 @@
+body{
+   background-color: rgb(240, 240, 240); 
+}
+.div1{
+    text-align: center;
+    background-color: white;
+    width: 75%;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 30px;
+}
+img{
+    width: 92%;
+    border-radius: 15px;
+    margin: 10px;
+}
+.div2{
+    width: 70%;
+    margin: auto;
+}
+.botao{
+    padding: 5px;
+    background-color: rgb(73, 167, 77);
+    border:none;
+    border-radius: 5px;
+    height: 45px;
+    width: 27%;
+    margin: 12px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
