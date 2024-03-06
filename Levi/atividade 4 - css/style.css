@@ -1,0 +1,316 @@
+.fundoCinza {
+    background-color: rgb(209, 203, 203);
+}
+
+.tituloArial {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paragrafoArial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.margemPreenchi {
+    margin: 20px;
+    padding: 10px;
+}
+
+.textoCentralizado {
+    text-align: center;
+}
+
+.textoJustificado {
+    text-align: justify;
+}
+
+.bordaInferior {
+    border-bottom-style: solid;
+}
+
+.bordaPontilhada {
+    border-style: dashed;
+    border-width: 2px;
+    padding: 5px;
+}
+
+.tituloFundoPreto {
+    background-color: rgb(36, 33, 33);
+    color: aliceblue;
+}
+
+.link {
+    text-decoration: none;
+    border-bottom-style: dashed;
+}
+
+.botao {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    margin: 20px;
+    background-color: rgb(96, 160, 107);
+    border-radius: 10px;
+    border: 0;
+    height: 50px;
+    width: 200px;
+
+}
+
+.div {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    margin-left: 610px;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
+    background: rgb(224, 220, 197);
+    text-align: center;
+    background: linear-gradient(90deg, rgba(224, 220, 197, 1) 0%, rgba(227, 211, 189, 1) 45%, rgba(207, 176, 150, 0.23012955182072825) 100%);
+}
+
+.estiloTitulo {
+    padding-top: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.conteudo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.021);
+    border-color: aliceblue;
+    color: rgba(255, 255, 255, 0.89);
+
+}
+
+
+.conteudoSelecionado {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    outline: none;
+    width: 420px;
+    background-color: rgba(255, 255, 255, 0.021);
+    border-color: aliceblue;
+    color: aliceblue;
+
+}
+
+.botaoEnviar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: rgb(75, 72, 72);
+    color: aliceblue;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 420px;
+}
+
+.divBranco {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    margin-left: 610px;
+    height: 650px;
+    width: 600px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(114, 114, 114, 0.384);
+}
+
+.background {
+    background-color: rgb(236, 235, 235);
+}
+
+.tituloFormulario {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgb(75, 72, 72);
+}
+
+.conteudoFormulario {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(49, 48, 48, 0.87);
+    margin-left: 60px;
+
+}
+
+.inputVazio {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 460px;
+}
+
+.selecaoEstado {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+    width: 482px;
+    background-color: rgba(196, 196, 196, 0.452);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.botaoEnviarVerde {
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin-left: 60px;
+    margin-top: 20px;
+    width: 482px;
+    padding: 10px;
+    background-color: rgb(93, 175, 93);
+    color: aliceblue;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.divTabela {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px;
+    margin-left: 450px;
+    height: 200px;
+    width: 1000px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(114, 114, 114, 0.384);
+}
+
+.tituloTabela {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(75, 72, 72);
+}
+
+table,
+th,
+td {
+    border: 1px solid rgb(228, 228, 228);
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    width: 120px;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+    color: rgba(51, 49, 49, 0.89);
+    background-color: rgba(226, 226, 226, 0.555);
+}
+
+.divImagem {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 80px;
+    height: 700px;
+    width: 800px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(114, 114, 114, 0.384);
+}
+
+.botaoEstilo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    padding: 13px;
+    background-color: rgb(207, 192, 141);
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 8px;
+    width: 120px;
+}
+
+
+.divConteudo {
+    margin-left: 200px;
+}
+
+.tituloImagem {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(75, 72, 72);
+}
+
+.divDesafio {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 500px;
+    margin-top: 80px;
+    height: 600px;
+    width: 1000px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(114, 114, 114, 0.384);
+
+
+}
+
+.divAlinhamentoMenu {
+    margin-left: 380px;
+}
+
+.estiloBotaoDesafio {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(75, 72, 72);
+    font-weight: 300;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0);
+    border-style: none;
+    margin-left: 20px;
+}
+
+.tituloDesafio {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    text-align: center;
+    color: rgb(75, 72, 72);
+}
+
+.subtituloPagina {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    color: rgb(75, 72, 72);
+}
+
+.textoPadrao {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    color: rgb(75, 72, 72);
+}
+
+.creditos {
+    margin-top: 200px;
+    margin-left: 360px;
+}

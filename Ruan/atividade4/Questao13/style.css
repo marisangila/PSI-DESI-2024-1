@@ -1,0 +1,30 @@
+#fundo{
+    font-family: Arial;
+    font-size: large;
+    background-color: rgb(184, 184, 184);
+    width: 800px;
+    height: 1000px;
+    margin: auto;
+    padding-top: 10px;
+}
+#fundoImagem{
+    background-color: white;
+    width: 790px;
+    height: 450px;
+    margin: auto;
+    border-radius: 15px;
+    text-align: center;
+}
+#titulo{
+    padding-top: 40px;
+}
+#inicial{
+    margin: auto;
+}
+.txt{
+    padding: 20px;
+}
+#texto{
+    text-align: left;
+}
+
