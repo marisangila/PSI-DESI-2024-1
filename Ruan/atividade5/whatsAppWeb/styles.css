@@ -17,12 +17,13 @@
     transform: translate(-50%);
     width: 1000px;
     height: 39px;
-    font-family: Arial;
     color: #ffffff;
+    font-family: Arial;
     display: flex;
     justify-content: left;
+    align-items: center;
 }
-#passoPasso{
+#janelaPassoPasso{
     margin: auto;
     width: 1000px;
     height: 500px;
@@ -32,7 +33,32 @@
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 3px 3px 20px rgb(170, 168, 168);
+    font-family: Arial;
+    display: flex;
 }
-#whatsText{
-    vertical-align: text-top;
+#passoPasso{
+    font-family: Arial;
+    width: 550px;
+    padding: 40px;
+}
+#tituloPassoPasso{
+    font-size: 22px;
+    padding-left: 20px;
+}
+#suporte{
+    margin-top: 60px;
+    font-size: 15px;
+    color: rgb(67, 189, 132);
+    padding-left: 20px;
+}
+#qrCode{
+    font-size: 15px;
+    width: 500px;
+}
+.passos{
+    font-size: 16px;
+    
+}
+#lista{
+    padding-top: 30px;
 }
