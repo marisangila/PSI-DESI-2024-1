@@ -13,58 +13,96 @@
     <main>
         <header>
             <div id="esquerda">
-                <i class="header-buttons" id="hamburger">hamburger</i>
+                <i class="header-buttons bi bi-list header-boxes" id="hamburger"></i>
                 <i class="bi bi-github fa-lg"></i>
-                <h2 id="Dashboard">Dashboard</h2>
+                <button id="dashboard">Dashboard</button>
             </div>
 
             <div id="direita">
-                <i class="header-buttons">lupa</i>
-                <i>traço</i>
-                <div class="header-buttons">
-                    <i>mais</i>
-                    <i>baixo</i>
+                <div id="search-more" class="header-boxes">
+                    <i class="bi bi-search header-buttons"></i>
+                    <input type="text" placeholder="Type / to search">
                 </div>
-                <i class="header-buttons">issues</i>
-                <i class="header-buttons">pull requests</i>
-                <i class="header-buttons">notifications</i>
-                <i id="perfil">perfil</i>
+               
+                <div class="header-boxes" id="create-new">
+                    <i class="bi bi-plus-lg"></i>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                
+                <i class="bi bi-record-circle header-buttons header-boxes"></i>
+                <i class="bi bi-reply header-buttons header-boxes"></i>
+                <i class="bi bi-app-indicator header-buttons header-boxes"></i>
+                <i class="bi bi-person-circle perfil"></i>
             </div>
         </header>
         <div class="content" id="content">
             <section>
                 <div id="central-section">
-                    <div id="heading-content">
-                        <h1>Home</h1>
-                        <div id="right-heading">
-                            <a href="#" class="link">Send feedback</a>
-                            <button><i></i>Filter<i></i></button>
+                    <div id="first-banner">
+                        <div id="heading-content">
+                            <h1>Home</h1>
+                            <div id="right-heading">
+                                <a href="#" class="link">Send feedback</a>
+                                <div id="filter-content">
+                                    <i class="bi bi-filter"></i>
+                                    <button>Filter</button>
+                                    <span id="eight">8</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sub-heading">
+                            <div id="title">
+                                <h3>Updates to your homepage feed</h3>
+                                <i class="bi bi-x-lg"></i>
+                            </div>
+                            <p>We've combined the power of the Following feed with the For you feed so there’s one place to
+                                discover content on GitHub. There’s improved filtering so you can customize your feed exactly
+                                how you like it, and a shiny new visual design. ✨</p>
+                            <a href="#" class="link">Learn more</a>
                         </div>
                     </div>
-                    <div id="sub-heading">
-                        <div class="title">
-                            <h3>Updates to your homepage feed</h3>
+                    <div id="banners">
+                        <div class="banner-box">
+                            <i class="bi bi-code-slash"></i>
+                            <div class="big-box">
+                                <div class="big-banners"></div>
+                                <div class="big-banners"></div>
+                            </div>
                         </div>
-                        <p>We've combined the power of the Following feed with the For you feed so there’s one place to
-                            discover content on GitHub. There’s improved filtering so you can customize your feed exactly
-                            how you like it, and a shiny new visual design. ✨</p>
-                        <a href="#" class="link">Learn more</a>
+                        <div class="banner-box">
+                            <i class="bi bi-wrench"></i>
+                            <div class="small-box">
+                                <div class="small-banners"></div>
+                                <div class="small-banners"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="aside-in-section"></div>
             </section>
+
             <aside>
                 <div id="top-repositories">
                     <h5>Top Repositories</h5>
-                    <button><i>book</i>New</button>
+                    <button><i class="bi bi-book"></i> New</button>
                 </div>
                 <input id="search" type="text" placeholder="Find a repository...">
                 <div id="repositories">
-                    <p><i></i>repository</p>
-                    <p><i></i>repository</p>
-                    <p><i></i>repository</p>
-                    <p><i></i>repository</p>
-                    <p><i></i>repository</p>
+                    <div class="repository">
+                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
+                    </div>
+                    <div class="repository">
+                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
+                    </div>
+                    <div class="repository">
+                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
+                    </div>
+                    <div class="repository">
+                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
+                    </div>
+                    <div class="repository">
+                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
+                    </div>
                 </div>
                 <div id="recent-activity">
                     <h5>Recent activity</h5>
