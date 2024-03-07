@@ -14,7 +14,7 @@
         <header>
             <div id="esquerda">
                 <i class="header-buttons bi bi-list header-boxes" id="hamburger"></i>
-                <i class="bi bi-github fa-lg"></i>
+                <i class="bi bi-github github"></i>
                 <button id="dashboard">Dashboard</button>
             </div>
 
@@ -23,12 +23,12 @@
                     <i class="bi bi-search header-buttons"></i>
                     <input type="text" placeholder="Type / to search">
                 </div>
-               
+
                 <div class="header-boxes" id="create-new">
                     <i class="bi bi-plus-lg"></i>
                     <i class="bi bi-caret-down-fill"></i>
                 </div>
-                
+
                 <i class="bi bi-record-circle header-buttons header-boxes"></i>
                 <i class="bi bi-reply header-buttons header-boxes"></i>
                 <i class="bi bi-app-indicator header-buttons header-boxes"></i>
@@ -43,7 +43,7 @@
                             <h1>Home</h1>
                             <div id="right-heading">
                                 <a href="#" class="link">Send feedback</a>
-                                <div id="filter-content">
+                                <div class="filter-content">
                                     <i class="bi bi-filter"></i>
                                     <button>Filter</button>
                                     <span id="eight">8</span>
@@ -55,62 +55,152 @@
                                 <h3>Updates to your homepage feed</h3>
                                 <i class="bi bi-x-lg"></i>
                             </div>
-                            <p>We've combined the power of the Following feed with the For you feed so there’s one place to
-                                discover content on GitHub. There’s improved filtering so you can customize your feed exactly
+                            <p>We've combined the power of the Following feed with the For you feed so there’s one place
+                                to
+                                discover content on GitHub. There’s improved filtering so you can customize your feed
+                                exactly
                                 how you like it, and a shiny new visual design. ✨</p>
                             <a href="#" class="link">Learn more</a>
                         </div>
                     </div>
                     <div id="banners">
                         <div class="banner-box">
-                            <i class="bi bi-code-slash"></i>
+                            <div class="icon-title">
+                                <i class="bi bi-code banner-icons"></i>
+                                <span>Start writing code</span>
+                            </div>
                             <div class="big-box">
-                                <div class="big-banners"></div>
-                                <div class="big-banners"></div>
-                            </div>
-                        </div>
-                        <div class="banner-box">
-                            <i class="bi bi-wrench"></i>
-                            <div class="small-box">
-                                <div class="small-banners"></div>
-                                <div class="small-banners"></div>
+                                <div class="big banners">
+                                    <div class="heading-banner">
+                                        <h3>Start a new repository for ...</h3>
+                                        <p>A repository contains all of your project's files, revision history, and
+                                            collaborator discussion.</p>
+                                    </div>
+                                    <div id="input-repository-name">
+                                        <h3>Repository name *</h3>
+                                        <input class="search" type="text" placeholder="name your new repository...">
+                                    </div>
+                                    <div id="options-box">
+                                        <div id="public">
+                                            <input type="radio" class="options">
+                                            <h3>Public</h3>
+                                        </div>
+                                        <p>Anyone on the internet can see this repository</p>
+                                        <div id="private">
+                                            <input type="radio" class="options">
+                                            <h3>Private</h3>
+                                        </div>
+                                        <p>You choose who can see and commit to this repository</p>
+                                    </div>
+                                    <button class="start-buttons">Create a new repository</button>
+                                </div>
+                                <div class="big banners" id="readme">
+                                    <div class="heading-banner">
+                                        <h3>Start a new repository for ...</h3>
+                                        <p>Share information about yourself by creating a profile README, which appears
+                                            at the top of your profile page.</p>
+                                    </div>
+                                    <div id="redme-list">
+                                        <div id="head-list">
+                                            <span>person/README.md</span>
+                                            <button class="start-buttons">Create</button>
+                                        </div>
+                                        <div id="list">
+                                            <ol type="1">
+                                                <li> - 👋 Hi, I’m person</li>
+                                                <li> - 👀 I’m interested in ...</li>
+                                                <li> - 🌱 I’m currently learning ...</li>
+                                                <li> - 💞️ I’m looking to collaborate on ...</li>
+                                                <li> - 📫 How to reach me ...</li>
+                                                <li> - 😄 Pronouns: ...</li>
+                                                <li> - ⚡ Fun fact: ...</li>
+                                                <li></li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="aside-in-section"></div>
-            </section>
+                    <div class="banner-box">
 
-            <aside>
-                <div id="top-repositories">
-                    <h5>Top Repositories</h5>
-                    <button><i class="bi bi-book"></i> New</button>
-                </div>
-                <input id="search" type="text" placeholder="Find a repository...">
-                <div id="repositories">
-                    <div class="repository">
-                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
-                    </div>
-                    <div class="repository">
-                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
-                    </div>
-                    <div class="repository">
-                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
-                    </div>
-                    <div class="repository">
-                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
-                    </div>
-                    <div class="repository">
-                        <i class="bi bi-person-circle perfil"></i><p> repository</p>
-                    </div>
-                </div>
-                <div id="recent-activity">
-                    <h5>Recent activity</h5>
-                    <div id="textarea">
-                        <p>When you take actions across GitHub, we´ll provide links to that activity here.</p>
+                        <div class="icon-title">
+                            <i class="bi bi-tools banner-icons"></i>
+                            <span>Use tools of the trade</span>
+                        </div>
+                        <div class="small-box">
+                            <div class="small banners">
+                                <h3>Write code in your web browser</h3>
+                                <div class="sb-content">
+                                    <i class="bi bi-github github"></i>
+                                    <p>Use the github.dev web-based editor from your repository or pull request to
+                                        create
+                                        and commit changes.</p>
+                                </div>
+                            </div>
+                            <div class="small banners">
+                                <h3>Get AI-based coding suggestions</h3>
+                                <div class="sb-content">
+                                    <i class="bi bi-github github"></i>
+                                    <p>Try GitHub Copilot free for 30 days, which suggests entire functions in real
+                                        time, right from your editor.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </aside>
+                <div id="aside-in-section">
+                    <div id="right-aside-h-banner">
+                        <div id="first-head-aside-banner">
+                            <i class="bi bi-github github"></i>
+                            <div id="words">
+                                <h2>The state of the Octoverse</h2>
+                                <h2 id="date">2023</h2>
+                            </div>
+                        </div>
+                        <p>What does it mean for a technology to go mainstream? Discover how AI is changing the
+                            developer experience.</p>
+                        <button class="filter-content">Learn more</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <aside>
+            <div id="top-repositories">
+                <h5>Top Repositories</h5>
+                <button class="start-buttons"><i class="bi bi-book"></i> New</button>
+            </div>
+            <input class="search" type="text" placeholder="Find a repository...">
+            <div id="repositories">
+                <div class="repository">
+                    <i class="bi bi-person-circle perfil"></i>
+                    <p> repository</p>
+                </div>
+                <div class="repository">
+                    <i class="bi bi-person-circle perfil"></i>
+                    <p> repository</p>
+                </div>
+                <div class="repository">
+                    <i class="bi bi-person-circle perfil"></i>
+                    <p> repository</p>
+                </div>
+                <div class="repository">
+                    <i class="bi bi-person-circle perfil"></i>
+                    <p> repository</p>
+                </div>
+                <div class="repository">
+                    <i class="bi bi-person-circle perfil"></i>
+                    <p> repository</p>
+                </div>
+            </div>
+            <div id="recent-activity">
+                <h5>Recent activity</h5>
+                <div id="textarea">
+                    <p>When you take actions across GitHub, we´ll provide links to that activity here.</p>
+                </div>
+            </div>
+        </aside>
         </div>
     </main>
 </body>
