@@ -3,7 +3,8 @@
     font-family: Arial;
     margin-left: auto;
     margin-right: auto;
-    max-width: 450px;
+    max-width: 430px;
+    max-height: 200px;
     align-self: center;
     align-content: center;
     padding: 20px;
@@ -26,17 +27,41 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #1E90FF,#4169E1 )	;
+    background: #0864b4;
+    background-image: url(img/Background-login.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-inline: 0px;
 }
 
-img {
+html {
+    height: 100%;
+}
+
+
+.imgsenai {
     margin-left: auto;
     margin-right: auto;
     align-self: center;
     align-items: center;
     align-content: center;
-    width: 150px;
+    width: 200px;
     height: 30px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .botao {
@@ -84,28 +109,67 @@ p {
     text-align: center;
 }
 
-.imagens {
-    padding: 50px;
-    margin:auto;
-    display: flex;
+
+.divLogo {
+    padding-left: 780px;
+    padding-top: 100px;
+    display: inline;
+    width: 1335;
+    height: 74.23;
     justify-content: center;
-    width: 20%;
+
+
 
 }
 
-.imgfim {
-    padding: 5px;
-    margin:auto;
+
+.principal {
+    margin-left: 520px;
+    padding: 70px;
+    align-content: center;
     display: flex;
     justify-content: center;
     width: 12%;
+}
+
+.lojaApps {
+
+
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 
 }
-.propaganda{
+
+.frases {
+    padding: 20px;
+    display: grid;
+    justify-content: left;
+    align-content: flex-end;
+    width: 32%;
+}
+
+.propaganda {
     padding: 5px;
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: center;
-    width: 500px;
-    height: 205px;
+    width: 450px;
+    height: 170px;
+}
+
+.fadeInUp {
+    display: grid;
+    margin-left: 60px;
+    align-content: center;
+    justify-content: left;
+}
+
+.vivencias {
+    display: grid;
+    margin-left: 60px;
+    align-content: center;
+    justify-content: left;
 }
