@@ -1,0 +1,91 @@
+.div1{
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(90deg, #9aabd1, #d5d9e4);
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 30px;
+}
+.titulo1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.nome{
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+    border-color:white;
+}
+.email{
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+    border-color:white;
+}
+.senha{
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+    border-color:white;
+}
+.idade{
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+    border-color:white;
+}
+.mensagem{
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+    border-color:white;
+}
+.selecione{
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+    border-color:white;
+}
+.botao{
+    width: 80%;
+    height: 35px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 10px;
+
+    background: rgb(54, 84, 133);
+    border-color: rgb(54, 84, 133);
+}
+.formulario ::placeholder{
+    padding: 5px;
+    color: white;
+    opacity: 0.6;
+}
+.selecione{
+    color: white;
+    opacity: 0.6;
+}
+.botao{
+    color: white;
+    opacity: 0.6;
+}

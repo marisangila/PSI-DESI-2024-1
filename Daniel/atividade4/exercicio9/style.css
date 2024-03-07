@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="button"]{
+    background-color: #4CAF50;
+    border: none;
+    width: 140px;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    margin: 20px;
+}

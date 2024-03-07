@@ -1,0 +1,41 @@
+#formulario{
+    background-image: linear-gradient(to right, #00da42, #00d0a2, #00beea, #00a4ff, #2880f2);
+    border-radius: 1%;
+    width: 500px;
+    height: 485px;
+    margin: 0 auto;
+}
+#tituloFormulario{
+    color: #ffffff;
+    font-family: Arial;
+    text-align: center;
+    padding-top: 30px;
+    padding-top: 50px;
+}
+.caixas{
+    background-color: transparent;
+    backdrop-filter: saturate(80%);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: #ffffff;
+    width: 450px;
+    height: 30px;
+}
+#mensagem{
+    height: 40px;
+    resize: none;
+}
+.opcaoCaixa{
+    color: black;
+}
+#enviar{
+    background-color: black;
+    color: #ffffff;
+    width: 450px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.alinhaTexto{
+    text-align: center;
+}

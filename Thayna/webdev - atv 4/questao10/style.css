@@ -1,0 +1,85 @@
+.Forms{
+    margin: auto;
+    text-align: center;
+    border-radius: 1%;
+    background: linear-gradient(90deg, rgb(164, 212, 164), rgb(122, 224, 216));
+    width: 30%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.Forms ::placeholder{
+    color: white;
+    opacity: 0.6 ;
+    padding: 5px;
+}
+
+.Forms input {
+    border-radius: 5px;
+}
+
+
+.titulo{
+    font-family: Arial;
+    text-align: center;
+    color:aliceblue
+}
+
+.inputNome{
+    width: 350px;
+    height: 35px;
+    font-family: Arial;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-style: solid;
+}
+.email{
+    width: 350px;
+    height: 35px;
+    font-family: Arial;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-style: solid;
+}
+.senha{
+    width: 350px;
+    height: 35px;
+    font-family: Arial;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-style: solid;
+}
+.idade{
+    width: 350px;
+    height: 35px;
+    font-family: Arial;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-style: solid;
+}
+.mensagem{
+    width: 350px;
+    font-family: Arial;
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: aliceblue;
+    border-style: solid;
+    color:aliceblue;
+}
+.select{
+    color: aliceblue;
+    width: 350px;
+    height: 35px;
+    font-family: Arial;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-style: solid;
+    border-radius: 5px;
+}
+.btn{
+    font-family: Arial;
+    background-color: rgb(57, 68, 63);
+    color:aliceblue;
+    width: 350px;
+    height: 35px;
+}

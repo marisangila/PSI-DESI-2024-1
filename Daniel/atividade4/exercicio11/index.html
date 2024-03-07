@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <main>
+        <section id="section_all">
+            <h1>Inserting Images and Many Buttons</h1>
+                <div>
+                    <input type="button" value="Button 1" id="200" onclick="changeImage(this.id)">
+                    <input type="button" value="Button 2" id="400" onclick="changeImage(this.id)">
+                    <input type="button" value="Button 3" id="700" onclick="changeImage(this.id)">
+                </div>
+                <img src="imagens/img_200.png" alt="Imagem">
+                <div>
+                    <input type="button" value="Button 4" id="900" onclick="changeImage(this.id)">
+                    <input type="button" value="Button 5" id="1100" onclick="changeImage(this.id)">
+                    <input type="button" value="Button 6" id="1500" onclick="changeImage(this.id)">
+                </div>
+        </section>  
+    </main>
+
+    <script>
+        let image = window.document.getElementsByTagName("img")[0]
+        
+        function changeImage(id){
+            image.src = `imagens/img_${id}.png`
+        }
+    </script>
+</body>
+</html>
