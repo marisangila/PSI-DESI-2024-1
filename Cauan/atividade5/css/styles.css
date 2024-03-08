@@ -154,7 +154,6 @@ section{
     margin-left: 90px;
     margin-right: 50px;
 }
-
 #heading-content{
     display: flex;
     justify-content: space-between;
@@ -239,12 +238,15 @@ section{
     margin-top: 30px;
 }
 .banners{
-    background-color: #1b1f27;
+    /* background-color: #1b1f27; */
     border-radius: 3px;
     margin: 15px 0px 15px 0;
     padding: 15px;
     border: 1px solid #333536;
     font-size: 13px;
+}
+.central-banner{
+    background-color: #1b1f27;
 }
 .banners > button{
     font-size: 13px;
@@ -343,12 +345,12 @@ section{
 }
 #right-aside-h-banner{
     background-color: #000000;
-    padding: 15px;
+    /* padding: 15px; */
     font-size: 13px;
     width: 370px;
     margin-top: 20px;
     border-radius: 5px;
-    border: 1px solid #333536;
+    /* border: 1px solid #333536; */
 }
 #right-aside-h-banner > p{
     color: #5d6264;
@@ -357,4 +359,17 @@ section{
     width: 100%;
     margin-top: 15px;
     padding: 5px;
+}
+#last-changes{
+    font-size: 13px;
+    width: 370px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #1b1f27;
+    height: auto;
+}
+li > a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0px;
 }
