@@ -6,7 +6,7 @@
 }
 
 body{
-    width: 97vw;
+    width: 99vw;
     height: 100vh;
 }
 
@@ -14,7 +14,7 @@ body{
     display: flex; 
     justify-content: center; 
     gap: 20px; 
-    margin-top  : 100px;
+    margin-top: 100px;
 }
 
 header{
@@ -22,11 +22,10 @@ header{
     gap: 5px;
     display: flex;
     justify-content: space-around;
-    z-index: 100;
+    z-index: 20;
     position: fixed;
     background-color: white;
     width: 99.3vw;
-    /* box-shadow: 5px 5px 5px rgba(0, 0, 0, .3); */
 }
 
 .sections_header{
@@ -131,28 +130,23 @@ header{
     width: 400px;
 }
 
-#popup{
+#popup {
     background-color: rgba(0, 0, 0, .3);
     width: 100%;
-    height: 100vh;
-    display: flex;
-    border: none;
-    outline: none;
-    margin: 0px;
+    min-height: 100vh; 
     position: fixed;
-    z-index: 20;
+    z-index: 19;
     display: none;
+    flex-direction: column;
 }
 
-#content_popup{
+#content_popup {
     background-color: white;
     width: 70%;
-    max-height: 92vh;
     margin-left: 20%;
     border-radius: 0px 0px 20px 20px;
     padding-inline: 55px;
-    padding-block: 120px;
-   
+    padding-top: 70px;
 }
 
 .section_popup > h5{
@@ -288,4 +282,129 @@ section#galery{
 
 .bottom_image_sections:hover{
     background-color: rgba(255,255,255, .8);
+}
+
+/* ////////////////////////////////////////// */
+/*  EXPLORE  */
+
+h1#title_explore{
+    font-size: 37px;
+    margin-block: 5px;
+}
+
+p#date_today{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#title_content{
+    text-align: center;
+    margin-top: 120px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.inspirations_section{
+    display: grid;
+    grid-template-columns: 420px 420px 420px;
+    grid-template-rows: 350px 350px;
+    min-width: 50em;
+    gap: 20px;
+}
+
+.inspiration_item_img{
+    background-color: black;
+    border-radius: 20px;
+    background-image: url("../images/users/inspiration.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inspiration_item_img > div{
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 20px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+    color: white;
+    align-items: center;
+  
+}
+
+.inspiration_item_img > div:hover{
+    background-color: rgba(0, 0, 0, .4);
+}   
+
+.inspiration_item_img > div > h3 {
+    font-size: 25px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+footer > p:nth-child(3){
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer > a{
+    background-color: rgb(233, 233, 233);
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer > a:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+/* CREATE PAGE */
+
+#section_page{
+    display: flex;
+    margin-top: 95px; 
+    border-top: 1px solid rgba(0, 0, 0, 0.247);
+    width: 100%;
+}
+
+#lateral_menu{
+    height: 100vh;
+    width: 90px;
+    border-right: 1px solid rgba(0, 0, 0, 0.247);
+    
+}
+
+#lateral_menu > section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+    padding-block: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+
+#lateral_menu > section > img{
+    width: 16px;
+}
+
+h1#title_create{
+    padding: 30px;
+    font-size: 23px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+    width: 100%;
 }
