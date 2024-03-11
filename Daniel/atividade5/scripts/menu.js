@@ -1,7 +1,10 @@
-//Emphasis in the current page link 
-if(window.parent.location.href === "http://127.0.0.1:5500/Daniel/atividade5/pages/home.html" ){
+//Emphasis in the current page link
+let url = window.parent.location.href
+url = url.split("/") 
+
+if(url[url.length-1] === "home.html" ){
     current_page = document.getElementById("initial_page_link")
-}else if(window.parent.location.href === "http://127.0.0.1:5500/Daniel/atividade5/pages/explore.html"){
+}else if(url[url.length-1] === "explore.html"){
     current_page = document.getElementById("explore_page_link")
 }else{
     current_page = document.getElementById("create_page_link")
