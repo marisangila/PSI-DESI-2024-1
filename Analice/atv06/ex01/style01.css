@@ -1,0 +1,10 @@
+nav {
+    padding: 10px;
+    background-color: black;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
