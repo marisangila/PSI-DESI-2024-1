@@ -1,108 +1,3 @@
-//Emphasis in the current page link 
-if(window.parent.location.href === "http://127.0.0.1:5500/Daniel/atividade5/pages/home.html" ){
-    current_page = document.getElementById("initial_page_link")
-}else if(window.parent.location.href === "http://127.0.0.1:5500/Daniel/atividade5/pages/explore.html"){
-    current_page = document.getElementById("explore_page_link")
-}else{
-    current_page = document.getElementById("create_page_link")
-}
-
-current_page.style.color = "white"
-current_page.style.backgroundColor = "rgb(12, 12, 12)"
-current_page.style.fontWeight = "700"
-
-///////////////////////////////////////////////////////////////////////
-
-//Change border of the search input
-document.getElementById("input_search").addEventListener("focus", () => {
-    document.getElementById("content_input_search").style.border = "4px solid rgb(116, 210, 235)"
-    document.getElementById("popup").style.display = "flex"
-})
-
-document.getElementById("input_search").addEventListener("blur", () => {
-    document.getElementById("content_input_search").style.border = "none"
-    document.getElementById("popup").style.display = "none"
-})
-
-///////////////////////////////////////////////////////////////////////
-
-//Focus in menu_hamburguer 
-let menu_hamburguer = document.getElementById("menu_hamburguer")
-document.addEventListener("click", () => {
-    if(menu_hamburguer.contains(event.target)){
-        menu_hamburguer.style.color = "white"
-        menu_hamburguer.style.backgroundColor = "rgb(12, 12, 12)"
-        menu_hamburguer.style.fontWeight = "700"
-    }else{
-        menu_hamburguer.style.color = "black"
-        menu_hamburguer.style.backgroundColor = "transparent"
-        menu_hamburguer.style.fontWeight = "300"
-    }
-})
-
-///////////////////////////////////////////////////////////////////////
-
-// POPUP
-let current_researches_section = document.getElementById("current_researches_section")
-for(let i = 0; i < 5; i++){
-    let content_current_recomendation = document.createElement('div')
-    content_current_recomendation.setAttribute("class", "items_recomendations")
-    content_current_recomendation.style.padding = "10px"
-    content_current_recomendation.style.gap = "10px"
-  
-    let text_current_recomendation = document.createElement('div')
-    text_current_recomendation.innerHTML = "Draws of characters"
-    content_current_recomendation.appendChild(text_current_recomendation)
-
-    let img_current_recomendation = document.createElement('img')
-    img_current_recomendation.setAttribute("src", "../images/icons/remove.png")
-    img_current_recomendation.style.width = "20px"
-
-    content_current_recomendation.appendChild(img_current_recomendation)
-
-    current_researches_section.appendChild(content_current_recomendation)
-}
-
-let ideas_section = document.getElementById("ideas_you")
-for(let i = 0; i < 2; i++){
-    let content_idea_recomendation = document.createElement('div')
-    content_idea_recomendation.setAttribute("class", "items_recomendations")
-
-    ideas_section.appendChild(content_idea_recomendation)
-
-    let img_idea_recomendation = document.createElement('img')
-    img_idea_recomendation.setAttribute("class", "img_idea")
-    img_idea_recomendation.setAttribute("src", "../images/users/idea.jpeg")
-
-    content_idea_recomendation.appendChild(img_idea_recomendation)
-
-    let text_idea_recomendation = document.createElement('p')
-    text_idea_recomendation.setAttribute("class", "text_idea")
-    text_idea_recomendation.innerHTML = "Ilustration Ghibli"
-    content_idea_recomendation.appendChild(text_idea_recomendation)
-
-}
-
-let popular_section = document.getElementById("popular_idea")
-for(let i = 0; i < 4; i++){
-    let content_idea_recomendation = document.createElement('div')
-    content_idea_recomendation.setAttribute("class", "items_recomendations")
-
-    popular_section.appendChild(content_idea_recomendation)
-
-    let img_idea_recomendation = document.createElement('img')
-    img_idea_recomendation.setAttribute("class", "img_idea")
-    img_idea_recomendation.setAttribute("src", "../images/users/idea2.jpg")
-
-    content_idea_recomendation.appendChild(img_idea_recomendation)
-
-    let text_idea_recomendation = document.createElement('p')
-    text_idea_recomendation.setAttribute("class", "text_idea")
-    text_idea_recomendation.innerHTML = "Popular Ilustrations"
-    content_idea_recomendation.appendChild(text_idea_recomendation)
-
-}
-
 ///////////////////////////////////////////////////////////////////////
 // Galery Images
 let GALERY = window.document.getElementById("galery")
@@ -215,7 +110,6 @@ for(let i = 0; i < 600; i++){
     })
 
     options_top_image.appendChild(button_save)
-
     
     //NAME_ARTIST
     let name_artist = document.createElement('p')
@@ -254,11 +148,3 @@ for(let i = 0; i < 600; i++){
     content_more_options.appendChild(more_options)
 }
 
-//////////////////////////////////////////////////
-// SCROLL HEADER
-document.addEventListener('scroll', () => {
-    document.getElementsByTagName("header")[0].style.boxShadow = "10px 10px 10px rgba(0,0,0,.2)"
-    if(window.scrollY === 0){
-        document.getElementsByTagName("header")[0].style.boxShadow = "none"
-    }
-});

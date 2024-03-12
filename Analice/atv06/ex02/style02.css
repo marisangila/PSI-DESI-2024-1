@@ -1,0 +1,29 @@
+* {
+    max-width: 1920px;
+    max-height: 850px;
+}
+
+
+.menu {
+    display: inline-block;
+    width: 20%;
+    height: 1080px; 
+    background-color: #333333;
+    padding: 20px;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.texto {
+    padding: 20px;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
