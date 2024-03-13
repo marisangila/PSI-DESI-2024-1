@@ -8,11 +8,26 @@
     section#galery{
         column-count: 5;
     }
+
+    #current_researches_section{ 
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+    }
 }
 
 @media screen and (max-width: 1250px){
     section#galery{
         column-count: 4;
+    }
+
+    #popular_idea{
+        display: grid;
+        grid-template-columns: 50% 50% ;
+    }
+
+    #current_researches_section{ 
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 }
 

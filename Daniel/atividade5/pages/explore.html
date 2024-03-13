@@ -3,10 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/icons/pinterest_icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <link rel="stylesheet" href="../css/media.css">
     <title>Explore</title>
 </head>
 <body>
-    <iframe src="menu.html"  frameborder="0" height="100px" width="100%"></iframe>
-    <p>AFEEE</p>
+    <header style="display: flex;" >
+        <nav class="sections_header" id="content_navigation_pages">
+            <div class="content_icon_pinterest">
+                <img src="../images/icons/pinterest_icon.png" width="25px" height="25px" alt="" ></div>
+            </div>
+            <a href="home.html" target="_parent" class="contents_menupages" id="initial_page_link" onclick="changePage(this.href)">Initial page</a>
+            <a href="explore.html" target="_parent" class="contents_menupages" id="explore_page_link">To explore</a>
+            <a href="create.html" target="_parent" class="contents_menupages" id="create_page_link">To create</a>
+            <section id="menu_hamburguer">Initial page<span class="material-symbols-outlined"  >expand_more</span></section>
+        </nav>
+        <section class="sections_header" id="section_input_search">
+            <section id="content_input_search">
+                <div id="content_search_icon" >
+                    <img src="../images/icons/search_icon.png" width="20px" height="20px" alt="">
+                </div>
+                <input type="text" id="input_search" placeholder="To look for" onfocus="changeBorder()">
+            </section>
+        </section>
+        <nav class="sections_header">
+            <div class="content_icon_pinterest"><img src="../images/icons/bell.png" alt="icon of notifications" width="23px" height="23px"></div>
+            <div class="content_icon_pinterest"><img src="../images/icons/typing.png" alt="icon of messages" width="23px" height="23px"></div>
+            <div class="content_icon_pinterest"><img src="../images/icons/icon_user.png" alt="icon of user" width="23px" height="23px"></div>
+            <div id="content_options" class="content_icon_pinterest" ><span class="material-symbols-outlined">expand_more</span></div>
+        </nav>
+        
+    </header>
+    <section id="popup">
+        <section id="content_popup">
+            <section class="section_popup">
+                <h5>Content researches</h5>
+                <section id="current_researches_section" class="recomendations_section"></section>
+            </section>
+            <section class="section_popup">
+                <h5>Ideas for you</h5>
+                <section id="ideas_you" class="recomendations_section"></section>
+            </section>
+            <section  class="section_popup">
+                <h5>Popular on pinterest</h5>
+                <section id="popular_idea" class="recomendations_section"></section>
+            </section> 
+        </section>
+    </section>
+
+    <main>
+        <section id="title_content">
+            <p id="date_today" >Date today</p>
+            <h1 id="title_explore" >Stay Inspired</h1>
+        </section>
+        
+        <section class="inspirations_section" >
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+        </section>
+        <h2 id="features_purchases_title">Featured Purchases</h2>
+        <section class="inspirations_section">
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+            <section class="inspiration_item_img"><div><p>Aleatory Phrease</p><h3>Draws of Characters</h3></div></section>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../images/icons/check.png" width="40px" height="40px" alt="">
+        <p>Is all for today</p>
+        <p >Become tomorrow for to find more inspirations</p>
+        <a href="home.html">To go the principal page</a>
+    </footer>
+
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/explore.js"></script>
 </body>
 </html>

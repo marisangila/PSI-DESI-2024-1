@@ -54,6 +54,9 @@ header{
     background-color: #444444;
     border: 1px solid #828385;
 }
+.github{
+    font-size: 30px;
+}
 #dashboard{
     color: #fff;
     background-color: transparent;
@@ -107,16 +110,16 @@ aside > *{
     justify-content: space-between;
     align-items: center;
 }
-#top-repositories > button{
-    background-color: #1d7c1a;
-    padding: 5px;
+.start-buttons{
+    background-color: #359232;
+    padding: 8px;
     color: white;
     border: none;
     border-radius: 5px;
-    width: 65px;
-    height: 30px;
+    width: auto;
+    height: auto;
 }
-#search{
+.search{
     padding: 8px;
     width: 93%;
     background-color: #0b0d0e;
@@ -142,7 +145,6 @@ section{
     position: absolute;
     left: 20%;
     display: flex;
-    flex-direction: column;
     padding: 5px;
 }
 #central-section{
@@ -150,7 +152,9 @@ section{
     height: 100%;
     margin-top: 5px;
     margin-left: 90px;
+    margin-right: 50px;
 }
+
 #heading-content{
     display: flex;
     justify-content: space-between;
@@ -187,7 +191,7 @@ section{
     align-items: center;
     justify-content: space-between;
 }
-#filter-content{
+.filter-content{
     background-color: #282a2c;
     padding: 2px;
     border-radius: 5px;
@@ -196,11 +200,12 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
-#filter-content > *{
+.filter-content > *{
     margin: 3px;
 }
-#filter-content > button{
+.filter-content > button{
     background-color: transparent;
     border: none;
     color: #fff;
@@ -217,4 +222,139 @@ section{
     background-color: #424242;
     border-radius: 70%;
     padding: 1px 5px
+}
+.banner-icons{
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 17px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.icon-title{
+    color: #93979c;
+    font-size: 14px;
+    margin-top: 20px;
+}
+#banners{
+    margin-top: 30px;
+}
+.banners{
+    background-color: #1b1f27;
+    border-radius: 3px;
+    margin: 15px 0px 15px 0;
+    padding: 15px;
+    border: 1px solid #333536;
+    font-size: 13px;
+}
+.banners > button{
+    font-size: 13px;
+}
+.big-box, .small-box{
+    display: flex;
+    justify-content: space-between;
+}
+.big{
+    width: 430px;
+    height: 360px;
+}
+.big > *{
+    margin: 8px;
+    font-size: 15px;
+}
+.heading-banner{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+.heading-banner > p{
+    color: #93979c;
+    margin-top: 15px;
+}
+#input-repository-name{
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+#public,#private{
+    display: flex;
+}
+#public > *,#private > *{
+    margin-right: 8px;
+    font-size: 13px;
+}
+#options-box > *{
+    margin: 10px 0;
+}
+#options-box > p{
+    color: #93979c;
+    font-size: 13px;
+}
+#head-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    width: 100%;
+    background-color: #0b0d0e;
+    border: 1px solid #404447;
+    border-radius: 10px 10px 0 0;
+    font-size: 12px;
+}
+#list{
+    border: 1px solid #404447;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 5px 5px;
+}
+#list > ol{
+    margin: 10px 60px 10px 0;
+}
+#readme-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sb-content{
+    display: flex;
+    margin-top: 15px;
+}
+.sb-content > p{
+    color: #636668;
+    margin-left: 15px;
+}
+.small {
+    margin-top: 20px;
+    font-size: 13px;
+    width: 430px;
+}
+#aside-in-section{
+    width: 25%;
+    right: 0px;
+}
+#first-head-aside-banner{
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+#words{
+    margin-left: 15px;
+}
+#date{
+    color: #5d6264;
+}
+#right-aside-h-banner{
+    background-color: #000000;
+    padding: 15px;
+    font-size: 13px;
+    width: 370px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #333536;
+}
+#right-aside-h-banner > p{
+    color: #5d6264;
+}
+#right-aside-h-banner > button{
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px;
 }
