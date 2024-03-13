@@ -1,0 +1,51 @@
+body{
+    margin: 0px;
+}
+.quadradoCinza{
+    background-color: gray;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.quadradoPreto{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+
+}
+.quadradoAmarelo{
+    background-color: rgb(255, 166, 0);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.meio{
+    top: 30%;
+    left: 30%;
+}
+.esquerdaTopo{
+    top: 0%;
+    left: 0%;
+}
+.direitaTopo{
+    top: 0%;
+    right: 0%;
+}
+.direitaBaixo{
+    bottom: 0%;
+    right: 0%;
+}
+.esquerdaBaixo{
+    bottom: 0%;
+    left: 0%;
+}
+.fixoDireitaTopo{
+    right: 0;
+    top: 0;
+}
+.fixoDireitaBaixo{
+    right: 0;
+    bottom: 0;
+}
