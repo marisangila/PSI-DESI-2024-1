@@ -7,7 +7,7 @@ div{
   }
   
 .primeiro > div {
-    background-color: #f1f1f1;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -19,7 +19,7 @@ div{
   }
   
 .segundo > div {
-    background-color: #f1f1f1;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -31,7 +31,7 @@ div{
   }
   
 .terceiro > div {
-    background-color: #f1f1f1;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -43,7 +43,7 @@ div{
   }
   
 .quarto > div {
-    background-color: #f1f1f1;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -55,7 +55,7 @@ div{
   }
   
 .quinto > div {
-    background-color: #f1f1f1;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
@@ -69,7 +69,7 @@ div{
   }
   
 .sexto > div {
-    background-color: #f1f1f1;
+    background-color: white;
     margin: 10px;
     padding: 20px;
     font-size: 30px;
