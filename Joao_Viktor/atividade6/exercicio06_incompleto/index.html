@@ -47,25 +47,29 @@
                 <input class="input_padrao" type="text" placeholder="Insira seu e-mail" required>
             </div>
         </div>
-
-        <label>Formação Acadêmica:</label><br>
-        <input type="radio" name="opcao_formacao"><label>Ensino Fundamental</label><br>
-        <input type="radio" name="opcao_formacao"><label>Ensino Médio</label><br>
-        <input type="radio" name="opcao_formacao"><label>Ensino Superior</label><br>
-        <input type="radio" name="opcao_formacao"><label>Pós Graduação - Especialização</label><br>
-        <input type="radio" name="opcao_formacao"><label>Pós Graduação - Mestrado</label><br>
-        <input type="radio" name="opcao_formacao"><label>Pós Graduação - Doutorado</label>
-        <br><br>
-        <label>Nome do curso:</label>
-        <select disabled>
-            <option>Desenvolvimento e Análise de Sistemas</option>
-        </select>
-        <br><br>
-        <label>Situação:</label><br>
-        <input type="radio" name="opcao_situacao" disabled><label>Em Andamento</label><br>
-        <input type="radio" name="opcao_situacao" disabled><label>Completo</label><br>
-        <input type="radio" name="opcao_situacao" disabled><label>Incompleto</label>
-        <br><br>
+        <div class="formacao">
+            <div class="escolher_formacao">
+                <label>Formação Acadêmica:</label><br>
+                <input type="radio" name="opcao_formacao"><label>Ensino Fundamental</label><br>
+                <input type="radio" name="opcao_formacao"><label>Ensino Médio</label><br>
+                <input type="radio" name="opcao_formacao"><label>Ensino Superior</label><br>
+                <input type="radio" name="opcao_formacao"><label>Pós Graduação - Especialização</label><br>
+                <input type="radio" name="opcao_formacao"><label>Pós Graduação - Mestrado</label><br>
+                <input type="radio" name="opcao_formacao"><label>Pós Graduação - Doutorado</label>
+            </div>
+            <div class="nome_curso">
+                <label>Nome do curso:</label><br>
+                <select disabled>
+                    <option>Desenvolvimento e Análise de Sistemas</option>
+                </select>
+            </div>
+            <div class="andamento">
+                <label>Situação:</label><br>
+                <input type="radio" name="opcao_situacao" disabled><label>Em Andamento</label><br>
+                <input type="radio" name="opcao_situacao" disabled><label>Completo</label><br>
+                <input type="radio" name="opcao_situacao" disabled><label>Incompleto</label>
+            </div>
+        </div>
         <label>Qual sua satisfação em relação ao curso?</label><input type="range">
         <br><br>
         <label>Descreva como está sendo sua experiência até o momento:</label><br>

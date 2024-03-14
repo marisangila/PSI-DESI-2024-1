@@ -16,7 +16,8 @@ h3 {
 
 .nome_completo,
 .data_idade,
-.imagem_arquivo {
+.imagem_arquivo,
+.formacao{
     display: block;
     text-align: center;
     width: 100%;
@@ -27,7 +28,8 @@ h3 {
 .data_nascimento,
 .idade,
 .email,
-.imagem {
+.imagem,
+.escolher_formacao{
     display: inline-block;
     text-align: left;
 }
