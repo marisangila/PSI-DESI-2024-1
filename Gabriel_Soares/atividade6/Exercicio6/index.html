@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 6</title>
+</head>
+<body>
+    <div class="main">
+        <div class="titulo">
+            <h1>Neste Exercício você deve usar CSS para formatar o formulário:</h1>
+            <h3>Preencher as informações:</h3>
+        </div>
+        <form>
+            <label><p>Insira uma Imagem:</label> <input type="file"></p>
+            <label><p>Nome: </label> <input class="texto" type="text" placeholder="Insira seu nome" maxlength="250"></p>
+            <p>Sobrenome: <input class="texto" type="text" placeholder="Insira seu sobrenome" maxlength="250"></p>
+            <p>Data de Nascimento: <input class="texto" type="date"></p>
+            <p>Idade: <input class="texto" type="number" min="1"></p>
+            <p>Email: <input class="texto" type="email" required></p>
+            <div class="formacao_academica">
+                <label>Formação acadêmica: <br>
+                    <input type="radio" name="escolha_formacao"> Ensino Fundamental<br>
+                    <input type="radio" name="escolha_formacao"> Ensino Médio<br>
+                    <input type="radio" name="escolha_formacao"> Ensino Superior<br>
+                    <input type="radio" name="escolha_formacao"> Pós Graduação - Especialização<br>
+                    <input type="radio" name="escolha_formacao"> Pós Graduação - Mestrado<br>
+                    <input type="radio" name="escolha_formacao"> Pós Graduação - Doutorado<br>
+                </label>
+            </div>
+            <p class="nome_curso">Nome do Curso: 
+                <select class="texto" disabled="disabled">
+                    <option>Desenvolvimento de Sistemas</option>
+                    <option>Mecânica</option>
+                    <option>Elétrica</option>
+                </select>
+            </p>
+            <label>Situação <br>
+                <label><input type="radio" name="escolha_situacao" disabled="disabled"> Em andamento</label><br>
+                <label><input type="radio" name="escolha_situacao" disabled="disabled"> Completo</label><br>
+                <label><input type="radio" name="escolha_situacao" disabled="disabled"> Incompleto</label><br>
+            </label>
+            <p>Qual sua satisfação em relação ao curso? <input type="range"></p>
+            <p>Descreva como está sua experiência até o momento:</p>
+            <textarea placeholder="Descreva aqui..."></textarea>
+            <p>Escolha uma senha: <input class="texto" type="password" placeholder="Digite sua Senha"></p>
+            <p>Confirme sua senha: <input class="texto" type="password" placeholder="Digite sua Senha"></p>
+            <label>Confirme: <br>
+                <label><input type="checkbox"> Você concorda com os termos?</label><br>
+                <label><input type="checkbox"> Você gostaria de receber e-mails com notificações?</label><br>
+            </label>
+            <br>
+            <input class="btn" type="button" value="Salvar">
+        </form>
+    </div>
+</body>
+</html>

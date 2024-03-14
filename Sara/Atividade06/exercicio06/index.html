@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lilita+One&display=swap" rel="stylesheet">
+    <title> Exercicio 05 </title>
+</head>
+<body>
+    <div class="div_principal">
+        <h1 class="titulo"> Formulário de cadastro </h1>
+        <p class="titulo_preencher"><strong> Preencha as informações: </strong></p>
+        <form class="formulario">
+            <label class="label_imagem"> Insira uma imagem: </label><input class="input_imagem" type="file"><br><br>
+            <label class="label_nome"> Nome: </label><input class="input_nome" type="text" maxlength="250" placeholder="Insira seu nome"> <br><br>
+            <label class="label_sobrenome"> Sobrenome: </label><input class="input_sobrenome" type="text" maxlength="250" placeholder="Insira seu sobrenome"> <br><br>
+            <label class="label_data_nascimento"> Data de nascimento: </label><input class="input_data_nascimento" type="date"> <br><br>
+            <label class="label_idade"> Idade: </label><input class="input_idade" type="number"><br><br>
+            <label class="label_email"> E-mail: </label><input class="input_email" type="email" required placeholder="Insira seu e-mail" required> <br><br>
+            <hr><br><br>
+            <label class="label_formacao"> Formação Acadêmica </label> <br><br>
+            <input class="input_formacao" type="radio" name="opcao_formacao"> <label>Ensino Fundamental</label> <br>
+            <input class="input_formacao" type="radio" name="opcao_formacao"> <label>Ensino Médio</label> <br>
+            <input class="input_formacao"  type="radio" name="opcao_formacao"> <label>Ensino Superior</label> <br>
+            <input class="input_formacao" type="radio" name="opcao_formacao"> <label>Pós Graduação - Especialização</label> <br>
+            <input class="input_formacao" type="radio" name="opcao_formacao"> <label>Pós Graduação - Mestrado</label> <br>
+            <input class="input_formacao" type="radio" name="opcao_formacao"> <label>Pós Graduação - Doutorado</label> <br><br>
+            <label>Nome do Curso: </label>  
+                <select  class="selecao" disabled>
+                    <option>Análise e Desenvolvimento de Sistemas</option>
+                </select><br><br>
+
+            <label class="situacao">Situação:</label><br><br>
+            <input type="radio" name="opcao_situacao_curso" disabled> <label>Em andamento</label> <br>
+            <input type="radio" name="opcao_situacao_curso" disabled> <label>Completo</label> <br>
+            <input type="radio" name="opcao_situacao_curso" disabled> <label>Incompleto</label> <br><br>
+
+            <labeL> Qual sua satisfação em relação ao curso? </labeL> <input type="range"><br><br>
+
+            <label> Descreva como está sendo sua experiência até o momento:</label><br><br>
+            <textarea class="descreva"rows="50" cols="92" placeholder="Descreva aqui..."></textarea><br><br>
+
+            <label class="label_senha"> Escolha uma senha: </label><input class="input_senha" type="password" placeholder="Digite sua senha"> <br><br>
+
+            <label class="label_senha"> Confirme sua senha: </label><input class="input_senha" type="password" placeholder="Digite sua senha"> <br><br>
+
+            <hr><br>
+
+            <label class="confirme"> Confirme: </label><br><br>
+            <input class="checkbox_01" type="checkbox"><label>Você concorda com os termos?</label><br>
+            <input class="checkbox_01" type="checkbox"><label>Você gostaria de receber e-mails com notificações?</label><br><br>
+            <button class="botao_salvar"type="submit"> Salvar </button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    border: 0;
+}
+.centralizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: DodgerBlue;
+}  
+.centralizacao > div {
+    background-color: white;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+p{
+    color: black;
+    margin: 0;
+}
