@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin-top: 20px;
+    margin-left: 50px;
+    display: block;
+}
+
+.menu{
+    display: block;
+    padding-top: 20px;
+    background-color: rgb(54, 54, 54);
+    font-family: Arial;
+    height: 40px;
+    width: 1800px;
+}
+
+a{
+    display: inline;
+    margin: 0px 10px 0px 10px;   
+    text-decoration: none;
+    color: white;
+}  

@@ -1,0 +1,85 @@
+*{margin: 0px; padding: 0px;}
+
+body{
+    background-image: url(images/andreas-rocha-clutteredoffice01.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    width: 800px; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.titulo{
+    color: rgba(255, 255, 255, 0.822);
+    padding: 10px;
+    text-shadow: rgb(41, 85, 180) 3px 2px 2px;
+}
+
+h3{
+    padding-top: 20px;
+}
+
+form{
+    background-color: rgba(255, 255, 255, 0.623);
+    padding: 10px 0px 0px 10px;
+    margin: 10px;
+    font-size: large;
+    border-radius: 20px;
+}
+
+
+.nome_curso{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px; 
+}
+
+.formacao_academica{
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px; 
+}
+
+textarea{
+    margin-left: 10px;
+    width: 400px;
+    height: 100px;
+}
+
+input{
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+.btn{
+    width: 80px;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-left: 340px;
+    background-color: rgb(160, 159, 170);
+}
+
+.btn:hover{
+    background-color: gray;
+}
+
+.btn:active{
+    background-color: white;
+}
+
+.texto{
+    width: 250px;
+    height: 20px;
+}
