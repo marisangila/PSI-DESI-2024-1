@@ -1,3 +1,10 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 input[type=file]{
     color: skyblue;
 }
@@ -6,6 +13,7 @@ input[type=text]{
    width: 15%;
    margin-left: 20px;
    vertical-align: middle;
+   margin: auto;
 }
 input[type=number]{
     width: 5%;
@@ -39,8 +47,56 @@ select{
     margin: 0;
 }
 textarea{
-    width: 25%;
+    width: 75%;
+    height: 65px;
 }
-input[type=submit]::placeholder{
-    color: black;
+input[type=submit]{
+    background-color: #044D8C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1px;
+    cursor: pointer;
+    margin: auto;
+    position: static;
+}
+input[type=submit]:hover{
+    background-color: #033E8C;
+}
+input[type=submit]:active{
+    background-color:#122A40;
+}
+
+body {
+    background-color: white;
+}
+form{
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    height: 90vh;
+    position: fixed;
+}
+label{
+    background-color: rgb(232, 243, 253);
+    border-radius: 20px;
+}
+p{
+    padding-bottom: 8px;
+}
+header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    background-color: #044D8C;
+}
+body{
+    background-image: url("images/bluecity.jpg");
+    background-position: center;
 }
