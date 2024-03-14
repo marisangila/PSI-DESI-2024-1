@@ -1,0 +1,98 @@
+body{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(197, 196, 196);
+}
+.titulo{
+    text-align: center;
+}
+._2forms{
+    background-color: rgb(167, 167, 167);
+
+    width: 95%;
+    height: 480px;
+
+    bottom: 10px
+}
+._1forms{
+    width: 95%;
+    height: 450px;
+    top: 10px;
+}
+
+.forms1{
+    width: 46%;
+    height: 92%;
+}
+.forms2{
+    width: 46%;
+    height: 92%;
+    right: 10px;
+}
+.forms3{
+    width: 40%;
+}
+
+.p{
+    padding: 10px;
+}
+.border{
+    border: 1px solid gray;
+}
+.border-blue{
+    border: 1px solid rgb(102, 174, 255);
+}
+.border-green{
+    border: 1px solid rgb(219, 255, 166);
+}
+.border-radius{
+    border-radius: 5px;
+}
+.bg-gray{
+    /* background-color: rgb(218, 255, 161); */
+    background-image: linear-gradient(to right, 
+    #eaebea, #b9c6be, #86a399, #50817a, #006060);
+}
+.bg-blue{
+    /* background-color: rgb(102, 174, 255); */
+    background-image: linear-gradient(to right top,
+    #052137, #004d6a, #007e9c, #00b3c8, #12ebeb);
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.inherit{
+    display: inherit;
+}
+.inline-block{
+    display: inline-block;
+}
+.block{
+    display: block;
+}
+.r{
+    right: 5px;
+}
+.cursive{
+    font-family: cursive;
+}
+.text-color{
+    color:white;
+}
+.box-text{
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+}
+label{
+    font-size: 17px;
+}
+.area-text{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+}

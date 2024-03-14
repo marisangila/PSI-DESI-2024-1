@@ -1,0 +1,45 @@
+.dado_pessoal{
+    background-color: rgb(208, 177, 236);
+    display: block;
+    height: 300px;
+    width: 800px;
+    border: 1px solid transparent;
+    
+}
+
+.main{
+    background-color: rgb(221, 206, 235);
+    display: block;
+    height: 1000px;
+    width: 800px;
+    border: 1px solid black;
+    position: relative;
+    left: 30%;
+    border-radius: 15px;
+}
+
+.formacao_academica{
+    background-color: rgb(193, 153, 228);
+    display: block;
+    height: 300px;
+    width: 800px;
+    border: 1px solid transparent;
+}
+
+.satisfacao{
+    background-color: rgb(169, 116, 216);
+    display: block;
+    height: 315px;
+    width: 800px;
+    border: 1px solid transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.btn{
+    background-color: rgb(227, 200, 252);
+}
+
+.text{
+    background-color: rgb(201, 175, 226);
+}

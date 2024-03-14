@@ -1,0 +1,20 @@
+
+
+/* sinal > significa que esta modificando as divis dentro da div main */
+
+.centro {
+    display: flex;
+    background-color: DodgerBlue;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  
+.centro > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    
+}
