@@ -11,22 +11,23 @@ body{
     background-color: rgb(167, 167, 167);
 
     width: 95%;
-    height: 450px;
+    height: 480px;
 
     bottom: 10px
 }
 ._1forms{
     width: 95%;
-    height: 400px;
+    height: 450px;
     top: 10px;
 }
 
 .forms1{
     width: 46%;
-    height: 423px;
+    height: 92%;
 }
 .forms2{
     width: 46%;
+    height: 92%;
     right: 10px;
 }
 .forms3{
@@ -81,4 +82,17 @@ body{
 }
 .text-color{
     color:white;
+}
+.box-text{
+    width: 80%;
+    height: 30px;
+    font-size: 20px;
+}
+label{
+    font-size: 17px;
+}
+.area-text{
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
 }
