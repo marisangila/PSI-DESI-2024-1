@@ -1,0 +1,43 @@
+.relative{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    border: 2px solid black;
+}
+.absolute{
+    position: absolute;
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+}
+.meio{
+    left: 25%;
+    top: 25%;
+}
+.right-top {
+    top: 0;
+    right: 0;
+}
+.right-bottom {
+    bottom: 0;
+    right: 0;
+}
+.left-bottom {
+    bottom: 0;
+    left: 0;
+}
+.fixed{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+.black1{
+    top: 0;
+    right: 0;
+}
+.black2{
+    bottom: 0;
+    right: 0;
+}

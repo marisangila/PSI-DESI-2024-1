@@ -1,0 +1,13 @@
+.div1{
+    position: relative;
+    background: rgb(51, 47, 47);
+    color: white;
+    padding: 10px;
+    top: 25px;
+    left: 5%;
+    width: 90%;
+    right: 5%;
+}
+.a1{
+    padding: 10px;
+}
