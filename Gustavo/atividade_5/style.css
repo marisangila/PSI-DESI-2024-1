@@ -1,0 +1,107 @@
+body{
+    display: grid;
+    place-items: center;
+    margin-bottom: 500px;
+    margin: 5px;
+}
+
+.center{    
+    display: grid;
+    place-items: center;
+}
+
+.square{
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px ;
+    width: 400px;
+    padding: 40px;
+    margin-top: 10%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo{
+    width: 100px;
+    height: 100%;
+    right: 10px;
+    margin-left: 38%;
+}
+
+.login_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.email_input{
+    height: 40px;
+    width: 400px;
+    border: 1px solid rgb(177, 176, 176);
+    border-radius: 3px;
+}
+
+.email_esquecido{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: rgb(26,115,232);
+}
+
+.text{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modo_visitante{
+    text-decoration: none;
+    color: rgb(26,115,232);
+}
+
+.buttons{
+    position: relative;
+    justify-content: space-between;
+}
+
+.btn1{
+    position: absolute;
+    background-color: transparent;
+    border: 0;
+    color: rgb(26,115,232);
+    left: 0;
+}
+
+.btn2{
+    position: absolute;
+    background-color: rgb(26,115,232);
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    width: 80px;
+    right: 0px;
+}
+
+.baixo{
+    margin-top: 10px;
+    width: 482px;
+}
+
+.baixo a{
+    text-decoration: none;
+    color: black;
+    margin-left: 50px;
+}
+
+.baixo a select{
+    margin-left: 10px
+}
+
+#lingua{
+    border: 0;
+}
+
+.btn1, .btn2{
+    cursor: pointer;
+}
