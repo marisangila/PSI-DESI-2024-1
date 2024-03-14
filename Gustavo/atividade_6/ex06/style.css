@@ -1,0 +1,64 @@
+.text_header{
+    background-color: yellow;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(186,182,14,1) 33%, rgba(0,212,255,1) 100%);
+    border-radius: 5px;
+    align-items: center;
+}
+
+p, h2, label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.high_text{
+    margin-left: 25%;
+}
+
+.pessoal{
+    margin-left: 25%;
+    background-color: rgb(224, 207, 53);
+    width: 50%;
+    left: 25%;
+    padding: 10px;
+}
+
+.escolaridade{
+    margin-left: 25%;
+    background-color: rgb(86, 218, 24);
+    width: 50%;
+    padding: 10px;
+}
+
+.cadastro{
+    margin-left: 25%;
+    background-color: rgb(36, 166, 241);
+    width: 50%;
+    padding: 10px;
+}
+
+.cadastro p{
+    color: black;
+}
+
+#story{
+    resize: none;
+}
+
+.botao{
+    margin: 5px 0px 5px 50%;
+    padding: 5px;
+    background-color: rgb(62, 208, 245);
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: rgb(255, 255, 255);
+}
