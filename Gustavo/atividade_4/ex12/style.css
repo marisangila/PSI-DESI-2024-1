@@ -1,0 +1,33 @@
+body{
+    background-color: gray;
+}
+
+main{
+    margin: auto;
+}
+
+.conteudo{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.conteudo h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botoes{
+    background-color: rgb(8, 202, 8);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px;
+    width: 114px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.senai{
+    width: 400px;
+    height: 400px;
+}
