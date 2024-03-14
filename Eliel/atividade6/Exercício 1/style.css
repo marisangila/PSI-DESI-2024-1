@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+}
+.ex001div{
+    background-color: rgb(36, 36, 36);
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.ex001navBar{
+    display: inline;
+}
+
+.exlinkText{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
