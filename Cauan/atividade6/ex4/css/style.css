@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: greenyellow;
+}
+header{
+    background-color: red;
+    padding: 40px;
+    text-align: center;
+}
+aside{
+    background-color: greenyellow;
+    padding: 25px;
+    height: 100%;
+    position: fixed;
+}
+section{
+    background-color: #5d90ff;
+    padding: 25px;
+    margin-left: 140px;
+    height: 100%;
+}
