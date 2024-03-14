@@ -1,0 +1,64 @@
+body{
+    position: relative;
+}
+
+.graySquare{
+    width: 400px;
+    height: 100%;
+    background-color: gray;
+    border: black 2px solid;
+    margin-block:10px;
+    position: relative;
+}
+
+.orangeSquare{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 166, 0);
+    position: absolute;
+}
+
+.center{
+    left: 25%;
+    top: 25%;
+}
+
+.topRight{
+    right: 0;
+}
+
+.bottomRight{
+    right: 0;
+    bottom: 0;
+}
+
+.bottomLeft{
+    bottom: 0;
+}
+
+.blackSquare{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#secondSquare{
+    margin-top: 15%;
+}
+
+#thirdSquare{
+    margin-top: 0%;
+}
+
+#fourthSquare{
+    margin-top: 10%;
+}
+
+.block{
+    /* background-color: aqua; */
+    height: 400px;
+    position: relative;
+}
