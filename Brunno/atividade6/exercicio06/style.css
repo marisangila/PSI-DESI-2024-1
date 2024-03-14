@@ -1,0 +1,46 @@
+input[type=file]{
+    color: skyblue;
+}
+
+input[type=text]{
+   width: 15%;
+   margin-left: 20px;
+   vertical-align: middle;
+}
+input[type=number]{
+    width: 5%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+  }
+input[type=email]::placeholder{
+    color: black;
+    opacity: 70%;
+}
+input[type=radio]{
+    display: inline-block;
+}
+.formacao{
+    margin-bottom: 0;
+}
+select{
+    border-color: black;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.situacao p{
+    margin: 0;
+}
+textarea{
+    width: 25%;
+}
+input[type=submit]::placeholder{
+    color: black;
+}
