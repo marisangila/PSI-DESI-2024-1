@@ -1,0 +1,42 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nome_completo,
+.data_idade,
+.imagem_arquivo {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.nome,
+.sobrenome,
+.data_nascimento,
+.idade,
+.email,
+.imagem {
+    display: inline-block;
+    text-align: left;
+}
+
+.input_padrao {
+    width: 400px;
+    padding: 6px;
+    border-radius: 15px;
+    border: 1px solid #444;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

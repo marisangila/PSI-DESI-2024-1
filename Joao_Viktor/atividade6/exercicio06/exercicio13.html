@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 13</title>
+</head>
+
+<body>
+    <h1>Neste Exercício você deve criar uma página HTML com os seguintes componentes:</h1>
+    <hr>
+    <form>
+        <h3>Preenchar as informações:</h3>
+        <div class="geral">
+            <div class="nome_completo">
+                <div class="nome">
+                    <label class="teste">Nome:</label><br>
+                    <input class="input_padrao" type="text" placeholder="Insira seu nome" maxlength="250">
+                    <br><br>
+                </div>
+                <div class="sobrenome">
+                    <label>Sobrenome:</label><br>
+                    <input class="input_padrao" type="text" placeholder="Insira seu sobrenome" maxlength="250">
+                    <br><br>
+                </div>
+            </div>
+            <div class="data_idade">
+                <div class="data_nascimento">
+                    <label>Data de nascimento:</label><br>
+                    <input class="input_padrao" type="date">
+                </div>
+                <div class="idade">
+                    <label>Idade:</label><br>
+                    <input class="input_padrao" type="number">
+                </div>
+            </div>
+        </div>
+        <div class="imagem_arquivo">
+            <div class="imagem">
+                <label>Insira uma Imagem:</label><br>
+                <input class="input_padrao" type="file">
+            </div>
+            <div class="email">
+                <label>E-mail:</label><br>
+                <input class="input_padrao" type="text" placeholder="Insira seu e-mail" required>
+            </div>
+        </div>
+
+        <label>Formação Acadêmica:</label><br>
+        <input type="radio" name="opcao_formacao"><label>Ensino Fundamental</label><br>
+        <input type="radio" name="opcao_formacao"><label>Ensino Médio</label><br>
+        <input type="radio" name="opcao_formacao"><label>Ensino Superior</label><br>
+        <input type="radio" name="opcao_formacao"><label>Pós Graduação - Especialização</label><br>
+        <input type="radio" name="opcao_formacao"><label>Pós Graduação - Mestrado</label><br>
+        <input type="radio" name="opcao_formacao"><label>Pós Graduação - Doutorado</label>
+        <br><br>
+        <label>Nome do curso:</label>
+        <select disabled>
+            <option>Desenvolvimento e Análise de Sistemas</option>
+        </select>
+        <br><br>
+        <label>Situação:</label><br>
+        <input type="radio" name="opcao_situacao" disabled><label>Em Andamento</label><br>
+        <input type="radio" name="opcao_situacao" disabled><label>Completo</label><br>
+        <input type="radio" name="opcao_situacao" disabled><label>Incompleto</label>
+        <br><br>
+        <label>Qual sua satisfação em relação ao curso?</label><input type="range">
+        <br><br>
+        <label>Descreva como está sendo sua experiência até o momento:</label><br>
+        <textarea rows="5" cols="50" placeholder="Descreva aqui"></textarea>
+        <br><br>
+        <label>Escolha uma senha:</label>
+        <input type="password" placeholder="Digite sua Senha">
+        <br><br>
+        <label>Confirme sua senha:</label>
+        <input type="password" placeholder="Digite sua Senha">
+        <br><br>
+        <label>Confirme:</label><br>
+        <input type="checkbox"><label>Você concorda com os termos?</label><br>
+        <input type="checkbox"><label>Você gostaria de receber os e-mails com notificações?</label><br>
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+
+</html>
