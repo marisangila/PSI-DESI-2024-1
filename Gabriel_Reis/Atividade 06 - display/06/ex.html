@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="titulo">
+        <h3>Preencha as informações:</h3>
+    </div>
+    <div class="area"></div>
+    <div class="formulario">
+        <form>
+
+
+            <p>Escolha uma imagem: <input type="file"></p>
+            <label>Nome:</label>
+            <input type="text" maxlength="20" placeholder="Insira seu nome">
+            <br>
+            <label>Sobrenome:</label>
+            <input type="text" maxlength="20" placeholder="Insira seu Sobrenome">
+            <br>
+            <label>Data de nascimento:</label>
+            <input type="date">
+            <br>
+            <label>Idade: </label>
+            <input type="number" maxlength="200" placeholder="Insira sua Idade">
+            <br>
+            
+            <label>E-mail:</label>
+            <input type="email" placeholder="Insira seu E-mail" required>
+            <br>
+            <br>
+
+            <label>Formação Academica:</label>
+            <br>
+            <input type="radio" name="escolha">
+            <label>Ensino Fundamental</label>
+            <br>
+
+            <input type="radio" name="escolha">
+            <label>Ensino Medio</label>
+            <br>
+
+            <input type="radio" name="escolha">
+            <label>Ensino Superior</label>
+            <br>
+
+            <input type="radio" name="escolha">
+            <label>Pós Graduação - Especialização</label>
+            <br>
+
+            <input type="radio" name="escolha">
+            <label>Pós Graduação - Mestrado</label>
+            <br>
+
+            <input type="radio" name="escolha">
+            <label>Pós Graduação - Doutorado</label>
+            <br>
+            <br>
+
+            <label>Nome do curso:</label>
+            <select disabled="disabled">
+                <option value="1">Escolha uma opção</option>
+            </select>
+            <br>
+            <br>
+
+            <label>Situação:</label>
+            <br>
+            <input type="radio" name="escolha_situacao" disabled>
+            <label>Em Andamento</label>
+            <br>
+
+            <input type="radio" name="escolha_situacao" disabled>
+            <label>Completo</label>
+            <br>
+
+            <input type="radio" name="escolha_situacao" disabled>
+            <label>Incompleto</label>
+            <br>
+            <br>
+
+            <label>Qual sua satisfação em relação ao curso?</label><br>
+            <input class="avaliacao" type="range" min="0" max="10">
+            <br>
+            <br>
+
+            <label>Descreva como esta sendo sua experiencia até o momento:</label>
+            <br>
+            <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descreva aqui..."></textarea>
+            <br>
+            <br>
+
+            <label>Escolha uma senha:</label>
+            <input type="password" maxlength="20" placeholder="Insira sua senha">
+            <br>
+            <br>
+            <label>Confirme sua senha:</label>
+            <input type="password" maxlength="20" placeholder="Insira sua senha">
+            <br>
+            <br>
+
+            <label>Confirme:</label>
+            <br>
+
+            <input type="checkbox">
+            <label>Concordo com os termos.</label>
+            <br>
+            <input type="checkbox">
+            <label>Gostaria de receber e-mails e notificações.</label>
+            <br>
+            <br>
+            <input class="botao" type="submit" value="Salvar">
+            <br>
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>

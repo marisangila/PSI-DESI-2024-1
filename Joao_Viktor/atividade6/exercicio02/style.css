@@ -1,0 +1,26 @@
+nav{
+    background-color: #333;
+    height: 800px;
+    width: 10%;
+    padding: 20px;
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav li{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+div{
+    position: fixed;
+    top: 50px;
+    display: inline-block;
+    margin-left: 20px;
+}

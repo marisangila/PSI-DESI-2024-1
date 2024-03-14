@@ -1,0 +1,35 @@
+nav{
+    background-color: black;
+    margin-left: 0;
+    height: 800px;
+    width: 10%;
+    padding: 20px;
+    display: inline-block;
+    padding-right: 80px;
+}
+
+ul {
+    position: fixed;
+    padding-left: 0px;
+}
+
+.corpo{
+    position: fixed;
+    top: 50px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+a{
+    display: inline;
+    padding-top: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+li{
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
