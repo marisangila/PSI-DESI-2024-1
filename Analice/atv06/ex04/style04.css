@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1700px;
+    max-height: 900px;
+}
+
+.nav {
+    display: block;
+    height: 100px;
+    background-color: #DC143C;
+}
+
+.nav p {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.aside {
+    display: inline-block;
+    width: 20%;
+    height: 900px;
+    background-color: #7FFF00;
+}
+
+.aside p {
+    padding: 20px;
+}
+
+.main {
+    float: right;
+    width: 80%;
+    height: 900px;
+    background-color: #6495ED;
+}
+
+.main p {
+    padding: 20px;
+}

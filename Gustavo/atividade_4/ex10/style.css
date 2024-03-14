@@ -1,0 +1,66 @@
+/* body{
+    height: 100vh;
+    width: 100vh;
+} */
+.center{
+    margin: 0 auto;
+    width: 500px;
+}
+
+.formulario{
+    text-align: center;
+    background-image: linear-gradient(to right, #2dec56, #00e8a4, #00dfde, #00d2fd, #00c0ff, #3dc0fd, #57bffb, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.q, select{
+    width: 400px;
+    margin: 5px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 3px;
+}
+/* .q{
+    padding: 10px;
+    background-color: transparent;
+    border: solid white 1px;
+    color: white; 
+    width: 250px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.q::placeholder{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#q5{
+    resize: none;
+}
+
+#box_options{
+    width: 420px;
+}
+
+.options{
+    color: black;
+}
+
+#botao_enviar{
+    background-color: rgb(60, 59, 59);
+    color: white;
+    border: transparent;
+    width: 420px;
+    cursor: pointer;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

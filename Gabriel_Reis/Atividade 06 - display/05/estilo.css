@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navegacao{
+    background-color: red;
+    display: inline;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 2000px;
+    height: 100px;
+}
+
+.menu_esquerdo{
+    background-color: lime;
+    position: fixed;
+    top: 100px;
+    display: inline-block;
+    width: 200px;
+    height: 1000px;
+   
+}
+
+.conteudo_principal{
+    background-color: royalblue;
+    position: static;
+    left: 200px;
+    top: 97px;
+    padding:200px;
+    padding-top: 100px;
+    height: 800px;
+    width: 1500px;
+
+
+
+}
+.menu_direito_sup{
+    background-color: pink;
+    position: fixed;
+    left: 1700px;
+    top: 97px;
+    height: 400px;
+    width: 200px;
+
+}
+.menu_direito_inf{
+    background-color: pink;
+    position: fixed;
+    left: 1700px;
+    top: 497px;
+
+    height: 500px;
+    width: 200px;
+
+}
+
+.rodape{
+    background-color: yellow;
+    display: block;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    width: 2000px;
+    height: 100px;
+}

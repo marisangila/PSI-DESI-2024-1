@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style06.css">
+    <link rel="shortcut icon" href="formulario-de-contato.png" type="image/x-icon">
+    <title>exercicio 06</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="form">
+            <h1>Formulário de Cadastro</h1>
+            <h4>Preencha as informações:</h4>
+            <br>
+            <label>Insira sua imagem:</label>
+            <br>
+            <input type="file">
+            <br><br>
+            <label>Nome:</label>
+            <br>
+            <input class="input-text"  type="text" placeholder="Insira seu nome" maxlength="250">
+            <br><br>
+            <label>Sobrenome:</label>
+            <br>
+            <input class="input-text" type="text" placeholder="Insira seu sobrenome" maxlength="250">
+            <br><br>
+            <label>Data de nascimento:</label>
+            <br>
+            <input class="input-data"  type="date">
+            <br><br>
+            <label>Idade:</label>
+            <br>
+            <input class="input-text" type="number" width="10">
+            <br><br>
+            <label>E-mail:</label>
+            <br>
+            <input class="input-text" type="text" placeholder="Insira seu e-mail" required>
+            <br>
+            <br>
+            <label>Formação Acadêmica:</label><br>
+            <br>
+            <input type="radio" name="opcao_formacao"><label> Ensino Fundamental</label><br>
+            <input type="radio" name="opcao_formacao"><label> Ensino Médio</label><br>
+            <input type="radio" name="opcao_formacao"><label> Ensino Superior</label><br>
+            <input type="radio" name="opcao_formacao"><label> Pós Graduação - Especialização</label><br>
+            <input type="radio" name="opcao_formacao"><label> Pós Graduação - Mestrado</label><br>
+            <input type="radio" name="opcao_formacao"><label> Pós Graduação - Doutorado</label>
+            <br><br>
+            <label>Nome do curso:</label>
+            <br>
+            <select disabled>
+                <option>Desenvolvimento e Análise de Sistemas</option>
+            </select>
+            <br><br>
+            <label>Situação:</label><br>
+            <br>
+            <input type="radio" name="opcao_situacao" disabled><label> Em Andamento</label><br>
+            <input type="radio" name="opcao_situacao" disabled><label> Completo</label><br>
+            <input type="radio" name="opcao_situacao" disabled><label> Incompleto</label>
+            <br><br>
+            <label>Qual sua satisfação em relação ao curso? 
+            <br>
+            </label><input type="range">
+            <br><br>
+            <label>Descreva como está sendo sua experiência até o momento:</label><br>
+            <br>
+            <textarea rows="5" cols="50" placeholder="Descreva aqui"></textarea>
+            <br><br>
+            <label>Escolha uma senha:</label>
+            <input class="input-senha" type="password" placeholder="Digite sua Senha">
+            <br><br>
+            <label>Confirme sua senha:</label>
+            <input class="input-senha" type="password" placeholder="Digite sua Senha">
+            <br><br>
+            <label>Confirme:</label><br>
+            <br>
+            <input type="checkbox"><label> Você concorda com os termos?</label><br>
+            <br>
+            <input type="checkbox"><label> Você gostaria de receber os e-mails com notificações?</label><br>
+            <br>
+            <button type="submit">Salvar</button>
+        </div>
+    </div>
+</body>
+
+</html>
