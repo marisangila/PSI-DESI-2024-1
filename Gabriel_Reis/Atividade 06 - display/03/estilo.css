@@ -1,0 +1,123 @@
+.cube1{
+    
+    border: 7px solid black;
+
+    background-color: rgb(90, 87, 87);
+    width:300px;
+    height:300px;
+    margin: 5px
+    
+}
+
+.cube2{
+
+    border: 7px solid black;
+
+    background-color: rgb(90, 87, 87);
+    width:300px;
+    height:300px;
+    margin: 5px
+}
+
+.cube3{
+
+    border: 7px solid rgb(26, 20, 20);
+
+    background-color: rgb(90, 87, 87);
+    width:300px;
+    height:300px;
+    margin: 5px
+}
+
+.cube4{
+
+    border: 7px solid black;
+
+    background-color: rgb(90, 87, 87);
+    width:300px;
+    height:300px;
+    margin: 5px
+}
+
+.cube5{
+
+    border: 7px solid black;
+    display: grid;
+    background-color: rgb(90, 87, 87);
+    width:300px;
+    height:300px;
+    margin: 5px
+}
+
+.cube_int1{
+    background-color: yellow;
+    position: relative;
+    top:100px;
+    left:100px;
+    width:100px;
+    height:100px;
+
+}
+
+.cube_int2{
+    background-color: yellow;
+    position: relative;
+    width:100px;
+    height:100px;
+
+}
+
+.cube_int3{
+    background-color: yellow;
+    position: relative;
+    top:0px;
+    left:200px;
+    width:100px;
+    height:100px;
+
+}
+
+.cube_int4{
+    background-color: yellow;
+    position: relative;
+    top:200px;
+    left:200px;
+    
+    width:100px;
+    height:100px;
+
+}
+
+.cube_int5{
+    background-color: yellow;
+    position: relative;
+    top:200px;
+    left:0px;
+
+    width:100px;
+    height:100px;
+
+}
+
+.cube_abs1{
+    background-color: black;
+    position: fixed;
+    top:10px;
+    left:1650px;
+
+    width:200px;
+    height:200px;
+
+}
+
+.cube_abs2{
+    background-color: black;
+    position: fixed;
+    top:700px;
+    left:1650px;
+
+    width:200px;
+    height:200px;
+
+}
+

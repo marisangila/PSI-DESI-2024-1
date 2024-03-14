@@ -1,0 +1,19 @@
+.menu{
+    display:block;
+    background-color: rgb(31, 29, 29);
+    padding: 15px;
+    font-size: 20px;
+    width: 1800px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+body{
+    
+    justify-content: center;
+    
+}

@@ -1,0 +1,48 @@
+.quadrado_cinza{
+    height: 400px;
+    width: 400px;
+    background-color: gray;
+    border: 3px solid black;
+    position: relative;
+    display: block;
+}
+.quadrado_laranja{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    position: absolute;
+    display: block;
+}
+
+.laranja01{
+    top: 100px;
+    left: 100px;
+}
+
+.laranja03{
+    right: 0px;
+}
+
+.laranja04{
+    right: 0px;
+    bottom: 0px;
+}
+
+.laranja05{
+    bottom: 0px;
+}
+
+.quadrado_preto{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+.preto01{
+    right: 10px;
+}
+.preto02{
+    right: 10px;
+    bottom: 10px;
+}
