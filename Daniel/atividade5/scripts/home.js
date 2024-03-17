@@ -1,8 +1,7 @@
+///////////////////////////////////////////////////////////////////////
 // Galery Images
 let GALERY = window.document.getElementById("galery")
-console.log(GALERY)
 for(let i = 0; i < 600; i++){
-
     //CONTENT_IMAGE
     let content_image = document.createElement('section')
     content_image.setAttribute("class", "img_galery")
@@ -111,7 +110,6 @@ for(let i = 0; i < 600; i++){
     })
 
     options_top_image.appendChild(button_save)
-
     
     //NAME_ARTIST
     let name_artist = document.createElement('p')
@@ -149,3 +147,4 @@ for(let i = 0; i < 600; i++){
 
     content_more_options.appendChild(more_options)
 }
+

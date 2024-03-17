@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.div_principal{
+    font-size: 20px;
+    width: 85%;
+    margin: auto;
+    background-color: rgb(213, 204, 228);
+    border-radius: 15px;
+    position: relative;
+    top: 30px;
+    padding: 10px;
+}
+.titulo{
+    background-color:rgb(146, 127, 175);
+    color: white;
+    font-family: "Lilita One", sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 5px;
+}
+.formulario{
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 95%;
+    margin: auto;
+}
+.titulo_preencher{
+    font-size: 25px;
+    padding: 5px;
+    margin: 20px;
+    text-decoration:underline;
+}
+input.input_imagem{
+    margin: 10px;
+}
+input.input_nome{
+    margin: 10px;
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    width: 85%;
+    float: right;
+    position: relative;
+    height: 30px;
+    bottom: 12px;
+}
+input.input_sobrenome{
+    margin: 10px;
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    width: 77%;
+    float: right;
+    position: relative;
+    bottom: 12px;
+    height: 30px;
+}
+label.label_data_nascimento{
+    display: inline-block;
+}
+input.input_data_nascimento{
+    margin: 10px;
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    width: 65%;
+    float: right;
+    position: relative;
+    bottom: 12px;
+    height: 30px;
+}
+input.input_idade{
+    margin: 10px;
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    width: 85%;
+    float: right;
+    position: relative;
+    bottom: 35px;
+    height: 30px; 
+}
+input.input_email{
+    margin: 10px;
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    width: 85%;
+    float: right;
+    position: relative;
+    bottom: 40px;
+    height: 30px; 
+}
+hr{
+    width: 100%;
+    margin: auto;
+}
+label.label_formacao{
+    font-weight: bold;
+}
+.selecao{
+    margin: 10px;
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    width: 70%;
+    float: right;
+    position: relative;
+    bottom: 15px;
+    height: 30px; 
+}
+.situacao{
+    font-weight: bold; 
+}
+.descreva{
+    border-width: thin;
+    width: 100%;
+    float: right;
+    border-radius: 7px;
+    padding: 5px;
+    position: relative;
+    bottom: 15px;
+    height: 30px; 
+}
+input.input_senha{
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    width: 67%;
+    float: right;
+    height: 30px;
+}
+.confirme{
+    font-weight: bold; 
+}
+.checkbox_01{
+    margin-right: 10px;
+}
+.botao_salvar{
+    border-width: thin;
+    border-radius: 7px;
+    padding: 5px;
+    background-color:rgb(146, 127, 175);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    width: 20%;
+    height: 30px;
+    margin-left: 35%;
+}

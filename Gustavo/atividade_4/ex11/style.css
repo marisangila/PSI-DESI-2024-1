@@ -1,0 +1,69 @@
+body{
+    background-color: #dddddd;
+}
+.formulario, .tabela{
+    width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: left;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.tabela{
+    margin-top: 50px;
+}
+
+.formulario label{
+    margin-left: 10px;
+}
+
+table, tr, th{
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.tabela thead th{
+    margin: 0;
+    border: solid 1px black;
+    background-color: gray;
+    
+}
+
+.tabela tbody td{
+    margin: 0;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.formulario h1{
+    text-align: center;
+}
+
+input, select, button{
+    padding: 5px;
+    margin: 10px;
+}
+
+button{
+    cursor: pointer;
+}
+
+input{
+    width: 90%;
+}
+select, button{
+    border-radius: 5px;
+    width: 93%;
+}
+
+#box_options{
+    background-color: #dddddd;
+}
+
+.botao_enviar{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+}

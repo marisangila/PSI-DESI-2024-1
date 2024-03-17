@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.bar_esq{
+    position: fixed;
+    background-color: rgb(40, 40, 40);
+    width: 200px;
+    height: 1000px;
+}
+
+.conteudo{
+    margin-left: 200px;
+    padding: 30px;
+}
+
+h1{
+    padding-bottom: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    margin: 20px 0px 0px 20px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 6</title>
+</head>
+
+<body class="background">
+    <div id="form">
+        <h1>Formulário</h1>
+
+        <h3>Preencha as informações</h3>
+        <div>
+            <label id="personalInfo">Insira uma imagem:</label>
+            <input type="file">
+            <br> 
+            <br>
+            <label id="personalInfo">Nome:</label>
+            <br>
+            <input id="input" type="text" placeholder="Insira seu nome." maxlength="250">
+            <br> 
+            <br>
+            <label id="personalInfo">Sobrenome:</label>
+            <br>
+            <input id="input" type="text" placeholder="Insira seu sobrenome." maxlength="250">
+            <br> 
+            <br>
+            <label id="personalInfo">Data de nascimento:</label>
+            <br>
+            <input id="input" type="date">
+            <br> 
+            <br>
+            <label id="personalInfo">Idade:</label>
+            <br>
+            <input id="input" type="number" placeholder="Insira sua idade.">
+            <br> 
+            <br>
+            <label id="personalInfo">E-mail:</label>
+            <br>
+            <input id="input" type="text" placeholder="Insira seu e-mail." required>
+            <br> 
+            <br>
+        </div>
+            
+        <div id="radioOptions">
+            <label>Formação acadêmica:</label> 
+            <br>
+            <input type="radio" name="opcao_formacao"><label>Ensino Fundamental</label>
+            <br>
+            <input type="radio" name="opcao_formacao"><label>Ensino Médio</label>
+            <br>
+            <input type="radio" name="opcao_formacao"><label>Ensino Superior</label>
+            <br>
+            <input type="radio" name="opcao_formacao"><label>Pós Graduação - Especialização</label>
+            <br>
+            <input type="radio" name="opcao_formacao"><label>Pós Graduação - Mestrado</label>
+            <br>
+            <input type="radio" name="opcao_formacao"><label>Pós Graduação - Doutorado</label>
+            <br>
+            <br>
+            <label>Nome do curso:</label>
+            <br>
+            <select name="curso" id="curso" disabled>
+                <option value="">Análise e Desenvolvimento de Sistemas</option>
+            </select>
+            <br>
+            <br>
+            <label>Situação:</label>
+            <br>
+            <input type="radio" name="opcao_situacao" disabled><label>Em andamento</label>
+            <br>
+            <input type="radio" name="opcao_situacao" disabled><label>Completo</label>
+            <br>
+            <input type="radio" name="opcao_situacao" disabled><label>Incompleto</label>
+            <br>
+            <br>
+            <label>Qual sua satisfação em relação ao curso?</label>
+            <input type="range"> 
+            <br> 
+            <br>
+            <label>Descreva como está sendo sua experiência até o momento</label><br>
+            <textarea name="" id="" cols="74" rows="3" placeholder="Descreva aqui..."></textarea> 
+            <br>
+            <br>
+        </div>
+
+        <div id="terms">
+            <label>Escolha uma senha:</label>
+            <input id="password" type="password" placeholder="Digite sua senha."><br><br>
+            <label>Confirme sua senha:</label>
+            <input id="password" type="password" placeholder="Confirme sua senha."><br><br>
+            <label>Confirme:</label><br>
+            <input type="checkbox"><label>Você concorda com os termos?</label><br>
+            <input type="checkbox"><label>Você gostaria de receber e-mails com notificações?</label><br><br>
+            <input type="submit">
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+            
+
+
+            
+            
