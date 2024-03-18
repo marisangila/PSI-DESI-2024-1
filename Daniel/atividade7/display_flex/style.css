@@ -1,0 +1,49 @@
+*{
+    border: None;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: rgb(157, 183, 255);
+    padding: 20px;
+    margin: 20px;
+}
+
+div{
+    background-color: white;
+    height: 100px;
+    margin: 20px;
+    min-width: 100px;
+    padding: 20px;
+}
+
+#flex{
+    display: flex;
+}
+
+#flex_direction{
+    display: flex;
+    flex-direction: column;
+}
+
+#flex_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flex_flow{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#justify_content{
+    display: flex;
+    justify-content: center;
+}
+
+#align_items{
+    display: flex;
+    align-items: center;
+}
