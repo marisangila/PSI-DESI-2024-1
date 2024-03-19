@@ -20,6 +20,9 @@ header{
     padding: 25px;
     border-bottom: 2px solid #282a2c;
 }
+.bi-list{
+    font-size: 17px;
+}
 #search-more{
     display: flex;
     justify-content: left;
@@ -68,24 +71,29 @@ header{
     border-radius: 5px;
     padding: 8px 8px;
 }
-#direita{
+#right-header{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 650px;
     border-collapse: collapse;
 }
-#esquerda{
+#left-header{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 12px;
 }
-#esquerda > *{
+#left-header > *{
     margin: 15px;
 } 
 #create-new > i{
     margin-left: 5px;
+}
+.hovers:hover{
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.5s;
 }
 aside{
     margin: auto;
@@ -154,7 +162,6 @@ section{
     margin-left: 90px;
     margin-right: 50px;
 }
-
 #heading-content{
     display: flex;
     justify-content: space-between;
@@ -239,12 +246,15 @@ section{
     margin-top: 30px;
 }
 .banners{
-    background-color: #1b1f27;
+    /* background-color: #1b1f27; */
     border-radius: 3px;
     margin: 15px 0px 15px 0;
     padding: 15px;
     border: 1px solid #333536;
     font-size: 13px;
+}
+.central-banner{
+    background-color: #1b1f27;
 }
 .banners > button{
     font-size: 13px;
@@ -343,12 +353,11 @@ section{
 }
 #right-aside-h-banner{
     background-color: #000000;
-    padding: 15px;
     font-size: 13px;
     width: 370px;
+    height: auto;
     margin-top: 20px;
     border-radius: 5px;
-    border: 1px solid #333536;
 }
 #right-aside-h-banner > p{
     color: #5d6264;
@@ -357,4 +366,43 @@ section{
     width: 100%;
     margin-top: 15px;
     padding: 5px;
+}
+#last-changes{
+    width: 370px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #1b1f27;
+    height: auto;
+}
+#last-changes h2{
+    font-size: 1.1em;
+}
+li > a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20px 0px;
+}
+#ul li{
+    list-style: disc outside none;
+}
+.lt_link{
+    color: #fff;
+}
+.li-box p{
+    color: #7a7a7a;
+    margin: 1.2em 0;
+}
+#ul{
+    border: 1px solid #7a7a7a;
+}
+#ul{
+    margin-bottom: 1.2em;
+    padding-left: 1em;
+}
+#view-changelog{
+    color: #7a7a7a;
+    margin-left: 1.2em;
+}
+#view-changelog:hover{
+    color: #3937da;
 }

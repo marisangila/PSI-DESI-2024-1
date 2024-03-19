@@ -1,0 +1,187 @@
+@font-face {
+    font-family: 'Mark';
+    src: url('fontes/Mark\ W05\ Medium.ttf')format('truetype');
+    font-style: normal;
+    font-size: 100%;
+}
+
+.background {
+    background-image: url(imagens/annie_lux.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 20% 45%;
+    position: fixed;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+
+.logo {
+    height: 40px;
+    width: 141px;
+    margin-top: 72px;
+    margin-left: 72px;
+    background-image: url(imagens/logo_completa.png);
+}
+
+.container_principal {
+    background-color: rgb(255, 255, 255);
+    height: 555px;
+    width: 625px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.titulo {
+    font-family: 'Mark';
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding-top: 70px;
+    letter-spacing: -0.05em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.input {
+    font-family: 'Mark';
+    color: rgb(31, 31, 31);
+    font-size: 15px;
+    font-weight: 600;
+    background: rgb(248, 248, 248);
+    border: none;
+    padding: 15px;
+    letter-spacing: 0.08em;
+    width: 500px;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+::placeholder {
+    font-family: 'Mark';
+    font-size: 10px;
+}
+
+.box {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.facebook {
+    width: 125px;
+    height: 32px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(24, 119, 242);
+    background-image: url(imagens/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.facebook:hover {
+    background-color: rgb(31, 101, 192);
+}
+
+.google {
+    width: 125px;
+    height: 32px;
+    margin-right: 5px;
+    border: solid 1px rgb(223, 221, 221);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(imagens/google.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.google:hover {
+    background-color: rgba(54, 54, 54, 0.144);
+
+}
+
+.apple {
+    width: 125px;
+    height: 32px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(44, 43, 43);
+    background-image: url(imagens/apple.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.apple:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.xbox {
+    width: 125px;
+    height: 32px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(16, 124, 16);
+    background-image: url(imagens/xbox.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.xbox:hover {
+    background-color: rgb(32, 104, 32);
+}
+
+.container_checkbox input {
+    display: none;
+}
+
+.container_checkbox:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+    display: inline-block;
+    vertical-align: -8px;
+    margin: 10px 8px 4px 50px;
+
+}
+
+.label_checkbox_text {
+    font-family: 'Mark';
+    font-size: 15px;
+    color: rgb(31, 31, 31);
+}
+
+.button_login {
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    border: solid 2px rgb(223, 221, 221);
+    background-color: #ffffff00;
+    margin-left: 280px;
+    margin-top: 20px;
+}
+
+.button_login:hover {
+    background-color: #26a9bb;
+    border: solid 2px #333030;
+}
+
+.container_button {
+    font-family: 'Mark';
+    font-size: 16px;
+}
+
+.link_esqueceu_senha {
+    margin-left: 216px;
+}
+
+.link_criar_conta {
+    margin-left: 276px;
+}
