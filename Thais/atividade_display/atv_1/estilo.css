@@ -1,0 +1,13 @@
+.menu_b{
+    background-color: black;
+    color: white;
+    display: block;
+    border: 1px solid;
+    padding: 15px;
+}
+
+.text{
+    margin: 10px;
+    color: whitesmoke;
+    text-decoration: none;
+}

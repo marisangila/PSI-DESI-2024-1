@@ -1,0 +1,11 @@
+div{
+    background-color: #1a1a1a;
+}
+
+li{
+    color: aliceblue;
+    list-style-type: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+}

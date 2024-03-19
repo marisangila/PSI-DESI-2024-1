@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav#menu{
+    background-color: rgb(61, 61, 61);
+    padding: 20px;
+}
+
+a.menu_link{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin-inline: 10px;
+}

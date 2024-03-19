@@ -1,0 +1,36 @@
+.div_principal{
+    width: 100%;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display: block;
+}
+.cabecalho{
+    background-color: #DC143C;
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.menu_navegacao{
+    position: relative;
+    top: 100px;
+    margin: auto;
+    text-align: center;
+}
+.aba_lateral{
+    background-color: #7FFF00;
+    display: inline-block;
+    width: 15%;
+    height: 920px;
+    text-align: center;
+}
+.conteudo_principal{
+    background-color: #6495ED;
+    width: 85%;
+    height: 920px;
+    display: inline-block;
+    float: right;
+}
+p{
+    padding: 20px;
+}
