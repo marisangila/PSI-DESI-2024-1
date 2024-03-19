@@ -1,0 +1,55 @@
+
+.bloco-maior{
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    background-color: #7a7a7a;
+}
+.bloco-pequeno{
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+}
+.bloco-pequeno-preto{
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+}
+#a1{
+    position: relative;
+    left: 75px;
+    top: 75px;
+}
+#a3{
+    position: relative;
+    left: 150px;
+}
+#a4{
+    position: relative;
+    left: 150px; 
+    top: 150px;
+}
+#a5{
+    position: relative;
+    top: 150px;
+}
+#b1{
+    position: absolute;
+    right: 0;
+    top:0;
+}
+#b2{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+#b3{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+#b4{
+    position: absolute;
+    right: 0;
+    bottom:0;
+}
