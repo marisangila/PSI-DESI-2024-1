@@ -1,0 +1,47 @@
+div{
+    margin: 15px;
+    background-color: white;
+}
+
+.cubo{
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.div_1{
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.div_2{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+}
+
+.div_3{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div_4{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.div_5{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+}
+
+.div_6{
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: stretch;
+    height: 200px;
+}

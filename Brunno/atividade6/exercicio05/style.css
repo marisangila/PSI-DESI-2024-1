@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0;
+    position: relative;
+    font-size: 18px;
+}
+body{
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    height: 5em;
+    background-color: red;
+    display: block;
+    position: relative;
+    text-align: center;
+    line-height: 80px;
+}
+
+.esquerdo{
+    display: inline-block;
+    height: 90em;
+    width: 15%;
+    background-color: lightgreen;
+    position: fixed;
+    left: 0;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.direitoTop{
+    display: inline-block;
+    height:60%;
+    right: 0;
+    width: 15%;
+    background-color: lightcoral;
+    display: block;
+    position: fixed;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.direitoBottom{
+    display: inline-block;
+    height: 40%;
+    right: 0;
+    width: 15%;
+    bottom: 5em;
+    background-color: lightcoral;
+    display: block;
+    position: fixed;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+main{
+    background-color: skyblue;
+    padding-top: 20px;
+    padding-left: 20px;
+    height: 90em;
+    width: 68%;
+    display: block;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: fixed;
+}
+
+footer{
+    height: 5em;
+    width: 100%;
+    line-height: 80px;
+    bottom: 0;
+    text-align: center;
+    display: block;
+    position: fixed;
+    background-color: yellow;
+}

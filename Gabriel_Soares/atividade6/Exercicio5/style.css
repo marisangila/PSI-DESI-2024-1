@@ -1,0 +1,62 @@
+*{margin: 0px; padding: 0px;}
+
+.main{
+    display: inline;
+}
+
+.menu{
+    height: 60px;
+    width: 100%;
+    background-color: crimson;
+    position: fixed;
+    padding-top: 40px;
+}
+
+.pag{
+    display: inline-block;
+}
+
+.menu_lateral_esq{
+    background-color: springgreen;
+    padding: 20px 0px 0px 20px;
+    width: 220px;
+    position: fixed;
+    top: 100px;
+    height: 1000px;
+}
+
+.conteudo{
+    background-color: cornflowerblue;
+    position: static;
+    left: 240px;
+    top: 100px;
+    width: 1400px;
+    height: 1000px;
+    padding: 120px 0px 0px 270px;
+}
+
+.menu_direito_sup{
+    background-color: indianred;
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    height: 600px;
+    width: 250px;
+}
+
+.menu_direito_inf{
+    background-color: indianred;
+    position: fixed;
+    top: 500px;
+    right: 0px;
+    height: 600px;
+    width: 250px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+}

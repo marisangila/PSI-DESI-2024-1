@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.quadrado_cinza{
+    height: 350px;
+    width: 350px;
+    background-color: #808080;
+    border: 3px solid black;
+    position: relative;
+    display: block;
+}
+.quadrado_laranja{
+    height: 200px;
+    width: 200px;
+    background-color: #FFA500;
+    position: absolute;
+}
+
+.quadrado_laranja01{
+    top: 75px;
+    left: 75px;
+}
+
+.quadrado_laranja03{
+    right: 0px;
+}
+
+.quadrado_laranja04{
+    right: 0px;
+    bottom: 0px;
+}
+
+.quadrado_laranja05{
+    bottom: 0px;
+}
+
+.quadrado_preto{
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+
+.quadrado_preto01{
+    right: 0px;
+}
+.quadrado_preto02{
+    right: 0px;
+    bottom: 0px;
+}

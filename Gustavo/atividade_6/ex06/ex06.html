@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ex06</title>
+</head>
+<body>
+    <h1 class="text_header">Neste Exercício você deve usar CSS para formatar o formulário: </h1>
+    <div class="container">
+        <h2 class="high_text">Preencher as informações: </h2>
+        <div class="pessoal">
+            <h2>Pessoal:</h2>
+            <p>Insira uma Imagem: <input type="file"> </p>
+            <p>Nome: <input type="text" placeholder="Insira seu nome" maxlength="250"></p>
+            <p>Sobrenome: <input type="text" placeholder="Insira seu sobrenome" maxlength="250"></p>
+            <p>Data de nascimento: <input type="date"></p>
+            <p>Idade: <input type="text"></p>
+
+            <label>E-mail:</label>
+            <input type="text" placeholder="Insira seu e-mail" required>
+        </div>
+
+        <div class="escolaridade">
+            <h2>Escolaridade:</h2>
+            <p>Formação Acadêmica: </p>
+            <input type="radio" name="Options"> Ensino Fundamental <br>
+            <input type="radio" name="Options"> Ensino Médio <br>
+            <input type="radio" name="Options"> Ensino Superior <br>
+            <input type="radio" name="Options"> Pós Graduação - Especialização <br>
+            <input type="radio" name="Options"> Pós Graduação - Mestrado <br>
+            <input type="radio" name="Options"> Pós Graduação - Doutorado <br><br>
+            <label>Nome do curso:</label>  
+            <select name="#" id="#" disabled>
+                <option value="course1">Desenvolvimento e Análise de Sistemas</option>
+                <option value="course2">Ciência da Computação</option>
+                <option value="course3">Engenharia de Software</option>
+                <option value="course4">Cyber Securite</option>
+            </select>
+            <p>Situação:</p>
+            <input type="radio" name="Situation" disabled> Em andamento <br>
+            <input type="radio" name="Situation" disabled> Completo <br>
+            <input type="radio" name="Situation" disabled> Incompleto
+    
+            <p>Qual sua satisfação em reslação ao curso? <input type="range"></p>
+    
+            <p>Descreva como está sendo sua experiência até o momento: </p>
+            <textarea id="story" name="story" rows="5" cols="49" placeholder="Descreva aqui...">
+            </textarea>
+        </div> 
+
+        <div class="cadastro">
+            <h2>Cadastro</h2>
+            <p>Escolha uma senha: <input type="text"></p>
+            <p>Confirme sua senha: <input type="text"></p>
+
+            <p>Confirme:</p>
+            <input type="checkbox">Você concorda com os termos? <br>
+            <input type="checkbox">Você gostaria de receber e-mails com notificações? <br><br>
+        </div>
+        
+        <button class="botao">Salvar</button>
+    </div>
+</body>
+</html>

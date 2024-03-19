@@ -1,0 +1,15 @@
+header{
+    background-color: #333333;
+    width: 50%;
+    height: 20px;
+    padding: 5px;
+    position: relative;
+    top: 20px;
+    left: 25%;
+}
+a{
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color:aliceblue
+}

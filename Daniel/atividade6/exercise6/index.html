@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercise 6</title>
+</head>
+<body >
+    <header>
+    </header>
+    <main>
+        <form>
+            <h2>Preencha as Seguintes Informações</h2>
+            <div id="line">
+                <div></div>
+            </div>
+            <section id="inputs_container" >           
+                <div class="input_section">
+                    <label for="input_imagem" id="input_imagem_label">Insira sua imagem aqui</label>  
+                    <input type="file" id="input_imagem" >
+                </div>
+                
+                <br><br>
+                
+                <div class="input_section"> 
+                    <input type="text" id="input_nome" placeholder="Insira seu nome" maxlength="250" class="inputs">
+                    <input type="text" id="input_nome" placeholder="Insira seu sobrenome" maxlength="250" class="inputs">    
+                </div>
+          
+                <div class="input_section"> 
+                    <input type="date" id="input_date" class="inputs">
+                    <input type="number" id="input_age" placeholder="Insira aqui sua idade" class="inputs">
+                </div>
+
+                <div class="input_section"> 
+                    <input type="text" id="input_date" placeholder="Insira aqui seu email" class="inputs" >
+                </div>
+
+                <fieldset>
+                    <legend>Formação acadêmica</legend>
+                    <div class="formacao_academica_choice">
+                        <input type="radio" name="formacao" id="ensiono_fundamental" >
+                        <label for="ensiono_fundamental" >Ensino Fundamental</label>
+                    </div>
+                    <div class="formacao_academica_choice">
+                        <input type="radio" name="formacao" id="ensiono_medio">
+                        <label for="ensiono_medio">Ensino Médio</label>
+                    </div>
+                    <div class="formacao_academica_choice">
+                        <input type="radio" name="formacao" id="superior">
+                        <label for="superior">Ensino Superior</label>
+                    </div>
+                    <div class="formacao_academica_choice">
+                        <input type="radio" name="formacao" id="especializacao">
+                        <label for="especializacao">Pós Graduação - Especialização</label>
+                    </div>
+                    <div class="formacao_academica_choice">
+                        <input type="radio" name="formacao" id="mestrado">
+                        <label for="mestrado">Pós Graduação - Mestrado</label>
+                    </div>
+                    <div class="formacao_academica_choice">
+                        <input type="radio" name="formacao" id="doutorado">
+                        <label for="doutorado">Pós Graduação - Doutorado</label>
+                    </div>
+                </fieldset>
+                
+                <div class="input_section">
+                    <label for="curso">Nome do Curso</label>
+                    <select name="curso" disabled id="curso_select" >
+                        <option value="">Analise e Desenvolvimento de Sistemas</option>
+                        <option value="">Design de Animação Digital</option>
+                        <option value="">Medicina</option>
+                        <option value="">Engenharia da Computação</option>
+                        <option value="">Nutrição</option>
+                        <option value="">Direito</option>
+                    </select>
+                </div>
+
+                <h3 for=""></h3>
+                <fieldset>
+                    <legend>Situação</legend>
+                    <div class="situacao_radio" >
+                        <input type="radio" name="radio" id="andamento"><label for="andamento">Em andamento</label>
+                    </div>
+                    <div class="situacao_radio">
+                        <input type="radio" name="radio" id="completo"><label for="completo">Completo</label>
+                    </div>
+                    <div class="situacao_radio">
+                        <input type="radio" name="radio" id="incompleto"><label for="incompleto">Incompleto</label>
+                    </div>    
+                </fieldset>
+                
+                               
+                <div class="input_section">
+                    <label for="satisfacao">Qual sua satisfação em relação a este curso?</label><input name="satisfacao" type="range">
+                </div>
+
+                <div class="input_section">
+                    <label for="experiencia">Descreva como está sendo sua experiência até o momento:</label>
+                </div>
+
+                <div class="input_section">
+                    <textarea name="experiencia" cols="30" rows="10" placeholder="Descreva aqui..." class="inputs"></textarea>
+                </div>
+                
+                <div class="input_section">
+                    <input type="text" id="input_date" placeholder="Digite sua senha" class="inputs">
+                    <input type="text" id="input_date" placeholder="Confirme sua senha" class="inputs">
+                </div>
+               
+                <div class="confirme_radios" >
+                    <h3>Confirme</h3>
+                    <div><input type="checkbox" id="termo"><label for="termo">Você concorda com os termos?</label> </div>
+                    <div><input type="checkbox" id="emails"><label for="emails">Você gostaria de receber emails com frequência?</label></div>
+                </div>
+
+                <div id="bnt_submit_container">
+                    <input type="submit" value="Salvar">
+                </div>
+            </section>
+        </form>
+        
+    
+    </main>
+</body>
+</html>

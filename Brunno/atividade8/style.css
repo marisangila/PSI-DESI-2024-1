@@ -1,0 +1,245 @@
+.bodyClaro{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #8eaebb;
+    color: black;
+}
+.bodyEscuro{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #00022b;
+    color: white;
+}
+.confirmaGrande{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #262b15;
+    border-color: white;
+    color: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+}
+.confirmaPequeno{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #262b15;
+    border-color: white;
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+.confirmaComFundo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #0b385f;
+    border-color: white;
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+.confirmaSemFundo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border-color: gray;
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+.cancelaGrande{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #800000;
+    border-color: white;
+    color: white;
+    height: 100px;
+    width: 200px;
+    border-radius: 20px;
+}
+.cancelaPequeno{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #800000;
+    border-color: white;
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+.cancelaComFundo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #0b385f;
+    border-color: white;
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+.cancelaSemFundo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: transparent;
+    border-color: gray;
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+}
+input[type=checkbox]{
+    position: relative;
+    cursor: pointer;
+}
+input[type=checkbox]:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: 2px solid #4fa5d8;
+    border-radius: 3px;
+    background-color: white
+}
+input[type=checkbox]:checked:after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+    left: 6px;
+}
+.container {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.campoCheckbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.campoCheckbox:hover {
+    background-color: #ccc;
+}
+.campoCheckbox:checked {
+    background-color: #010e54;
+}
+h2{
+    font-weight: normal;
+}
+input[type=text]{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #daeaf7;
+}
+input[type=email]{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #daeaf7;
+}
+input[type=password]{
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #daeaf7;
+}
+.slidecontainer {
+    width: 500px;
+}
+  
+.slider {
+    width: 250px;
+    height: 10px;
+    background: #daeaf7;
+    outline: none;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #0b385f;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #0b385f;
+    cursor: pointer;
+}
+.labelClaro{
+    color: white;
+}
+.labelEscuro{
+    color: black;
+}
+.paragrafoClaro{
+    color: white;
+}
+.paragrafoEscuro{
+    color: black;
+}
+.cabecalhoClaro{
+    color: white;
+}
+.cabecalhoEscuro{
+    color: black;
+}
+a{
+    color: #386994;
+    cursor: crosshair;
+}
+a:hover{
+    color: #1b7cd1;
+}
+a:active{
+    color: #0b3d68;
+}
+.divClaro{
+    background-color: #8eaebb;
+}
+.divEscuro{
+    background-color: #00022b;
+}

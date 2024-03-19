@@ -1,0 +1,22 @@
+body, html{
+    height: 100%;
+}
+
+.left{
+    position: fixed;
+    background-color: rgb(37, 37, 37);
+    width: 20%;
+    height: 100%;
+}
+
+.text{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.right{
+    position: absolute;
+    left: 180px;
+}

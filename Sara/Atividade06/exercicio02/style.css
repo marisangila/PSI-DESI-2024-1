@@ -1,0 +1,23 @@
+.div_principal{
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.barra_lateral_direita{
+    background-color: #333333;
+    width: 20%;
+    height: 1080px;
+    display: inline-block;
+    margin-top: 0px;
+}
+.opcao_menu_lateral{
+    margin:12px;
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+    padding: 10px;
+}
+.div_esquerda{
+    display: inline-block;
+    padding: 14px;
+}

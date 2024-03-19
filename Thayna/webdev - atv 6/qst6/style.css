@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    background-color: #6b6b6b;
+}
+form{
+    filter: drop-shadow(-6px 7px 13px #000000);
+    padding: 143px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #ebebeb;
+    width: 750px;
+}
+h1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+label{
+    font-size: 18px;
+}
+form ::placeholder{
+    color: white;
+    opacity: 0.6 ;
+    padding: 5px;
+}
+
+input[type="file"] {
+    display: none;
+}
+label.file {
+    margin: none;
+    padding: 10px;
+    width: 200px;
+    background-color: #333;
+    color: #FFF;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="text"]{
+    width: 500px;
+    border-radius: 4px;
+    padding: 10px 55px 5px 0px;
+}
+input[type="email"]{
+    width: 500px;
+    border-radius: 4px;
+    padding: 10px 55px 5px 0px;
+}
+label.nome{
+    color: black;
+}
+input[type='password']{
+    width: 500px;
+    border-radius: 4px;
+    padding: 10px 55px 5px 0px;
+}
+
+input[type='date']{
+    background-color: #333;
+    color: #FFF;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+}
+
+input[type='button']{
+    color: #FFF;
+    background-color: #333;
+    width: 500px;
+    height: 35px;
+}
+input{
+    padding-left: 5px;
+    border: none;
+}
+select{
+    width: 500px;
+    height: 35px;
+}
+.option{
+    margin-left: 5px;
+}
+textarea{
+    width: 500px;
+}

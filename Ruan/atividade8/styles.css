@@ -1,0 +1,118 @@
+/* PALETA DE CORES:*/
+.bg_color_green{background-color: rgb(140, 236, 140);}
+.bg_color_red{background-color: rgb(230, 111, 95);}
+.bg_color_blue{background-color: rgb(124, 124, 240);}
+.bg_color_black{background-color: rgb(0, 0, 0);}
+.bg_color_white{background-color: rgb(255, 255, 255);}
+.bg_color_orange{background-color: rgb(243, 183, 71);}
+.bg_color_pink{background-color: rgb(252, 128, 252);}
+.bg_color_yellow{background-color: rgb(252, 249, 107);}
+
+/* ==================================================================== */
+/* BOTÃO SEM FORMATAÇÃO */
+.button{
+    height: 22px;
+    width: 80px;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.big_button{
+    height: 40px;
+    width: 90px;
+}
+.small_button{
+    height: 18px;
+    width: 70px;
+}
+.border_button{
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.without_bg_button{
+    height: 22px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.bolder_without_bg_button{
+    height: 22px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+/* ==================================================================== */
+/* BOTÃO DE CONFIRMAÇÃO */
+.big_confirm_button{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(140, 236, 140);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.small_confirm_button{
+    height: 18px;
+    width: 70px;
+    background-color: rgb(140, 236, 140);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.with_bg_confirm_button{
+    height: 22px;
+    width: 80px;
+    background-color: rgb(140, 236, 140);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.without_bg_confirm_button{
+    height: 22px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid rgb(140, 236, 140);
+    border-radius: 3px;
+    font-weight: bolder;
+    color: rgb(140, 236, 140);
+}
+
+/* ==================================================================== */
+/* BOTÃO DE CANCELAMENTO */
+.big_cancel_button{
+    height: 40px;
+    width: 90px;
+    background-color: rgb(226, 66, 45);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.small_cancel_button{
+    height: 18px;
+    width: 70px;
+    background-color: rgb(226, 66, 45);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.with_bg_cancel_button{
+    height: 22px;
+    width: 80px;
+    background-color: rgb(226, 66, 45);
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 3px;
+}
+.without_bg_cancel_button{
+    height: 22px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid rgb(226, 66, 45);
+    border-radius: 3px;
+    font-weight: bolder;
+    color: rgb(226, 66, 45);
+}
+
+/* ==================================================================== */
+/* CAMPO DE CHECKBOX */
+input[type="checkbox"]{
+    cursor: pointer;
+    border-color: red;
+}
