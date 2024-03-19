@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background{
+    background-image: url("imagens/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.background::before{
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+    position: fixed;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: " ";
+}
+
+.menu_superior{
+    display: block;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.main_content{
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: 80px 0px 0px 200px;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.main_form{
+    display: block;
+    position: relative;
+    margin: 100px 350px -10px;
+    width: 35%;
+    height: 90%;
+    background-color: rgba(240, 248, 255, 0.158);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+}
+
+.config_form{
+    margin: 5px 50px 10px;
+    padding: 20px;
+}
+
+.title{
+    margin: 220px;
+    font-size: 30px;
+}
+
+.input_dados{
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 20px;
+    border-style: none;
+}
