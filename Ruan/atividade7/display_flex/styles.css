@@ -1,0 +1,33 @@
+body, html{
+    margin: 0x;
+    height: 100%;
+}
+.containerAzul{
+    margin: 2%;
+    padding: 0.5%;
+    background-color: rgb(127, 198, 245);
+    width: 90%;
+    display: flex;
+}
+.divNumeros{
+    background-color: #ffffff;
+    margin: 2%;
+}
+.container1{
+
+}
+.container2{
+
+}
+.container3{
+    
+}
+.container4{
+
+}
+.container5{
+
+}
+.container6{
+    
+}
