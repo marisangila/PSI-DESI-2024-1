@@ -1,0 +1,60 @@
+.cinza{
+    display: block;
+    background-color: rgb(109, 108, 108);
+    height: 400px;
+    width: 400px;
+    left: 0;
+    border: 1px solid;
+}
+
+.laranja{
+    display: block;
+    background-color: rgb(236, 130, 30);
+    border: 1px solid;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.preto_estatico{
+    background-color: black;
+    position: fixed;
+    height: 200px;
+    width: 200px;
+    border: 1px solid;
+}
+
+.posicao_1{
+    left:25%;
+    top: 25%;
+}
+
+.posicao_2{
+    left: 0;
+    top: 0;
+}
+
+.posicao_3{
+    left: 50%;
+    bottom: 0%;
+}
+
+.posicao_4{
+    left: 50%;
+    top: 50%;
+}
+
+.posicao_5{
+    right: 0%;
+    top: 50%;
+}
+
+.posicao_estatico1{
+    right: 0;
+    top: 0;
+}
+
+.posicao_estatico2{
+    right: 0;
+    bottom: 0;
+}
