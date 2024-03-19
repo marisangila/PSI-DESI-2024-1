@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+}
+
+nav{
+    height: 100px;
+    background-color: #dc143c;
+    margin: 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+
+.font_control{
+    font-size: 0;
+}
+
+aside{
+    display: inline-block;
+    height: 831px;
+    width: 20%;
+    background-color: #7FFF00;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+main{
+    display: inline-block;
+    height: 831px;
+    width: 80%;
+    background-color: #6495ED;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}

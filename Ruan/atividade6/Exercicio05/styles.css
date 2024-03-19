@@ -1,0 +1,55 @@
+body, html{
+    margin: 0px;
+    height: 100%;
+}
+p{
+    margin:0px;
+}
+.disposicaoSite{
+    display: block;
+}
+#navegacao{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(238, 43, 43);
+}
+#rodape{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+}
+#meioDaPagina{
+    position: relative;
+    height: 79%;
+}
+.paginaMeio{
+    display: inline-block;
+    height: 100%;
+}
+#menuEsquerdo{
+    position: absolute;
+    width: 10%;
+    background-color: greenyellow;
+}
+#meuDireito{
+    position: relative;
+}
+#conteudoPrincipal{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    background-color: rgb(69, 69, 209);
+}
+.menuDir{
+    position: absolute;
+    left: 90%;
+    background-color: pink;
+    height: 50%;
+    right: 0px;
+}
+#superior{
+    top: 0px;
+}
+#inferior{
+    bottom: 0px;
+}

@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    height: 100px;
+    background-color: #dc143c;
+}
+
+.space_control {
+    font-size: 0px;
+}
+
+.menu_esquerdo {
+    display: inline-block;
+    height: 700px;
+    width: 15%;
+    background-color: #7FFF00;
+    font-size: 16px;
+}
+
+main {
+    display: inline-block;
+    height: 700px;
+    width: 70%;
+    background-color: #6495ED;
+    font-size: 16px;
+}
+
+.menus_direito{
+    float: right;
+    width: 15%;
+}
+
+.menu_direito_superior {
+    width: 100%;
+    height: 350px;
+    background-color: #FFC0CB;
+    font-size: 16px;
+}
+
+.menu_direito_inferior {
+    width: 100%;
+    height: 350px;
+    background-color: #FFC0CB;
+    font-size: 16px;
+}

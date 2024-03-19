@@ -1,0 +1,91 @@
+.cinza01 {
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    border: 3px solid black;
+}
+
+.laranja01 {
+    position: relative;
+    top: 120px;
+    left: 120px;
+    width: 250px;
+    height: 250px;
+    background: #FFA500;
+}
+
+.cinza02 {
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    border: 3px solid black;
+}
+
+.laranja02 {
+    width: 250px;
+    height: 250px;
+    background: #FFA500;
+}
+
+.cinza03 {
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    border: 3px solid black;
+}
+
+.laranja03 {
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 250px;
+    background: #FFA500;
+}
+
+.cinza04 {
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    border: 3px solid black;
+}
+
+.laranja04 {
+    margin-left: 250px;
+    margin-top: 250px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #FFA500;
+}
+
+.cinza05 {
+    width: 500px;
+    height: 500px;
+    background-color: #808080;
+    border: 3px solid black;
+}
+
+.laranja05 {
+    margin-top: 250px;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: #FFA500;
+}
+
+.quadrado01 {
+    position: fixed;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}
+
+.quadrado02 {
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+}

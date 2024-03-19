@@ -1,0 +1,34 @@
+.main{
+    display: block;
+}
+nav{
+    background-color: red;
+    text-align: center;
+    padding: 40px;
+    height: 10%;
+}
+
+.baixo{
+    position: relative;
+    height: 90%;
+}
+
+.lateral{
+    position: absolute;
+    display: inline-block;
+    background-color: greenyellow;
+    width: 25%;
+    padding: 10px;
+    height: 800px;
+    left: 0px;
+}
+
+.principal{
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(64, 160, 205);
+    width: 75%;
+    padding: 10px;
+    height: 800px;
+    right: 0;
+}

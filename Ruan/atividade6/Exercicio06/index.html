@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="titulo" class="divFormulario">
+        <div id="alinhaTitulo">
+            <h1 class="removeMargem">Neste Exercício você deve criar uma página HTML com os seguintes componentes:</h1>
+        </div>
+    </div>
+    <div id="formulario" class="divFormulario">
+
+            <p class="removeMargem negrito" id="tituloFormulario">Preencher as informações:</p>
+
+        <div id="inputFormulario">
+
+            <div id="informacoesPessoais" class="divisoesFormulario">
+                <p>
+                    <h3 for="text" class="espacoInputs">Informações Pessoais:</h3>
+                </p>
+                <p>
+                    <label for="text">Insira uma Imagem:</label>
+                    <input type="file" class="inputs">
+                </p>
+
+                <p>
+                    <label for="text">Nome:</label>
+                    <input type="text" maxlength="250" placeholder="Insira seu nome" class="inputs">
+                </p>
+
+                <p>
+                    <label for="text">Sobrenome:</label>
+                    <input type="text" maxlength="250" placeholder="Insira seu sobrenome" class="inputs">
+                </p>
+
+                <p>
+                    <label for="text">Data de nascimento:</label>
+                    <input type="date" class="inputs">
+                </p>
+
+                <p>
+                    <label for="text">Idade:</label>
+                    <input type="text" maxlength="3" size="5" class="inputs">
+                </p>
+
+                <p>
+                    <label for="text">E-mail:</label>
+                    <input type="email" maxlength="250" placeholder="Insira seu e-mail" required="required" class="inputs">
+                </p>
+            </div>
+
+            <div id="escolaridade" class="divisoesFormulario">
+                <p>
+                    <h3 for="text" class="espacoInputs">Formação Acadêmica:</h3> <br>
+                    <input type="radio" name="formacao"> <label for="text">Ensino Fundamental</label> <br>
+                    <input type="radio" name="formacao"> <label for="text">Ensino Médio</label> <br>
+                    <input type="radio" name="formacao"> <label for="text">Ensino Superior</label> <br>
+                    <input type="radio" name="formacao"> <label for="text">Ensino Pós Graduação - Especialização</label>
+                    <br>
+                    <input type="radio" name="formacao"> <label for="text">Ensino Pós Graduação - Mestrado</label> <br>
+                    <input type="radio" name="formacao"> <label for="text">Ensino Pós Graduação - Doutorado</label> <br>
+                </p>
+
+                <p>
+                    <label for="text">Nome do Curso:</label>
+                    <select name="" id="" disabled>
+                        <option value="">Desenvolvimento e Análise de Sistemas</option>
+                        <option value="">Sistemas de Informação</option>
+                        <option value="">Engenharia de Software</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="text">Situação:</label> <br>
+                    <input type="radio" name="situacao" disabled> <label for="text" >Em Andamento</label> <br>
+                    <input type="radio" name="situacao" disabled> <label for="text">Completo</label> <br>
+                    <input type="radio" name="situacao" disabled> <label for="text">Incompleto</label> <br>
+                </p>
+
+                <p>
+                    <label for="text">Qual sua satisfação em relação ao curso?</label>
+                    <input type="range">
+                </p>
+
+                <p>
+                    <label for="text">Descreva como está sendo sua experiência até o momento:</label> <br>
+                    <textarea name="" id="descricao" cols="30" rows="10" placeholder="Descreva aqui..."></textarea>
+                </p>
+            </div>
+
+            <div id="confirmacoes" class="divisoesFormulario">
+                <p>
+                    <label for="text" class="espacoInputs">Escolha uma senha:</label>
+                    <input type="text" maxlength="16" placeholder="Digite sua senha">
+                </p>
+
+                <p>
+                    <label for="text" class="espacoInputs">Confirme sua senha:</label>
+                    <input type="text" maxlength="16" placeholder="Digite sua senha">
+                </p>
+
+                <p>
+                    <label for="text">Confirme:</label> <br>
+                    <input type="checkbox"> <label for="text">Você concorda com os termos?</label> <br>
+                    <input type="checkbox"> <label for="text">Você gostaria de receber e-mails com notificações?</label>
+                    <br>
+                </p>
+            </div>
+
+        </div>
+
+        <p>
+            <a href=""><input type="button" value="Salvar" id="salvar" class="negrito"></a>
+        </p>
+    </div>
+</body>
+
+</html>

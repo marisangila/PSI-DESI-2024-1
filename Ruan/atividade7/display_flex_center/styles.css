@@ -1,0 +1,10 @@
+body, html{
+    margin: 0px;
+    height: 100%;
+    background-color: rgb(41, 76, 172);
+}
+#centralizaDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

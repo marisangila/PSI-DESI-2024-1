@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade 6</title>
+</head>
+
+<body>
+    <form>
+        <h1>Preencher as informações:</h1>
+        <label class="file">Escolher arquivo</label></br></br><input type="file" class="imagem"><br></br>
+        <label class="nome">Nome: </label></br></br><input type="text" placeholder="Insira seu nome" maxlength="250"><br></br>
+        <label class="sobrenome">Sobrenome:</label></br></br><input type="text" placeholder="Insira seu sobrenome" maxlength="250"><br></br>
+        <label>Data de nascimento:</label></br></br><input type="date" class="data"><br></br>
+        <label class="idade">Idade:</label></br></br><input type="text"><br></br>
+        <label class="email">E-mail:</label></br></br><input type="email" placeholder="Insira seu e-mail" required><br></br>
+        <label>Formação Acadêmica:</label><br></br>
+        <input type="radio" name="opcao_formacao" disabled><label class="option">Ensino Fundamental</label><br>
+        <input type="radio" name="opcao_formacao" disabled><label class="option">Ensino Médio</label><br>
+        <input type="radio" name="opcao_formacao" disabled><label class="option">Pós Graduação - Especialização</label><br>
+        <input type="radio" name="opcao_formacao" disabled><label class="option">Pós Graduação - Mestrado</label><br>
+        <input type="radio" name="opcao_formacao" disabled><label class="option">Pós Graduação - Doutorado</label><br></br>
+        <label>Nome do curso:</label></br></br>
+        <select disabled>Desenvolvimento de Sistemas <option>Desenvolvimento e Análise de Sistemas</option>
+        </select><br></br>
+        <label>Situação</label><br></br>
+        <input type="radio" disabled name="opcao_situacao"><label class="option">Em Andamento</label><br>
+        <input type="radio" disabled name="opcao_situacao"><label class="option">Completo</label><br>
+        <input type="radio" disabled name="opcao_situacao"><label class="option">Incompleto</label><br></br>
+        <label>Qual sua satisfação em relação ao curso?</label></br></br><input type="range" class="range"><br></br>
+        <label>Descreva como está sendo sua experiência até o momento:</label><br></br>
+        <textarea class="descricao" rows="5" cols="50">Descreva aqui...</textarea><br></br>
+        <label>Escolha sua senha: </label></br></br><input type="password" placeholder="Digite sua senha"><br></br>
+        <label>Confirme sua senha: </label></br></br><input type="password" placeholder="Digite sua senha"><br></br>
+        <label>Confirme: </label><br></br>
+        <input type="checkbox" class="checkbox"><label class="option"> Você concorda com os termos?</label><br>
+        <input type="checkbox" class="checkbox"><label class="option"> Você gostaria de receber e-mails com nontificações?</label><br></br>
+        <input type="button" value="Salvar">
+    </form>
+</body>
+
+</html>

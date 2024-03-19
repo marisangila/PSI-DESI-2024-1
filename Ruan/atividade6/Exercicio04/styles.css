@@ -1,0 +1,40 @@
+body, html{
+    margin: 0px;
+    display: block;
+    height: 100%;
+}
+.div{
+    width: 100%;
+}
+p{
+    margin: 0px;
+}
+#navegacao{
+    height: 10%;
+    background-color: rgb(255, 59, 59);
+}
+#divConteudo{
+    position: relative;
+    height: 90%;
+}
+.divCentralizar{
+    position: absolute;
+}
+#menuLateral{
+    width: 15%;
+    left: 0%;
+    height: 100%;
+    background-color: greenyellow;
+}
+#conteudo{
+    width: 85%;
+    right: 0%;
+    height: 100%;
+    background-color: rgb(57, 57, 255);
+}
+.centralizaTexto{
+    text-align: center;
+}
+#centralizaRodape{
+    padding-top: 35px;
+}

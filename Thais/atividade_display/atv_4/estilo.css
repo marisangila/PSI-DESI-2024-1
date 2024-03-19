@@ -1,0 +1,51 @@
+.navegacao{
+    background-color: rgb(219, 65, 65);
+    color: black;
+    display: block;
+    height: 100px;
+    width: 800px;
+    border: 1px solid transparent;
+}
+
+.menu_lateral{
+    background-color: greenyellow;
+    color: black;
+    display: block;
+    height: 800px;
+    width: 150px;
+    border: 1px solid transparent; 
+}
+
+.conteudo_principal{
+    background-color: rgb(48, 139, 212);
+    color: black;
+    display: block;
+    height: 800px;
+    width: 650px;
+    border: 1px solid transparent;
+    position: relative;
+    left: 18.7%;
+    bottom: 802px;
+}
+
+.text_1{
+    position: relative;
+    left: 40%;
+    top: 40%;
+}
+
+.text_2{
+   position: relative;
+   left: 20%;
+   top: 15px;   
+}
+
+.text_3{
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+
+.main{
+    display: inline-block;
+}
