@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header{
+    background-color: red;
+    height: 15%;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+footer{
+    background-color: yellow;
+    width: 100%;
+    height: 15%;
+}
+section{
+    background-color: #5d90ff;
+    height: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+aside{
+    height: 100%;
+    width: 10%;
+}
+#left-bar{
+    background-color: chartreuse;
+    position: absolute;
+    left: 0;
+}
+#right-bar{
+    background-color: rgb(255, 117, 135);
+    position: relative;
+    left: 90%;
+    bottom: 100%;
+}
+#right-top,#right-bottom{
+    height: 50%;
+}
+
+

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    display: inline;
+}
+
+.text_link{
+    text-decoration: none;
+    padding-left: 50px;
+    font-size: 20px;
+    color: rgb(231, 228, 225);
+}
+
+.background{
+    background-color: rgb(53, 50, 50);
+    padding: 10px;
+    margin: 50px;
+}

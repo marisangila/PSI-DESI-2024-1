@@ -1,0 +1,58 @@
+main{
+    display: block;
+}
+
+nav{
+    height: 94px;
+    width: 100%;
+    background-color: red;
+}
+
+.meio{
+    position: relative;
+    height: 800px;
+}
+
+.esquerdo{
+    position: absolute;
+    display: inline-block;
+    background-color: greenyellow;
+    width: 33%;
+    height: 100%;
+}
+
+.principal{
+    position: absolute;
+    display: inline-block;
+    background-color: blue;
+    width: 33%;
+    height: 100%;
+    left: 33%;
+}
+
+.superior{
+    position: absolute;
+    display: inline-block;
+    background-color: pink;
+    width: 34%;
+    height: 50%;
+    right: 0px;
+}
+
+.inferior{
+    position: absolute;
+    display: inline-block;
+    background-color: orange;
+    width: 34%;
+    height: 50%;
+    right: 0px;
+    bottom: 0px;
+}
+
+.rodape{
+    position: absolute;
+    display: inline-block;
+    background-color: yellow;
+    width: 99%;
+    height: 10%;
+}

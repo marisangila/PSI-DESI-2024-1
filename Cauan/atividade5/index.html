@@ -12,13 +12,13 @@
 <body>
     <main>
         <header>
-            <div id="esquerda">
-                <i class="header-buttons bi bi-list header-boxes" id="hamburger"></i>
+            <div id="left-header">
+                <i class="header-buttons bi bi-list header-boxes"></i>
                 <i class="bi bi-github github"></i>
                 <button id="dashboard">Dashboard</button>
             </div>
 
-            <div id="direita">
+            <div id="right-header">
                 <div id="search-more" class="header-boxes">
                     <i class="bi bi-search header-buttons"></i>
                     <input type="text" placeholder="Type / to search">
@@ -43,7 +43,7 @@
                             <h1>Home</h1>
                             <div id="right-heading">
                                 <a href="#" class="link">Send feedback</a>
-                                <div class="filter-content">
+                                <div class="filter-content hovers">
                                     <i class="bi bi-filter"></i>
                                     <button>Filter</button>
                                     <span id="eight">8</span>
@@ -70,7 +70,7 @@
                                 <span>Start writing code</span>
                             </div>
                             <div class="big-box">
-                                <div class="big banners">
+                                <div class="big banners central-banner">
                                     <div class="heading-banner">
                                         <h3>Start a new repository for ...</h3>
                                         <p>A repository contains all of your project's files, revision history, and
@@ -78,7 +78,7 @@
                                     </div>
                                     <div id="input-repository-name">
                                         <h3>Repository name *</h3>
-                                        <input class="search" type="text" placeholder="name your new repository...">
+                                        <input class="search hovers" type="text" placeholder="name your new repository...">
                                     </div>
                                     <div id="options-box">
                                         <div id="public">
@@ -92,9 +92,9 @@
                                         </div>
                                         <p>You choose who can see and commit to this repository</p>
                                     </div>
-                                    <button class="start-buttons">Create a new repository</button>
+                                    <button class="start-buttons hovers">Create a new repository</button>
                                 </div>
-                                <div class="big banners" id="readme">
+                                <div class="big banners central-banner" id="readme">
                                     <div class="heading-banner">
                                         <h3>Start a new repository for ...</h3>
                                         <p>Share information about yourself by creating a profile README, which appears
@@ -103,7 +103,7 @@
                                     <div id="redme-list">
                                         <div id="head-list">
                                             <span>person/README.md</span>
-                                            <button class="start-buttons">Create</button>
+                                            <button class="start-buttons hovers">Create</button>
                                         </div>
                                         <div id="list">
                                             <ol type="1">
@@ -129,7 +129,7 @@
                             <span>Use tools of the trade</span>
                         </div>
                         <div class="small-box">
-                            <div class="small banners">
+                            <div class="small banners central-banner">
                                 <h3>Write code in your web browser</h3>
                                 <div class="sb-content">
                                     <i class="bi bi-github github"></i>
@@ -138,7 +138,7 @@
                                         and commit changes.</p>
                                 </div>
                             </div>
-                            <div class="small banners">
+                            <div class="small banners central-banner">
                                 <h3>Get AI-based coding suggestions</h3>
                                 <div class="sb-content">
                                     <i class="bi bi-github github"></i>
@@ -150,7 +150,7 @@
                     </div>
                 </div>
                 <div id="aside-in-section">
-                    <div id="right-aside-h-banner">
+                    <div id="right-aside-h-banner" class="banners">
                         <div id="first-head-aside-banner">
                             <i class="bi bi-github github"></i>
                             <div id="words">
@@ -160,7 +160,39 @@
                         </div>
                         <p>What does it mean for a technology to go mainstream? Discover how AI is changing the
                             developer experience.</p>
-                        <button class="filter-content">Learn more</button>
+                        <button class="filter-content hovers">Learn more</button>
+                    </div>
+                    <div id="last-changes" class="banners">
+                        <h2>Latest changes</h2>
+                        <div id="lt-list">
+                            <ul id="ul">
+                                <li>
+                                    <div class="li-box">
+                                        <p>Yesterday</p>
+                                        <a href="#" class="link lt_link">GitHub Copilot Chat General Availability in JetBrains IDE</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-box">
+                                        <p>Yesterday</p>
+                                        <a href="#" class="link lt_link">GitHub Actions; All Actions will run on Node20 instead of Node16 by default</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-box">
+                                        <p>2 days ago</p>
+                                        <a href="#" class="link lt_link">GitHub Support Portal redesign: Toward a more personalized future</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="li-box">
+                                        <p>2 days ago</p>
+                                        <a href="#" class="link lt_link">Group Configuration Options for Dependabot Security Updates – Public</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a href="#" class="link lt_link" id="view-changelog">View changelog →</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -169,9 +201,9 @@
         <aside>
             <div id="top-repositories">
                 <h5>Top Repositories</h5>
-                <button class="start-buttons"><i class="bi bi-book"></i> New</button>
+                <button class="start-buttons hovers"><i class="bi bi-book"></i> New</button>
             </div>
-            <input class="search" type="text" placeholder="Find a repository...">
+            <input class="search hovers" type="text" placeholder="Find a repository...">
             <div id="repositories">
                 <div class="repository">
                     <i class="bi bi-person-circle perfil"></i>

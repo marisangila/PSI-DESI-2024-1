@@ -1,0 +1,57 @@
+section{
+    height: 250px;
+    position: relative;
+}
+
+.gray_cube{
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(216, 216, 216);
+    border: 1px solid black;
+}
+
+.orange_cube{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background-color: orange;
+}
+
+.black_cube{
+    width: 140px;
+    height: 140px;
+    background-color: black;
+    position: absolute;
+}
+
+.black_cube_bottom{
+    right: 0;
+    bottom: 0;
+}
+
+.black_cube_top{
+    right: 0;
+    top: 0;
+}
+
+#orange_1{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#orange_3{
+    right: 0;
+}
+
+#orange_4{
+    bottom: 0;
+    right: 0;
+}
+
+#orange_5{
+    bottom: 0;
+    left: 0;
+}
