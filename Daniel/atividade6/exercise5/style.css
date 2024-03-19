@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: 0px;
+}
+
+body{
+    width: 99vw;
+    height: 100vh;
+}
+
+header{
+    background-color: rgba(255, 76, 76, 0.911);
+    text-align: center;
+    height: 150px;
+    width: 100%;
+}
+
+aside{
+    background-color: rgb(58, 197, 58);
+    width: 10%;
+    height: 900px;
+    display: inline-block;
+}
+
+main{
+    background-color: rgb(111, 121, 255);
+    width: 79.52%;
+    height: 900px;
+    display: inline-block;
+}
+
+footer{
+    background-color: yellow;
+    height: 100px;
+}
+
+/* .section_right_menu{
+    display: absolute;
+    height: 50%;   
+} */
