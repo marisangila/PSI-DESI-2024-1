@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 800px;
+}
+.bg-blue{
+    background-color: rgb(86, 86, 255);
+}
+.bg-light{
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+}
+.group{
+    margin: 10px;
+}
+#column{
+    display: flex;
+    flex-direction: column;
+}
+#inline{
+    display: flex;
+    flex-direction: row;
+}
+#wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+#flow{
+    display: flex;
+    flex-flow: column-reverse;
+}
+#j-content{
+    display: flex;
+    justify-content: center;
+}
+#a-items{
+    display: flex;
+    align-items: start;
+}
+#a-items div{
+    height: 200px;
+}
