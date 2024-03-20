@@ -7,58 +7,44 @@
         <title>Formulário com Bordas</title>
     </head>
 <body>
+    <header class="header" style="background-color: black;"></header>
+
     <div class="bordered">
         <div>
-            <div>
-                <input type="button" value="BOTÃO" class="but big-but noColor">
-                <input type="button" value="BOTÃO" class="but big-but">
-                <input type="button" value="BOTÃO" class="but medium-but noColor">  
-                <input type="button" value="BOTÃO" class="but medium-but">    
-                <input type="button" value="BOTÃO" class="but small-but noColor">  
-            </div>
-            <div>
-                <input type="button" value="BOTÃO" class="but small-but">
-                <input type="checkbox" name="" id="" class="checkbox checkbox-big pointer">
-                <input type="checkbox" name="" id="" class="checkbox pointer">
-                <input type="checkbox" name="" id="" class="checkbox checkbox-small pointer">
-            </div>
+            <input type="button" value="SUBMIT" class="but big-but">
+            <input type="button" value="CANCEL" class="but big-but but-cancel">
+            <input type="button" value="SUBMIT" class="but medium-but but-submit">  
+            <input type="button" value="CANCEL" class="but medium-but">    
+            <input type="button" value="SUBMIT" class="but small-but but-submit">
+            <input type="button" value="CANCEL" class="but small-but but-cancel">  
         </div>
-        
-        <!-- <h2>Formulário de Exemplo</h2>
-        <form>
-            <div>
-                <label for="check">Checkbox:</label>
-                <input type="checkbox" id="check" name="check">
-            </div>
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha">
-            </div>
-            <div>
-                <input type="range" id="range" name="range">
-            </div>
-            <div>
-                <p>Isso é um parágrafo de exemplo.</p>
-            </div>
-            <div>
-                <h3>Isso é um cabeçalho de exemplo.</h3>
-            </div>
-            <div>
-                <button type="submit" class="bordered">Confirmar</button>
-                <button type="button" class="bordered">Cancelar</button>
-            </div>
-            <div>
-                <a href="#">Isso é um link de exemplo</a>
-            </div>
-        </form> -->
+        <div>
+            <input type="checkbox" class="checkbox checkbox-big pointer">
+            <input type="checkbox" class="checkbox pointer">
+            <input type="checkbox" class="checkbox checkbox-small pointer">
+        </div>
+        <div style="width: 30%;" >
+            <input type="text" class="input input-username" placeholder="Insert your name here">
+            <input type="text" class="input input-email" placeholder="Insert your email here">
+            <input type="password" class="input input-password" placeholder="Insert your password here">
+            <input type="range" class="input input-range" placeholder="Insert your name here">
+        </div>
+        <div>
+            <label for="" class="font-dark label-small" >LABEL</label>
+            <label for="" class="font-light label" >LABEL</label>
+            <label for="" class="font-dark-opacity label-big">LABEL</label>
+            <label for="" class="font-purple label label-extra-big" >LABEL</label>
+            <label for="" class="font-pink-dark label-small" >LABEL</label>
+            <label for="" class="font-pink-red label" >LABEL</label>
+            <label for="" class="font-orange label-big" >LABEL</label>
+            <label for="" class="font-orange-yellow label-extra-big" >LABEL</label>
+            <label for="" class="font-yellow label-small">LABEL</label>
+        </div>
+        <div>
+            <p class="font-dark-opacity paragraph-small">Paragraph</p>
+            <p class="font-dark-opacity paragraph">Paragraph</p>
+            <p class="font-dark-opacity paragraph-big">Paragraph</p>
+        </div>
     </div>
 </body>
 </html>
