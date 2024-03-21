@@ -1,0 +1,231 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* H2 - Formulário */
+
+  .container h2 {
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  /* Buttons with background */
+  
+  .button {
+    text-align: center;
+  }
+  
+  .button button {
+    width: 240px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    /*Aplicar borda e efeitos globais*/
+    border: 2px solid black;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .btn-confirm-large {
+    /* color: white;
+    background-color: green;
+    width: 200px; */
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #289bb8;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 15px;
+    letter-spacing: 2px;
+  }
+
+  .btn-confirm-large:hover {
+    background: #289bb8;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* .btn-confirm-small {
+    color: white;
+    background-color: green;
+    width: 100px;
+  }
+   */
+  .btn-cancel-large {
+    /* color: white;
+    background-color: red;
+    width: 50px;
+    width: 200px; */
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #289bb8;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 15px;
+    letter-spacing: 2px
+  }
+
+  .btn-cancel-large:hover {
+    background: #289bb8;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  /* .btn-cancel-small {
+    color: white;
+    background-color: red;
+    width: 100px;
+  } */
+  
+  /* Buttons without background */
+  
+  .btn-confirm-large-sem-fundo {
+    background-color: transparent;
+    width: 50px;
+    width: 200px;
+  }
+  
+  .btn-confirm-small-sem-fundo {
+    background-color: transparent;
+    width: 100px;
+  }
+  
+  .btn-cancel-large-sem-fundo {
+    background-color: transparent;
+    width: 50px;
+    width: 200px;
+  }
+  
+  .btn-cancel-small-sem-fundo {
+    background-color: transparent;
+    width: 100px;
+  }
+
+  /* Range */
+
+  .range input{
+    width: 100%;
+  }
+  
+  /* Campo checkbox */
+  
+  .checkbox input {
+    cursor: pointer;
+  }
+  
+  /* Link */
+  
+  .link a {
+    text-decoration: none;
+    color: #286B98;
+}
+  
+  /* Campo de texto para nome, email, senha */
+
+  .container {  
+    color: white;
+    margin: 50px auto;
+    height: 758px;
+    width: 600px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    padding: 50px;
+    position: relative;
+    background: #152437
+  }
+  
+  .form-cor-escura input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+  }
+  
+  /* Label - fonte de cor clara */
+  
+  .form-cor-clara label {
+    color: rgb(235, 227, 186);
+  }
+  
+  /* Label - fonte de cor escura */
+  
+  .form-cor-escura label {
+    /* color: rgb(15, 17, 151); */
+    color: white;
+    opacity: 0.5;
+  }
+  
+  /* Parágrafo - fonte de cor clara*/
+  
+  .paragrafo-cor-clara {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Parágrafo - fonte de cor escura*/
+  
+  .paragrafo-cor-escura {
+    /* color: rgb(15, 17, 151); */
+    color: white;
+    text-align: center;
+  }
+  
+  /* Cabeçalho - fonte de cor clara */
+  
+  .cabecalho-cor-clara {
+      color: rgb(235, 227, 186);
+  }
+  
+  /* Cabeçalho - fonte de cor escura */
+  
+  .cabecalho-cor-escura {
+      /* color: rgb(15, 17, 151); */
+      color: white;
+      text-align: center;
+  }
+  
+  /* Body - fundo de cor clara */
+  
+  body {
+    background: linear-gradient(#30142b, #2772a1); 
+  }
+  
+  /* Body - fundo de cor escura */
+  
+  body {
+      /* background-color: rgb(168, 3, 113); */
+  }
+  
+  /* DIV - fundo de cor clara */
+  
+  div {
+      /* background-color: rgb(121, 183, 241);
+      padding: 1px; */
+  }
+  
+  /* DIV - fundo de cor escura */
+  
+  div {
+      /* background-color: rgb(59, 149, 223);
+      padding: 1px; */
+  }
+
+  /* Range */
+

@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background_menu{
+    background-color: rgb(53, 50, 50); 
+    width: 200px;
+    height: 1200px;
+    position: fixed;
+}
+.menu{
+    display: block;
+    padding-block: 20px;
+}
+
+.main{
+    position: relative;
+    width: 800px;
+    left: 250px;
+    top: 80px;
+}
+
+.text_link{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    color: rgb(231, 228, 225);
+}
+
+.text_main{
+    margin-bottom: 20px;
+}
