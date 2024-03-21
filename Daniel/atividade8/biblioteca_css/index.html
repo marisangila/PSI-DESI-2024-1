@@ -6,46 +6,132 @@
         <link rel="stylesheet" href="style.css">
         <title>Formulário com Bordas</title>
     </head>
-<body>
-    <header class="header" style="background-color: black;"></header>
+<body class="body-light" >
+    <header class="header header-dark">
+        <nav style="width:40%; display: flex;">
+            <ul style=" display: flex;" >
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-light" >Home</a></li>
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-light" >About</a></li>
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-light" >Cart</a></li>
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-light" >Perfil</a></li>
+            </ul>
+        </nav>
+        <div style="width: 60%;" >
 
-    <div class="bordered">
-        <div>
-            <input type="button" value="SUBMIT" class="but big-but">
-            <input type="button" value="CANCEL" class="but big-but but-cancel">
-            <input type="button" value="SUBMIT" class="but medium-but but-submit">  
-            <input type="button" value="CANCEL" class="but medium-but">    
-            <input type="button" value="SUBMIT" class="but small-but but-submit">
-            <input type="button" value="CANCEL" class="but small-but but-cancel">  
         </div>
-        <div>
-            <input type="checkbox" class="checkbox checkbox-big pointer">
-            <input type="checkbox" class="checkbox pointer">
-            <input type="checkbox" class="checkbox checkbox-small pointer">
+    </header>
+
+    <header class="header" style="margin-top: 75px; background-color: white;" >
+        <nav style="width:40%; display: flex;">
+            <ul style=" display: flex;" >
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-dark" >Home</a></li>
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-dark" >About</a></li>
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-dark" >Cart</a></li>
+                <li style="width: 80px; height: 20px;" ><a href="" class="link font-dark" >Perfil</a></li>
+            </ul>
+        </nav>
+        <div style="width: 60%;" >
+
         </div>
-        <div style="width: 30%;" >
-            <input type="text" class="input input-username" placeholder="Insert your name here">
-            <input type="text" class="input input-email" placeholder="Insert your email here">
-            <input type="password" class="input input-password" placeholder="Insert your password here">
-            <input type="range" class="input input-range" placeholder="Insert your name here">
-        </div>
-        <div>
-            <label for="" class="font-dark label-small" >LABEL</label>
-            <label for="" class="font-light label" >LABEL</label>
-            <label for="" class="font-dark-opacity label-big">LABEL</label>
-            <label for="" class="font-purple label label-extra-big" >LABEL</label>
-            <label for="" class="font-pink-dark label-small" >LABEL</label>
-            <label for="" class="font-pink-red label" >LABEL</label>
-            <label for="" class="font-orange label-big" >LABEL</label>
-            <label for="" class="font-orange-yellow label-extra-big" >LABEL</label>
-            <label for="" class="font-yellow label-small">LABEL</label>
-        </div>
-        <div>
-            <p class="font-dark-opacity paragraph-small">Paragraph</p>
-            <p class="font-dark-opacity paragraph">Paragraph</p>
-            <p class="font-dark-opacity paragraph-big">Paragraph</p>
-        </div>
-    </div>
+    </header>
+
+    <main style="display: flex; justify-content: center; height: 100vh; align-items: end;">
+        <form class="card-dark" >
+            <div>
+                <input type="button" value="SUBMIT" class="but big-but">
+                <input type="button" value="CANCEL" class="but big-but but-cancel">
+                <input type="button" value="SUBMIT" class="but medium-but but-submit">  
+                <input type="button" value="CANCEL" class="but medium-but">    
+                <input type="button" value="SUBMIT" class="but small-but but-submit">
+                <input type="button" value="CANCEL" class="but small-but but-cancel">  
+            </div>
+            <div>
+                <input type="checkbox" class="checkbox checkbox-big pointer">
+                <input type="checkbox" class="checkbox pointer">
+                <input type="checkbox" class="checkbox checkbox-small pointer">
+            </div>
+            <div style="width: 40%;" >
+                <input type="text" class="input input-username" placeholder="Insert your name here">
+                <input type="text" class="input input-email" placeholder="Insert your email here">
+                <input type="password" class="input input-password" placeholder="Insert your password here">
+                <input type="range" class="input input-range" placeholder="Insert your name here">
+            </div>
+            <div>
+                <label for="" class="font-dark label-small" >LABEL</label>
+                <label for="" class="font-light label" >LABEL</label>
+                <label for="" class="font-dark-opacity label-big">LABEL</label>
+                <label for="" class="font-purple label label-extra-big" >LABEL</label>
+                <label for="" class="font-pink-dark label-small" >LABEL</label>
+                <label for="" class="font-pink-red label" >LABEL</label>
+                <label for="" class="font-orange label-big" >LABEL</label>
+                <label for="" class="font-orange-yellow label-extra-big" >LABEL</label>
+                <label for="" class="font-yellow label-small">LABEL</label>
+            </div>
+            <div>
+                <p class="font-dark-opacity paragraph-small">Paragraph</p>
+                <p class="font-dark-opacity paragraph">Paragraph</p>
+                <p class="font-dark-opacity paragraph-big">Paragraph</p>
+            </div>
+            <select class="select-dark select-big">
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+                <option value="">option 4</option>
+                <option value="">option 5</option>
+            </select>
+        </form>
+        <form class="card-light" >
+            <div>
+                <input type="button" value="SUBMIT" class="but big-but">
+                <input type="button" value="CANCEL" class="but big-but but-cancel">
+                <input type="button" value="SUBMIT" class="but medium-but but-submit">  
+                <input type="button" value="CANCEL" class="but medium-but">    
+                <input type="button" value="SUBMIT" class="but small-but but-submit">
+                <input type="button" value="CANCEL" class="but small-but but-cancel">  
+            </div>
+            <div>
+                <input type="checkbox" class="checkbox checkbox-big pointer">
+                <input type="checkbox" class="checkbox pointer">
+                <input type="checkbox" class="checkbox checkbox-small pointer">
+            </div>
+            <div style="width: 40%;" >
+                <input type="text" class="input input-username" placeholder="Insert your name here">
+                <input type="text" class="input input-email" placeholder="Insert your email here">
+                <input type="password" class="input input-password" placeholder="Insert your password here">
+                <input type="range" class="input input-range" placeholder="Insert your name here">
+            </div>
+            <div>
+                <label for="" class="font-dark label-small" >LABEL</label>
+                <label for="" class="font-light label" >LABEL</label>
+                <label for="" class="font-dark-opacity label-big">LABEL</label>
+                <label for="" class="font-purple label label-extra-big" >LABEL</label>
+                <label for="" class="font-pink-dark label-small" >LABEL</label>
+                <label for="" class="font-pink-red label" >LABEL</label>
+                <label for="" class="font-orange label-big" >LABEL</label>
+                <label for="" class="font-orange-yellow label-extra-big" >LABEL</label>
+                <label for="" class="font-yellow label-small">LABEL</label>
+            </div>
+            <div>
+                <p class="font-dark-opacity paragraph-small">Paragraph</p>
+                <p class="font-dark-opacity paragraph">Paragraph</p>
+                <p class="font-dark-opacity paragraph-big">Paragraph</p>
+            </div>
+            <select class="select-light select-small" >
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+                <option value="">option 4</option>
+                <option value="">option 5</option>
+            </select>
+            <select class="select-light select-big" >
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 3</option>
+                <option value="">option 4</option>
+                <option value="">option 5</option>
+            </select>
+        </form>
+    </main>
 </body>
 </html>
 
