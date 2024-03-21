@@ -278,11 +278,23 @@ input[type=checkbox]:checked:after{
 .paragraph_darktheme{
     color: black;
 }
-.header_lighttheme{
-    color: white;
-}
 .header_darktheme{
+    color: white;
+    background-color: #0f135a;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    height: 50px;
+}
+.header_lighttheme{
     color: black;
+    background-color: #77a8bb;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    height: 50px;
 }
 .stylized_link{
     color: #386994;
@@ -295,7 +307,7 @@ input[type=checkbox]:checked:after{
     color: #0b3d68;
 }
 .div_lighttheme{
-    background-color: #91c0d3;
+    background-color: #8acde7;
     width: fit-content;
     color: black;
     padding: 20px;
