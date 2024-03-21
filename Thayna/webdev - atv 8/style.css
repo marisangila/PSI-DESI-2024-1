@@ -1,0 +1,211 @@
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Body claro */
+body{
+    background-color: #f7f7f7;
+}
+
+   /* Body com cor escura */
+
+/* body{
+    background-color: #1A1A1A;
+} */
+
+/* Botão */
+.btn{
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+}
+
+/* Botão Grande */
+.btn-grande{
+    width: 350px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px;
+    border: none;
+}
+
+/* Botão pequeno */
+.btn-pqn{
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Botão de confirmação grande */
+.btn-confirmacao-grnd{
+    border-radius: 8px;
+    background-color: #5BD46F;
+    color: white;
+}
+
+/* Botão de confirmação pequeno */
+.btn-confirmacao-pqn{
+    border-radius: 3px;
+    background-color: #5BD46F;
+    color: white;
+}
+
+/* Botão de confirmação com cor */
+.btn-confirmacao-ccor{
+    background-color: #5BD46F;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* Botão de confirmação sem cor */
+.btn-confirmacao-scor{
+    background: none;
+    color: #5BD46F;
+}
+
+/* Botão de cancelamento grande */
+.btn-cancelamento-grnd{
+    color: white;
+    background-color: #dd6565;
+    border-radius: 8px;
+}
+
+/* Botão de cancelamento pequeno */
+.btn-cancelamento-pqn{
+    color: white;
+    border-radius: 3px;
+    background-color: #dd6565;
+}
+
+/* Botão de cancelamento com cor */
+.btn-cancelamento-ccor{
+    background-color: #dd6565;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* Botão de cancelamento sem cor */
+.btn-cancelamento-scor{
+    background: none;
+    color: #dd6565;    
+}
+
+/* Checkbox */
+.check{
+    cursor: pointer;
+}
+
+/* Modificando o placeholder dos inputs */
+.input::placeholder{
+    color: white;
+    padding: 5px;
+}
+
+/* Input tipo text */
+.input-text{
+    width: 350px;
+    height: 35px;
+    font-family: Arial;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: rgb(100, 100, 100);
+    border-style: solid;
+}
+
+/* Fonte das labels dos inputs*/
+.label-input{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Range */
+input[type=range]{
+    cursor: pointer;
+    background-color: #a5a5a5;
+    border-radius: 10px;
+    padding: 3px;
+    appearance: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #dadada;
+    border-radius: 50%;
+    border: none;
+  }
+  
+/* Select */
+  .select{
+    color: rgb(158, 158, 158);
+    width: 350px;
+    height: 35px;
+    font-family: Arial;
+    background-color: transparent;
+    border-color:  rgb(158, 158, 158);
+    border-style: solid;
+    border-radius: 5px;
+}
+
+/* Fonte escura */
+.font-escura{
+    color: #424242;
+    font-size: 15px;
+}
+
+/* Fonte clara */
+.font-clara{
+    color: azure;
+    font-size: 15px;
+}
+
+/* Parágrafo escuro */
+.p-escura{
+    color: #424242;
+    font-size: 15pz;    
+}
+
+/* Paragrafo claro */
+.p-clara{
+    color:azure;
+    font-size: 15px
+}
+
+/* Cabeçalho cor clara */
+.cabecalho-cor-clara{
+    font-family: Arial, Helvetica, sans-serif;
+    color:azure;
+}
+
+/* Cabeçalho cor escura */
+.cabecalho-cor-escura{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #424242;
+}
+
+/* Link */
+a{
+    text-decoration: none;
+    color: #424242;
+}
+a:hover{
+    color: #405f47;
+}
+
+/* Div com cor clara */
+.div-cor-clara{
+    height: 850px;
+    width: 550px;
+    color: #414141;
+    background-color: #f7f7f7;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+/* Div com cor escura */
+.div-cor-escura{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    height: 850px;
+    width: 550px;
+    color: azure;
+    background-color: #1a1a1a;
+}

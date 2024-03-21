@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.retangle{
+    position: relative;
+    height: 400px;
+}
+
+/* Personalização dos quadrados internos e externos: */
+
+.background_style{
+    background-color: rgb(105, 97, 97); 
+    border: solid 4px black;
+    width: 400px;
+    height: 400px; 
+    margin: 10px 10px 10px 10px;
+}
+
+.square_style{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(39, 15, 22);
+    position: relative;
+}
+
+/* Quadrados externos: */
+
+.square_top{
+    top: -50%;
+    left: 200%;
+}
+
+.square_bottom{
+    top: 0%;
+    left: 200%;
+}
+
+.square_bottom_two{
+    top: -50%;
+    left: 200%;
+}
+
+.square_bottom_bottom{
+    top: 0%;
+    left: 200%;   
+}
+
+/* Quadrados internos: */
+
+.square_center{
+    left: 25%;
+    top: 25%;
+}
+
+.square_top_left{
+    left: 0%;
+    top: 0%;
+}
+
+.square_top_right{
+    top: 0%;
+    left: 50%;
+}
+
+.square_bottom_right{
+    top: 50%;
+    left: 50%;
+}
+
+.square_bottom_left{
+    top: 50%;
+}
+

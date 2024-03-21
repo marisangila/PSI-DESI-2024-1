@@ -1,0 +1,49 @@
+#container{
+    display: flex;
+    background-color: dodgerblue;
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    gap: 20px;
+    margin-top: 1%;
+}
+
+.quadrado_padrao{
+    display: flex;
+    background-color: white;
+    width: 5%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.r2{
+    height: 200px;
+    flex-direction: column;
+}
+
+.q2{
+    width: 100%;
+}
+
+.r3{
+    height: 200px;
+    flex-wrap: wrap;
+}
+
+.r4{
+    flex-flow: column-reverse;
+}
+
+.q4{
+    width: 100%;
+}
+
+.r5{
+    justify-content: center;
+}
+
+.q6{
+    height: 200px;
+    align-items: start;
+}

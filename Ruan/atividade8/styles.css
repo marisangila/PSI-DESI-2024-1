@@ -1,0 +1,328 @@
+/* PALETA DE CORES - FUNDO */
+.bg_color_green{background-color: rgb(140, 236, 140);}
+.bg_color_red{background-color: rgb(230, 111, 95);}
+.bg_color_blue{background-color: rgb(100, 100, 255);}
+.bg_color_black{background-color: rgb(0, 0, 0);}
+.bg_color_white{background-color: rgb(255, 255, 255);}
+.bg_color_orange{background-color: rgb(243, 183, 71);}
+.bg_color_pink{background-color: rgb(252, 128, 252);}
+.bg_color_yellow{background-color: rgb(252, 249, 107);}
+.bg_color_bisque{background-color: bisque;}
+
+/* ==================================================================== */
+/* CORES DE FONTES */
+.color_white{color: #ffffff;}
+.color_black{color: black;}
+.color_red{color: red;}
+.color_green{color: green;}
+
+/* ==================================================================== */
+/* BOTÃO SEM FORMATAÇÃO */ 
+.button{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.big_button{
+    height: 60px;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px;
+}
+.small_button{
+    height: 24px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 4px;
+}
+.border_button{
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 10px;
+}
+.without_bg_button{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.bolder_without_bg_button{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+/* ==================================================================== */
+/* BOTÃO DE CONFIRMAÇÃO */
+.big_confirm_button{
+    height: 60px;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(140, 236, 140);
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.small_confirm_button{
+    height: 24px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(140, 236, 140);
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.with_bg_confirm_button{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(140, 236, 140);
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.without_bg_confirm_button{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(140, 236, 140);
+    border-radius: 10px;
+    font-weight: bolder;
+    color: rgb(140, 236, 140);
+}
+
+/* ==================================================================== */
+/* BOTÃO DE CANCELAMENTO */
+.big_cancel_button{
+    height: 60px;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(226, 66, 45);
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.small_cancel_button{
+    height: 24px;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(226, 66, 45);
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.with_bg_cancel_button{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(226, 66, 45);
+    border: none;
+    box-shadow: 1px 1px 4px;
+    border-radius: 10px;
+}
+.without_bg_cancel_button{
+    height: 40px;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    border: 2px solid rgb(226, 66, 45);
+    border-radius: 10px;
+    font-weight: bolder;
+    color: rgb(226, 66, 45);
+}
+
+/* ==================================================================== */
+/* CAMPO DE CHECKBOX */
+/* https://www.renesena.com.br/blog/criando-input-checkbox-personalizado/ */
+.primary_checkbox:not(:checked) {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.primary_checkbox:checked{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    content: url('image/x_checkbox.png');
+}
+
+/* ==================================================================== */
+/* CAMPO DE TEXTO */
+.primary_text_name{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 250px;
+}
+.secondary_text_name{
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 250px;
+}
+
+/* ==================================================================== */
+/* CAMPO DE E-MAIL */
+.primary_text_email{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 250px;
+    text-transform: lowercase;
+}
+.secondary_text_email{
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 250px;
+    text-transform: lowercase;
+}
+
+/* ==================================================================== */
+/* CAMPO DE SENHA */
+.primary_text_password{
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 250px;
+    font-weight: bolder;
+}
+.secondary_text_password{
+    border-radius: 50px;
+    border: 1px solid gray;
+    padding: 5px;
+    width: 250px;
+    font-weight: bolder;
+}
+
+/* ==================================================================== */
+/* CAMPO DE RANGE */
+.primary_range{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18em;
+    height: 0.2em;
+    position: relative;
+    left: 4em;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    accent-color: rgb(156, 156, 156);
+    outline: none;
+}
+
+/* ==================================================================== */
+/* CAMPO DE SELEÇÃO */
+.primary_select_field{
+    appearance: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* ==================================================================== */
+/* CAMPO DE LABEL */
+.primary_text_label{
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+    padding: 5px;
+}
+.secondary_text_label{
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: black;
+    padding: 5px;
+}
+
+/* ==================================================================== */
+/* CAMPO DE PARÁGRAFO */
+.primary_paragraph{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.secondary_paragraph{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ==================================================================== */
+/* CABEÇALHO */
+.primary_header{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+.secondary_header{
+    color: black;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+/* ==================================================================== */
+/* LINK */
+.primary_link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.primary_link:link:hover{
+    text-decoration:underline;
+}
+
+/* ==================================================================== */
+/* DIV */
+.div_bg_color_primary{
+    background-color: rgb(255, 247, 236);
+    padding: 50px;
+}
+.div_bg_color_secondary{
+    background-color: rgb(151, 39, 255);
+    padding: 50px;
+}
