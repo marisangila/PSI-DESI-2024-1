@@ -6,76 +6,84 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formulário com Bordas</title>
 </head>
-<body class="bodyClaro">
+<body class="body_lighttheme">
 <div class="bordered">
 	<h2>Formulário</h2>
 	<form>
         <div>
-            <button class="confirmaGrande" type="button">Confirmo</button>
+            <button class="btn_confirmation_big" type="button">Confirmo</button>
         </div>
         <div>
-            <button class="confirmaPequeno" type="button">Confirmo</button>
+            <button class="btn_confirmation_small" type="button">Confirmo</button>
         </div>
         <div>
-            <button class="confirmaComFundo" type="button">Confirmo</button>
+            <button class="btn_confirmation_with_bg" type="button">Confirmo</button>
         </div>
         <div>
-            <button class="confirmaSemFundo" type="button">Confirmo</button>
+            <button class="btn_confirmation_transparent_bg" type="button">Confirmo</button>
         </div>
         <div>
-            <button class="cancelaGrande" type="button">Cancelar</button>
+            <button class="btn_cancel_big" type="button">Cancela</button>
         </div>
         <div>
-            <button class="cancelaPequeno" type="button">Cancelar</button>
+            <button class="btn_cancel_small" type="button">Cancela</button>
         </div>
         <div>
-            <button class="cancelaComFundo" type="button">Cancelar</button>
+            <button class="btn_cancel_with_bg" type="button">Cancela</button>
         </div>
         <div>
-            <button class="cancelaSemFundo" type="button">Cancelar</button>
+            <button class="btn_cancel_transparent_bg" type="button">Cancela</button>
         </div>
     	<div>
-        	<label class="container">Checkbox:</label>
-        	<input class="campoCheckbox" type="checkbox" id="check" name="check">
+        	<label class="checkbox_container">Checkbox:</label>
+        	<input class="checkbox_input" type="checkbox" id="check" name="check">
     	</div>
     	<div>
             <label for="nome">Nome:</label>
-        	<input class="campoNome" type="text" id="nome" name="nome">
+        	<input class="text_input" type="text" id="nome" name="nome">
     	</div>
     	<div>
         	<label for="email">Email:</label>
-        	<input class="campoEmail" type="email" id="email" name="email">
+        	<input class="email_input" type="email" id="email" name="email">
     	</div>
     	<div>
         	<label for="senha">Senha:</label>
-        	<input class="campoSenha" type="password" id="senha" name="senha">
+        	<input class="password_input" type="password" id="senha" name="senha">
     	</div>
     	<div class="slidercontainer">
         	<input class="slider" type="range" id="range" name="range">
     	</div>
         <div>
-            <label class="labelClaro">Label Claro</label>
+            <label class="label_darktheme">Seleção</label>
+            <select class="custom_select" name="selecao" id="selecao">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
         </div>
         <div>
-            <label class="labelEscuro">Label Escuro</label>
+            <label class="label_lighttheme">Label Claro</label>
+        </div>
+        <div>
+            <label class="label_darktheme">Label Escuro</label>
         </div>
     	<div>
-        	<p class="paragrafoClaro">Isso é um parágrafo claro.</p>
+        	<p class="paragraph_lighttheme">Isso é um parágrafo claro.</p>
     	</div>
         <div>
-        	<p class="paragrafoEscuro">Isso é um parágrafo escuro.</p>
+        	<p class="paragraph_darktheme">Isso é um parágrafo escuro.</p>
     	</div>
     	<div>
-        	<h3 class="cabecalhoClaro">Isso é um cabeçalho claro.</h3>
+        	<header class="header_lighttheme"><h3>Isso é um cabeçalho claro.</h3></header>
     	</div>
         <div>
-        	<h3 class="cabecalhoEscuro">Isso é um cabeçalho escuro.</h3>
+        	<header class="header_darktheme"><h3>Isso é um cabeçalho escuro.</h3></header>
     	</div>
     	<div>
-        	<a class="linkEstilizado" href="#">Isso é um link.</a>
+        	<a class="stylized_link" href="#">Isso é um link.</a>
     	</div>
-        <div class="divClaro"></div>
-        <div class="divEscuro"></div>
+        <div class="div_lighttheme">Card Claro</div>
+        <div class="div_darktheme">Card Escuro</div>
 	</form>
 </div>
 

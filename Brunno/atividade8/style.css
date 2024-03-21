@@ -1,100 +1,151 @@
-.bodyClaro{
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+.body_lighttheme{
     font-family: 'Times New Roman', Times, serif;
     background-color: #8eaebb;
     color: black;
 }
-.bodyEscuro{
+.body_darktheme{
     font-family: 'Times New Roman', Times, serif;
     background-color: #00022b;
     color: white;
 }
-.confirmaGrande{
+.btn_confirmation_big{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: #262b15;
     border-color: white;
     color: white;
-    height: 100px;
-    width: 200px;
+    height: 30px;
+    width: 400px;
     border-radius: 20px;
 }
-.confirmaPequeno{
+.btn_confirmation_big:hover{
+    background-color: #1f240e;
+}
+.btn_confirmation_big:active{
+    background-color: #333a1b;
+}
+.btn_confirmation_small{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: #262b15;
     border-color: white;
     color: white;
-    height: 50px;
-    width: 80px;
+    height: 30px;
+    width: 100px;
     border-radius: 10px;
 }
-.confirmaComFundo{
+.btn_confirmation_small:hover{
+    background-color: #1f240e;
+}
+.btn_confirmation_small:active{
+    background-color: #333a1b;
+}
+.btn_confirmation_with_bg{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: #0b385f;
     border-color: white;
     color: white;
-    height: 50px;
-    width: 80px;
+    height: 30px;
+    width: 100px;
     border-radius: 10px;
 }
-.confirmaSemFundo{
+.btn_confirmation_with_bg:hover{
+    background-color: #092f50;
+}
+.btn_confirmation_with_bg:active{
+    background-color: #103f68;
+}
+.btn_confirmation_transparent_bg{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: transparent;
     border-color: gray;
     color: white;
-    height: 50px;
-    width: 80px;
+    height: 30px;
+    width: 100px;
     border-radius: 10px;
 }
-.cancelaGrande{
+.btn_confirmation_transparent_bg:hover{
+    opacity: 0.7;
+}
+.btn_confirmation_transparent_bg:active{
+    opacity: 0.9;
+}
+.btn_cancel_big{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 30px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: #800000;
     border-color: white;
     color: white;
-    height: 100px;
-    width: 200px;
+    height: 30px;
+    width: 400px;
     border-radius: 20px;
 }
-.cancelaPequeno{
+.btn_cancel_big:hover{
+    background-color: #640000;
+}
+.btn_cancel_big:active{
+    background-color: #aa0000;
+}
+.btn_cancel_small{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: #800000;
     border-color: white;
     color: white;
-    height: 50px;
-    width: 80px;
+    height: 30px;
+    width: 100px;
     border-radius: 10px;
 }
-.cancelaComFundo{
+.btn_cancel_small:hover{
+    background-color: #640000;
+}
+.btn_cancel_small:active{
+    background-color: #aa0000;
+}
+.btn_cancel_with_bg{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: #0b385f;
     border-color: white;
     color: white;
-    height: 50px;
-    width: 80px;
+    height: 30px;
+    width: 100px;
     border-radius: 10px;
 }
-.cancelaSemFundo{
+.btn_cancel_with_bg:hover{
+    background-color: #092f50;
+}
+.btn_cancel_with_bg:active{
+    background-color: #103f68;
+}
+.btn_cancel_transparent_bg{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: normal;
+    font-size: 20px;
     background-color: transparent;
     border-color: gray;
     color: white;
-    height: 50px;
-    width: 80px;
+    height: 30px;
+    width: 100px;
     border-radius: 10px;
+}
+.btn_cancel_transparent_bg:hover{
+    opacity: 0.7;
+}
+.btn_cancel_transparent_bg:active{
+    opacity: 0.9;
 }
 input[type=checkbox]{
     position: relative;
@@ -126,7 +177,7 @@ input[type=checkbox]:checked:after{
     top: 2px;
     left: 6px;
 }
-.container {
+.checkbox_container {
     font-family: 'Times New Roman', Times, serif;
     display: inline-block;
     position: relative;
@@ -138,14 +189,14 @@ input[type=checkbox]:checked:after{
     -ms-user-select: none;
     user-select: none;
 }
-.container input {
+.checkbox_container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
 }
-.campoCheckbox {
+.checkbox_input {
     position: absolute;
     top: 0;
     left: 0;
@@ -153,48 +204,55 @@ input[type=checkbox]:checked:after{
     width: 25px;
     background-color: #eee;
 }
-.campoCheckbox:hover {
+.checkbox_input:hover {
     background-color: #ccc;
 }
-.campoCheckbox:checked {
+.checkbox_input:checked {
     background-color: #010e54;
 }
-h2{
-    font-weight: normal;
-}
-input[type=text]{
+.text_input{
     padding-left: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #daeaf7;
 }
-input[type=email]{
+.email_input{
     padding-left: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #daeaf7;
 }
-input[type=password]{
+.password_input{
     padding-left: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     background-color: #daeaf7;
 }
+.custom_select {
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100px;
+    background-color: #daeaf7;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 .slidecontainer {
     width: 500px;
 }
-  
 .slider {
     width: 250px;
     height: 10px;
     background: #daeaf7;
     outline: none;
 }
-  
 .slider:hover {
     opacity: 1;
 }
-  
 .slider::-webkit-slider-thumb {
     appearance: none;
     width: 20px;
@@ -202,44 +260,65 @@ input[type=password]{
     background: #0b385f;
     cursor: pointer;
 }
-  
 .slider::-moz-range-thumb {
     width: 20px;
     height: 20px;
     background: #0b385f;
     cursor: pointer;
 }
-.labelClaro{
+.label_lighttheme{
     color: white;
 }
-.labelEscuro{
+.label_darktheme{
     color: black;
 }
-.paragrafoClaro{
+.paragraph_lighttheme{
     color: white;
 }
-.paragrafoEscuro{
+.paragraph_darktheme{
     color: black;
 }
-.cabecalhoClaro{
+.header_darktheme{
     color: white;
+    background-color: #0f135a;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    height: 50px;
 }
-.cabecalhoEscuro{
+.header_lighttheme{
     color: black;
+    background-color: #77a8bb;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    height: 50px;
 }
-a{
+.stylized_link{
     color: #386994;
     cursor: crosshair;
 }
-a:hover{
+.stylized_link:hover{
     color: #1b7cd1;
 }
-a:active{
+.stylized_link:active{
     color: #0b3d68;
 }
-.divClaro{
-    background-color: #8eaebb;
+.div_lighttheme{
+    background-color: #8acde7;
+    width: fit-content;
+    color: black;
+    padding: 20px;
+    border-color: white;
+    border-radius: 20px;
 }
-.divEscuro{
-    background-color: #00022b;
+.div_darktheme{
+    background-color: #101344;
+    width: fit-content;
+    color: white;
+    padding: 20px;
+    border-color: gray;
+    border-radius: 20px;
 }

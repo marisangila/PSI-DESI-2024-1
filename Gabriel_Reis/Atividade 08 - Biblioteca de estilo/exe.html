@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<header>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário com Bordas</title>
+	<link rel="stylesheet" href="estilo.css">
+
+<header class="header_claro">
+	Este é um exemplo de header
+</header>
+
+<header class="header_escuro">
+	Este é um exemplo de header
+</header>
+
+</header>
+<body >
+
+	<div class="bordered">
+		<h2>Formulário de Exemplo</h2>
+		<form>
+			<div>
+				<label class="estilo_label_escuro" for="check">Checkbox:</label>
+				<input type="checkbox" id="check" name="check" class="input_checkbox">
+			</div>
+
+			<div>
+				<label  for="nome">Nome:</label>
+				<input class="input_nome" type="text" id="nome" name="nome">
+			</div>
+			<div>
+				<label for="email">Email:</label>
+				<input class="input_email" type="email" id="email" name="email">
+			</div>
+			<div>
+				<label for="senha">Senha:</label>
+				<input class="input_senha" type="password" id="senha" name="senha">
+			</div>
+			<div>
+				<input class="input_range" type="range" id="range" name="range">
+			</div>
+			<br>
+
+			<label for="cars">Escolha uma opção:</label>
+
+			<select class="campo_select" name="opcao" id="opcao">
+				<option value="0" selected>Selecione uma Opção</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+			<br>
+			<br>
+			<div>
+				<p class="paragrafo_claro">Isso é um parágrafo de exemplo.</p>
+			</div>
+			<div>
+				<p class="paragrafo_escuro">Isso é um parágrafo de exemplo.</p>
+			</div>
+			<br>
+			<div>
+				<button type="submit" class="botao_confirma_grande">confirma_grande</button>
+
+				<button type="submit" class="botao_confirma_pequeno">confirma_pequeno</button>
+
+				<button type="submit" class="botao_confirma_sem_fundo">confirma_sem_fundo</button>
+
+				<button type="submit" class="botao_confirma_com_fundo">confirma_com_fundo</button>
+
+				<button type="button" class="botao_cancela_grande">cancela_grande</button>
+
+				<button type="button" class="botao_cancela_pequeno">Cancelar</button>
+
+				<button type="button" class="botao_cancela_sem_fundo">Cancelar</button>
+
+				<button type="button" class="botao_cancela_com_fundo">Cancelar</button>
+
+			</div>
+			<br>
+			<div>
+				<a class="estilo_link" href="#">Isso é um link de exemplo</a>
+			</div>
+			<br>
+			<div class="div_card_escuro">
+				Exemplo Div card
+			</div>
+		</form>
+	</div>
+
+</body>
+
+</html
