@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clique</title>
+</head>
+<body>
+    <div class="div-square-sm">
+        <h1>Clique no botão abaixo para incrementar</h1>
+        <button type="button"
+        onclick="incrementar()" class="btn-primary">Incrementar</button>
+        <label id="btn_incremento">0</label>
+    </div>
+    <div>
+        <h1>Clique no botão abaixo para decrementar</h1>
+        <button type="button"
+        onclick="decrementar()">Decrementar</button>
+        <label id="btn_decremento">100</label>
+    </div>
+    <div>
+        <h1>Arraste o mouse no botão abaixo para sumir</h1>
+        <button type="button"
+        onmouseenter="sumir_aparecer()" onmouseleave="sumir_aparecer()"><label id="estado_btn">Sumir</label></button>
+        <label id="palavra_teste">Palavra Teste</label>
+        <h1>Arraste novamente para aparecer</h1>
+    </div>
+    <div>
+        <label class="checkbox-big">One
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="checkbox-big">Two
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="checkbox-big">Three
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          
+          <label class="checkbox-big input-dark">Four
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+    </div>
+
+    <div class="display-flex flex-direction-column
+        ">
+        <input type="text" placeholder="insira seu nome">
+        <input type="email" name="" id="">
+        <input type="password" name="" id="">
+        <input type="range" name="" id="">
+        <label >this is a label</label>
+        <p>this is a p</p>
+        <select>
+            <option value="">a</option>
+            <option value="">b</option>
+            <option value="">c</option>
+        </select>
+        <header>this is a reader</header>
+        <a class="a-hover-color-danger" href="">this is a link</a>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
