@@ -137,7 +137,6 @@
   .container {  
     color: white;
     margin: 50px auto;
-    height: 758px;
     width: 600px;
     border-radius: 10px;
     box-sizing: border-box;
@@ -158,6 +157,22 @@
     outline: none;
     background: transparent;
   }
+
+  /* Select */
+
+  .campo-selecao {
+    width: 100%;
+    border-radius: 8px;
+    height: 25px;
+  }
+
+  .campo-selecao option {
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+
   
   /* Label - fonte de cor clara */
   
