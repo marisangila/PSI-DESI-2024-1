@@ -1,0 +1,167 @@
+:root {
+    --gray-dark: #181818;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#line{
+    margin-top: 10px;
+   margin-bottom: 70px;
+   text-align: center;
+}
+
+#line div{
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.295);
+    display: inline-block;
+}
+
+body{
+
+    background-image: linear-gradient(#355797, #bb7e8e);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: relative;
+}
+
+main{
+    padding: 100px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+header{
+    text-align: center;
+    padding-block: 50px;
+    /* background-color: #000000; */
+    color: white;
+  
+}
+
+form{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .4);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+    backdrop-filter: blur(10px);
+}
+
+#inputs_container{
+    margin: auto;
+    width: 70%;
+}
+
+.inputs, #curso_select{
+    width: 45%;
+    margin-inline: 10px;
+    padding-block: 7px;
+    padding-inline: 20px;
+    min-width: 40%;
+    border-radius: 5px;
+    border: .3px solid rgba(0, 0, 0, 0.26);
+    font-size: 17px;
+    color: white;
+    background-color: #40507a69;
+    outline: none;
+}
+
+.inputs::placeholder{
+    color: rgba(255, 255, 255, 0.596);
+}
+
+.input_section{
+    margin-block: 20px;
+    text-align: center;
+}
+
+#input_imagem{
+    display: none;
+}
+
+#input_imagem_label, #bnt_submit_container input[type="submit"]{
+    cursor: pointer;
+    background-color: #b67c8e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+   
+}
+
+#input_imagem_label:hover{
+    background-color: #b16e83;
+}
+
+
+fieldset{
+    width: 100%;
+    border: .3px solid white;
+    padding: 20px;
+    border: .3px solid rgba(0, 0, 0, 0.26);
+}
+
+.formacao_academica_choice input, .situacao_radio input {
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.formacao_academica_choice label, .situacao_radio label {
+    cursor: pointer;
+}
+
+input[type="radio"]{
+    font: inherit;
+    color: currentColor;
+    width: .7em;
+    height: .7em;
+    border: 0.0005em solid currentColor;
+    border-radius: 50%;
+}
+
+#curso_select{
+    cursor: pointer;
+}
+
+.confirme_radios{
+    padding: 20px;
+}
+
+.confirme_radios div{
+    margin-block: 20px;
+
+}
+
+.confirme_radios div input{
+    margin-inline: 10px;
+}
+
+.confirme_radios div input, .confirme_radios div label{
+    cursor: pointer;
+}
+
+#bnt_submit_container{
+    text-align: center;
+}
+
+#bnt_submit_container input[type="submit"]{
+    border: .3px solid black;
+}
+
+#bnt_submit_container input[type="submit"]:hover{
+    background-color: #b16e83;
+}

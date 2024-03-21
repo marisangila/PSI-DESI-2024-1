@@ -1,0 +1,129 @@
+body{
+    background-color: rgba(255, 242, 244, 0.541);
+}
+
+/*Aqui você encontra a paleta de cores utilizada:*/
+
+:root{
+    --dark-red: #b70046;
+    --light-red: #e10055;
+    --brown-red: #A64456;
+    --brown-pink: #D9718C;
+    --light-pink: #ff94bc;
+}
+
+/*Botões de confirmação - Configurações:*/
+
+.btn_confirm{
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--brown-pink);
+    border: none;
+    color: white;
+}
+
+.btn_confirm:hover{
+    background-color: var(--brown-red);
+}
+
+.btn_confirm_tiny{
+    width: 5%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--brown-pink);
+    border: none;
+    color: white;    
+}
+
+.btn_confirm_tiny:hover{
+    background-color: var(--brown-red);
+}
+
+.wocolor_btn_confirm{
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    border: solid 1px #6e6a68;
+    color: 	#6e6a68;
+}
+
+.wocolor_btn_confirm:hover{
+    background-color: var(--brown-pink);
+    border: solid 1px var(--brown-pink);
+    color: 	white;
+}
+
+.wocolor_btn_confirm_tiny{
+    width: 5%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    border: solid 1px #6e6a68;
+    color: 	#6e6a68;   
+}
+
+.wocolor_btn_confirm_tiny:hover{
+    background-color: var(--brown-pink);
+    border: solid 1px var(--brown-pink);
+    color: 	white;  
+}
+
+/*Botões de cancelamento - Configurações:*/
+
+.btn_cancel{
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--light-red);
+    border: none;
+    color: white;  
+}
+
+.btn_cancel:hover{
+    background-color: var(--dark-red);
+}
+
+.btn_cancel_tiny{
+    width: 5%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--light-red);
+    border: none;
+    color: white;    
+}
+
+.btn_cancel_tiny:hover{
+    background-color: var(--dark-red);
+}  
+
+.wocolor_btn_cancel{
+    width: 10%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    border: solid 1px #6e6a68;
+    color: 	#6e6a68;       
+}
+
+.wocolor_btn_cancel:hover{
+    background-color: var(--light-red);
+    border: solid 1px var(--light-red);
+    color: 	white;      
+}
+
+.wocolor_btn_cancel_tiny{
+    width: 5%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    border: solid 1px #6e6a68;
+    color: 	#6e6a68;       
+}
+
+.wocolor_btn_cancel_tiny:hover{
+    background-color: var(--light-red);
+    border: solid 1px var(--light-red);
+    color: 	white;      
+}

@@ -1,0 +1,12 @@
+body{
+    height: 100vh;
+    background-color: rgb(86, 86, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-light{
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+}

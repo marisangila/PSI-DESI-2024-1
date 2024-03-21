@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: inline-block;
+    margin-block: 60px;
+    margin-left: 250px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+aside#menu{
+    display: inline-block;
+    background-color: rgb(46, 46, 46);
+    padding: 30px;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+}
+
+.menu_link{
+    list-style-type: none;
+    margin-block: 20px;    
+    font-size: 17px;
+   
+    
+    margin-block: 30px;
+}
+
+.menu_link a{
+    color: white;
+    text-decoration: none;
+}

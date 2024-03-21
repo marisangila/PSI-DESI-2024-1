@@ -1,0 +1,20 @@
+*{
+    border: None;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(149, 208, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+}
