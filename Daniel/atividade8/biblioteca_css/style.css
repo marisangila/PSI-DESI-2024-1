@@ -101,15 +101,23 @@
 /* CHECKBOX */
 .checkbox{
     height: 2rem;
-    width: 3em;
+    width: 3rem;
     appearance: none;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.2rem;
-    border: 0.1rem solid var(--black-opacity);
     border-radius: .3rem;
     margin: 10px;
+    border: 0.1rem solid black;
+}
+
+.check-dark{
+    border: 0.1rem solid var(--orange);
+}
+
+.check-light{
+    border: 0.1rem solid var(--black-opacity);
 }
 
 .checkbox::before {
@@ -118,29 +126,37 @@
     height: 1.6rem;
     clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
     transform: scale(0);
+    background-color: black;
+}
+
+.check-dark::before{
     background-color: var(--orange);
+}
+
+.check-light::before{
+    background-color: var(--purple);
 }
 
 .checkbox:checked::before {
     transform: scale(.9);
 }
 
-.checkbox-big{
+.check-big{
     height: 3rem;
     width: 4em;
 }
 
-.checkbox-big::before{
+.check-big::before{
     width: 2rem;
     height: 2rem;
 }
 
-.checkbox-small{
+.check-small{
     height: 1.5rem;
     width: 2em;
 }
 
-.checkbox-small::before{
+.check-small::before{
     width: 1.2rem;
     height: 1.2rem;
 }
@@ -154,16 +170,28 @@
     max-width: 500px;
     min-width: 240px;
     font-size: 14px;
-    border: 1px solid black;
     border-radius: 5px;
     margin: 10px;
+    border: 1px solid black;
 }
 
-.input:focus{
+.ipt-dark{
+    border: 1px solid var(--orange);
+}
+
+.ipt-light{
+    border: 1px solid var(--black-opacity);
+}
+
+.ipt-light:focus{
     border-color: var(--purple);
 }
 
-.input-username{
+.ipt-dark:focus{
+    border-color: var(--orange);
+}
+
+.ipt-username{
     background-image: url('./images/icon_user.png');
     background-repeat: no-repeat;
     background-size: 25px;
@@ -171,11 +199,15 @@
     background-position-x: 3%;
 }
 
-.input-username:focus{
-    background-image: url('./images/icon_user_focus.png');
+.ipt-light.ipt-username:focus{
+    background-image: url('./images/icon_user_focus_light.png');
 }
 
-.input-email{
+.ipt-dark.ipt-username:focus{
+    background-image: url('./images/icon_user_focus_dark.png');
+}
+
+.ipt-email{
     background-image: url('./images/icon_email.png');
     background-repeat: no-repeat;
     background-size: 25px;
@@ -183,11 +215,15 @@
     background-position-x: 3%;
 }
 
-.input-email:focus{
-    background-image: url('./images/icon_email_focus.png');
+.ipt-light.ipt-email:focus{
+    background-image: url('./images/icon_email_focus_light.png');
 }
 
-.input-password{
+.ipt-dark.ipt-email:focus{
+    background-image: url('./images/icon_email_focus_dark.png');
+}
+
+.ipt-password{
     background-image: url('./images/icon_password.png');
     background-repeat: no-repeat;
     background-size: 25px;
@@ -195,8 +231,12 @@
     background-position-x: 3%;
 }
 
-.input-password:focus{
-    background-image: url('./images/icon_password_focus.png');
+.ipt-dark.ipt-password:focus{
+    background-image: url('./images/icon_password_focus_dark.png');
+}
+
+.ipt-light.ipt-password:focus{
+    background-image: url('./images/icon_password_focus_light.png');
 }
 
 .input-range{
@@ -219,8 +259,16 @@
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: var(--orange);
     margin-top: -4px;
+    background: black;
+}
+
+.ipt-dark.input-range::-webkit-slider-thumb{
+    background: var(--orange);
+}
+
+.ipt-light.input-range::-webkit-slider-thumb{
+    background: var(--purple);
 }
 
 /* LABEL */
@@ -296,7 +344,8 @@
     border-right: .2px solid var(--orange);
 }
 
-/*LINK*/
+
+/* LINK */
 .link{
     text-decoration: none;
     color: var(--black-opacity);
