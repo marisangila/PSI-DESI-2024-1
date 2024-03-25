@@ -183,6 +183,27 @@
     border-radius: 5px;
     content: url('image/x_checkbox.png');
 }
+.secondary_checkbox:not(:checked) {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+.secondary_checkbox:checked{
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    content: url('image/x_checkbox_white.png');
+}
 
 /* ==================================================================== */
 /* CAMPO DE TEXTO */
@@ -191,12 +212,26 @@
     border: 1px solid gray;
     padding: 5px;
     width: 250px;
+    box-shadow: 1.5px 1.5px 3px;
+    background: url(image/nome.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    background-color: #ffffff;
 }
 .secondary_text_name{
     border-radius: 50px;
     border: 1px solid gray;
     padding: 5px;
     width: 250px;
+    box-shadow: 1.5px 1.5px 3px;
+    background: url(image/nome.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    background-color: #ffffff;
 }
 
 /* ==================================================================== */
@@ -207,6 +242,7 @@
     padding: 5px;
     width: 250px;
     text-transform: lowercase;
+    box-shadow: 1.5px 1.5px 3px;
 }
 .secondary_text_email{
     border-radius: 50px;
@@ -214,6 +250,7 @@
     padding: 5px;
     width: 250px;
     text-transform: lowercase;
+    box-shadow: 1.5px 1.5px 3px;
 }
 
 /* ==================================================================== */
@@ -224,6 +261,7 @@
     padding: 5px;
     width: 250px;
     font-weight: bolder;
+    box-shadow: 1.5px 1.5px 3px;
 }
 .secondary_text_password{
     border-radius: 50px;
@@ -231,6 +269,7 @@
     padding: 5px;
     width: 250px;
     font-weight: bolder;
+    box-shadow: 1.5px 1.5px 3px;
 }
 
 /* ==================================================================== */
@@ -244,7 +283,19 @@
     left: 4em;
     border-radius: 5px;
     background-color: rgb(0, 0, 0);
-    accent-color: rgb(156, 156, 156);
+    accent-color: rgb(88, 88, 88);
+    outline: none;
+}
+.secondary_range{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18em;
+    height: 0.2em;
+    position: relative;
+    left: 4em;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    accent-color: rgb(206, 206, 206);
     outline: none;
 }
 
@@ -260,24 +311,41 @@
     border-radius: 5px;
     border: 1px solid gray;
 }
+.primary_select_field:hover{
+    border: 1px solid black;
+}
+.secondary_select_field{
+    appearance: none;
+    background-color: rgb(85, 85, 85);
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+}
+.secondary_select_field:hover{
+    border: 1px solid rgb(255, 255, 255);
+}
 
 /* ==================================================================== */
 /* CAMPO DE LABEL */
 .primary_text_label{
     border: none;
     border-radius: 5px;
-    font-weight: bolder;
     font-size: 16px;
     padding: 5px;
+    box-shadow: 1.5px 1.5px 3px;
 }
 .secondary_text_label{
     border: none;
     border-radius: 5px;
-    font-weight: bolder;
     font-size: 16px;
     color: #ffffff;
-    background-color: black;
+    background-color: rgb(85, 85, 85);
     padding: 5px;
+    box-shadow: 1.5px 1.5px 3px black;
 }
 
 /* ==================================================================== */
@@ -324,5 +392,9 @@
 }
 .div_bg_color_secondary{
     background-color: rgb(24, 22, 26);
+    padding: 50px;
+}
+.div_bg_color_tertiary{
+    background-color: rgb(241, 223, 199);
     padding: 50px;
 }
