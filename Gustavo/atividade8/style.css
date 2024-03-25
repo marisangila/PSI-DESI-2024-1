@@ -1,0 +1,390 @@
+.body_YellowLight{
+    background-color: #F0FF89;
+}
+.body_YellowDark{
+    background-color: #d3f10d;
+}
+
+
+.check_large{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+.check_medium{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+}
+
+
+.btn{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn-big{
+    width: 10%;
+}
+
+
+.btn-small{
+    width: 8%;
+}
+
+
+.btn-red{
+    background-color: rgb(247, 74, 74);
+    border: 0;
+    color: white;
+}
+
+
+.btn-red:hover{
+    background-color: #8C1F28;
+    cursor: pointer;
+}
+
+
+.btn-green{
+    background-color: green;
+    border: 0;
+    color: white;
+}
+
+
+.btn-green:hover{
+    background-color: #6FFCB8;
+    cursor: pointer;
+}
+
+
+.btn-blue{
+    background-color: blue;
+    border: 0;
+    color: white;
+}
+
+
+.btn-blue:hover{
+    background-color: #4D4AE8;
+    cursor: pointer;
+}
+
+
+.btn-yellow{
+    background-color: yellow;
+    border: 0;
+    color: black;
+}
+.btn-yellow:hover{
+    background-color: #C0B62F;
+    cursor: pointer;
+}
+
+
+.btn-pink{
+    background-color: pink;
+    border: 0;
+    color: black;
+}
+.btn-pink:hover{
+    background-color: #F2D5DB;
+    cursor: pointer;
+}
+
+
+.btn-orange{
+    background-color: orange;
+    border: 0;
+    color: black;
+}
+.btn-orange:hover{
+    background-color: #F2B705;
+    cursor: pointer;
+}
+
+
+.btn-black{
+    background-color: black;
+    border: 0;
+    color: white;
+}
+.btn-black:hover{
+    background-color: #A6A6A6;
+    cursor: pointer;
+}
+
+
+.btn-gray{
+    background-color: gray;
+    border: 0;
+    color: white;
+}
+.btn-gray:hover{
+    background-color: #262626;
+    cursor: pointer;
+}
+
+
+.btn-cancellation-bg-none{
+    background-color: transparent;
+    border: 1px solid black;
+    border: 1px solid #F22E52;
+}
+.btn-cancellation-bg-none:hover{
+    background-color: #F2B3B3;
+    color: #F22E52;
+    cursor: pointer;
+}
+
+
+.btn-confirmed{
+    background-color: #5E8C6A;
+    border: 1px solid #062626;
+    color: #F0FF89;
+    font-size: 12px;
+}
+.btn-confirmed:hover{
+    background-color: #D1EA46;
+    cursor: pointer;
+    color: #214001;
+}
+
+
+.btn-cancellation{
+    background-color: #F20C1F;
+    color: white;
+    border: 1px solid #F2B3B3;
+    cursor: pointer;
+    font-size: 12px;
+}
+.btn-cancellation:hover{
+    background-color: #F2B3B3;
+    color: red;
+    border: 1px solid red;
+}
+
+
+/* Fazer CheckBox */
+
+
+/* ---------- CAIXA DE NOME NORMAL---------- */
+.boxName_default{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.boxName_small_default{
+    width: 10%;
+}
+.boxName_large_default{
+    width: 20%;
+}
+/* ---------- CAIXA DE NOME EM LINHA---------- */
+.boxName_line{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+.boxName_large_line{
+    width: 20%;
+}
+.boxName_small_line{
+    width: 10%;
+}
+/* ---------- CAIXA DE NOME VIDRO---------- */
+.boxName_glass{
+    border-radius: 3px;
+    border: 0;
+    background-color: rgba(94, 93, 93, 0.3);
+    backdrop-filter: (10px);
+    padding: 5px;
+}
+.boxName_large_glass{
+    width: 20%;
+}
+.boxName_small_glass{
+    width: 10%;
+}
+
+
+
+
+
+
+/* ---------- CAIXA DE EMAIL NORMAL---------- */
+.boxEmail_default{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.boxEmail_small_default{
+    width: 10%;
+}
+.boxEmail_large_default{
+    width: 20%;
+}
+/* ---------- CAIXA DE EMAIL EM LINHA---------- */
+.boxEmail_line{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+.boxEmail_large_line{
+    width: 20%;
+}
+.boxEmail_small_line{
+    width: 10%;
+}
+/* ---------- CAIXA DE EMAIL VIDRO---------- */
+.boxEmail_glass{
+    border-radius: 3px;
+    border: 0;
+    background-color: rgba(94, 93, 93, 0.3);
+    backdrop-filter: (10px);
+    padding: 5px;
+}
+.boxEmail_large_glass{
+    width: 20%;
+}
+.boxEmail_small_glass{
+    width: 10%;
+}
+
+
+
+
+
+
+/* ---------- CAIXA DE SENHA NORMAL---------- */
+.boxPassword_default{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.boxPassword_small_default{
+    width: 10%;
+}
+.boxPassword_large_default{
+    width: 20%;
+}
+/* ---------- CAIXA DE SENHA EM LINHA---------- */
+.boxPassword_line{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+.boxPassword_large_line{
+    width: 20%;
+}
+.boxPassword_small_line{
+    width: 10%;
+}
+/* ---------- CAIXA DE SENHA VIDRO---------- */
+.boxPassword_glass{
+    border-radius: 3px;
+    border: 0;
+    background-color: rgba(94, 93, 93, 0.3);
+    backdrop-filter: (10px);
+    padding: 5px;
+}
+.boxPassword_large_glass{
+    width: 20%;
+}
+.boxPassword_small_glass{
+    width: 10%;
+}
+
+
+
+
+.range_red{
+    accent-color: rgb(248, 95, 95);
+}
+.range_blue{
+    accent-color: rgb(106, 80, 255);
+}
+.range_orange{
+    accent-color: rgb(255, 141, 75);
+}
+.range_green{
+    accent-color: #6FFCB8;
+}
+
+
+.select{
+    border-radius: 50px;
+}
+.select_large{
+    width: 200px;
+}
+.select_small{
+    width: 60px;
+}
+
+
+.label_text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+.label_DarkRed{
+    color: #8C1F28;
+}
+.label_LightRed{
+    color: #F22E52;
+}
+
+
+.paragraph_arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paragraph_DarkRed{
+    color: #8C1F28;
+}
+.paragraph_LightRed{
+    color: #F22E52;
+}
+
+
+.cabc{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.cabc_escuro{
+    color: #8C1F28;
+}
+.cabc_claro{
+    color: #F22E52;
+}
+
+
+
+
+.beautiful_link{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link_normalText{
+    text-decoration: none;
+    color: black;
+}
+
+
+.div_square{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.div_square_light{
+    background-color: rgba(105, 104, 104, 0.5);
+}
+
+
+.div_square_dark{
+    background-color: rgba(26, 25, 25);
+}
