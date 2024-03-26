@@ -1,0 +1,224 @@
+.main,
+header {
+    display: flex
+}
+
+.card_claro,
+.card_escuro {
+    display: flex;
+    padding: 30px;
+    border-radius: 40px
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial
+}
+
+p {
+    font-size: 16px
+}
+
+header {
+    justify-content: start;
+    align-items: center
+}
+
+input {
+    height: 30px;
+    width: 500px;
+    background-color: ivory
+}
+
+.main {
+    align-items: center;
+    justify-content: center
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: #3576ee
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #76a2f3
+}
+
+a:active {
+    color: #3b1ee2
+}
+
+.body_claro {
+    background-color: #fff8dc
+}
+
+.header_claro {
+    background-color: #b51630;
+    height: 60px
+}
+
+.p_header_claro {
+    color: ivory;
+    margin-left: 20px
+}
+
+.label_claro,
+.paragrafo_claro {
+    color: #000
+}
+
+.card_claro {
+    flex-direction: column;
+    background-color: #30706f
+}
+
+.body_escuro {
+    background-color: #16213e
+}
+
+.header_escuro {
+    background-color: #0f3460
+}
+
+.p_header_escuro {
+    color: #e94560;
+    margin-left: 20px
+}
+
+.label_escuro,
+.paragrafo_escuro {
+    color: #e94560
+}
+
+.card_escuro {
+    flex-direction: column;
+    background-color: #533483
+}
+
+.input_range {
+    -webkit-appearance: none;
+    width: 400px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: #ba3950;
+    outline: 0
+}
+
+.input_range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #a83348
+}
+
+.range_span {
+    margin-left: 14px;
+    width: 50px;
+    height: 30px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 30px
+}
+
+.range_span:before {
+    content: '';
+    position: absolute;
+    border-right: 9px solid transparent;
+    border-left: 9px solid transparent;
+    border-bottom: 12px solid #222;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg)
+}
+
+.btn_confirma_grande_com_fundo {
+    background-color: green;
+    color: #fff;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px
+}
+
+.btn_confirma_grande_sem_fundo {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px
+}
+
+.btn_confirma_pequeno_com_fundo {
+    background-color: green;
+    color: #fff;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px
+}
+
+.btn_confirma_pequeno_sem_fundo {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px
+}
+
+.btn_cancela_grande_com_fundo {
+    background-color: tomato;
+    color: #fff;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px
+}
+
+.btn_cancela_grande_sem_fundo {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px
+}
+
+.btn_cancela_pequeno_com_fundo {
+    background-color: tomato;
+    color: #fff;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px
+}
+
+.btn_cancela_pequeno_sem_fundo {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid tomato;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px
+}
+
+.input_check {
+    background-image: url(checkmark.svg) no-repeat;
+    width: 20px;
+    height: 20px
+}
+
+.input_check:checked {
+    background-image: url(checkmark-selected.svg) no-repeat
+}
+
+.caixa_selecao {
+    height: 30px
+}

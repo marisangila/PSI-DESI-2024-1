@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_daniel.css">
+    <link rel="stylesheet" href="style_sara.css">
+    <title>Formulário</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+
+        .coluna {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="body-dark">
+    <h2 class="font-orange-yellow label-extra-big titulo">Cardápio com Participação Popular</h2>
+    <hr>
+    <div class="container">
+        <div class="card-dark div_direita">
+            <h3 class="font-orange label-big titulo">Cadastro</h3>
+            <div class="card-dark">
+                <label class="font-light">Nome:</label>
+                <input type="text" class="input ipt-username ipt-dark font-orange" placeholder="Insert your name here"><br>
+                <label class="font-light">Sobrenome:</label>
+                <input type="text" class="input ipt-username ipt-dark font-orange" placeholder="Insert your last name here"><br>
+                <label class="font-light">E-mail:</label>
+                <input type="text"  class="input ipt-email ipt-dark font-orange" placeholder="Insert your e-mail here"><br>
+                <label class="font-light">CPF:</label>
+                <input type="text" class="input ipt-username ipt-dark font-orange" placeholder="Insert your CPF here"><br>
+                <label class="font-light">Escolha uma senha forte:</label>
+                <input type="password" class="input ipt-password ipt-dark font-orange" placeholder="Insert your password here"><br>
+                <label class="font-light">Confirme a senha:</label>
+                <input type="password" class="input ipt-password ipt-dark font-orange" placeholder="Insert your password here again"><br>
+            </div>
+            <div class="card-dark">
+                <h4 class="font-orange-yellow label-big titulo">Endereço</h4>
+                <label class="font-light">CEP:</label>
+                <input type="text" class="input ipt-username ipt-dark font-orange" placeholder="Insert your CEP here"><br>
+                <label class="font-light">Logradouro:</label>
+                <input type="text" class="input ipt-username ipt-dark font-orange" placeholder="Insert your adress here"><br>
+                <label class="font-light">Número:</label>
+                <input type="number" class="input ipt-username ipt-dark font-orange" placeholder="Insert your adress number here"><br>
+                <label class="font-light">Bairro:</label>
+                <input type="text" class="input ipt-username ipt-dark font-orange" placeholder="Insert your neighborhood here"><br>
+                <label class="font-light">Complemento:</label>
+                <input type="text" class="input ipt-username ipt-dark font-orange" placeholder="Insert your CPF here"><br>
+                <label class="font-light">Renda Média:</label>
+                <br>
+                <select class="select-dark select-big selecao">
+                    <option selected="true">Selecione</option>
+                    <option>Menos de R$ 1.000,00</option>
+                    <option>R$ 1.000,00 - R$ 2.000,00</option>
+                    <option>R$ 2.001,00 - R$ 3.000,00</option>
+                    <option>R$ 3.001,00 - R$ 4.000,00</option>
+                    <option>Mais de R$ 4.000,00</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-dark div_direita">
+            <h3 class="font-orange-yellow label-big titulo">Preferências alimentares</h3>
+            <div>
+                <div class="card-dark">
+                    <p class="paragraph-big font-light">De acordo com a escala, quanto você está satisfeito com a alimentação servida?</p>
+                    <input type="range"  class="input input-range ipt-dark">
+                </div>
+                <div class="card-dark">
+                    <label class="label font-light titulo_refeicao">Para qual refeição você costuma usar o restaurante?</label>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Não costumo ir ao restaurante</label><br>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Café da Manhã</label><br>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Almoço</label><br>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Café da Tarde</label><br>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Jantar</label><br>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Lanche</label><br>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Lanche Da Meia Noite</label><br>
+                    <input type="checkbox" class="checkbox check-dark check-small pointer verificacao">
+                    <label class="font-light">Ceia</label><br>
+                </div>
+                <div class="card-dark">
+                    <label class="label font-light titulo_refeicao">Normalmente, você come:</label><br>
+                    <input type="radio" name="tipo" class="selecione">
+                    <label class="font-light">Doce</label>
+                    <input type="radio" name="tipo" class="selecione">
+                    <label class="font-light">Salgado</label>
+                    <input type="radio" name="tipo" class="selecione">
+                    <label class="font-light">Ambos</label>
+                </div>
+                <div class="card-dark">
+                    <label class="label font-light titulo_refeicao">Qual seu tipo de dieta?</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Nenhuma restrição</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Sem glúten</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Sem sal</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Sem açúcar</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Sem lactose</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Vegetariana</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Vegana</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Ovolactovegetariana</label><br>
+                    <input class="checkbox check-dark check-small pointer verificacao" type="checkbox">
+                    <label class="font-light">Outra</label><br><br>
+                    <div class="card">
+                        <textarea class="texto" placeholder="Descreva suas restrições" rows="4" cols="80"></textarea>
+                    </div>
+                </div>
+                <div class="card-dark">
+                    <label class="label font-light titulo_refeicao">Normalmente, você utiliza qual dos seguintes métodos de pagamento?</label>
+                    <br>
+                    <select class="select-dark select-big selecao">
+                        <option selected="true">Selecione</option>
+                        <option>Dinheiro</option>
+                        <option>Cartão de Débito</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Pix</option>
+                        <option>Fiado</option>
+                        <option>Dinheiro Emprestado</option>
+                        <option>Rolo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <input class="but medium-but but-submit" type="submit" value="Enviar">
+        <input class="but medium-but" type="submit" value="Voltar">
+        <input class="but medium-but but-cancel" type="submit" value="Cancelar">
+    </div>
+    </form>
+    <div class="link_sara">
+        <a class="link font-light" href="">Acesse o cardápio da semana</a>
+    </div>
+</body>
+
+</html>
