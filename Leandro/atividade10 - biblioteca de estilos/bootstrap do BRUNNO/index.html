@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+    
+</head>
+
+<body id="body" class="body_lighttheme">
+    <h2 class="header_darktheme">Cardápio com Participação Popular</h2>
+    <div id="modo_escuro" style="width: 200px;" id="modo" class="btn_confirmation_with_bg"
+    onclick="modo_escuro_claro()">modo escuro</div>
+    <hr>
+    <div id="div1" class="div_darktheme d-flex">
+        <div id="div2" class="div_lighttheme d-flex align-items justify-content">
+            <div id="text1">
+                <h3>Cadastro</h3>
+                <label>Nome:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Sobrenome:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>E-mail:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>CPF:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Escolha uma senha forte:</label><br>
+                <input type="password" class="password_input"><br>
+                <label>Confirme a senha:</label><br>
+                <input type="password" class="password_input"><br>
+            </div>
+            <div id="text2" class="margin-left">
+                <h4>Endereço</h4>
+                <label>CEP:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Logradouro:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Número:</label><br>
+                <input type="number" class="text_input"><br>
+                <label>Bairro:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Complemento:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Renda Média:</label><br>
+                <br>
+                <select class="custom_select">
+                    <option selected="true">Selecione</option>
+                    <option>Menos de R$ 1.000,00</option>
+                    <option>R$ 1.000,00 - R$ 2.000,00</option>
+                    <option>R$ 2.001,00 - R$ 3.000,00</option>
+                    <option>R$ 3.001,00 - R$ 4.000,00</option>
+                    <option>Mais de R$ 4.000,00</option>
+                </select>
+            </div>
+        </div>
+        <div id="div3" class="div_lighttheme margin-left">
+            <h3 id="text3">Preferências alimentares</h3>
+            <div>
+                <div class="">
+                    <p>De acordo com a escala, quanto você está satisfeito com a alimentação servida?</p>
+                    <input type="range" class="slider slider">
+                </div>
+                <div id="text4">
+                    <label>Para qual refeição você costuma usar o restaurante?</label><br>
+                    <input type="checkbox">
+                    <label>Não costumo ir ao restaurante</label><br>
+                    <input type="checkbox">
+                    <label>Café da Manhã</label><br>
+                    <input type="checkbox">
+                    <label>Almoço</label><br>
+                    <input type="checkbox">
+                    <label>Café da Tarde</label><br>
+                    <input type="checkbox">
+                    <label>Jantar</label><br>
+                    <input type="checkbox">
+                    <label>Lanche</label><br>
+                    <input type="checkbox">
+                    <label>Lanche Da Meia Noite</label><br>
+                    <input type="checkbox">
+                    <label>Ceia</label><br>
+                </div>
+                <div id="text5">
+                    <label>Normalmente, você come:</label><br>
+                    <input type="radio" name="tipo">
+                    <label>Doce</label>
+                    <input type="radio" name="tipo">
+                    <label>Salgado</label>
+                    <input type="radio" name="tipo">
+                    <label>Ambos</label>
+                </div>
+                <div id="text6">
+                    <label>Qual seu tipo de dieta?</label><br>
+                    <input type="checkbox">
+                    <label>Nenhuma restrição</label><br>
+                    <input type="checkbox">
+                    <label>Sem glúten</label><br>
+                    <input type="checkbox">
+                    <label>Sem sal</label><br>
+                    <input type="checkbox">
+                    <label>Sem açúcar</label><br>
+                    <input type="checkbox">
+                    <label>Sem lactose</label><br>
+                    <input type="checkbox">
+                    <label>Vegetariana</label><br>
+                    <input type="checkbox">
+                    <label>Vegana</label><br>
+                    <input type="checkbox">
+                    <label>Ovolactovegetariana</label><br>
+                    <input type="checkbox">
+                    <label>Outra</label>
+                    <div class="card">
+                        <textarea placeholder="Descreva suas restrições" rows="4" cols="80"></textarea>
+                    </div>
+                </div>
+                <div id="text7">
+                    <label>Normalmente, você utiliza qual dos seguintes métodos de pagamento?</label>
+                    <br>
+                    <select>
+                        <option selected="true">Selecione</option>
+                        <option>Dinheiro</option>
+                        <option>Cartão de Débito</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Pix</option>
+                        <option>Fiado</option>
+                        <option>Dinheiro Emprestado</option>
+                        <option>Rolo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <input type="submit" value="Enviar" class="btn_confirmation_big">
+        <input type="submit" value="Voltar" class="btn_confirmation_with_bg">
+        <input type="submit" value="Cancelar" class="btn_cancel_small">
+    </div>
+    </form>
+    <div>
+        <a href="">Acesse o cardápio da semana</a>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>

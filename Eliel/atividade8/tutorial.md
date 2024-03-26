@@ -6,6 +6,8 @@ Essa folha de estilos conta com duas versões de estilização: itens para modo 
 >[!NOTE]
 >Os resultados da aplicação dos estilos estarão em um documento PDF separado, em conjunto com os demais elementos.
 
+>Redimensione as divs conforme a sua necessidade!
+
 ## Plano de fundo (Background)
 
 Pode ser utilizado diretamente no body ou em uma div.
