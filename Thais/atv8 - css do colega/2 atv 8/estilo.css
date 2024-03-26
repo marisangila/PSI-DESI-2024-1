@@ -1,0 +1,166 @@
+/* .buttons,.option{cursor:ponteiro;font-weight:600}.buttons,.label,.option{font-weight:600}.link,.option{margin-left:1vw}*{padding:0;margin :0}body{display:flex;height:100vh}.page-background-light{background-color:#d8d8d8}.page-background-dark{background-color:#0a0b23}.div-cards{height:75vh; largura:40vw;raio da borda:5%;display:flex;justificar conteúdo:centro;align-items:centro;direção flexível:coluna;margem superior:8vh}.link-div,.select-div{margem -top:1vh;display:flex}.div-header{display:flex;altura:8vh;largura:100vw}.dark-background-header,.darkmode{background-color:#1d1f43}.light-background-header{ cor de fundo:#fffdf5}.select-div{justify-content:center}.buttons-div{margem-top:2vh}.main-div{altura:100vh;largura:100vw;display:flex;direção flexível: coluna;align-items:center}.input-text:hover,.input-text:not(:placeholder-shown),.lightmode{background-color:#fff}.buttons{outline:0;border:none;border -raio:10px;cor:#fff}.big-btn{largura:30vw;altura:5vh;tamanho da fonte:grande}.small-btn{largura:10vw;altura:5vh;tamanho da fonte:médio}.caixa de seleção -text,.label{tamanho da fonte:15px;família da fonte:Arial,Helvetica,sans-serif}.confirm{cor de fundo:#63a625}.cancel{cor de fundo:#a62525}.no-background{fundo -color:rgba(0,0,0,0);borda:1px sólido #000;cor:#000}.no-background-darkmode{cor de fundo:rgba(0,0,0,0);borda: 1px sólido #fff;cor:#fff}.confirm:hover{background-color:#70bb2a}.confirm:active{background-color:#7ccf2f}.cancel:hover{background-color:#bb2a2a}.cancel:active {cor de fundo:#cf2f2f}.no-background-darkmode:hover,.no-background:hover{cor de fundo:rgba(255,255,255,.151)}.no-background-darkmode:ativo,.no-background: ativo {cor de fundo: rgba (255.255.255,.26)}. entrada de caixa de seleção personalizada {display: nenhum}. entrada de caixa de seleção personalizada + rótulo: antes de {conteúdo: ''; largura: 18px; altura: 18px; raio da borda :4px;cor de fundo:#b9b9b9;border:none;display:inline-block;vertical-align:-8px;margin:10px 8px 3px 15px;padding:1px}.custom-checkbox input:checked+label:before{ background-image:url("dados:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' largura do traço='1' preenchimento='%23555555'%3E%3Cpath fill='nenhum' traço='%23FFFFFF' acidente vascular cerebral-linecap=' redondo' acidente vascular cerebral-linejoin='redondo' acidente vascular cerebral-miterlimit='10' data-cap='butt' d='M2,83 4,72l1,58 1,58 2,83-2,83'/%3E%3C/g%3E%3C/ svg%3E");cor de fundo:#579121;posição de fundo:centro;borda:none;padding:1px}.checkbox-text{margem-top:10px}.input-text{margin-top:2vh;border -raio:7px;contorno:0;borda:nenhuma;largura:24vw;altura:4vh;cor de fundo:#f2f2f2;margem direita:1vw;preenchimento esquerdo:1vh;sombra da caixa:2px 2px #b2b2b2}. range-bar{aparência:none;border:none;width:10vw}.range-bar::-webkit-slider-runnable-track{aparência:none;height:2vh;background:#438a20;background:linear-gradient( 90deg,#438a20 21%,#00ff08 76%)}.range-bar::-webkit-slider-thumb{aparência:nenhum;cor de fundo:#006329;largura:1vw;altura:2vh;borda:1px sólido #000}.label{margem direita:5px}.dark-font{cor:#000}.light-font{cor: #fff}.select-menu{outline:0;width:10vw;height:2vh;border:none;border-radius:5px;padding-left:2px;background-color:#ddd}.paragraph{font-size: 16px;família de fontes:Arial,Helvetica,sans-serif}.header-options{família de fontes:Arial,Helvetica,sans-serif;display:flex;tipo de estilo de lista:none;align-items:center}. link{margem direita:1vw;tamanho da fonte:14px} */
+
+
+.page-background-light{
+    background-color: hsl(0, 0%, 85%);
+}
+
+.page-background-dark{
+    background-color: hsl(238, 55%, 9%);
+}   
+ 
+.div-header{
+    display: flex;
+    height: 8vh;
+    width: 100vw;
+}
+
+.light-background-header{
+    background-color: rgb(255, 253, 245);
+}
+
+.dark-background-header{
+    background-color: hsl(237, 39%, 19%);
+}
+
+.div-cards{
+    height: 75vh;
+    width: 40vw;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightmode{
+    background-color: white;
+}
+
+.darkmode{
+    background-color: hsl(237, 39%, 19%);
+}
+
+.input-text{
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    width: 24vw;
+    height: 4vh;
+    background-color: hsl(0, 0%, 95%);
+    padding-left: 1vh;
+    box-shadow: 2px 2px hsl(0, 0%, 70%);
+}
+
+.big-btn{
+    width: 30vw;
+    height: 5vh;
+    font-size: large;
+}
+
+.small-btn{
+    width: 10vw;
+    height: 5vh;
+    font-size: medium;
+}
+
+.confirm{
+    background-color: hsl(91, 63%, 40%);
+}
+
+.cancel{
+    background-color: hsl(0, 63%, 40%);
+}
+
+.no-background{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+}
+
+.no-background-darkmode{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+}
+
+.range-bar{
+    appearance: none;
+    border: none;
+    width: 10vw;
+}
+    
+.range-bar::-webkit-slider-runnable-track{
+    appearance: none;
+    height: 2vh;
+    background: rgb(67,138,32);
+    background: linear-gradient(90deg, rgba(67,138,32,1) 21%, rgba(0,255,8,1) 76%);
+}
+    
+.range-bar::-webkit-slider-thumb{
+    appearance: none;
+    background-color: rgb(0, 99, 41);
+    width: 1vw;
+    height: 2vh;
+    border: 1px solid black;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+    
+.custom-checkbox input+label:before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background-color: rgb(185, 185, 185);
+    border: none;
+    display: inline-block;
+    vertical-align: -8px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 8px;
+    margin-bottom: 3px;
+    padding: 1px;
+}
+    
+.custom-checkbox input:checked+label:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none'     stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: hsl(91, 63%, 35%);
+    background-position: center;
+    border: none;
+    padding: 1px;
+}
+
+.select-menu{
+    outline: none;
+    width: 10vw;
+    height: 2vh;
+    border: none;
+    border-radius: 5px;
+    padding-left: 2px;
+}
+
+.paragraph{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    font-weight: 600;
+}
+
+.link{
+    font-size: 14px;
+}
+
+.dark-font{
+    color: black;
+}
+
+.light-font{
+    color: white;
+}
