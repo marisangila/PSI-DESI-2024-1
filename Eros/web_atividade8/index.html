@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="insatisfacao.png" type="image/x-icon">
+    <title>Formulário Insatisfeito</title>
+</head>
+
+<body>
+    <datalist id="marcas">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+    </datalist>
+
+    <div class="txt conteudo">
+        <h2>Formulário de Insatisfação</h2>
+        <div class="centralizado apenas">
+
+            <div id="marca" class="botao_check centralizado invisivel">
+                <button type="button" class="botao_check_interior" onclick="desmarca()"></button>
+            </div>
+            <div id="desmarca" class="botao_check centralizado">
+                <button type="button" class="botao_descheck_interior" onclick="marca()"></button>
+            </div>
+
+            <label for="check">Insatisfeito</label>
+        </div>
+        <form id="conteudo">
+            <div>
+                <div class="centralizado">
+                    <label for="nome" class="txt_centro">Nome:</label>
+                    <input name="1" type="text" class="insere_txt" id="nome" name="nome" height="100" maxlength="23">
+                </div>
+                <div class="centralizado">
+                    <label for="email" class="txt_centro">Email:</label>
+                    <br>
+                    <input name="1" type="email" class="insere_txt" id="email" name="email">
+                </div>
+                <div class="centralizado">
+                    <label for="senha" class="txt_centro">Senha:</label>
+                    <br>
+                    <input name="1" type="password" class="insere_txt" id="senha" name="senha">
+                </div>
+            </div>
+            <div class="espaco_medio">
+                <p>Em um nível de 0 a 5,<br>o quão insatisfeito você está?</p>
+            </div>
+            <div>
+                <input name="1" type="range" id="range" name="range" min="0" max="7" list="marcas" />
+            </div>
+            <div class="rodape">
+                <button name="" type="submit" class="botao confirma_com_raiva">
+                    <img src="grr.png" width="75" height="75" alt="GRRR">
+                </button>
+                <button name="1" type="button" class="botao cancela_na_paz">
+                    <img src="paz.png" width="75" height="75" alt="Ohmmm...">
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="estiloscript.js"></script>
+
+</html>

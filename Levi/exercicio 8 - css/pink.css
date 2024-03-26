@@ -10,8 +10,14 @@
     src: url(fontes/Relevance-trial-Bold.ttf);
 }
 
-body{
+.body_dark{
     background-color: rgb(212, 205, 205);
+    font-family: 'Relevance Bold';
+    font-size: 16px;
+}
+
+.body_light{
+    background-color: #ffffff;
     font-family: 'Relevance Bold';
     font-size: 16px;
 }
@@ -41,13 +47,13 @@ body{
 }
 
 
-.option{
+.option_light{
     margin: 0px 10px 0px 10px;
     font-size: 20px;
     cursor: pointer;
 }
 
-.option:active{
+.option_light:active{
     color: var(--dark-red);
 }
 
@@ -88,13 +94,12 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: rgb(212, 205, 205);
     margin-top: 100px;
 }
 
 /* Configuração para as divs, aumente ou diminua a altura (height) de acordo com a necessidade */
 
-.config{
+.config_div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,11 +112,11 @@ body{
 
 /* Cores das Divs*/
 
-.background_light{
+.background_light_div{
     background-color: white;
 }
 
-.background_dark{
+.background_dark_div{
     background-color: #df9eaf;   
 }
 
@@ -203,7 +208,7 @@ body{
 
 /*Configurações para o checkbox */
 
-.container{
+.container_checkbox{
     display: block;
     position: relative;
     padding-left: 35px;
@@ -213,7 +218,7 @@ body{
 
 /* Escondendo o checkbox padrão */
 
-.container input{
+.container_checkbox input{
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -235,13 +240,13 @@ body{
 
 /* Adicionando cor ao clicar */
 
-.container input:checked ~ .checkmark{
+.container_checkbox input:checked ~ .checkmark{
     background-color: var(--dark-red);
 }
 
 /* Criando o ícone de check */
 
-.container .checkmark:after{
+.container_checkbox .checkmark:after{
     content: "";
     position: absolute;
     display: none;
@@ -257,7 +262,7 @@ body{
 }
 
 /* Exibidindo o ícone de check ao ser selecionado */
-.container input:checked ~.checkmark:after{
+.container_checkbox input:checked ~.checkmark:after{
     display: block;
 }
 
@@ -310,3 +315,14 @@ body{
     height: 20px;
     border-radius: 20px;
 }
+
+
+/* Opções de link */
+
+.link_dark{
+  color: var(--dark-red-2);  
+}
+
+.link_light{
+    color: white;  
+  }
