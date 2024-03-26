@@ -9,39 +9,41 @@
     
 </head>
 
-<body class="body_lighttheme">
-    <h2>Cardápio com Participação Popular</h2>
+<body id="body" class="body_lighttheme">
+    <h2 class="header_darktheme">Cardápio com Participação Popular</h2>
+    <div id="modo_escuro" style="width: 200px;" id="modo" class="btn_confirmation_with_bg"
+    onclick="modo_escuro_claro()">modo escuro</div>
     <hr>
-    <div class="">
-        <div class="">
-            <h3>Cadastro</h3>
-            <div class="">
-                <label>Nome:</label>
-                <input type="text" class="text_input">
-                <label>Sobrenome:</label>
-                <input type="text" class="text_input">
-                <label>E-mail:</label>
-                <input type="text" class="text_input">
-                <label>CPF:</label>
-                <input type="text" class="text_input">
-                <label>Escolha uma senha forte:</label>
-                <input type="password" class="password_input">
-                <label>Confirme a senha:</label>
-                <input type="password" class="password_input">
+    <div id="div1" class="div_darktheme d-flex">
+        <div id="div2" class="div_lighttheme d-flex align-items justify-content">
+            <div id="text1">
+                <h3>Cadastro</h3>
+                <label>Nome:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Sobrenome:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>E-mail:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>CPF:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Escolha uma senha forte:</label><br>
+                <input type="password" class="password_input"><br>
+                <label>Confirme a senha:</label><br>
+                <input type="password" class="password_input"><br>
             </div>
-            <div class="">
+            <div id="text2" class="margin-left">
                 <h4>Endereço</h4>
-                <label>CEP:</label>
-                <input type="text" class="text_input">
-                <label>Logradouro:</label>
-                <input type="text" class="text_input">
-                <label>Número:</label>
-                <input type="number" class="text_input">
-                <label>Bairro:</label>
-                <input type="text" class="text_input">
-                <label>Complemento:</label>
-                <input type="text" class="text_input">
-                <label>Renda Média:</label>
+                <label>CEP:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Logradouro:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Número:</label><br>
+                <input type="number" class="text_input"><br>
+                <label>Bairro:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Complemento:</label><br>
+                <input type="text" class="text_input"><br>
+                <label>Renda Média:</label><br>
                 <br>
                 <select class="custom_select">
                     <option selected="true">Selecione</option>
@@ -53,15 +55,15 @@
                 </select>
             </div>
         </div>
-        <div class="">
-            <h3>Preferências alimentares</h3>
+        <div id="div3" class="div_lighttheme margin-left">
+            <h3 id="text3">Preferências alimentares</h3>
             <div>
                 <div class="">
                     <p>De acordo com a escala, quanto você está satisfeito com a alimentação servida?</p>
                     <input type="range" class="slider slider">
                 </div>
-                <div>
-                    <label>Para qual refeição você costuma usar o restaurante?</label>
+                <div id="text4">
+                    <label>Para qual refeição você costuma usar o restaurante?</label><br>
                     <input type="checkbox">
                     <label>Não costumo ir ao restaurante</label><br>
                     <input type="checkbox">
@@ -79,7 +81,7 @@
                     <input type="checkbox">
                     <label>Ceia</label><br>
                 </div>
-                <div>
+                <div id="text5">
                     <label>Normalmente, você come:</label><br>
                     <input type="radio" name="tipo">
                     <label>Doce</label>
@@ -88,7 +90,7 @@
                     <input type="radio" name="tipo">
                     <label>Ambos</label>
                 </div>
-                <div>
+                <div id="text6">
                     <label>Qual seu tipo de dieta?</label><br>
                     <input type="checkbox">
                     <label>Nenhuma restrição</label><br>
@@ -112,7 +114,7 @@
                         <textarea placeholder="Descreva suas restrições" rows="4" cols="80"></textarea>
                     </div>
                 </div>
-                <div class="">
+                <div id="text7">
                     <label>Normalmente, você utiliza qual dos seguintes métodos de pagamento?</label>
                     <br>
                     <select>
@@ -140,5 +142,5 @@
         <a href="">Acesse o cardápio da semana</a>
     </div>
 </body>
-
+<script src="scripts.js"></script>
 </html>
