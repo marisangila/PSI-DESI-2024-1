@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+    <style>
+        .div-container {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+
+        .div-coluna {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .div-card {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .div-center {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body class="body fundo_claro">
+    <h2 class="cabecalho">Cardápio com Participação Popular</h2>
+    <hr>
+    <div class="div-container">
+        <div class="div-coluna card fundo_claro">
+            <h3 class="fonte_secundaria">Cadastro</h3>
+            <div class="div-card">
+                <label class="label fonte_secundaria">Nome:</label>
+                <input class="text_sentence fonte_primaria" type="text">
+                <label class="label fonte_secundaria" >Sobrenome:</label>
+                <input class="text_sentence fonte_primaria" type="text">
+                <label class="label fonte_secundaria" >E-mail:</label>
+                <input class="text_sentence fonte_primaria" type="text">
+                <label class="label fonte_secundaria">CPF:</label>
+                <input class="text_sentence fonte_primaria" type="text">
+                <label class="label fonte_secundaria">Escolha uma senha forte:</label>
+                <input class="text_sentence fonte_primaria" type="password">
+                <label class="label fonte_secundaria">Confirme a senha:</label>
+                <input class="text_sentence fonte_primaria" type="password">
+            </div>
+            <div class="div-card">
+                <h3 class="fonte_secundaria">Endereço</h4>
+                <label class="label fonte_secundaria">CEP:</label>
+                <input class="text_sentence fonte_primaria"  type="text">
+                <label class="label fonte_secundaria">Logradouro:</label>
+                <input class="text_sentence fonte_primaria"  type="text">
+                <label class="label fonte_secundaria">Número:</label>
+                <input class="text_sentence fonte_primaria"  type="number">
+                <label class="label fonte_secundaria">Bairro:</label>
+                <input class="text_sentence fonte_primaria"  type="text">
+                <label class="label fonte_secundaria">Complemento:</label>
+                <input class="text_sentence fonte_primaria"  type="text">
+                <label class="label fonte_secundaria">Renda Média:</label>
+                <br>
+                <select class="selecao">
+                    <option selected="true">Selecione</option>
+                    <option>Menos de R$ 1.000,00</option>
+                    <option>R$ 1.000,00 - R$ 2.000,00</option>
+                    <option>R$ 2.001,00 - R$ 3.000,00</option>
+                    <option>R$ 3.001,00 - R$ 4.000,00</option>
+                    <option>Mais de R$ 4.000,00</option>
+                </select>
+            </div>
+        </div>
+        <div class="div-coluna card fundo_claro">
+            <h3 class="fonte_secundaria">Preferências alimentares</h3>
+            <div>
+                <div class="div-card">
+                    <p class="paragrafo fonte_secundaria">De acordo com a escala, quanto você está satisfeito com a alimentação servida?</p>
+                    <input class="range" type="range">
+                </div>
+                <div>
+                    <label class="label fonte_secundaria">Para qual refeição você costuma usar o restaurante?</label>
+                    <br>
+                    <input class="check" type="checkbox">
+                    <label class="label fonte_secundaria">Não costumo ir ao restaurante</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Café da Manhã</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Almoço</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Café da Tarde</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Jantar</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Lanche</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Lanche Da Meia Noite</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Ceia</label><br>
+                </div>
+                <div>
+                    <label class="label fonte_secundaria">Normalmente, você come:</label><br>
+                    <input type="radio" name="tipo">
+                    <label class="label fonte_secundaria">Doce</label>
+                    <input type="radio" name="tipo">
+                    <label class="label fonte_secundaria">Salgado</label>
+                    <input type="radio" name="tipo">
+                    <label class="label fonte_secundaria">Ambos</label>
+                </div>
+                <div>
+                    <label class="label fonte_secundaria">Qual seu tipo de dieta?</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Nenhuma restrição</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Sem glúten</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Sem sal</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Sem açúcar</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Sem lactose</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Vegetariana</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Vegana</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Ovolactovegetariana</label><br>
+                    <input type="checkbox">
+                    <label class="label fonte_secundaria">Outra</label>
+                    <div class="div-card">
+                        <textarea placeholder="Descreva suas restrições" rows="4" cols="80"></textarea>
+                    </div>
+                </div>
+                <div class="div-card">
+                    <label class="label fonte_secundaria">Normalmente, você utiliza qual dos seguintes métodos de pagamento?</label>
+                    <br>
+                    <select class="selecao">
+                        <option selected="true">Selecione</option>
+                        <option>Dinheiro</option>
+                        <option>Cartão de Débito</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Pix</option>
+                        <option>Fiado</option>
+                        <option>Dinheiro Emprestado</option>
+                        <option>Rolo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="div-center">
+        <input class="btn_pequeno btn_confirmacao" type="submit" value="Enviar">
+        <input class="btn_pequeno btn_confirmacao" type="submit" value="Voltar">
+        <input class="btn_pequeno btn_confirmacao" type="submit" value="Cancelar">
+    </div>
+    </form>
+    <div>
+        <a class="link" href="#">Acesse o cardápio da semana</a>
+    </div>
+</body>
+
+</html>
+index.html
+Exibindo index.html…
