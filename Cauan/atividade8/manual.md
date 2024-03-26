@@ -2,27 +2,27 @@
 
 * buttons
 
-.btn-confirm-light:
+.btn-confirm-light: Botão de confirmação para tema claro.
   
   ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/143744033/0f5638c9-c5b0-47b4-84a9-bc192a91e0f1)
 
-.btn-ghost-confirm-light:
+.btn-ghost-confirm-light: Botão de confirmação transparente para tema claro.
 
   ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/143744033/b46821c7-2f66-426d-a092-4197549577f7)
 
-.btn-cancel-light:
+.btn-cancel-light: Botão de cancelamento para tema claro.
 
 ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/143744033/702797dd-ba01-4eef-8d2c-74aad46843d8)
 
-.btn-ghost-cancel-light:
+.btn-ghost-cancel-light: Botão de cancelamento transparente para tema claro.
 
 ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/143744033/4856ab90-e972-477a-99f1-1d8b5efdc275)
 
-.btn-confirm-dark:
+.btn-confirm-dark: Botão de confirmação para tema escuro.
 
 ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/143744033/4b503738-fe46-4156-a186-9b3ffc9c31c4)
 
-.btn-ghost-confirm-dark:
+.btn-ghost-confirm-dark: 
 
 ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/143744033/0ea73aae-bbca-44af-bac7-9361821d03b8)
 
