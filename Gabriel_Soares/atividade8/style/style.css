@@ -1,0 +1,271 @@
+/* Configurações padrão */
+
+*{padding: 0px; margin: 0px; font-family: Arial} /* Defini tudo com margin e padding 0 */
+
+p{
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+input{
+    height: 30px;
+    width: 500px;
+    background-color: #FFFFF0;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*--------------------*/
+
+/* Configurações de Link */
+
+a{
+    text-decoration: none;
+    color: rgb(53, 118, 238);
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(118, 162, 243);
+}
+
+a:visited{
+    text-decoration: none;
+    color: rgb(53, 118, 238);
+}
+
+a:active{
+    color: rgb(59, 30, 226);
+}
+
+/*--------------------*/
+
+/* Funções para deixar a página em modo claro */
+
+.body_claro{
+    background-color: #FFF8DC;
+}
+
+.header_claro{
+    background-color: #B51630;
+    height: 60px;
+}
+
+.p_header_claro{
+    color: #FFFFF0;
+    margin-left: 20px;
+}
+
+.label_claro{
+    color: #000000;
+}
+
+.paragrafo_claro{
+    color: #000000;
+}
+
+.card_claro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #30706F;
+    border-radius: 40px;
+}
+
+/*--------------------*/
+
+/* Funções para deixar a página em modo escuro */
+
+.body_escuro{
+    background-color: #16213E;
+}
+
+.header_escuro{
+    background-color: #0F3460;
+}
+
+.p_header_escuro{
+    color: #E94560;
+    margin-left: 20px;
+}
+
+.label_escuro{
+    color: #E94560;
+}
+
+.paragrafo_escuro{
+    color: #E94560;
+}
+
+.card_escuro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #533483;
+    border-radius: 40px;
+}
+
+/*--------------------*/
+
+/* INPUTS RANGE */
+
+.input_range{
+    -webkit-appearance:none;
+	width:400px;
+	height:4px;
+	border-radius:5px;
+	background-color:#ba3950;
+	outline:none;
+}
+
+.input_range::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:#a83348;
+}
+
+.range_span{
+	position:absolute;
+	margin-left:14px;
+	width:50px;
+	height:30px;
+	background-color:#222;
+	color:#fff;
+	border-radius:3px;
+	text-align:center;
+	line-height:30px;
+}
+.range_span:before{
+	content:'';
+	position:absolute;
+	border-right:9px solid transparent;
+	border-left:9px solid transparent;
+	border-bottom:12px solid #222;
+	left:-10px;
+	top:50%;
+	transform:translateY(-50%) rotate(-90deg);
+}
+
+/*--------------------*/
+
+/* BOTÃO CONFIRMAR GRANDE */
+
+.btn_confirma_grande_com_fundo{
+    background-color: green;
+    color: white;
+    border: 2px green solid;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+.btn_confirma_grande_sem_fundo{
+    background-color: transparent;
+    color: black;
+    border: 2px green solid;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+/*--------------------*/
+
+/* BOTÃO CONFIRMAR PEQUENO */
+
+.btn_confirma_pequeno_com_fundo{
+    background-color: green;
+    color: white;
+    border: 2px green solid;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.btn_confirma_pequeno_sem_fundo{
+    background-color: transparent;
+    color: black;
+    border: 2px green solid;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+/*--------------------*/
+
+/* BOTÃO CANCELAR PEQUENO */
+
+.btn_cancela_grande_com_fundo{
+    background-color: tomato;
+    color: white;
+    border: 2px tomato solid;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+.btn_cancela_grande_sem_fundo{
+    background-color: transparent;
+    color: black;
+    border: 2px tomato solid;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+}
+
+/*--------------------*/
+
+/* BOTÃO CANCELAR PEQUENO */
+
+.btn_cancela_pequeno_com_fundo{
+    background-color: tomato;
+    color: white;
+    border: 2px tomato solid;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.btn_cancela_pequeno_sem_fundo{
+    background-color: transparent;
+    color: black;
+    border: 2px tomato solid;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+/*--------------------*/
+
+/* CHECK BOX */
+
+.input_check{
+    background-image: url(checkmark.svg) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+   
+.input_check:checked {
+    background-image: url(checkmark-selected.svg) no-repeat;
+}
+
+/*--------------------*/
+
+/* CAIXA DE SELEÇÃO */
+
+.caixa_selecao{
+    width: 200px;
+    height: 30px;
+}
+
+/*--------------------*/
