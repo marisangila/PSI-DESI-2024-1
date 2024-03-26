@@ -1,129 +1,328 @@
-body{
-    background-color: rgba(255, 242, 244, 0.541);
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Sugestão de fonte: */
+
+@font-face{
+    font-family: 'Relevance Bold';
+    src: url(fontes/Relevance-trial-Bold.ttf);
+}
+
+.body_dark{
+    background-color: rgb(212, 205, 205);
+    font-family: 'Relevance Bold';
+    font-size: 16px;
+}
+
+.body_light{
+    background-color: #ffffff;
+    font-family: 'Relevance Bold';
+    font-size: 16px;
+}
+
+/* Configuração padrão do cabeçalho */
+.size_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+
+/* Configuração padrão para lista do cabeçalho */
+
+.list_orientation{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+/* Cabeçalho claro*/
+
+.header_light{
+    background-color: #ffffff; 
+}
+
+
+.option_light{
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.option_light:active{
+    color: var(--dark-red);
+}
+
+/* Cabeçalho escuro*/
+
+.header_dark{
+    background-color: var(--brown-pink);
+}
+
+.option_dark{
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.option_dark:active{
+    color: rgb(63, 63, 63);
+}
+
+/* Opções de cores para fontes */
+
+.dark_red_font{
+    color: var(--dark-red-2);
+}
+
+.dark_brown_font{
+    color:#25141a;
+}
+
+.light_font{
+    color:white;
+}
+
+/*Background*/
+
+.main_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+/* Configuração para as divs, aumente ou diminua a altura (height) de acordo com a necessidade */
+
+.config_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    height: 800px;
+    width: 450px;
+    border-radius: 20px;
+}
+
+/* Cores das Divs*/
+
+.background_light_div{
+    background-color: white;
+}
+
+.background_dark_div{
+    background-color: #df9eaf;   
 }
 
 /*Aqui você encontra a paleta de cores utilizada:*/
 
 :root{
+    --brown: #25141a;
+    --grey-light: #6e6a68;
+    --dark-red-2: #810233;
     --dark-red: #b70046;
     --light-red: #e10055;
     --brown-red: #A64456;
     --brown-pink: #D9718C;
     --light-pink: #ff94bc;
+    --light-green: #1bb18b;
+    --dark-green: #297e69;
 }
 
-/*Botões de confirmação - Configurações:*/
+/* Tamanho dos botões */
 
-.btn_confirm{
-    width: 10%;
-    height: 40px;
+.big_btn{
+    width: 40%;
+    height: 35px;
     border-radius: 20px;
-    background-color: var(--brown-pink);
     border: none;
     color: white;
+    cursor: pointer;
+    font-family: 'Relevance Bold';
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.tiny_btn{
+    width: 20%;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Relevance Bold';
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/*Botões de confirmação com cor - Configurações:*/
+
+.btn_confirm{
+    background-color: var(--light-green);
 }
 
 .btn_confirm:hover{
-    background-color: var(--brown-red);
+    background-color: var(--dark-green);
 }
 
-.btn_confirm_tiny{
-    width: 5%;
-    height: 40px;
-    border-radius: 20px;
-    background-color: var(--brown-pink);
-    border: none;
-    color: white;    
-}
-
-.btn_confirm_tiny:hover{
-    background-color: var(--brown-red);
-}
+/*Botões de confirmação sem cor - Configurações:*/
 
 .wocolor_btn_confirm{
-    width: 10%;
-    height: 40px;
-    border-radius: 20px;
     background-color: #f0f0f0;
-    border: solid 1px #6e6a68;
-    color: 	#6e6a68;
+    color: 	var(--grey-light);
 }
 
 .wocolor_btn_confirm:hover{
-    background-color: var(--brown-pink);
-    border: solid 1px var(--brown-pink);
+    background-color: var(--light-green);
     color: 	white;
 }
 
-.wocolor_btn_confirm_tiny{
-    width: 5%;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #f0f0f0;
-    border: solid 1px #6e6a68;
-    color: 	#6e6a68;   
-}
-
-.wocolor_btn_confirm_tiny:hover{
-    background-color: var(--brown-pink);
-    border: solid 1px var(--brown-pink);
-    color: 	white;  
-}
-
-/*Botões de cancelamento - Configurações:*/
+/*Botões de cancelamento com cor - Configurações:*/
 
 .btn_cancel{
-    width: 10%;
-    height: 40px;
-    border-radius: 20px;
-    background-color: var(--light-red);
-    border: none;
-    color: white;  
+    background-color: var(--dark-red); 
 }
 
 .btn_cancel:hover{
-    background-color: var(--dark-red);
+    background-color: var(--dark-red-2);
 }
 
-.btn_cancel_tiny{
-    width: 5%;
-    height: 40px;
-    border-radius: 20px;
-    background-color: var(--light-red);
-    border: none;
-    color: white;    
-}
-
-.btn_cancel_tiny:hover{
-    background-color: var(--dark-red);
-}  
+/*Botões de cancelamento sem cor - Configurações:*/
 
 .wocolor_btn_cancel{
-    width: 10%;
-    height: 40px;
-    border-radius: 20px;
     background-color: #f0f0f0;
-    border: solid 1px #6e6a68;
-    color: 	#6e6a68;       
+    color: 	var(--grey-light);       
 }
 
 .wocolor_btn_cancel:hover{
-    background-color: var(--light-red);
-    border: solid 1px var(--light-red);
+    background-color: var(--dark-red);
+
     color: 	white;      
 }
 
-.wocolor_btn_cancel_tiny{
-    width: 5%;
-    height: 40px;
-    border-radius: 20px;
+/*Configurações para o checkbox */
+
+.container_checkbox{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* Escondendo o checkbox padrão */
+
+.container_checkbox input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+/* Criando o checkbox customizado */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
     background-color: #f0f0f0;
-    border: solid 1px #6e6a68;
-    color: 	#6e6a68;       
+    border-radius: 5px;
 }
 
-.wocolor_btn_cancel_tiny:hover{
-    background-color: var(--light-red);
-    border: solid 1px var(--light-red);
-    color: 	white;      
+/* Adicionando cor ao clicar */
+
+.container_checkbox input:checked ~ .checkmark{
+    background-color: var(--dark-red);
 }
+
+/* Criando o ícone de check */
+
+.container_checkbox .checkmark:after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 8px;
+    border: solid #f0f0f0;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Exibidindo o ícone de check ao ser selecionado */
+.container_checkbox input:checked ~.checkmark:after{
+    display: block;
+}
+
+/* Input de dados */
+
+.input_text{
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    padding: 0px 0px 0px 15px;
+    box-shadow: 0px 0px 3px #6e6a6846;
+    font-family: 'Relevance Bold';
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Após escrever, troca a cor da caixa */
+
+.input_text:not(:placeholder-shown){
+    background-color: #ffffff;
+}
+
+/* Barra de Range */
+
+.range_bar{
+    appearance: none;
+    border: none;
+    width: 10vw;
+    margin-bottom: 15px;
+}
+
+/* Barrinha de baixo */
+.range_bar::-webkit-slider-runnable-track{
+    appearance: none;
+    height: 3px;
+    border-radius: 5px;
+    background-color:#6e6a6846;
+}
+
+/* Bolinha */
+
+.range_bar::-webkit-slider-thumb{
+    margin-top: -6px;
+    appearance: none;
+    background-color: var(--dark-red);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+
+/* Opções de link */
+
+.link_dark{
+  color: var(--dark-red-2);  
+}
+
+.link_light{
+    color: white;  
+  }
