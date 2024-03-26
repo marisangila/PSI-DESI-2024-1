@@ -1,0 +1,162 @@
+
+
+button{
+    border-radius: 10px;
+    height: 40px;
+    background-color: #155B5D;
+
+    color:white;
+
+}
+
+input{
+    background-color: #339c8962;
+    width: 300px;
+    height: 20px;
+    margin-bottom: 5px;;
+}
+
+.botao_confirma_grande{
+    width: 400px;
+    
+}
+
+.botao_confirma_pequeno{
+    width: 150px;
+    
+}
+
+.botao_confirma_sem_fundo{
+    background-color: transparent;
+    width: 150px;
+    color: black;
+    
+}
+
+.botao_confirma_com_fundo{
+    background-color: #01553B;
+    width: 200px;
+    
+}
+
+.botao_cancela_grande{
+    width: 200px;
+    
+}
+
+.botao_cancela_pequeno{
+    width: 50px;
+    font-size: 9px;
+    text-align: center;
+}
+
+.botao_cancela_sem_fundo{
+    background-color: transparent;
+    width: 50px;
+    font-size: 9px;
+    text-align: center;
+    color: black;
+
+}
+
+.botao_cancela_com_fundo{
+    background-color: red;
+    width: 80px;
+    
+}
+
+.input_checkbox{
+    color: #0D0A0A;
+    width: 50px
+
+}
+
+.input_nome{
+    background-color:#339c894f;
+    border-radius: 10px;
+
+}
+
+.input_email{
+    background-color:#339c894f;
+    border-radius: 10px;
+    width: 320px    ;
+    
+}
+
+.input_senha{
+    background-color:#339c894f;
+    border-radius: 10px;
+    width: 320px    ;
+    
+}
+
+.input_range{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 5px;  
+    border-radius: 10px;
+    background-color: #032326;
+}
+
+.campo_select{
+    background-color:#01553B;
+    color: white;
+    width: 200px;
+}
+
+.label_claro{
+    color: #37A691;
+}
+
+.label_escuro{
+    color: #0b2a2b;
+}
+
+.paragrafo_claro{
+    color: #37A691;
+}
+.paragrafo_escuro{
+    color: #0b2a2b;
+}
+
+.header_claro{
+    color: #37A691;
+
+}
+
+.header_escuro{
+    color: #0b2a2b;
+}
+
+.estilo_link{
+    color: #01553B;
+    text-decoration: none;
+}
+
+.body_claro{
+    background-color: #C9DDE5;
+}
+
+.body_escuro{
+    background-color: #1a1a1a;
+}
+
+.div_card_claro{
+    background-color: #C9DDE5;
+    color: black;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.div_card_escuro{
+    background-color: #0b2a2b;
+    color: white;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
