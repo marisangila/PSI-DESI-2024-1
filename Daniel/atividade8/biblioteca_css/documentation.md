@@ -21,7 +21,6 @@ Para que você possa estilizar o background da suas páginas, estão disponívei
     
        <body class="body-alternative">
   ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/12ef5f52-c3a6-422f-bb11-69d036c37adf)
-
     
 ## HEADER
 Sempre que você for adicionar uma seção de header no seu projeto, você pode usar a classe header, para o tema escura usar header-dark.
@@ -57,21 +56,28 @@ Para estilizar seus botões, você pode usar a classe but, que define que seu el
 ## CHECKBOX
    A biblioteca permite que você escolha três tamanhos de checkbox. Sendo elas:
 
-* checkbox-big, checkbox-medium e checkbox-small
+* check-big, check-medium e check-small
   
-      <input type="checkbox" class="checkbox checkbox-big pointer">
-      <input type="checkbox" class="checkbox checkbox-medium pointer">
-      <input type="checkbox" class="checkbox checkbox-small pointer">
+      <input type="checkbox" class="checkbox check-big pointer">
+      <input type="checkbox" class="checkbox check-medium pointer">
+      <input type="checkbox" class="checkbox check-small pointer">
      ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/5ca35d73-fc15-4b8c-8479-37d28e278451)
+
+* check-dark e chack-light
+  
+        <input type="checkbox" class="checkbox check-light check-small pointer">
+        <input type="checkbox" class="checkbox check-dark check-small pointer">
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/b00bacbe-7df2-4c8e-a061-27e1eddd343c)
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/c8ae703b-c303-4f66-8412-00de1241054c)
 
 ## INPUT
 O input possui classes para 3 tipos diferentes de propositos, sendo eles nome de usuário, senha, e email, além do input tipo range.
 
-* input-username, input-password e input-email
+* ipt-username, ipt-password e ipt-email
 
-      <input type="text" class="input input-username" placeholder="Insert your name here">
-      <input type="text" class="input input-email" placeholder="Insert your email here">
-      <input type="password" class="input input-password" placeholder="Insert your password here">
+      <input type="text" class="input ipt-username" placeholder="Insert your name here">
+      <input type="text" class="input ipt-email" placeholder="Insert your email here">
+      <input type="password" class="input ipt-password" placeholder="Insert your password here">
     ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/f0034aa4-0a05-48f2-bbc6-95b2efcb0efd)
 
 * input-range
@@ -79,7 +85,18 @@ O input possui classes para 3 tipos diferentes de propositos, sendo eles nome de
       <input type="range" class="input input-range" placeholder="Insert your name here">
     ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/6225a43d-9d4e-4ef7-a2ae-d6d997eefdd9)
 
-## Os labels, além de outras estilizações, possuem quatro níveis de tamanho, além de ser possível adicionar cor em cada um deles, usando a classe "font-nomeDaCor":
+Para que você possa atribuir estilizações de tema, use as seguintes classes:
+* ipt-light e ipt-dark
+
+        <input type="text" class="input ipt-username ipt-light" placeholder="Insert your name here">
+        <input type="text" class="input ipt-username ipt-dark" placeholder="Insert your name here">
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/7db34664-e62c-447b-8529-e7c44e2668b9)
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/264fb263-c837-4819-9e29-36ad6f5305c6)
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/78dc664b-3172-4026-af7f-2add80ca717f)
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/2578e280-0ee7-445b-add4-539fee0924af)
+
+## Label 
+Os labels, além de outras estilizações, possuem quatro níveis de tamanho, além de ser possível adicionar cor em cada um deles, usando as classes "font-nomeDaCor":
 
 * label-small, label-medium, label-big e label-extra-big
 
@@ -98,7 +115,46 @@ O input possui classes para 3 tipos diferentes de propositos, sendo eles nome de
 
   ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/9fb5a6d2-a9fb-4b4c-a394-8ae119bc06c6)
 
+## Parágrafo
+Os parágrafos da biblioteca permitem que você escolha entre três tamanhos diferentes, sendo ele:
 
+* .paragraph-small, .paragraph e .paragraph-big
 
+              <p class="paragraph-small font-light">Paragraph</p>
+              <p class="paragraph font-light">Paragraph</p>
+              <p class="paragraph-big font-light">Paragraph</p>
+
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/1b5103ce-8b2f-445e-95d3-a77e4d5735cf)
+  ![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/b80d7351-702b-4437-8da4-91c255ae4300)
+
+## Link
+
+* link
+Deve ser usado para todo link do projeto.
+
+      <a href="" class="link font-light">
+      <a href="" class="link font-dark">
+      
+![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/01f89cbf-ae2e-47dc-a16c-f2049bf0f546)
+![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/f91f9025-3e82-4af3-861e-fd39e168bae5)
+
+## Card
+Basicamente representam divs, usadas para englobar diversos elementos, no exemplo abaixo, foi usado como um formulário.
+
+* card-dark e card-light
+
+      <form class="card-dark">
+      <form class="card-light">
+![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/db3cdf2b-d2a7-47e0-bff5-0dd80ca96442)
+![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/99f3bec5-5ed9-4cf1-9b2a-ffa41849aacf)
+
+## Select
+Assim como todos os outros elementos, este possuí uma versão escura e outra clara.
+
+       <select class="select-dark select-big">
+       <select class="select-light select-big">
+
+![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/16077455-b002-4531-8308-4bbb20e21771)
+![image](https://github.com/marisangila/PSI-DESI-2024-1/assets/130805695/9ac5aeb0-3d6b-4926-8de6-b2367b51f4ee)
 
 

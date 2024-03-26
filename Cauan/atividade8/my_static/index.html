@@ -16,7 +16,7 @@
         <button class="nav-dark-btn">Assunto</button>
         <button class="nav-dark-btn">Assunto</button>
     </nav>
-    <nav class="nav nav-light shadow-light">
+    <nav class="nav nav-light shadow-dark">
         <button class="nav-light-btn">Assunto</button>
         <button class="nav-light-btn">Assunto</button>
         <button class="nav-light-btn">Assunto</button>
@@ -28,31 +28,31 @@
             <div id="buttons">
                 <div id="confirm-btn">
                     <h2>Confirm btn</h2>
-                    <div id="normal">
-                        <button class="big-btn btn-confirm-light shadow-light">Confirmar</button>
-                        <button class="small-btn btn-confirm-light shadow-light">Confirmar</button>
+                    <div id="normal" class="card bg-dark">
+                        <button class="big-btn btn-confirm-light">Confirmar</button>
+                        <button class="small-btn btn-confirm-light">Confirmar</button>
                         <div class="teste-btn">
-                            <div class="all-space-btn btn-confirm-light shadow-light">Confirmar</div>
+                            <div class="all-space-btn btn-confirm-light">Confirmar</div>
                         </div>
                     </div>
-                    <div id="ghost">
-                        <button class="big-btn btn-ghost-confirm-light shadow-light">Confirmar</button>
-                        <button class="small-btn btn-ghost-confirm-light shadow-light">Confirmar</button>
+                    <div id="ghost" class="card">
+                        <button class="big-btn btn-ghost-confirm-light">Confirmar</button>
+                        <button class="small-btn btn-ghost-confirm-light">Confirmar</button>
                         <div class="teste-btn">
-                            <div class="all-space-btn btn-ghost-confirm-light shadow-light">Confirmar</div>
+                            <div class="all-space-btn btn-ghost-confirm-light">Confirmar</div>
                         </div>
                     </div>
                 </div>
                 <div id="cancel-btn">
                     <h2>Cancel btn</h2>
-                    <div id="normal">
+                    <div id="normal" class="card">
                         <button class="big-btn btn-cancel-light shadow-light">cancelar</button>
                         <button class="small-btn btn-cancel-light shadow-light">cancelar</button>
                         <div class="teste-btn">
                             <div class="all-space-btn btn-cancel-light shadow-light">cancelar</div>
                         </div>
                     </div>
-                    <div id="ghost">
+                    <div id="ghost" class="card">
                         <button class="big-btn btn-ghost-cancel-light shadow-light">cancelar</button>
                         <button class="small-btn btn-ghost-cancel-light shadow-light">cancelar</button>
                         <div class="teste-btn">
@@ -60,46 +60,58 @@
                         </div>
                     </div>
                 </div>
-                <div id="check-box">
-                    <div>
+                <div id="form">
+                    <div class="card">
                         <h2>Check-box</h2>
                         <div id="check-boxes">
                             <input type="checkbox" class="check-b check-light">
                         </div>
                     </div>
                     <h2>Input-text</h2>
-                    <div>
+                    <div class="card">
                         <div id="input-t">
                             <input type="text" class="input-txt">
                         </div>
                     </div>
                     <h2>Search-box</h2>
-                    <div>
+                    <div class="card">
                         <div id="search">
-                            <input type="text" class="box" placeholder="search">
+                            <input type="text" class="search-box" placeholder="search">
                         </div>
                     </div>
                     <h2>Seleção</h2>
-                    <div>
-                        <select class="select-light">
+                    <div class="card">
+                        <select class="select-dark">
                             <option class="option">asgdjgahsjd</option>
                         </select>
+                    </div>
+                    <h2>Range</h2>
+                    <div class="card">
+                        <div id="range">
+                            <input type="range" class="range-dark" placeholder="range">
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <button class="simple-btn-light">Div</button>
+                        <p class="light-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum laudantium
+                            atque non. Dolores, dolorem? Similique blanditiis earum dicta fugiat consectetur
+                            cupiditate corporis numquam dignissimos facere vero vitae quis, in et.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="dark" class="back-dark">
+        <div id="dark" class="bg-dark" class="card">
             <div id="buttons">
                 <div id="confirm-btn">
                     <h2>Confirm btn</h2>
-                    <div id="normal">
+                    <div class="card bg-light">
                         <button class="big-btn btn-confirm-dark shadow">Confirmar</button>
                         <button class="small-btn btn-confirm-dark shadow">Confirmar</button>
                         <div class="teste-btn">
                             <div class="all-space-btn btn-confirm-dark shadow">Confirmar</div>
                         </div>
                     </div>
-                    <div id="ghost">
+                    <div class="card">
                         <button class="big-btn btn-ghost-confirm-dark shadow">Confirmar</button>
                         <button class="small-btn btn-ghost-confirm-dark shadow">Confirmar</button>
                         <div class="teste-btn">
@@ -107,16 +119,16 @@
                         </div>
                     </div>
                 </div>
-                <div id="cancel-btn">
+                <div >
                     <h2>Cancel btn</h2>
-                    <div id="normal">
+                    <div class="card">
                         <button class="big-btn btn-cancel-dark shadow">cancelar</button>
                         <button class="small-btn btn-cancel-dark shadow">cancelar</button>
                         <div class="teste-btn">
                             <div class="all-space-btn btn-cancel-dark shadow">cancelar</div>
                         </div>
                     </div>
-                    <div id="ghost">
+                    <div class="card">
                         <button class="big-btn btn-ghost-cancel-dark shadow">cancelar</button>
                         <button class="small-btn btn-ghost-cancel-dark shadow">cancelar</button>
                         <div class="teste-btn">
@@ -125,60 +137,60 @@
                     </div>
                 </div>
                 <div id="form">
-                    <div>
+                    <div class="card">
                         <h2>Check-box</h2>
                         <div id="check-boxes">
                             <input type="checkbox" class="check-b check-dark">
                         </div>
                     </div>
                     <h2>Input-text</h2>
-                    <div>
+                    <div class="card">
                         <div id="input-t">
                             <input type="text" class="input-txt">
                         </div>
                     </div>
                     <h2>Search-box</h2>
-                    <div>
+                    <div class="card">
                         <div id="search">
-                            <input type="text" class="box" placeholder="Search">
+                            <input type="text" class="search-box" placeholder="Search">
                         </div>
                     </div>
                     <h2>Email</h2>
-                    <div>
+                    <div class="card">
                         <div id="email">
-                            <input type="email" class="box" placeholder="email">
+                            <input type="email" class="email" placeholder="email">
                         </div>
                     </div>
                     <h2>Senha</h2>
-                    <div>
-                        <div id="search">
-                            <input type="password" class="box">
+                    <div class="card">
+                        <div id="password">
+                            <input type="password" class="password" placeholder="senha">
                         </div>
                     </div>
                     <h2>Range</h2>
-                    <div>
-                        <div id="search">
-                            <input type="range" class="range" placeholder="range">
+                    <div class="card">
+                        <div id="range">
+                            <input type="range" class="range-light" placeholder="range">
                         </div>
                     </div>
                     <h2>Seleção</h2>
-                    <div>
-                        <select class="select-dark">
+                    <div class="card">
+                        <select class="select-light">
                             <option class="option">asgdjgahsjd</option>
                         </select>
                     </div>
-                    <div id="other-items">
+                    <div id="other-items" class="card">
                         <h2>Label</h2>
-                        <div>
-                            <div id="light-l">
-                                <label class="light-l">LABEL</label>
+                        <div class="card">
+                            <div id="light-label">
+                                <label class="light-label">LABEL</label>
                             </div>
-                            <div id="dark-l">
-                                <label class="dark-l">LABEL</label>
+                            <div id="dark-label">
+                                <label class="dark-label">LABEL</label>
                             </div>
-                        </div>
+                        </div class="card">
                         <h2>Parágrafo</h2>
-                        <div>
+                        <div class="card">
                             <div class="light-p">
                                 <p class="light-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             </div>
@@ -187,8 +199,14 @@
                             </div>
                         </div>
                         <h2>Link</h2>
-                        <div>
+                        <div class="card">
                             <a href="#" class="link">Link</a>
+                        </div>
+                        <div class="card bg-light">
+                            <button class="simple-btn-dark">Div</button>
+                            <p class="dark-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum laudantium
+                                atque non. Dolores, dolorem? Similique blanditiis earum dicta fugiat consectetur
+                                cupiditate corporis numquam dignissimos facere vero vitae quis, in et.</p>
                         </div>
                     </div>
 
