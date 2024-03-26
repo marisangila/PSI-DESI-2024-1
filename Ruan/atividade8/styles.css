@@ -243,6 +243,12 @@
     width: 250px;
     text-transform: lowercase;
     box-shadow: 1.5px 1.5px 3px;
+    background: url(image/email.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    background-color: #ffffff;
 }
 .secondary_text_email{
     border-radius: 50px;
@@ -251,6 +257,12 @@
     width: 250px;
     text-transform: lowercase;
     box-shadow: 1.5px 1.5px 3px;
+    background: url(image/email.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    background-color: #ffffff;
 }
 
 /* ==================================================================== */
@@ -262,6 +274,12 @@
     width: 250px;
     font-weight: bolder;
     box-shadow: 1.5px 1.5px 3px;
+    background: url(image/senha.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    background-color: #ffffff;
 }
 .secondary_text_password{
     border-radius: 50px;
@@ -270,6 +288,12 @@
     width: 250px;
     font-weight: bolder;
     box-shadow: 1.5px 1.5px 3px;
+    background: url(image/senha.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    background-color: #ffffff;
 }
 
 /* ==================================================================== */
@@ -381,6 +405,13 @@
     color: rgb(0, 0, 0);
 }
 .primary_link:link:hover{
+    text-decoration:underline;
+}
+.secondary_link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.secondary_link:link:hover{
     text-decoration:underline;
 }
 
