@@ -4,7 +4,7 @@ No presente arquivo estará presente um manual de aplicação dos estilos criado
 Essa folha de estilos conta com duas versões de estilização: itens para modo claro e itens para modo escuro.
 
 >[!NOTE]
->Os resultados da aplicação dos estilos estarão ao final do documento, em conjunto com os demais elementos.
+>Os resultados da aplicação dos estilos estarão em um documento PDF separado, em conjunto com os demais elementos.
 
 ## Plano de fundo (Background)
 
@@ -32,7 +32,6 @@ Classe-mãe:
     display: flex;
     height: 8vh;
     width: 100vw;
-    box-shadow: 0px 2px hsl(0, 0%, 60%);
     }
 
 Para o modo claro:
@@ -44,8 +43,7 @@ Para o modo claro:
 Para o modo escuro:
     
     .dark-background-header{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 14%, rgba(80,80,80,1) 100%);
+    background-color: hsl(237, 39%, 19%);
     }
 
 Para a customização, utilize a classe-mãe em conjunto com a classe do estilo que preferir (light mode ou dark mode), este padrão irá se repetir para os demais elementos. Aqui vai um exemplo:
@@ -67,18 +65,21 @@ Classe-mãe:
     width: 40vw;
     border-radius: 5%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     }
 
 Para o modo claro:
 
-    .light-mode{
-    background-color: antiquewhite;
+    .lightmode{
+    background-color: white;
     }
 
 Para o modo escuro:
 
-    .dark-mode{
-    background-color: rgb(21, 38, 71);
+    .darkmode{
+    background-color: hsl(237, 39%, 19%);
     }
 
 ## Input de texto (text input)
@@ -93,7 +94,6 @@ O mesmo também muda de estilo quando o cursor passa sob input e ao ser preenchi
     width: 24vw;
     height: 4vh;
     background-color: hsl(0, 0%, 95%);
-    margin-right: 1vw;
     padding-left: 1vh;
     box-shadow: 2px 2px hsl(0, 0%, 70%);
     }
@@ -196,7 +196,7 @@ Estilo para botão sem cor de fundo para backgrounds escuros:
     }
 
     .custom-checkbox input:checked+label:before {
-    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 10 10'%3E%3Cg class='nc-icon-wrapper' stroke-width='1' fill='%23555555'%3E%3Cpath fill='none'     stroke='%23FFFFFF' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='10' data-cap='butt' d='M2.83 4.72l1.58 1.58 2.83-2.83'/%3E%3C/g%3E%3C/svg%3E");
     background-color: hsl(91, 63%, 35%);
     background-position: center;
     border: none;
@@ -255,7 +255,3 @@ Para o modo escuro:
     .light-font{
     color: white;
     }
-
-## Exemplos de aplicação com todos os elementos
-
-
