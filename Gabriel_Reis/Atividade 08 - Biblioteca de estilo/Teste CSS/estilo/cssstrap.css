@@ -1,0 +1,402 @@
+.Check-Box,
+.custom-select {
+    position: relative;
+    appearance: none
+}
+
+body {
+    background-color: #e4e4e4
+}
+
+.Arial {
+    font-family: Arial
+}
+
+.Calibri {
+    font-family: Calibri
+}
+
+.TimesNewRoman {
+    font-family: "Times New Roman"
+}
+
+.Verdana {
+    font-family: Verdana
+}
+
+.TrebuchetMS {
+    font-family: "Trebuchet MS"
+}
+
+.Impact {
+    font-family: Impact
+}
+
+.Georgia {
+    font-family: Georgia
+}
+
+.Garamond {
+    font-family: Garamond
+}
+
+.CourierNew {
+    font-family: "Courier New"
+}
+
+.ArialBlack {
+    font-family: "Arial Black"
+}
+
+.ComicSansMS {
+    font-family: "Comic Sans MS"
+}
+
+.LucidaGrande {
+    font-family: "Lucida Grande"
+}
+
+.PalatinoLinotype {
+    font-family: "Palatino Linotype"
+}
+
+.Baskerville {
+    font-family: Baskerville
+}
+
+.CenturyGothic {
+    font-family: "Century Gothic"
+}
+
+.GillSans {
+    font-family: "Gill Sans"
+}
+
+.BookmanOldStyle {
+    font-family: "Bookman Old Style"
+}
+
+.Futura {
+    font-family: Futura
+}
+
+.BodoniMT {
+    font-family: "Bodoni MT"
+}
+
+.Btn,
+.Btn-Confirm {
+    font-size: 17px;
+    font-family: Arial;
+    width: 100px
+}
+
+.Bold {
+    font-weight: bolder
+}
+
+.FC-Light-Red {
+    color: #ff4040
+}
+
+.FC-Light-Blue {
+    color: #3b3bff
+}
+
+.FC-White {
+    color: #fff
+}
+
+.FC-Black {
+    color: #000
+}
+
+.FC-Light-Green {
+    color: #4cff4c
+}
+
+.FC-Light-Yellow {
+    color: #ffff7b
+}
+
+.FC-Light-Pink {
+    color: #ffb9c5
+}
+
+.FC-Dark-Red {
+    color: #8d2323
+}
+
+.FC-Dark-Blue {
+    color: #23239b
+}
+
+.FC-Dark-Green {
+    color: #237223
+}
+
+.FC-Dark-Yellow {
+    color: #9c9c4c
+}
+
+.FC-Dark-Pink {
+    color: #9c747b
+}
+
+.BGC-Light-Red {
+    background-color: #ff4040
+}
+
+.BGC-Light-Blue {
+    background-color: #3b3bff
+}
+
+.BGC-White {
+    background-color: #fff
+}
+
+.BGC-Black {
+    background-color: #000
+}
+
+.BGC-Light-Green {
+    background-color: #4cff4c
+}
+
+.BGC-Light-Yellow {
+    background-color: #ffff7b
+}
+
+.BGC-Light-Pink {
+    background-color: #ffb9c5
+}
+
+.BGC-Dark-Red {
+    background-color: #8d2323
+}
+
+.BGC-Dark-Blue {
+    background-color: #23239b
+}
+
+.BGC-Dark-Green {
+    background-color: #237223
+}
+
+.BGC-Dark-Yellow {
+    background-color: #9c9c4c
+}
+
+.BGC-Dark-Pink {
+    background-color: #9c747b
+}
+
+.Btn {
+    height: 40px;
+    color: #fff;
+    background-color: gray;
+    border-radius: 15px;
+    border: 1px solid gray
+}
+
+.Btn-Confirm,
+.Btn:hover {
+    height: 40px;
+    border-radius: 15px
+}
+
+.Btn:hover {
+    background-color: #a0a0a0
+}
+
+.Btn-Confirm {
+    color: #fff;
+    background-color: #00cf2d;
+    border: 1px solid gray
+}
+
+.Btn-Cancel,
+.Btn-Confirm-Transparent {
+    border-radius: 15px;
+    height: 40px;
+    font-size: 17px;
+    font-family: Arial;
+    width: 100px
+}
+
+.Btn-Confirm:hover {
+    height: 40px;
+    background-color: #02e433
+}
+
+.Btn-Cancel {
+    color: #fff;
+    background-color: #cf0000;
+    border: 1px solid gray
+}
+
+.Btn-Cancel:hover {
+    height: 40px;
+    background-color: #f50000
+}
+
+.Btn-Confirm-Transparent {
+    color: #414141;
+    background-color: rgba(0, 207, 45, 0);
+    border: 1px solid gray
+}
+
+.Btn-Confirm-Transparent:hover {
+    border-radius: 15px;
+    height: 40px;
+    color: #414141;
+    background-color: rgba(2, 156, 35, .267)
+}
+
+.Btn-Cancel-Transparent {
+    border-radius: 15px;
+    height: 40px;
+    font-size: 17px;
+    color: #414141;
+    background-color: rgba(207, 0, 0, 0);
+    font-family: Arial;
+    width: 100px;
+    border: 1px solid gray
+}
+
+.custom-select,
+.custom-select option {
+    font-family: Arial, sans-serif
+}
+
+.Btn-Big,
+.Btn-Cancel-Transparent:hover,
+.Btn-Small {
+    height: 40px;
+    border-radius: 15px
+}
+
+.Btn-Cancel-Transparent:hover {
+    color: #414141;
+    background-color: rgba(245, 0, 0, .185)
+}
+
+.Btn-Big {
+    width: 140px;
+    font-size: 25px
+}
+
+.Btn-Small {
+    width: 80px;
+    font-size: 13px
+}
+
+.Check-Box {
+    height: 20px;
+    width: 20px
+}
+
+.Check-Box:after {
+    content: '\00D7';
+    display: block;
+    background: url('https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-32.png') 0 15px/18px 18px no-repeat #fff;
+    pointer-events: none;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    color: transparent;
+    transition: .25s ease-in-out;
+    border-radius: 3px;
+    line-height: 15px;
+    border: 1px solid #000
+}
+
+.Custom-Range-Blue,
+.Custom-Range-Red {
+    width: 80px;
+    height: 38px;
+    cursor: pointer;
+    background: #0c1d2c;
+    margin: 10px 0
+}
+
+.Check-Box:checked:after {
+    background-color: #95e0ac;
+    background-position: 0 0
+}
+
+.Check-Box:hover:after {
+    border-color: #919191
+}
+
+.Custom-Range-Blue {
+    accent-color: #2248f1;
+    border-radius: 5px;
+    border: 1px solid #000
+}
+
+.Custom-Range-Blue::-webkit-slider-thumb {
+    width: 80px;
+    accent-color: #5cf7f9;
+    height: 38px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000;
+    background: #0c1d2c;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 10px 0
+}
+
+.Custom-Range-Red {
+    accent-color: #f12222;
+    border-radius: 5px;
+    border: 1px solid #000
+}
+
+.Custom-Range-Red::-webkit-slider-thumb {
+    width: 80px;
+    accent-color: #f95c5c;
+    height: 38px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000;
+    background: #0c1d2c;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 10px 0
+}
+
+.Custom-Box {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0
+}
+
+.Custom-Box:hover {
+    background-color: #bebebe;
+    border: 1px solid #e0e0e0
+}
+
+.custom-select {
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 30px 5px 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #f5f5f5;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="%23333"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 5px center
+}
+
+.custom-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none
+}

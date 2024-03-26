@@ -1,0 +1,140 @@
+
+
+.conteudo
+{
+    background-color: darkgray;
+    max-width: fit-content;
+    padding: 15px;
+}
+
+.txt
+{
+    font-family: Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: darkred;
+}
+
+.txt_centro
+{
+    text-align: center;
+}
+
+.centralizado
+{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apenas
+{
+    padding-left: 33%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.insere_txt
+{
+    width: 400px;
+    line-height: 50px;
+    font-family: Impact, Haettenschweiler,
+    'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: black;
+    border: 4px solid darkred;
+}
+
+.cabecalho
+{
+    text-align: center;
+}
+
+.rodape
+{
+    display: flex;
+    justify-content: center;
+}
+
+.espaco_medio
+{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.espaco_peq
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.botao
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border-style: ridge;
+    border-width: 5px;
+}
+
+.botao_check
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    border-style: ridge;
+    border-width: 5px;
+    margin-bottom: 24px;
+    margin-right: 4px;
+}
+
+.botao_check_interior
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    border-width: 5px;
+    border-color: orangered;
+    background-color: orange;
+}
+
+.botao_descheck_interior
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 60px;
+    border-width: 5px;
+    border-color: rgba(255, 0, 0, 0.4);
+    background-color: rgb(140, 140, 140);
+}
+
+.invisivel
+{
+    display: none;
+}
+
+.confirma_com_raiva 
+{
+    margin-right: 50%;
+    background-color: crimson;
+}
+
+.confirma_com_raiva:hover
+{
+    cursor: pointer;
+}
+
+.cancela_na_paz
+{
+    background-color: darkgreen;
+}
+
+.cancela_na_paz:hover
+{
+    cursor: pointer;
+}
