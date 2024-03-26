@@ -47,7 +47,7 @@ h3 {
 }
 
 .coluna {
-    width: 50%;
+  margin: 20px;
 }
 
 .card {
@@ -60,7 +60,7 @@ h3 {
 .container .input_text {
     border-radius: 5px;
     border: none ;
-    width: 800px;
+    width: 750px;
     margin-top: 3px;
     padding: 8px;
 }
@@ -71,9 +71,16 @@ h3 {
  
 }
 
-.renda-media, option, textarea {
+.renda-media, option {
     color: var(--grey-light);
-    width: 800px;
+    width: 750px;
+    border-radius: 5px;
+    border: none ;
+    padding: 8px;
+}
+
+textarea {
+  width: 750px;
     border-radius: 5px;
     border: none ;
     padding: 8px;
@@ -123,7 +130,7 @@ body {
 .range_bar {
   appearance: none;
   border: none;
-  width: 820px;
+  width: 750px;
   margin-bottom: 15px;
 }
 .range_bar::-webkit-slider-runnable-track {
