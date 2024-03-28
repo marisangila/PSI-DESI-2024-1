@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-1">
+            <h1>Formulário de solicitação de monitoria:</h1>
+        </div>
+        <div class="col-2">
+            <label for="nome">Nome:</label>
+            <input type="text" >
+        </div>
+        <div class="col-3">
+            <label for="Sobrenome">Sobrenome:</label>
+            <input type="text">
+        </div>
+        <div class="col-4">
+            <label for="CPF">CPF:</label>
+            <input type="text">
+        </div>
+        <div class="col-5">
+            <label for="email">E-mail:</label>
+            <input type="email">
+        </div>
+        <div class="col-6">
+            <label for="telefone">Telefone:</label>
+            <input type="text" >
+        </div>
+        <div class="col-7">
+            <label for="curso">Curso:</label>
+            <select name="curso" id="curso">
+                <option value="">Selecione</option>
+                <option value="">Curso 1</option>
+                <option value="">Curso 2</option>
+                <option value="">Curso 3</option>
+            </select>
+        </div>
+        <div class="col-8">
+            <label for="curso">Turno:</label>
+            <br>
+            <input type="radio" id="matutino" name="turno"> <label for="matutino">Matutino</label>
+            <input type="radio" id="vespertino" name="turno"> <label for="vespertino">Vespertino</label>
+            <input type="radio" id="noturno" name="turno"><label for="noturno">Noturno</label>
+        </div>
+        <div class="col-9">
+            <button type="submit">Solicitar</button>
+        </div>
+    </div>
+</body>
+</html>
