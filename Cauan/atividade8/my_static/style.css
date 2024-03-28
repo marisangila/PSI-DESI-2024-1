@@ -241,6 +241,9 @@
     font-size: 16px;
     outline: none;
 }
+.input-txt::placeholder{
+    color: var(--water);
+}
 
 /* search */
 .search-box{
@@ -268,6 +271,16 @@
     color: var(--white);
     box-shadow: inset 1px 1px 3px #323232;
 }
+/* email */
+.email{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+    border: var(--gray);
+    color: var(--garden);
+    outline: none;
+}
+
 
 /* select */
 .select-light{
