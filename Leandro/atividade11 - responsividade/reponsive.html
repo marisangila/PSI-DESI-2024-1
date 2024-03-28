@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-4{
+  width: 33.33%;
+}
+.col-6{
+  width: 50%;
+}
+
+.alinhar{
+  display: flex;
+  justify-content: center;
+}
+.text-align{
+  width: 500px;
+  text-align: center;
+}
+.margin{
+  margin: 15px;
+}
+.padding{
+  padding: 5px
+}
+.btn{
+  width: 200px;
+}
+.border{
+  border: 1px solid black;
+}
+
+input{
+  border-radius: 5px;
+  border: 1px solid blue;
+}
+
+body{
+  background-color: rgb(168, 168, 168);
+}
+
+</style>
+</head>
+<body>
+
+<h1>Formulário de solicitação de monitoria:</h1>
+
+<!-- primeira linha -->
+<div class="row margin">
+  <label class="col-6">Nome:</label>
+  <label class="col-6">Sobrenome:</label>
+
+  <input class="col-6 padding" type="text" name="" id="">
+  <input class="col-6 padding" type="text" name="" id="">
+</div>
+
+<!-- segunda linha -->
+<div class="row margin">
+  <label class="col-4">CPF:</label>
+  <label class="col-4">E-mail:</label>
+  <label class="col-4">Telefone:</label>
+
+  <input class="col-4 padding" type="text" name="" id="">
+  <input class="col-4 padding" type="text" name="" id="">
+  <input class="col-4 padding" type="text" name="" id="">
+</div>
+
+<!-- terceira linha -->
+<div class="row margin">
+  <label class="col-6">Curso:</label>
+  <label class="col-6">Turno:</label>
+
+  <select class="col-6 padding" name="" id="">
+    <option class="" value="">DESENVOLVEDOR</option>
+    <option class="" value="">ADMINISTRADOR</option>
+    <option class="" value="">PSICOLOGIA</option>
+  </select>
+
+  <input class="" type="radio" name="" id=""> <label for="">Matutino</label>
+  <input class="" type="radio" name="" id=""> <label for="">Vespertino</label>
+  <input class="" type="radio" name="" id=""> <label for="">Noturno</label>
+</div>
+
+<div class="row alinhar">
+  <input class="text-align padding btn" type="button" value="Solicitar">
+  </div>
+</div>
+
+</body>
+</html>
