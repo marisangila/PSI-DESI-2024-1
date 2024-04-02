@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="nav">
+    <header class="row">
         <h1>Formulário de solicitação de monitoria</h1>
     </header>
     <section class="shadow-dark">
-        <form action="">
+        <form>
             <div class="row">
                 <div class="col-6">
                     <label>Nome:</label>
@@ -50,30 +50,25 @@
                 <div class="col-6">
                     <label>Turno:</label>
                     <div class="radios">
-                        <form>
-                            <div>
-                                <input type="radio" name="opcao">
-                                <span>Matutino</span>
-                            </div>
-                            <div>
-                                <input type="radio" name="opcao">
-                                <span>Vespertino</span>
-                            </div>
-                            <div>
-                                <input type="radio" name="opcao">
-                                <span>Noturno</span>
-                            </div>
-                        </form>
+                        <div>
+                            <input type="radio" name="opcao">
+                            <span>Matutino</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="opcao">
+                            <span>Vespertino</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="opcao">
+                            <span>Noturno</span>
+                        </div>
                     </div>
                 </div>
             </div>
-    
             <div class="row" id="button">
                 <input type="submit" value="Enviar">
             </div>
-            
         </form>
     </section>
-    
 </body>
 </html>
