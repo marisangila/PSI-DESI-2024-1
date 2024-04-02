@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B5D9F0;
+}
+
+[class^="col-"]{
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+
+input, select {
+    border: none;
+    border-width: thin;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-2 input {
+    width: 98%;
+}
+
+.col-3 {
+    width: 50%;
+}
+
+.col-3 input {
+    width: 98%;
+}
+
+.col-4 {
+    width: 33.33%;
+    justify-content: space-between;
+}
+
+.col-4 input {
+    width: 98%;
+}
+
+.col-5 {
+    width: 33.33%;
+}
+
+.col-5 input {
+    width: 98%;
+}
+
+.col-6 {
+    width: 33.33%;
+}
+
+.col-6 input {
+    width: 98%;
+}
+
+.col-7 {
+    width: 50%;
+}
+
+.col-7 select {
+    width: 98%;
+}
+
+.col-8 {
+    padding: 10px;
+    display: block;
+    width: 50%;
+}
+
+.col-8 input[type="radio"],
+.col-8 label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Ajuste o espaçamento conforme necessário */
+}
+
+.col-9 {
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0 auto;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #5078A0;
+    color: white;
+    width: 300px;
+    border-radius: 4px;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(111, 168, 218);
+}
+
+/* Media queries */
+
+
+@media only screen and (max-width: 600px) {
+
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 922px) {
+
+    [class*="col-"] {
+        width:50%;
+    }
+}
