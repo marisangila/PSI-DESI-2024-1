@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(176, 212, 247);
+}
+
+[class^="col-"]{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1{
+    width: 8.33%; 
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+.btn{
+    padding: 10px;
+    padding-inline: 120px ;
+    padding-block: 10px ;
+    background-color: rgba(53, 97, 148, 0.897);
+    color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.text{
+    border-radius: 5px;
+    margin: 5px;
+    background-color: aliceblue;
+    height: 30px;
+}
+
+.center{
+    display: flex;
+}
+
+.container_btn{
+    display: flex; 
+    justify-content: center;
+}
+
+@media screen and (max-width: 992px){
+    [class^="col-"]{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    [class^="col-"]{
+        width: 100%;
+    }
+}
