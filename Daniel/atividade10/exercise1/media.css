@@ -1,3 +1,14 @@
+/* @media only screen and (max-width: 430px){
+    .div_inputs{
+        width: 100%;
+        margin: 10px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+} */
+
 @media only screen and (max-width: 600px){
     .div_inputs{
         width: 100%;
@@ -5,11 +16,33 @@
     }
 
     h1{
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .container_input_radio{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container_input_radio div label{
+        font-size: 12px;
+    }
+
+    .container_input_radio div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 3px;
+        
     }
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 920px){
     .col-1 {
         width: 8.33%;
     }
@@ -42,6 +75,16 @@
     }
     .col-11 {
         width: 91.66%;
+    }
+}
+
+@media only screen and (max-width: 920px) and (min-width: 600px){
+    h1{
+        font-size: 25px;
+    }
+
+    [class*="col-"] {
+        width: 50%;
     }
 }
 
