@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Exercicio Usando Colunas </title>
+</head>
+<body>
+    <form class="formulario">
+        <div class="row linha">
+            <div class="col-12">
+                <h1 class="titulo"> Formulário de solicitação de monitoria </h1>
+            </div>
+        </div>
+        <div class="row linha">
+            <div class="col-6">
+                <label> Nome: </label><br>
+                <input class="style_input" type="text">
+            </div>
+            <div class="col-6">
+                <label> Sobrenome: </label><br>
+                <input class="style_input" type="text">
+            </div>
+        </div>
+        <div class="row linha">
+            <div class="col-4">
+                <label> CPF: </label><br>
+                <input class="style_input" type="text">
+            </div>
+            <div class="col-4">
+                <label> E-mail: </label><br>
+                <input class="style_input" type="email">
+            </div>
+            <div class="col-4">
+                <label> Telefone: </label><br>
+                <input class="style_input" type="text">
+            </div>
+        </div>
+        <div class="row linha">
+            <div class="col-6">
+                <label> Curso: </label>
+                <select class="lista_suspensa">
+                    <option> Selecione </option>
+                </select>
+            </div>
+            <div class="col-6 div_radio">
+                <label> Turno: </label><br>
+                <div class="input_radio">
+                    <input name="turno" type="radio" class="selecione_turno"> <label> Matutino </label>
+                </div>
+                <div class="input_radio">
+                    <input name="turno" type="radio" class="selecione_turno"> <label> Vespertino </label>
+                </div>
+                <div class="input_radio">
+                    <input name="turno" type="radio" class="selecione_turno"> <label> Noturno </label>
+                </div>
+            </div>
+        </div>
+        <div class="row linha">
+            <div class="col-12 div_botao">
+                <button type="submit" class="botao"> Solicitar </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
