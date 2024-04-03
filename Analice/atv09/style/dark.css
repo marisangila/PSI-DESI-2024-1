@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --brown: #25141a;
+    --grey-light: #6e6a68;
+    --dark-red-2: #810233;
+    --dark-red: #b70046;
+    --light-red: #e10055;
+    --brown-red: #a64456;
+    --brown-pink: #d9718c;
+    --light-pink: #ff94bc;
+    --light-green: #1bb18b;
+    --dark-green: #297e69;
+  }
+  
+/* Forms */
+
+hr {
+    width: 100vw;
+}
+
+h2 {
+    color: white;
+    background-color: var(--dark-red);
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    color: var(--dark-red-2);
+    font-weight: 700;
+    padding-bottom: 4px;
+    padding-top: 10px;
+}
+
+.container {
+    color: white;
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 0 auto; /* Isso só centralizará horizontalmente se a largura do container for definida */
+}
+
+.coluna {
+  margin: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input */
+
+.container .input_text {
+    border-radius: 5px;
+    border: none ;
+    width: 750px;
+    margin-top: 3px;
+    padding: 8px;
+}
+
+.container label {
+    padding-bottom: 5px;
+    padding-top: 5px;
+ 
+}
+
+.renda-media, option {
+    color: var(--grey-light);
+    width: 750px;
+    border-radius: 5px;
+    border: none ;
+    padding: 8px;
+}
+
+textarea {
+  width: 750px;
+    border-radius: 5px;
+    border: none ;
+    padding: 8px;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--grey-light);
+}
+
+/* Buttons */
+
+.buttons {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.big_btn,
+.tiny_btn {
+    margin: 10px;
+  height: 35px;
+  color: white;
+  background-color: var(--dark-red-2);
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight:700;
+  font-size: 15px;
+}
+
+.tiny_btn {
+  width: 20%;
+  border-radius: 20px;
+  border: none;
+}
+
+.tiny_btn:hover {
+  background-color: var(--dark-green);
+}
+
+.btn_cancel:hover {
+  background-color: var(--dark-red-2);
+}
+
+/* Range */
+.range_bar {
+  appearance: none;
+  border: none;
+  width: 750px;
+  margin-bottom: 15px;
+}
+.range_bar::-webkit-slider-runnable-track {
+  appearance: none;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #6e6a6846;
+}
+.range_bar::-webkit-slider-thumb {
+  margin-top: -6px;
+  appearance: none;
+  background-color: var(--dark-red);
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration:underline;
+}

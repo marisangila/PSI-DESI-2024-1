@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary: #fff;
+    --secondary: #7a7a7a;
+    --dark: #000;
+    --hover: #e9e50c;
+    --winter: #0d729b;
+}
+body{
+    height: 100vh;
+    background: url("imgs/shin-jong-hun-1614704929310-2.jpg");
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 24.99%;
+}
+.col-4{
+    width: 33.32%;
+}
+.col-5{
+    width: 41,65%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.33%;
+}
+.col-8{
+    width: 66.66%;
+}
+.col-9{
+    width: 74.99%;
+}
+.col-10{
+    width: 83,32%;
+}
+.col-11{
+    width: 91.65%;
+}
+.col-12{
+    width: 100%;
+}
+[class^='col-']{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.row{
+    width: 100%;
+}
+.row::after{
+    content: "";
+    float: left;
+    display: table;
+}
+.radios{
+    display: flex;
+}
+input, select{
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    color: var(--primary);
+}
+input:hover, select:hover{
+    border-bottom: 2px solid var(--winter);
+} 
+#button{
+    display: flex;
+    justify-content: center;
+}
+input[type="submit"]{
+    width: 95%;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 10px;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    margin-top: 5em;
+}
+input[type="submit"]:hover{
+    color: var(--primary);
+    background-color: var(--winter);
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+section{
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    font-size: 16px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    padding: 30px;
+    margin: 5em 0;
+} 
+input[type="radio"]{
+    appearance: none;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: transparent;
+}
+input[type="radio"]:checked{
+    background-color: var(--winter);
+    border: 1px solid var(--primary);
+}
+
+@media (min-width:1200px){
+    .row{
+        display: flex;
+    }
+    section{
+        padding: 7em 2.5em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px){
+    div [class^='col-']{
+        width: 50%;
+        display: flex;
+    }
+    .col-12{
+        width: 100%;
+    }
+    section{
+        width: 90%;
+        padding: 2em;
+    }
+    form{
+        width: 100%;
+        display: table;
+    }
+    .row{
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (max-width: 767px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    [class^='col-']{
+        width: 100%;
+    }
+    section{
+        width: 95%;
+        padding: 2em;
+        margin: 2em 0em;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        margin: 1em;
+        padding: 0;
+    }
+    h1{
+        padding: 0.7em;
+        font-size: 1.7em;
+    }
+}
+
+@media (min-height: 1180px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        backdrop-filter: blur(1px);
+    }
+}

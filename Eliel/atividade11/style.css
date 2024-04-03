@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background{
+    height: 100vh;
+    background-color:rgb(243, 243, 243);
+}
+
+[class^="col-"] {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.div-radio{
+    display: flex;
+    margin: 8px;
+}
+
+.row{
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1{
+    font-size: 30px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+
+@media only screen and (max-width: 600px){
+    [class*="col-"]{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 920px){
+    [class*="col-"]{
+        width: 50%;
+    }
+}
+
+.col-12 {
+    width: 100%;
+}
+
+
+.btn{
+    width: 30vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: none;
+    background: rgb(101,76,142);
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgb(136, 103, 189);
+}
+
+.btn:active{
+    background: rgb(163, 123, 226);
+}
+
+.center-x{
+    align-items: center;
+}
+
+.text-inputs{
+    padding-left: 15px;
+    margin: 8px;
+    height: 4vh;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-inputs:hover{
+    background-color: rgb(228, 228, 228);
+}
+
+.text-inputs:not(:placeholder-shown){
+    background-color: rgb(228, 228, 228);;
+}
+
+label{
+    margin: 8px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.select{
+    height: 4vh;
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.radio{
+    margin: 8px;
+}
+
+
+
+
+
