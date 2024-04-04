@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+[class^='col-']{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.container-father{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-son{
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    background-color: rgb(127, 187, 255);
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+input, select, .btn{
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+.row{
+    padding: 6px;
+}
+
+.col-1{
+    width: 8.33%;
+}
+.col-2{
+    width: 16.66%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.33%;
+}
+.col-5{
+    width: 41.65%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.31%;
+}
+.col-8{
+    width: 66.64%;
+}
+.col-9{
+    width: 74.97%;
+}
+.col-10{
+    width: 83.3%;
+}
+.col-11{
+    width: 91.63%;
+}
+.col-12{
+    width: 100%;
+}
+
+body{
+    background-color: rgb(46, 151, 236);
+    height: 100vh;
+}
+
+.check{
+    display: flex;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 100px;
+    color: white;
+    background-color: rgb(4, 4, 255);
+    border-radius: 5px;
+}
+
+label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.check-box{
+    display: flex;
+    align-items: center;
+}
+
+.check-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 910px){
+    [class*="col-"]{
+        width: 50%;
+    }
+    .btn-box{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 670px){
+    [class*="col-"]{
+        width: 100%;
+    }
+    .container-son{
+        height: 600px;
+    }
+} 
+
