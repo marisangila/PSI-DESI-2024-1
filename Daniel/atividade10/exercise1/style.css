@@ -17,11 +17,9 @@ body{
 
 main{
     background-color: white;
-    padding: 100px;
+    padding: 50px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.123);
-    display: flex;
-    flex-direction: column;
     gap: 27px;
 }
 
@@ -57,9 +55,9 @@ div.div_inputs{
 }
 
 .container_submit{
-        display: flex; 
-        justify-content: center;
-        width: 100%;
+    display: flex; 
+    justify-content: center;
+    width: 100%;
 }
 
 .button_submit{
