@@ -1,0 +1,80 @@
+
+/* colors */
+.bg-primary-color {
+    background-color: #fff;
+}
+.bg-secondary-color {
+    background-color: #ebebeb;
+}
+.bg-dark-color {
+    background-color: #212529;
+}
+.primary-color {
+    color: #050505;
+}
+.light-color{
+    color: #fff;
+}
+.secondary-color {
+    color: #7a7a7a;
+}
+
+
+#main{
+    margin-bottom: 5em;
+}
+
+/* navbar */
+.navbar {
+    margin-bottom: 3em;
+    border-bottom: 1px solid #7a7a7a;
+}
+.navbar a:hover {
+    border-bottom: 2px solid #4171c9;
+    transition: 0.5s;
+}
+
+/* card */
+.card-body {
+    padding: 3em;
+}
+h3{
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+label{
+    margin: 0.3em;
+}
+
+/* form */
+.form-control{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #a8a8a8;
+}
+.form-control:hover{
+    border-bottom: 1px solid #4171c9;
+}
+.form-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+}
+#situation{
+    padding: 1em;
+}
+#submit-div{
+    margin-top: 2em;
+}
+#submit-button{
+    padding: 1em 5em;
+    font-size: 16px;
+}
+
+@media(min-width:768px){
+    #check-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
