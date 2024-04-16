@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <title>Formulário | BOOTSTRAP</title>
+</head>
+
+<body class="">
+
+    <div class="card text-start align-items-center border-0">
+        <div class="mt-3 card-body border rounded gradiente">
+            <h4 class="card-title">
+                Formulário de solicitação de monitoria:
+            </h4>
+
+            <form>
+                <div class="mb-3 row col-12">
+                    <label for="inputName" class="col-4 col-form-label">
+                        Nome
+                    </label>
+                    <br>
+                    <div class="col-8">
+                        <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Nome" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputName" class="col-12 col-form-label">
+                        Sobrenome
+                    </label>
+                    <br>
+                    <div class="col-12">
+                        <input type="text" class="form-control" name="inputName" id="inputName"
+                            placeholder="Sobrenome" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputName" class="col-12 col-form-label">
+                        CPF
+                    </label>
+                    <br>
+                    <div class="col-12">
+                        <input type="text" class="form-control" name="inputName" id="inputName"
+                            placeholder="111.111.111-11" />
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputName" class="col-12 col-form-label">
+                        E-mail
+                    </label>
+                    <br>
+                    <div class="col-12">
+                        <input type="text" class="form-control" name="inputName" id="inputName"
+                            placeholder="exemplo@email.com" />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="inputName" class="col-12 col-form-label">
+                        Telefone
+                    </label>
+                    <br>
+                    <div class="col-12">
+                        <input type="text" class="form-control" name="inputName" id="inputName"
+                            placeholder="(00) 90000-0000" />
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="" class="form-label">Curso</label>
+                    <select class="form-select" name="" id="">
+                        <option selected>Selecione</option>
+                        <option value="">Desenvolvedor de Sistemas</option>
+                        <option value="">UX Designer</option>
+                        <option value="">Analista de Sistemas</option>
+                    </select>
+                </div>
+
+                <fieldset class="mb-3 row col-12">
+                    <legend class="col-4 col-form-label">
+                        Turno
+                    </legend>
+                    <div class="col-12">
+                        <div class="btn-group" data-bs-toggle="buttons">
+                            <label class="btn">
+                                <input type="radio" class="me-2" name="" id="" autocomplete="off" />
+                                Matutino
+                            </label>
+                            <label class="btn">
+                                <input type="radio" name="" id="" autocomplete="off" />
+                                Vespertino
+                            </label>
+                            <label class="btn">
+                                <input type="radio" name="" id="" autocomplete="off" />
+                                Noturno
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="mb-3 row justify-content-center">
+                    <div class="col-sm-8">
+                        <button type="submit" class="col-12 btn botao-cor">
+                            Solicitar
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

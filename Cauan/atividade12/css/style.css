@@ -1,0 +1,39 @@
+
+body{
+    background-color: #f7f5f5e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.row::after{
+    content: "";
+    float: left;
+    display: table;
+}
+[class^='col-']{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+header{
+    color: #fff;
+}
+section{
+    border: 1px solid #dddcdc;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    font-size: 16px;
+    height: 55%;
+    background-color: #fff;
+    margin-top: 12em;
+}
+.btn{
+    width: 400px;
+}
+form{
+    height: 100%;
+}
+.py{
+    padding: 5em 0;
+}
