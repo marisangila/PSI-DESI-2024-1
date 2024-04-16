@@ -1,0 +1,6 @@
+.gradiente {background: linear-gradient(180deg, rgba(0,212,255,1) 0%, rgba(0,212,255,0.6726891440169818) 78%, rgba(255,255,255,1) 98%);}
+.botao-cor
+{
+    background-color: rgb(23, 68, 116) !important;
+    color: white;
+}

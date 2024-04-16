@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-father">
+        <div class="container-son">
+            
+            <div class="row">
+                <div class="col-12">
+                    <h1>Formulário de solicitação de monitoria:</h1>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-6">
+                    <label>Nome: </label>
+                    <input type="text"> 
+                </div>
+                <div class="col-6">
+                    <label>Sobrenome: </label>
+                    <input type="text">
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-4">
+                    <label>CPF:</label>
+                    <input type="text">
+                </div>
+                <div class="col-4">
+                    <label>E-mail:</label>
+                    <input type="text">
+                </div>
+                <div class="col-4">
+                    <label>Telefone:</label>
+                    <input class="tel" type="text">
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-6">
+                    <label>Curso:</label>
+                    <select>
+                        <option value="1">Selecione</option>
+                        <option value="2">Engenharia de Software</option>
+                        <option value="3">Engenharia de Computação</option>
+                        <option value="4">Ciência da Computação</option>
+                        <option value="5">Design</option>
+                    </select>
+                </div>
+                <div class="col-6 check-box">
+                    <label>Turno:</label>
+                    <div class="check">
+                        <input class="check-option" type="checkbox">Matutino
+                        <input class="check-option" type="checkbox">Vespertino
+                        <input class="check-option" type="checkbox">Noturno
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-12 btn-box">
+                    <button class="btn">Solicitar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

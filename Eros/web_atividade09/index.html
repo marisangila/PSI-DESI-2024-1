@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/base.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Formulário</title>
+</head>
+
+<body class="bg-dark">
+    <h2>Cardápio com Participação Popular</h2>
+    <hr>
+    <div class="container shadow-light">
+        <div class="coluna">
+            <h3 class="dark-label">Cadastro</h3>
+            <div class="card shadow-light">
+                <p class="dark-p">
+                    <label class="dark-label">Nome:</label>
+                    <br>
+                    <input class="input-txt" type="text">
+                </p>
+                <p class="dark-p">
+                    <label class="dark-label">Sobrenome:</label>
+                    <br>
+                    <input class="input-txt" type="text">
+                </p>
+                <p class="dark-p">
+                    <label class="dark-label">E-mail:</label>
+                    <br>
+                    <input class="input-txt email" type="email">
+                </p>
+                <p class="dark-p">
+                    <label class="dark-label">CPF:</label>
+                    <br>
+                    <input class="input-txt" type="text">
+                </p>
+
+                <p class="dark-p">
+                    <label class="dark-label">Escolha uma senha forte:</label>
+                    <br>
+                    <input class="input-txt password" type="password">
+                </p>
+
+                <p class="dark-p">
+                    <label class="dark-label">Confirme a senha:</label>
+                    <br>
+                    <input class="input-txt password" type="password">
+                </p>
+            </div>
+
+            <div class="card shadow-light">
+                <h3 class="dark-label">Endereço</h4>
+                <p class="dark-p">
+                    <label class="dark-label">CEP:</label>
+                    <br>
+                    <input class="input-txt" type="text">
+                </p>
+                <p class="dark-p">
+                    <label class="dark-label">Logradouro:</label>
+                    <br>
+                    <input class="input-txt" type="text">
+                </p>
+                <p class="dark-p">
+                    <label class="dark-label">Número:</label>
+                    <br>
+                    <input class="input-txt" type="number">
+                </p>
+                <p class="dark-p">
+                    <label class="dark-label">Bairro:</label>
+                    <br>
+                    <input class="input-txt" type="text">
+                </p>
+                <p class="dark-p">
+                    <label class="dark-label">Complemento:</label>
+                    <br>
+                    <input class="input-txt" type="text">
+                </p>
+                <br>
+                <p class="dark-p">
+                    <label class="dark-label">Renda Média:</label>
+                    <br>
+                    <select class="select-light">
+                        <option selected="true">Selecione</option>
+                        <option>Menos de R$ 1.000,00</option>
+                        <option>R$ 1.000,00 - R$ 2.000,00</option>
+                        <option>R$ 2.001,00 - R$ 3.000,00</option>
+                        <option>R$ 3.001,00 - R$ 4.000,00</option>
+                        <option>Mais de R$ 4.000,00</option>
+                    </select>
+                </p>
+            </div>
+        </div>
+        <div class="coluna">
+            <h3 class="dark-label">Preferências alimentares</h3>
+            <div>
+                <div class="card shadow-light">
+                    <p class="dark-p">De acordo com a escala, quanto você está satisfeito com a alimentação servida?</p>
+                    <input class="range-light" type="range">
+                </div>
+                <div>
+                    <h4 class="dark-label">Para qual refeição você costuma usar o restaurante?</h4><br>
+                    <input class="check-dark" type="checkbox">
+                    <label class="dark-label">Não costumo ir ao restaurante</label><br>
+                    <input type="checkbox">
+                    <label class="dark-label">Café da Manhã</label><br>
+                    <input type="checkbox">
+                    <label class="dark-label">Almoço</label><br>
+                    <input type="checkbox">
+                    <label class="dark-label">Café da Tarde</label><br>
+                    <input type="checkbox">
+                    <label class="dark-label">Jantar</label><br>
+                    <input type="checkbox">
+                    <label class="dark-label">Lanche</label><br>
+                    <input type="checkbox">
+                    <label class="dark-label">Lanche Da Meia Noite</label><br>
+                    <input type="checkbox">
+                    <label class="dark-label">Ceia</label><br>
+                </div>
+                <div>
+                    <p class="dark-p">
+                        <label class="dark-label">Normalmente, você come:</label><br>
+                        <input type="radio" name="tipo">
+                        <label class="dark-label">Doce</label>
+                        <input type="radio" name="tipo">
+                        <label class="dark-label">Salgado</label>
+                        <input type="radio" name="tipo">
+                        <label class="dark-label">Ambos</label>
+                    </p>
+                </div>
+                <div>
+                    <label class="dark-label">Qual seu tipo de dieta?</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Nenhuma restrição</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Sem glúten</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Sem sal</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Sem açúcar</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Sem lactose</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Vegetariana</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Vegana</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Ovolactovegetariana</label><br>
+                    <input type="radio" name="restricao">
+                    <label class="dark-label">Outra</label>
+                    <div class="card shadow-light">
+                        <textarea placeholder="Descreva suas restrições" rows="4" cols="80"></textarea>
+                    </div>
+                </div>
+                <div class="card shadow-light">
+                    <label>Normalmente, você utiliza qual dos seguintes métodos de pagamento?</label>
+                    <br>
+                    <select>
+                        <option selected="true">Selecione</option>
+                        <option>Dinheiro</option>
+                        <option>Cartão de Débito</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Pix</option>
+                        <option>Fiado</option>
+                        <option>Dinheiro Emprestado</option>
+                        <option>Rolo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <input class="big-btn btn-ghost-confirm-dark shadow-light" type="submit" value="Enviar">
+        <input class="big-btn btn-ghost-cancel-dark shadow-light" type="submit" value="Voltar">
+        <input class="big-btn btn-cancel-dark shadow-light" type="submit" value="Cancelar">
+    </div>
+    </form>
+    <div>
+        <a class="big-btn btn-ghost-confirm-dark shadow-light" href="">Acesse o cardápio da semana</a>
+    </div>
+</body>
+
+</html>
