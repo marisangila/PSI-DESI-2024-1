@@ -1,0 +1,19 @@
+.flex-center{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+body div{
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    
+}

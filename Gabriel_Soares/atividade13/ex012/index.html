@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Exercício 12</title>
+</head>
+<style>
+    body{
+        padding: 15px;
+    }
+
+    .div1{
+        display: flex;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    input{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+</style>
+<body>
+    <h1>RPG - Verifique se seu personagem morreu</h1>
+    <div class="div1">
+        <label>Vida</label>
+        <input type="number" id="vida">
+        <label>Dano</label>
+        <input type="number" id="dano">
+        <button id="btn" onclick="mostraSituacao()">Confirma</button>
+    </div>
+
+    <div id="situacao"></div>
+</body>
+</html>
