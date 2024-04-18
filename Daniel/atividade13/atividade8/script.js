@@ -1,18 +1,20 @@
-number = 0
-number2 = 1
-number3 = 1
+let number = 0
+let number2 = 1
+let number3 = 1
 
-somaPar = 0
+let sumPair = 0
 
-for(i=0;i<50000;i++){
-    number = number2 + number3      
+while(number3 < 50000){
+    number = number2 + number3       
     number2 = number + number3  
     number3 = number2 + number 
-
-    somaPar += number
+    
+    console.log(`${number}, ${number2}, ${number3}`)
+    sumPair += number
 }
 
-console.log(somaPar)
+console.log(sumPair)
+    
 
 
 
