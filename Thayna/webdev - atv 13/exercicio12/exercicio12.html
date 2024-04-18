@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade 12</title>
+  <script src="script.js"></script>
+  <style>
+    * {
+      color: white;
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .ceu {
+      text-align: center;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(0, #120c56, #000000);
+    }
+    button {
+      font-weight: 600;
+      color: #000000;
+      background-color: rgb(238, 94, 113);
+      border-style: none;
+      padding: 8px;
+      border-radius: 3px;
+    }
+
+    button:hover {
+      background-color: rgb(238, 238, 238);
+    }
+
+    input[type="number"] {
+      border-style: none;
+      border-radius: 3px;
+      padding: 8px;
+      background-color: #2a2a2a;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="ceu">
+    <h1 style="color: rgb(189, 189, 189);">Vida da Personagem</h1><br>
+
+    <form id="formVerificarMorte">
+      <label style="color: rgb(238, 94, 113); font-weight: 600;" for="dano">Dano sofrido:</label>
+      <input type="number" id="dano" required /><br>
+      <br />
+      <label style="color: rgb(71, 212, 255); font-weight: 600;"  for="saude">Saúde atual:</label>
+      <input type="number" id="saude" required /><br>
+      <br />
+      <button type="submit">Verificar Morte</button>
+    </form>
+
+    <div id="resultado"></div>
+
+  </div>
+
+</body>
+
+</html>
