@@ -6,5 +6,5 @@ if (a > b && a > c) {
 } else if (b > a && b > c) {
     alert(`O maior numero é ${b}`)
 } else if (c > a && c > b) {
-    alert(`O maior numero é ${b}`)
+    alert(`O maior numero é ${c}`)
 }
