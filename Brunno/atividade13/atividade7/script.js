@@ -1,30 +1,28 @@
-function mostrarIMC(){    
-    altura = document.getElementById("altura").value
-    peso = document.getElementById("peso").value
+window.onload = function() {
+    calculaPares();
 
-    imc = peso/(altura*altura)
+    function calculaPares(){
+        let numA = 0
+        let numB = 1
+        let numC = 0
+        let fibonacci = ""
+        let somaPares = 0
 
-    if(imc < 18.5){
-    msg = `Seu IMC é de: ${imc.toFixed(2)}, Abaixo do peso`
-    }
-    else if(imc > 18.6 || imc < 24.9){
-    msg = `Seu IMC é de: ${imc.toFixed(2)}, Peso ideal`
-    }
-    else if(imc > 25 || imc < 29.9){
-    msg = `Seu IMC é de: ${imc.toFixed(2)}, Levemente acima do peso`
-    }
-    else if(imc > 30 || imc < 34.9){
-    msg = `Seu IMC é de: ${imc.toFixed(2)}, Obesidade grau I`
-    }
-    else if(imc > 35 || imc < 39.9){
-    msg = `Seu IMC é de: ${imc.toFixed(2)}, Obesidade grau II`
-    }
-    else if(imc > 40){
-    msg = `Seu IMC é de: ${imc.toFixed(2)}, Obesidade grau III`
-    }
-    else{
-    msg = `Seu IMC é de: ${imc.toFixed(2)}, Incalculável.`
-    }
+        fibonacci += numA + " " + numB
 
-    document.getElementById("resultado").innerHTML = msg
+        for(contador = 1; contador <=23; contador++){
+            numC = numA + numB
+            fibonacci += " " + numC
+            if(numC % 2 == 0){
+                somaPares += numC
+            }
+            numA = numB
+            numB = numC
+        }
+            msg = fibonacci
+        
+            document.getElementById("resultado").innerHTML = msg;
+            document.getElementById("somaPares").innerHTML = somaPares;
+    };
 }
+    

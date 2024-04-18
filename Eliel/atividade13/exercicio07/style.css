@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div{
+    background-color: rgb(206, 206, 206);
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.div-resultado{
+    text-align: center;
+}
