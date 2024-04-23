@@ -1,0 +1,54 @@
+.boneco{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.corBoneco{
+    background-color: aqua;
+}
+.cabeca{
+    width: 75px;
+    height: 75px;
+}
+.olho{
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    margin: 5px;
+    margin-top: 30%;
+}
+.torso{
+    height: 75px;
+    width: 50px;
+    left: 85px;
+    top: 85px;
+}
+
+.braco{
+    top: 80px;
+    margin: 5px;
+    width: 15px;
+    height: 60px;
+}
+.bracoUm{left: 55px;}
+.bracoDois{left: 140px;}
+
+.perna{
+    top: 100px;
+    width: 15px;
+    height: 50px;
+}
+.pernaUm{left: 80px; top: 160px;}
+.pernaDois{left: 125px; top: 160px;}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+}
+.border{
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+.absolute{
+    position: absolute;
+}

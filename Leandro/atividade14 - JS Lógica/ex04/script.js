@@ -1,6 +1,5 @@
-var idade = Number(prompt('Informe sua idade: '))
-
-function verificaMaiorDeIdade(idade){
+function verificaMaiorDeIdade(){
+    var idade = Number(prompt('Informe sua idade: '))
     ehMaior = ''
     if(idade >= 18){
         ehMaior = 'é'
@@ -9,5 +8,4 @@ function verificaMaiorDeIdade(idade){
     }
     alert(`Você ${ehMaior} maior de idade`)
 }
-
-verificaMaiorDeIdade(idade)
+verificaMaiorDeIdade()
