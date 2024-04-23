@@ -1,6 +1,5 @@
-var num = Number(prompt('Informe um número: '))
-
-function calculaTabuada(num){
+function calculaTabuada(){
+    var num = Number(prompt('Informe um número: '))
     var tabuada = ''
     for(var i=0;i<=10;i++){
         res = num*i
@@ -8,4 +7,4 @@ function calculaTabuada(num){
     }
     alert(tabuada)
 }
-calculaTabuada(num)
+calculaTabuada()

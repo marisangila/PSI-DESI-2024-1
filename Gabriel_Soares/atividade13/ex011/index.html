@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Exercício 11</title>
+</head>
+<style>
+    body{
+        padding: 15px;
+    }
+
+    .div1{
+        display: flex;
+        margin-left: 15px;
+        margin-bottom: 20px;
+    }
+    input{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+</style>
+<body>
+    <h1>IMC</h1>
+    <div class="div1">
+        <label>Peso</label>
+        <input type="number" id="peso">
+        <label>Altura</label>
+        <input type="number" id="altura">
+        <button id="btn" onclick="mostraImc()">Confirma</button>
+    </div>
+
+    <div id="resultado"></div>
+</body>
+</html>
