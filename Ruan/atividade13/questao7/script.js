@@ -1,8 +1,24 @@
-function calcularImc() {
-    altura = Number(document.getElementById("altura").value)
-    peso = Number(document.getElementById("peso").value)
+function gerarTabela(){
 
-    resultado = peso/(altura**2)
+    var tabela = '<tr><th>Número</th></tr>'
 
-    document.getElementById("mostrarResultado").innerHTML = resultado
-} 
+    for (var i=1; i<200; i++) {
+        contador = 0
+
+        for (var j=1; j<=i; j++) {
+            if (i%j==0) {
+                contador += 1
+            }
+        }
+        if (contador == 2) {
+            tabela += '<tr><td>'
+            tabela += '<b>'
+            tabela += i      
+            tabela += '</b>'
+            tabela += '</td></tr>'
+        }else{
+            tabela += '<tr><td>' + i + '</td></tr>'
+        }
+    }
+    document.getElementById('insertTable').innerHTML = tabela
+}

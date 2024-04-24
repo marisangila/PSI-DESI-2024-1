@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "d:\\Users\\brunno_p_oliveira\\Desktop\\JavaScript\\atividade8\\index.html"
+            "file": "d:\\Users\\brunno_p_oliveira\\Documents\\GitHub\\PSI-DESI-2024-1\\Brunno\\atividade13"
         }
     ]
 }
