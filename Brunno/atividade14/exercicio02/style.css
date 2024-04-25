@@ -1,0 +1,7 @@
+.nav_menu {
+    display: none;
+  }
+  
+  .show {
+    display: initial;
+  }
