@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <script src="exe6.js"></script>
+</head>
+<body>
+    <form>
+        <label for="escolha">Selecione uma opção:</label>
+        <select id="escolha" onchange="mostrarNovoCampo()">
+            <option value="">Selecione uma opção</option>
+            <option value="opcao1">TADS</option>
+            <option value="opcao2">Ciências da Computação</option>
+            <option value="opcao3">WEB Design</option>
+            <option value="opcao4">Engenharia de Software</option>
+        </select>
+
+        <div id="campoCorrespondente" style="display: none;">
+            <label for="novoCampo">Insira o que você acha do curso selecionado:</label>
+            <input type="text" id="novoCampo">
+        </div>
+    </form>
+</body>
+</html>
