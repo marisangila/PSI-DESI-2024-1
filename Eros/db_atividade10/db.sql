@@ -5,185 +5,194 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 CREATE SCHEMA IF NOT EXISTS `DB_Senhor_dos_Pasteis` DEFAULT CHARACTER SET utf8 ;
 USE `DB_Senhor_dos_Pasteis` ;
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_fornecedores` (
-  `ID_fornecedor` INT NOT NULL AUTO_INCREMENT,
-  `col_contato1` VARCHAR(45) NOT NULL,
-  `col_contato2` VARCHAR(45) NOT NULL,
-  `col_descricao` VARCHAR(45) NOT NULL,
+DROP TABLE IF EXISTS `tb_fornecedores`;
+CREATE TABLE `tb_fornecedores` (
+  `ID_fornecedor` int NOT NULL AUTO_INCREMENT,
+  `col_contato1` varchar(45) NOT NULL,
+  `col_contato2` varchar(45) NOT NULL,
+  `col_descricao` varchar(45) NOT NULL,
   PRIMARY KEY (`ID_fornecedor`),
-  UNIQUE INDEX `ID_fornecedor_UNIQUE` (`ID_fornecedor` ASC) VISIBLE,
-  UNIQUE INDEX `col_contato1_UNIQUE` (`col_contato1` ASC) VISIBLE,
-  UNIQUE INDEX `col_contato2_UNIQUE` (`col_contato2` ASC) VISIBLE)
-ENGINE = InnoDB;
+  UNIQUE KEY `ID_fornecedor_UNIQUE` (`ID_fornecedor`),
+  UNIQUE KEY `col_contato1_UNIQUE` (`col_contato1`),
+  UNIQUE KEY `col_contato2_UNIQUE` (`col_contato2`)
+);
 
-
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_compras` (
-  `ID_compra` INT NOT NULL AUTO_INCREMENT,
-  `col_compra_valor` DECIMAL(6,2) NOT NULL,
-  `col_quantidade` INT NOT NULL,
-  `col_data` DATE NOT NULL,
-  PRIMARY KEY (`ID_compra`),
-  UNIQUE INDEX `ID_compra_UNIQUE` (`ID_compra` ASC) VISIBLE)
-ENGINE = InnoDB;
-
-
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_ingredientes` (
-  `ID_ingrediente` INT NOT NULL AUTO_INCREMENT,
-  `col_descricao` VARCHAR(50) NOT NULL,
-  `col_estoque` INT NOT NULL,
+DROP TABLE IF EXISTS `tb_ingredientes`;
+CREATE TABLE `tb_ingredientes` (
+  `ID_ingrediente` int NOT NULL AUTO_INCREMENT,
+  `col_descricao` varchar(50) NOT NULL,
+  `col_estoque` int NOT NULL,
   PRIMARY KEY (`ID_ingrediente`),
-  UNIQUE INDEX `ID_ingrediente_UNIQUE` (`ID_ingrediente` ASC) VISIBLE,
-  UNIQUE INDEX `col_descricao_UNIQUE` (`col_descricao` ASC) VISIBLE)
-ENGINE = InnoDB;
+  UNIQUE KEY `ID_ingrediente_UNIQUE` (`ID_ingrediente`),
+  UNIQUE KEY `col_descricao_UNIQUE` (`col_descricao`)
+);
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_receitas` (
-  `ID_receita` INT NOT NULL AUTO_INCREMENT,
-  `col_descricao` VARCHAR(50) NOT NULL,
+DROP TABLE IF EXISTS `tb_compras`;
+CREATE TABLE `tb_compras` (
+  `ID_compra` int NOT NULL AUTO_INCREMENT,
+  `col_compra_valor` decimal(6,2) NOT NULL,
+  `col_quantidade` int NOT NULL,
+  `col_data` date NOT NULL,
+  `fk_ID_fornecedor` int NOT NULL,
+  `fk_ID_ingrediente` int NOT NULL,
+  PRIMARY KEY (`ID_compra`),
+  UNIQUE KEY `ID_compra_UNIQUE` (`ID_compra`),
+  KEY `fk_ID_fornecedor_idx` (`fk_ID_fornecedor`),
+  KEY `fk_ID_ingrediente_idx` (`fk_ID_ingrediente`),
+  CONSTRAINT `fk_ID_fornecedor` FOREIGN KEY (`fk_ID_fornecedor`) REFERENCES `tb_fornecedores` (`ID_fornecedor`),
+  CONSTRAINT `fk_ID_ingrediente` FOREIGN KEY (`fk_ID_ingrediente`) REFERENCES `tb_ingredientes` (`ID_ingrediente`)
+); 
+
+DROP TABLE IF EXISTS `tb_receitas`;
+CREATE TABLE `tb_receitas` (
+  `ID_receita` int NOT NULL AUTO_INCREMENT,
+  `col_descricao` varchar(50) NOT NULL,
   PRIMARY KEY (`ID_receita`),
-  UNIQUE INDEX `ID_receita_UNIQUE` (`ID_receita` ASC) VISIBLE,
-  UNIQUE INDEX `col_descricao_UNIQUE` (`col_descricao` ASC) VISIBLE)
-ENGINE = InnoDB;
+  UNIQUE KEY `ID_receita_UNIQUE` (`ID_receita`),
+  UNIQUE KEY `col_descricao_UNIQUE` (`col_descricao`)
+); 
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_cardapios` (
-  `ID_cardapio` INT NOT NULL,
-  `tb_receitas_ID_receita` INT NOT NULL,
-  `tb_ingredientes_ID_ingrediente` INT NOT NULL,
-  PRIMARY KEY (`ID_cardapio`, `tb_receitas_ID_receita`, `tb_ingredientes_ID_ingrediente`),
-  INDEX `fk_tb_cardapios_tb_receitas1_idx` (`tb_receitas_ID_receita` ASC) VISIBLE,
-  INDEX `fk_tb_cardapios_tb_ingredientes1_idx` (`tb_ingredientes_ID_ingrediente` ASC) VISIBLE,
-  CONSTRAINT `fk_tb_cardapios_tb_receitas1`
-    FOREIGN KEY (`tb_receitas_ID_receita`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_receitas` (`ID_receita`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_tb_cardapios_tb_ingredientes1`
-    FOREIGN KEY (`tb_ingredientes_ID_ingrediente`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_ingredientes` (`ID_ingrediente`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+DROP TABLE IF EXISTS `tb_cardapios`;
+CREATE TABLE `tb_cardapios` (
+  `ID_cardapio` int NOT NULL AUTO_INCREMENT,
+  `fk_ID_receita` int NOT NULL,
+  `fk_ID_ingrediente` int NOT NULL,
+  PRIMARY KEY (`ID_cardapio`,`fk_ID_receita`,`fk_ID_ingrediente`),
+  KEY `fk_tb_cardapios_tb_receitas1_idx` (`fk_ID_receita`),
+  KEY `fk_tb_cardapios_tb_ingredientes1_idx` (`fk_ID_ingrediente`),
+  CONSTRAINT `fk_tb_cardapios_tb_ingredientes1` FOREIGN KEY (`fk_ID_ingrediente`) REFERENCES `tb_ingredientes` (`ID_ingrediente`),
+  CONSTRAINT `fk_tb_cardapios_tb_receitas1` FOREIGN KEY (`fk_ID_receita`) REFERENCES `tb_receitas` (`ID_receita`)
+) 
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_categorias_pasteis` (
-  `ID_categoria_pa` INT NOT NULL,
-  `col_descricao` VARCHAR(50) NOT NULL,
+DROP TABLE IF EXISTS `tb_categorias_pasteis`;
+CREATE TABLE `tb_categorias_pasteis` (
+  `ID_categoria_pa` int NOT NULL AUTO_INCREMENT,
+  `col_descricao` varchar(50) NOT NULL,
   PRIMARY KEY (`ID_categoria_pa`),
-  UNIQUE INDEX `co_descricao_UNIQUE` (`col_descricao` ASC) VISIBLE)
-ENGINE = InnoDB;
+  UNIQUE KEY `co_descricao_UNIQUE` (`col_descricao`)
+);
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_categorias_pizzas` (
-  `ID_categoria_pi` INT NOT NULL AUTO_INCREMENT,
-  `col_descricao` VARCHAR(50) NOT NULL,
+DROP TABLE IF EXISTS `tb_categorias_pizzas`;
+CREATE TABLE `tb_categorias_pizzas` (
+  `ID_categoria_pi` int NOT NULL AUTO_INCREMENT,
+  `col_descricao` varchar(50) NOT NULL,
   PRIMARY KEY (`ID_categoria_pi`),
-  UNIQUE INDEX `ID_categoria_p_UNIQUE` (`ID_categoria_pi` ASC) VISIBLE)
-ENGINE = InnoDB;
+  UNIQUE KEY `ID_categoria_p_UNIQUE` (`ID_categoria_pi`)
+);
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_pasteis` (
-  `ID_pastel` INT NOT NULL AUTO_INCREMENT,
-  `col_descricao` VARCHAR(50) NOT NULL,
-  `col_tamanho` TINYINT(1) NOT NULL,
-  `col_valor` DECIMAL(4,2) NOT NULL,
-  `tb_receitas_ID_receita` INT NOT NULL,
-  `tb_categorias_pasteis_ID_categoria_pa` INT NOT NULL,
+DROP TABLE IF EXISTS `tb_pasteis`;
+CREATE TABLE `tb_pasteis` (
+  `ID_pastel` int NOT NULL AUTO_INCREMENT,
+  `col_descricao` varchar(50) NOT NULL,
+  `col_tamanho` tinyint(1) NOT NULL,
+  `col_valor` decimal(4,2) NOT NULL,
+  `fk_ID_receita` int NOT NULL,
+  `fk_ID_categoria_pa` int NOT NULL,
   PRIMARY KEY (`ID_pastel`),
-  UNIQUE INDEX `ID_pasteis_UNIQUE` (`ID_pastel` ASC) VISIBLE,
-  INDEX `fk_tb_pasteis_tb_receitas1_idx` (`tb_receitas_ID_receita` ASC) VISIBLE,
-  INDEX `fk_tb_pasteis_tb_categorias_pasteis1_idx` (`tb_categorias_pasteis_ID_categoria_pa` ASC) VISIBLE,
-  CONSTRAINT `fk_tb_pasteis_tb_receitas1`
-    FOREIGN KEY (`tb_receitas_ID_receita`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_receitas` (`ID_receita`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_tb_pasteis_tb_categorias_pasteis1`
-    FOREIGN KEY (`tb_categorias_pasteis_ID_categoria_pa`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_categorias_pasteis` (`ID_categoria_pa`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  UNIQUE KEY `ID_pasteis_UNIQUE` (`ID_pastel`),
+  KEY `fk_tb_pasteis_tb_receitas1_idx` (`fk_ID_receita`),
+  KEY `fk_tb_pasteis_tb_categorias_pasteis1_idx` (`fk_ID_categoria_pa`),
+  CONSTRAINT `fk_tb_pasteis_tb_categorias_pasteis1` FOREIGN KEY (`fk_ID_categoria_pa`) REFERENCES `tb_categorias_pasteis` (`ID_categoria_pa`),
+  CONSTRAINT `fk_tb_pasteis_tb_receitas1` FOREIGN KEY (`fk_ID_receita`) REFERENCES `tb_receitas` (`ID_receita`)
+); 
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_pizzas` (
-  `ID_pizza` INT NOT NULL AUTO_INCREMENT,
-  `col_descricao` VARCHAR(50) NOT NULL,
-  `col_tamanho` CHAR NOT NULL,
-  `col_valor` DECIMAL(4,2) NOT NULL,
-  `tb_receitas_ID_receita` INT NOT NULL,
-  `tb_categorias_pizzas_ID_categoria_pi` INT NOT NULL,
+DROP TABLE IF EXISTS `tb_pizzas`;
+CREATE TABLE `tb_pizzas` (
+  `ID_pizza` int NOT NULL AUTO_INCREMENT,
+  `col_descricao` varchar(50) NOT NULL,
+  `col_tamanho` char(1) NOT NULL,
+  `col_valor` decimal(4,2) NOT NULL,
+  `fk_ID_receita` int NOT NULL,
+  `fk_ID_categoria_pi` int NOT NULL,
   PRIMARY KEY (`ID_pizza`),
-  UNIQUE INDEX `ID_pasteis_UNIQUE` (`ID_pizza` ASC) VISIBLE,
-  INDEX `fk_tb_pizzas_tb_receitas1_idx` (`tb_receitas_ID_receita` ASC) VISIBLE,
-  INDEX `fk_tb_pizzas_tb_categorias_pizzas1_idx` (`tb_categorias_pizzas_ID_categoria_pi` ASC) VISIBLE,
-  CONSTRAINT `fk_tb_pizzas_tb_receitas1`
-    FOREIGN KEY (`tb_receitas_ID_receita`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_receitas` (`ID_receita`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_tb_pizzas_tb_categorias_pizzas1`
-    FOREIGN KEY (`tb_categorias_pizzas_ID_categoria_pi`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_categorias_pizzas` (`ID_categoria_pi`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+  UNIQUE KEY `ID_pasteis_UNIQUE` (`ID_pizza`),
+  KEY `fk_tb_pizzas_tb_receitas1_idx` (`fk_ID_receita`),
+  KEY `fk_tb_pizzas_tb_categorias_pizzas1_idx` (`fk_ID_categoria_pi`),
+  CONSTRAINT `fk_tb_pizzas_tb_categorias_pizzas1` FOREIGN KEY (`fk_ID_categoria_pi`) REFERENCES `tb_categorias_pizzas` (`ID_categoria_pi`),
+  CONSTRAINT `fk_tb_pizzas_tb_receitas1` FOREIGN KEY (`fk_ID_receita`) REFERENCES `tb_receitas` (`ID_receita`)
+);
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_pedidos` (
-  `ID_pedido` INT NOT NULL AUTO_INCREMENT,
-  `col_quantidade` INT NOT NULL,
-  `col_data` DATETIME NOT NULL,
-  `col_entrega` TINYINT NOT NULL,
-  `tb_pasteis_ID_pastel` INT NOT NULL,
-  `tb_pizzas_ID_pizza` INT NOT NULL,
-  PRIMARY KEY (`ID_pedido`, `tb_pasteis_ID_pastel`, `tb_pizzas_ID_pizza`),
-  UNIQUE INDEX `ID_pedido_UNIQUE` (`ID_pedido` ASC) VISIBLE,
-  INDEX `fk_tb_pedidos_tb_pasteis1_idx` (`tb_pasteis_ID_pastel` ASC) VISIBLE,
-  INDEX `fk_tb_pedidos_tb_pizzas1_idx` (`tb_pizzas_ID_pizza` ASC) VISIBLE,
-  CONSTRAINT `fk_tb_pedidos_tb_pasteis1`
-    FOREIGN KEY (`tb_pasteis_ID_pastel`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_pasteis` (`ID_pastel`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_tb_pedidos_tb_pizzas1`
-    FOREIGN KEY (`tb_pizzas_ID_pizza`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_pizzas` (`ID_pizza`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+DROP TABLE IF EXISTS `tb_pedidos`;
+CREATE TABLE `tb_pedidos` (
+  `ID_pedido` int NOT NULL AUTO_INCREMENT,
+  `col_data` datetime NOT NULL,
+  `col_entrega` tinyint NOT NULL,
+  `fk_ID_fila` int NOT NULL,
+  `fk_ID_cliente` int NOT NULL,
+  PRIMARY KEY (`ID_pedido`),
+  UNIQUE KEY `ID_fila_UNIQUE` (`ID_pedido`),
+  KEY `fk_ID_fila_idx` (`fk_ID_fila`),
+  KEY `fk_ID_cliente_idx` (`fk_ID_cliente`),
+  CONSTRAINT `fk_ID_cliente` FOREIGN KEY (`fk_ID_cliente`) REFERENCES `tb_clientes` (`ID_cliente`),
+  CONSTRAINT `fk_ID_fila` FOREIGN KEY (`fk_ID_fila`) REFERENCES `tb_fila` (`ID_fila`)
+);
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_entregadores` (
-  `ID_entregador` INT NOT NULL AUTO_INCREMENT,
-  `col_nome` VARCHAR(100) NOT NULL,
-  `col_data_nasc` DATE NOT NULL,
-  `col_salario` DECIMAL(6,2) NOT NULL,
-  `col_adicional` INT NOT NULL,
-  `col_prazo` TIME NOT NULL,
-  `col_cpf` INT NOT NULL,
-  `col_cnh` INT NOT NULL,
-  `col_pis` INT NOT NULL,
+DROP TABLE IF EXISTS `tb_fila`;
+CREATE TABLE `tb_fila` (
+  `ID_fila` int NOT NULL AUTO_INCREMENT,
+  `col_quantidade` int NOT NULL,
+  `col_entrega` tinyint NOT NULL,
+  `fk_ID_pastel` int DEFAULT NULL,
+  `fk_ID_pizza` int DEFAULT NULL,
+  PRIMARY KEY (`ID_fila`),
+  UNIQUE KEY `ID_pedido_UNIQUE` (`ID_fila`),
+  KEY `fk_tb_pedidos_tb_pasteis1_idx` (`fk_ID_pastel`),
+  KEY `fk_tb_pedidos_tb_pizzas1_idx` (`fk_ID_pizza`),
+  CONSTRAINT `fk_ID_pastel` FOREIGN KEY (`fk_ID_pastel`) REFERENCES `tb_pasteis` (`ID_pastel`),
+  CONSTRAINT `fk_ID_pizza` FOREIGN KEY (`fk_ID_pizza`) REFERENCES `tb_pizzas` (`ID_pizza`)
+);
+
+DROP TABLE IF EXISTS `tb_entregadores`;
+CREATE TABLE `tb_entregadores` (
+  `ID_entregador` int NOT NULL AUTO_INCREMENT,
+  `col_nome` varchar(100) NOT NULL,
+  `col_data_nasc` date NOT NULL,
+  `col_salario` decimal(6,2) NOT NULL,
+  `col_adicional` int NOT NULL,
+  `col_prazo` time NOT NULL,
+  `col_cpf` bigint NOT NULL,
+  `col_cnh` bigint NOT NULL,
+  `col_clt` bigint NOT NULL,
   PRIMARY KEY (`ID_entregador`),
-  UNIQUE INDEX `ID_entregador_UNIQUE` (`ID_entregador` ASC) VISIBLE,
-  UNIQUE INDEX `col_pis_UNIQUE` (`col_pis` ASC) VISIBLE,
-  UNIQUE INDEX `col_cnh_UNIQUE` (`col_cnh` ASC) VISIBLE,
-  UNIQUE INDEX `col_cpf_UNIQUE` (`col_cpf` ASC) VISIBLE)
-ENGINE = InnoDB;
+  UNIQUE KEY `ID_entregador_UNIQUE` (`ID_entregador`),
+  UNIQUE KEY `col_pis_UNIQUE` (`col_clt`),
+  UNIQUE KEY `col_cnh_UNIQUE` (`col_cnh`),
+  UNIQUE KEY `col_cpf_UNIQUE` (`col_cpf`)
+);
 
-CREATE TABLE IF NOT EXISTS `DB_Senhor_dos_Pasteis`.`tb_entregas` (
-  `ID_entrega` INT NOT NULL AUTO_INCREMENT,
-  `col_endereco` VARCHAR(45) NULL,
-  `col_saida` DATETIME NULL,
-  `col_entregue` DATETIME NULL,
-  `tb_pedidos_ID_pedido` INT NOT NULL,
-  `tb_entregadores_ID_entregador` INT NOT NULL,
-  PRIMARY KEY (`ID_entrega`, `tb_pedidos_ID_pedido`, `tb_entregadores_ID_entregador`),
-  UNIQUE INDEX `ID_entrega_UNIQUE` (`ID_entrega` ASC) VISIBLE,
-  INDEX `fk_tb_entregas_tb_pedidos_idx` (`tb_pedidos_ID_pedido` ASC) VISIBLE,
-  INDEX `fk_tb_entregas_tb_entregadores1_idx` (`tb_entregadores_ID_entregador` ASC) VISIBLE,
-  CONSTRAINT `fk_tb_entregas_tb_pedidos`
-    FOREIGN KEY (`tb_pedidos_ID_pedido`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_pedidos` (`ID_pedido`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_tb_entregas_tb_entregadores1`
-    FOREIGN KEY (`tb_entregadores_ID_entregador`)
-    REFERENCES `DB_Senhor_dos_Pasteis`.`tb_entregadores` (`ID_entregador`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
+DROP TABLE IF EXISTS `tb_clientes`;
+CREATE TABLE `tb_clientes` (
+  `ID_cliente` int NOT NULL,
+  `col_nome` varchar(45) NOT NULL,
+  `col_cpf` varchar(45) DEFAULT NULL,
+  `col_telefofo1` int NOT NULL,
+  `col_telefofo2` int DEFAULT NULL,
+  PRIMARY KEY (`ID_cliente`),
+  UNIQUE KEY `ID_cliente_UNIQUE` (`ID_cliente`),
+  UNIQUE KEY `col_telefofo1_UNIQUE` (`col_telefofo1`),
+  UNIQUE KEY `col_cpf_UNIQUE` (`col_cpf`),
+  UNIQUE KEY `col_telefofo2_UNIQUE` (`col_telefofo2`)
+);
+
+DROP TABLE IF EXISTS `tb_entregas`;
+CREATE TABLE `tb_entregas` (
+  `ID_entrega` int NOT NULL AUTO_INCREMENT,
+  `col_endereco` varchar(45) NOT NULL,
+  `col_saida` time NOT NULL,
+  `col_entregue` time NOT NULL,
+  `fk_ID_pedido` int NOT NULL,
+  `fk_ID_entregador` int NOT NULL,
+  `fk_ID_cliente` int NOT NULL,
+  PRIMARY KEY (`ID_entrega`),
+  UNIQUE KEY `ID_entrega_UNIQUE` (`ID_entrega`),
+  KEY `fk_tb_entregas_tb_pedidos_idx` (`fk_ID_pedido`),
+  KEY `fk_tb_entregas_tb_entregadores1_idx` (`fk_ID_entregador`),
+  KEY `fk_ID_cliente_idx` (`fk_ID_cliente`),
+  CONSTRAINT `fk_tb_entregas_tb_clientes` FOREIGN KEY (`fk_ID_cliente`) REFERENCES `tb_clientes` (`ID_cliente`),
+  CONSTRAINT `fk_tb_entregas_tb_entregadores1` FOREIGN KEY (`fk_ID_entregador`) REFERENCES `tb_entregadores` (`ID_entregador`),
+  CONSTRAINT `fk_tb_entregas_tb_pedidos` FOREIGN KEY (`fk_ID_pedido`) REFERENCES `tb_fila` (`ID_fila`)
+);
+
 ENGINE = InnoDB;
 
 
