@@ -30,32 +30,8 @@ form{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     background-color: white;
-}
-
-
-.container-all-inputs{
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.container-input label{
-    font-size: 15px;
-    font-weight: 600;
-}
-
-.container-input input{
-    display: block;
-    margin-block: 5px;
-    padding-block: 10px;
-    padding-inline: 30px;
-    border-radius: 5px;
-    width: 450px;
-    outline: none;
-    border: 1px solid black;
 }
 
 .submit-button{
@@ -74,4 +50,19 @@ form{
 
 .submit-button:hover{
     background-color: #e28661;
+}
+
+.container-input label{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.container-input input{
+    display: block;
+    margin-block: 5px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
 }

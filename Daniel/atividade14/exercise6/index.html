@@ -11,16 +11,20 @@
 </head>
 <body>
     <main>
-      <select name="ghibliMovies" id="ghibliMovies" >
-        <option value="selected">Ghibli Movies</option>
-        <option>Mononoke Princcess</option>
-        <option>The Boy and The Heron</option>
-        <option>Howl's Moving Castle</option>
-        <option>Porco Rosso: The Last Romantic Hero</option>
-        <option>Nausicaa: Of the Valley of The Wind</option>
-        <option>The Trip of Chihiro</option>
-      </select>
+      <form action="#" method="POST" id="form-register">
+        <h1>REGISTER</h1>
+        <div class="container-input" >
+          <label for="input-cpf">CPF:</label>
+          <input type="text" placeholder="Input your CPF here" required id="cpfInput">
+          <span id="errorCPF" ></span>
+        </div>
+        <input type="submit" value="REGISTER" class="submit-button" >
+      </form>
     </main>
+
+    <dialog>
+      
+    </dialog>
 
     <script src="script.js" ></script>
 </body>
