@@ -1,8 +1,9 @@
-var a = Number(prompt('Informe o primeiro número: '))
-var b = Number(prompt('Informe o segundo número: '))
-var c = Number(prompt('Informe o terceiro número: '))
 
-function informaMaiorNumero(a,b,c){
+
+function informaMaiorNumero(){
+    var a = Number(prompt('Informe o primeiro número: '))
+    var b = Number(prompt('Informe o segundo número: '))
+    var c = Number(prompt('Informe o terceiro número: '))
     maiorValor = 0
     if(a > b && a > c){
         maiorValor = a
@@ -13,4 +14,4 @@ function informaMaiorNumero(a,b,c){
     }
     alert(`O maior valor digitado foi: ${maiorValor}`)
 }
-informaMaiorNumero(a,b,c)
+informaMaiorNumero()

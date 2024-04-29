@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <script src="script.js"></script>
+</head>
+
+<body onload="esconderDiv()">
+    <h1>Formulário</h1>
+    <div>
+        <label>Nome:</label>
+        <input type="text" onchange="mostrarCampo(1)" id="elemento1">
+    </div>
+    <br>
+    <div id="campo2">
+        <label>Sobrenome:</label>
+        <input type="text" onchange="mostrarCampo(2)" id="elemento2">
+    </div>
+    <br>
+    <div id="campo3">
+        <label>E-mail</label>
+        <input type="e-mail" onchange="mostrarCampo(3)" id="elemento3">
+    </div>
+    <br>
+    <div id="campo4">
+        <input type="button" value="Salvar" id="elemento4">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Dinâmico</title>
+    <script src="script.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Formulário Dinâmico</h2>
+
+<form id="form">
+    <label for="selectField">Escolha uma opção:</label>
+    <select id="selectField" onchange="mostrarCampo()">
+        <option value="option1">Opção 1</option>
+        <option value="option2">Opção 2</option>
+        <option value="option3">Opção 3</option>
+    </select>
+
+    <div id="campoAdicional1" class="hidden">
+        <label for="campo1">Campo Adicional 1:</label>
+        <input type="text" id="campo1" name="campo1">
+    </div>
+
+    <div id="campoAdicional2" class="hidden">
+        <label for="campo2">Campo Adicional 2:</label>
+        <input type="text" id="campo2" name="campo2">
+    </div>
+
+    <div id="campoAdicional3" class="hidden">
+        <label for="campo3">Campo Adicional 3:</label>
+        <input type="text" id="campo3" name="campo3">
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
