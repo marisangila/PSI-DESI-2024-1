@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.campo {
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.escondido {
+    display: none;
+}
