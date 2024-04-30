@@ -66,3 +66,14 @@ form{
     outline: none;
     border: 1px solid black;
 }
+
+.container-note{
+    display: none;
+    margin-inline: 30px;
+}
+
+
+.container-note label{
+    
+    margin-inline: 30px;
+}

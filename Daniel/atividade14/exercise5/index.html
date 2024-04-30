@@ -11,15 +11,15 @@
 </head>
 <body>
     <main>
-      <select name="ghibliMovies" id="ghibliMovies" >
-        <option value="selected">Ghibli Movies</option>
-        <option>Mononoke Princcess</option>
-        <option>The Boy and The Heron</option>
-        <option>Howl's Moving Castle</option>
-        <option>Porco Rosso: The Last Romantic Hero</option>
-        <option>Nausicaa: Of the Valley of The Wind</option>
-        <option>The Trip of Chihiro</option>
+      <select name="ghibliMovies" id="ghibliMovies" onchange="showExtraField()" >
+        <option value="selected-0">Ghibli Movies</option>
+        <option value="mononoke-1" >Mononoke Princcess</option>
+        <option value="boyAndHeron-2" >The Boy and The Heron</option>
+        <option value="movingCastle-3" >Howl's Moving Castle</option>
+        <option value="porcoRosso-4" >Porco Rosso: The Last Romantic Hero</option>
+        <option value="nausicaa-5" >Nausicaa: Of the Valley of The Wind</option>
       </select>
+      <div id="containerNote" class="container-note"></div>
     </main>
 
     <script src="script.js" ></script>

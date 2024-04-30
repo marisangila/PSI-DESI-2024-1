@@ -1,33 +1,23 @@
-$(document).ready(function(){
-    const formRegister = $("#form-register");
-    const CPFInput = $("#cpfInput"); 
-    const errorCPF = $("#errorCPF").css("color", "red") 
-    
-    formRegister.on("submit", (event) => {
-        if(validateCPF(CPFInput, errorCPF)){
-            alert(`User logged!!`)
-        }else{
-            event.preventDefault()
-        }
-    })
-})
 
-function validateCPF(input, error){
-    error.empty()
-    if(input.val().trim() === ''){
-        error.html(`This field is required!`)
-        return false
+note = [0,0,0,0,0,0]
+function showExtraField() {
+    var selectedValue = $("#ghibliMovies").val()
+    var containerNote = $("#containerNote");
+
+    console.log(selectedValue)
+    if (selectedValue === "selected") {
+        containerNote.css("display","none")
+    }else{
+        
+        containerNote.css("display","block")
+        let index = Number(selectedValue.charAt(selectedValue.length - 1))
+        console.log(note[index])
+        containerNote.html(`<input type="number" id="userNote" maxlength="1"><label for="userNote" id="note">Note: ${note[index]}</label>`)
+       
+        $('#userNote').on("input", ()=>{
+            $("#note").html(`Note: ${$("#userNote").val()}`)
+            note[index] += Number($("#userNote").val())
+            console.log(note[index])
+        })
     }
-
-    else if(!validateText(input.val().trim())){
-        error.html(`<p>Type it a correct CPF!!</p> 
-                    <p>Correctly format: ###.###.###-##</p>`)
-        return false
-    }
-    return true 
-}
-
-function validateText(text, camp) {
-    const regex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/
-    return regex.test(text);
 }
