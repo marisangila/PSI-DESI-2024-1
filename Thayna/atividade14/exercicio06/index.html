@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h2>Formulário</h2>
+
+    <form>
+        <div class="campo">
+            <label for="escolha">Qual seu nível de escolaridade?:</label>
+            <select id="escolha" name="escolha" onchange="mostrarCampoAdicional()">
+                <option value="">Selecione...</option>
+                <option value="opcao1">Ensino fundamental completo</option>
+                <option value="opcao2">Ensino médio completo</option>
+                <option value="opcao3">Cursando ensino superior</option>
+            </select>
+        </div>
+        <div id="campoAdicional" class="campo escondido">
+            <label for="campoAdicionalInput">Insira a instituição de ensino:</label>
+            <input type="text" id="campoAdicionalInput" name="campoAdicional">
+        </div>
+    </form>
+
+
+</body>
+
+</html>
