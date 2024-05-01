@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex3</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="campo1">Campo 1:</label>
+      <input type="text" id="campo1" name="campo1" oninput="mostrarCampo2()" />
+      <div id="campo2Container" class="hidden">
+        <label for="campo2">Campo 2:</label>
+        <input type="text" id="campo2" name="campo2" />
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
