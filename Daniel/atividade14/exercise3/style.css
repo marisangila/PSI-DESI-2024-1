@@ -1,0 +1,45 @@
+*{
+    margin: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+main{
+    margin: 40px;
+}
+
+.container{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container div label{
+    margin-inline: 5px;
+}
+
+.container h1{
+    font-size: 18px;
+}
+
+.collage{
+    display: none;
+}
+
+.container_input_radio label{
+    cursor: pointer;
+}
+
+
+.container_input_radio input[type="radio"]{
+    cursor: pointer;
+}
+
+.collage_input{
+    border: .5px solid black;
+    padding: 5px;
+    margin-block: 20px;
+    margin-inline: 5px; 
+}

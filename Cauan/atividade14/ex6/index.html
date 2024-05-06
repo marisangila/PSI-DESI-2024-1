@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex6</title>
+  </head>
+  <body>
+    <form id="meuFormulario">
+      <label for="opcao">Selecione uma opção:</label>
+      <select id="opcao" name="opcao" onchange="mostrarCampoExtra()">
+        <option value="">Selecione...</option>
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+      </select>
+
+      <div id="campoExtraContainer" style="display: none">
+        <label for="campoExtra" id="labelCampoExtra"></label>
+        <input type="text" id="campoExtra" name="campoExtra" />
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

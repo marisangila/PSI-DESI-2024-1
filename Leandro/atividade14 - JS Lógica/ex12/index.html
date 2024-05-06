@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        hp:<label id="hp">10</label>
+        <div>
+            <div class="boneco border d-flex">
+                <div class="cabeca corBoneco border d-flex absolute">
+                    <div class="olho"></div>
+                    <div class="olho"></div>
+                </div>
+                <div class="corpo">
+                    <div class="braco bracoUm corBoneco border absolute"></div>
+        
+                    <div class="torso corBoneco border absolute"></div>
+                    <div class="braco bracoDois corBoneco border absolute"></div>
+                </div>
+                <div class="parteBaixo">
+                    <div class="perna pernaUm corBoneco absolute border"></div>
+                    <div class="perna pernaDois corBoneco absolute border"></div>
+                </div>
+            </div>
+
+        </div>
+        hp:<label id="hp">50</label>
     </div>
     <input type="button" value="Cause 5 de dano!" onclick="causarDano()">
 </body>

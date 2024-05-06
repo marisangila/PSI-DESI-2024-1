@@ -1,10 +1,8 @@
-var a = Number(prompt('Informe o primeiro número: '))
-var b = Number(prompt('Informe o segundo número: '))
-var c = Number(prompt('Informe o terceiro número: '))
-
-function calculaMedia(a,b,c){
-    media = (a+b+c)/3
-    alert(`A média aritmética entre os 3 números é: ${media}`)
+function calculaMedia(){
+    var media = 0
+    for(var i=1; i<4; i++){
+        media += Number(prompt(`Informe o ${i}º`))
+    }
+    alert(`A média aritmética entre os 3 números é: ${media/3}`)
 }
-
-calculaMedia(a,b,c)
+calculaMedia()
