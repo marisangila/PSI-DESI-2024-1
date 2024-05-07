@@ -12,6 +12,10 @@ function addInfo(){
 
         btn1.textContent = 'Editar'
         btn2.textContent = 'Excluir'
+
+        btn2.addEventListener('click', function(){
+            tr.remove();
+        })
     
         td1.textContent = name;
         td2.textContent = email;
