@@ -27,6 +27,8 @@ function adicionaInfoTabela(){
     botao_exclui.textContent = "Excluir";
     botao_exclui.setAttribute("onclick", "excluirLinha(this)");
     celulaAcoes.appendChild(botao_exclui);
+    document.getElementById("nome").value = '';
+    document.getElementById("email").value = '';
 }
 
 function validarEmail(email) {
