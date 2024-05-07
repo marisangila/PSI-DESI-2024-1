@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 15</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Tabela</h1>
+    <form id="form">
+        <div class="row">
+            <div class="col">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Nome">
+            </div>
+            <div class="col">
+                <label for="idade">Idade</label>
+                <input type="text" class="form-control" id="idade" placeholder="Idade">
+            </div>
+        </div>
+      
+    
+    <div class="row justify-content-center">
+      <button type="button" class="btn btn-primary mt-2 mb-2" onclick="adicionarRegistro()">Adicionar</button>
+    </div>
+    </form>
+    <table id="tabela" class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        
+      </tbody>
+    </table>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

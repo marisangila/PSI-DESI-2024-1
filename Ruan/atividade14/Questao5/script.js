@@ -1,19 +1,9 @@
 function validarCpf(){
-    let cpf = document.getElementById('cpf').value
+    let cpf = document.getElementById('cpf').value.replace(/\D/g, '')
 
-    if (cpf.length == 11){
-        let invalidoNumeros = false
-        for (let caractere of cpf) {
-            if (typeof caractere != 'number'){
-                invalidoNumeros = true
-                alert('CPF possui letras!')
-                break;
-            }
-        }
-        if (!invalidoNumeros){
-            alert('chegou aqui')
-        }
+    if (cpf.length !== 11 || cpf.match(/(\d)\1{10}/)){
+        document.getElementById('mensagem').innerHTML = '<label style="color: red;">* CPF inválido.</label>'
     }else{
-        alert('CPF com número incorreto de caracteres!')
+        document.getElementById('mensagem').innerHTML = '<label style="color: green;">* CPF válido.</label>'
     }
 }

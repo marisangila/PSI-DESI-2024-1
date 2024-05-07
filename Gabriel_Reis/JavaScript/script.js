@@ -15,3 +15,20 @@ function calcularx(){
 function habilitarBotao(){
     
 }
+
+//criar celula
+celula=document.createElement('<td>');
+celula.textContent=" ";
+
+//Criar linha
+linha=document.createElement('<tr>');
+linha.appendChild(celula);
+
+//tabela
+tbody.appendChild(linha);
+
+//DOM
+var botao = document.getElementById("btn");
+botao.addEventListener("click", mostraLog);
+
+document.getElementById("btn").botao.addEventListener("click", mostraLog);

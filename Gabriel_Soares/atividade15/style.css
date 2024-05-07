@@ -1,0 +1,87 @@
+*{
+    padding: 0px; margin: 0px;
+}
+
+body{
+    background-image: url('imgs/ryan-richmond-8-016-16.jpg');
+    background-size: 120%;
+    background-repeat: no-repeat;
+}
+
+div{
+    padding: 15px;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 80%;
+    border: solid 2px white;
+    color: white;
+}
+
+td, th{
+    border: solid 1px white;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    
+}
+
+button{
+    height: 100%;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: crimson;
+    &:hover{
+        background-color: white;
+        color: crimson;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    margin: 30px 0px 0px 30px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+label{
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+}
+
+#nome, #email{
+    width: 300px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    &:focus{
+        outline-color: cornflowerblue;
+    }
+}
+
+#btn_confirma{
+    margin: 15px;
+    width: 100px;
+    height: 40px;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(77, 241, 77);
+    &:hover{
+        background-color: palegreen;
+    }
+}
