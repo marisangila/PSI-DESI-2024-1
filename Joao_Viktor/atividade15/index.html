@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabela Dinâmica</title>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>CRUD - Javascript</h2>
+    <form id="form">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name"/>
+      <label for="email">E-mail:</label>
+      <input type="text" id="email" name="email"/>
+      <button type="button" onclick="addRow()">Adicionar</button>
+    </form>
+
+    <h2>Tabela</h2>
+    <table border="" id="dataTable">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="dataBody"></tbody>
+    </table>
+  </body>
+</html>

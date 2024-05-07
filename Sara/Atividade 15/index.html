@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title> Atividade 15 </title>
+</head>
+<body>
+    <main class="main-content"> 
+        <div class="div-formulario">
+            <form class="formulario">
+                <label class="label-nome" id="label-nome"> Nome: </label><input type="text" class="nome" id="nome" required>
+                <label class="label-email" id="label-email"> E-mail: </label><input type="email" class="email" id="email" required>
+                <button type="button" class="botao" id="botao" onclick="adicionarElemento()"> Inserir </button>    
+            </form>
+        </div>
+        <div class="div-tabela">
+            <table border="1" class="tabela" id="tabela">
+                <thead>
+                    <th> Nome </th>
+                    <th> E-mail </th>
+                    <th> Ação </th>
+                </thead>
+                <tbody class="corpo-tabela" id="corpo-tabela">
+                </tbody>
+            </table>
+        </div>
+    </main> 
+</body>
+</html>
