@@ -45,7 +45,8 @@ function rowEdit(btnEdit) {
 }
 
 function deleteRow(btnDelete) {
-    var row = btnDelete.parentNode.parentNode;
-    row.remove();
+    var row = event.target.parentNode.parentNode;
+    var table = document.getElementById("table")
+    table.deleteRow(row.rowIndex);
 }
 
