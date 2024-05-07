@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/planilha.png" type="png">
+    <title>Tabela Dinâmica</title>
+</head>
+<body>
+    <h1>Tabela Dinâmica</h1>
+    <div class="container">
+        <label>Nome: </label>
+        <input type="text" id="nome">
+        <label>Email: </label>
+        <input type="email" id="email">
+        <input type="button" value="Confirma" id="btn_confirma" onclick="adicionaInfoTabela()">
+    </div>
+    <div class="tabela">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
