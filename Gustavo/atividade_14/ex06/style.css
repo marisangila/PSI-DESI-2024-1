@@ -1,0 +1,19 @@
+body { min-height: 100vh; }
+
+.main-container{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    left: 25%;
+    bottom: 25%;
+}
+
+.inputs{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

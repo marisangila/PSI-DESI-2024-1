@@ -1,0 +1,10 @@
+.center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}

@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#contador {
+    font-weight: bold;
+}

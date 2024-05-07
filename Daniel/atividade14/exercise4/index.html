@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
-    <title>Exercise 3</title>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <title>Exercise 4</title>
 </head>
 <body>
     <main>
-      <form action="">
+      <form action="#" method="POST" id="form-register" novalidate>
         <h1>REGISTER</h1>
+        <div class="container-all-inputs" >
+          <div class="container-input" id="container-input-email">
+            <label for="input-cpf">EMAIL:</label>
+            <input type="email" placeholder="Type it your EMAIL here" name="email" id="email" maxlength="255">
+            <span id="errorEmail"></span>
+          </div>
+          <div class="container-input" id="container-input-username">
+            <label for="input-cpf">USERNAME:</label>
+            <input type="text" placeholder="Type it your USERNAME here" name="username" id="username" maxlength="25" minlength="5" >
+            <span id="errorUsername"></span>
+          </div>
+          <div class="container-input">
+            <label for="input-cpf">PASSWORD:</label>
+            <input type="passwrod" placeholder="Type it your PASSWORD here" name="password" id="password" maxlength="30" minlength="8">
+            <span id="errorPassword"></span>
+          </div>
+          <div class="container-input">
+            <label for="input-cpf">CONFIRM PASSWORD:</label>
+            <input type="passwrod" placeholder="Confirm your PASSWORD here" name="confirmPassword" id="confirmPassword" maxlength="30" minlength="8">
+            <span id="errorConfirmPassword"></span>
+          </div>
+        </div>
+        <input type="submit" value="REGISTER" class="submit-button" >
       </form>
     </main>
     <script src="script.js" ></script>

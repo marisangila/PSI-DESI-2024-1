@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <style>
-        
-    </style>
-    <title>Exercise 3</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <title>Exercise 5</title>
 </head>
 <body>
     <main>
-      <form action="#">
-        <h1>REGISTER</h1>
-        <div class="container-input" >
-          <label for="input-cpf">CPF:</label>
-          <input type="text" placeholder="Input your CPF here" required id="input-cpf">
-        </div>
-        <input type="button" value="REGISTER" class="submit-button" >
-      </form>
+      <select name="ghibliMovies" id="ghibliMovies" onchange="showExtraField()" >
+        <option value="selected-0">Ghibli Movies</option>
+        <option value="mononoke-1" >Mononoke Princcess</option>
+        <option value="boyAndHeron-2" >The Boy and The Heron</option>
+        <option value="movingCastle-3" >Howl's Moving Castle</option>
+        <option value="porcoRosso-4" >Porco Rosso: The Last Romantic Hero</option>
+        <option value="nausicaa-5" >Nausicaa: Of the Valley of The Wind</option>
+      </select>
+      <div id="containerNote" class="container-note"></div>
     </main>
+
     <script src="script.js" ></script>
 </body>
 </html>
