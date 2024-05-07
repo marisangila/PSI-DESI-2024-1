@@ -1,0 +1,31 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: inline-block;
+}
+.menu {
+    display: none;
+    background-color: #4CAF50;
+    padding: 20px;
+    height: 100%;
+    width: 200px;
+    color: #fff;
+}
+nav{
+    padding: 20px;
+}
+.btn-menu {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+}

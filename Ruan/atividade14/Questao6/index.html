@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form>
+        <h1>Adicione um sabor ao cardápio:</h1>
+        <br>
+        <select id="selecionarOpcao" onchange="mostrarCampoExtra()">
+            <option value="opcao1">Salgado</option>
+            <option value="opcao2">Doce</option>
+            <option value="opcao3">Vegano</option>
+        </select>
+
+        <div id="campoExtra1" style="display: none;">
+            <label for="campo1">Campo Extra 1:</label>
+            <input type="text" id="campo1">
+        </div>
+
+        <div id="campoExtra2" style="display: none;">
+            <label for="campo2">Campo Extra 2:</label>
+            <input type="text" id="campo2">
+        </div>
+
+        <div id="campoExtra3" style="display: none;">
+            <label for="campo3">Campo Extra 3:</label>
+            <input type="text" id="campo3">
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+#menu {
+    display: none;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+#menuButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
