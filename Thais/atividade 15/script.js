@@ -5,7 +5,7 @@ document.getElementById('submit').addEventListener('click', function() {
     list.push(document.getElementById('nome').value);
     list.push(document.getElementById('e-mail').value);
     list.push(document.getElementById('cpf').value);
-    list.push(document.getElementById('dtnasc').value);
+    list.push(document.getElementById('dtNasc').value);
     
     let empty_fields = false
     for (field in list){
