@@ -1,0 +1,1 @@
+A pasta 'backend' deve ser colocada no diretório C:\xampp\htdocs

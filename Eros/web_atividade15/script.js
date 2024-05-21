@@ -53,7 +53,8 @@ function criaBTNedit()
     x.style.width = '50px';
     x.textContent = "E";
 
-    x.addEventListener('click',edit());
+    x.setAttribute("onclick","edit()")
+    //addEventListener('click',edit());
 
     return x
 }
@@ -67,19 +68,19 @@ function criaBTNdelet()
     x.style.width = '50px';
     x.textContent = "X";
 
-    x.addEventListener('click',delet());
+    x.setAttribute("onclick","delet()")
+    //x.addEventListener('click',delet());
 
     return x
 }
 
 function edit()
 {
-    alert(this);
     this.classList.add('bg-warning-subtle');
-    //this.closest('tr').classList.add('bg-warning-subtle');
+    this.closest('tr').classList.add('bg-warning-subtle');
 }
 
-function delet(x)
+function delet()
 {
-    x.parentNode.parentNode.remove();
+    this.parentNode.parentNode.remove();
 }
