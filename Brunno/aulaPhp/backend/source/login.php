@@ -14,7 +14,7 @@
             session_start();
             $_SESSION["adm_role"] = $usuario['adm_role'];
             $_SESSION['loggedin'] = true;
-            header("location:../index.html");
+            header("location:../pagina_inicial.php");
         }else{
             echo("E-mail ou senha inválidos!");
         }
