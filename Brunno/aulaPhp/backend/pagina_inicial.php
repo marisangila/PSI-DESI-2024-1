@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!$_SESSION["loggedin"]){
+    header("index.html");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,14 +27,14 @@
         </thead>
         <tbody>
             <?php
-            include_once("../source/listar.php");
+            include_once("source/listar.php");
             if (!empty($usuarios)){
                 foreach($usuarios as $usuario){
                     echo '<tr>
                             <td>'.$usuario["pk_usuario"].'</td>
                             <td>'.$usuario["email_usuario"].'</td>
                             <td>'.$usuario["adm_role"].'</td>
-                            <td><a href="">Excluir</a></td>
+                            <td><a href="source/excluir.php?usuario='.$usuario["pk_usuario"].'">Excluir</a></td>
                             <td><a href="">Alterar</a></td>
                         </tr>';
                 }
