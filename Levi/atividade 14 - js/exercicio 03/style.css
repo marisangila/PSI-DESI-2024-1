@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.container-style{
+    display: none;
+}
+
+.input-style{
+    margin: 5px;
+    width: 200px;
+    height: 20px;
+    padding: 5px 5px 5px 20px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 5px;
+    border: solid rgb(189, 189, 189) 1px;
+}
+
+.input-style:a{
+    background-color: white;
+}
+
+::placeholder{
+    color: rgb(253, 253, 253);
+}
