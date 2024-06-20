@@ -1,0 +1,29 @@
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #CDC9D3;
+    border-radius: 30px;
+    width: 39.5vh;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_personalizado{
+    color: #F8FFFF;
+    background-color: #7E395F;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn_personalizado:hover{
+    background-color: #5B2944;
+}
