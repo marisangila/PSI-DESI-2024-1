@@ -1,0 +1,212 @@
+*{
+    font-family: Friz Quadrata TT Regular;
+}
+
+div{
+    display: block;
+}
+
+body{
+    background-image: url('https://loldle.net/img/WallpaperDark.20d3d6f6.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color:#fff;
+}
+
+.menu{
+    margin-top: 1rem;
+    width: 100%;
+    display: block;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    align-items: center;
+    width: 100%;
+    max-width: 334px;
+    
+}
+
+.logo:hover{
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.top{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.config{
+    position: relative;
+    bottom: 5vh;
+}
+
+.flag{
+    position: absolute;
+    width: 20px;
+}
+
+.container-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.button{
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0;
+    text-align: left;
+    transition: all .1s ease-in-out;
+    margin: .6rem;
+    width: 23%;
+    max-width: 370px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: #fff
+}
+
+.title{
+    position: absolute;
+    top: 9px;
+    left: 105px;
+    font-size: 26.7px;
+    font-weight: 200;
+}
+
+.subtitulo{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.description{
+    position: absolute;
+    bottom: 21px;
+    left: 104px;
+    font-size: 14px;
+    font-weight: 200;
+    color: hsla(0,0%,100%,.851);
+    text-align: left
+}
+
+.container{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    right: 3vh;
+}
+
+/*MEDIA RETIREI DO PRÓPRIO SITE, PRA USAR A FUNÇÃO DE AJUSTAR CONFORME O TAMANHO DA JANELA*/
+
+@media screen and (max-width: 1608px) {
+    .title {
+        top:.6vw;
+        left: 6.5vw;
+        font-size: 1.6vw
+    }
+
+    .description {
+        bottom: 1.37vw;
+        left: 6.4vw;
+        font-size: .86vw
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .button-game {
+        width:95%
+    }
+
+    .button-title {
+        top: 8.982px;
+        left: 104.79px;
+        font-size: 26.94px
+    }
+
+    .button-description {
+        bottom: 21.912px;
+        left: 104.58px;
+        font-size: 13.944px
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .button-title {
+        top:2vw;
+        left: 25.5vw;
+        font-size: 6.8vw
+    }
+
+    .button-description {
+        bottom: 5.6vw;
+        left: 25.6vw;
+        font-size: 3.45vw
+    }
+}
+
+.button-game:hover {
+    transform: scale(1.02)
+}
+
+.game-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: rgb(218, 129, 13) 3px solid;
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+}
+
+.game-box-title{
+    font-size: 1.5rem;
+}
+
+.game-box-top-title{
+    color: #abffce;
+    font-size: 1.8rem;
+}
+
+.game-box-game{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    margin: 2rem;
+}
+
+.games{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 8vh;
+}
+
+.social-icon{
+    padding: 0.5rem;
+    align-items: center;
+}
+

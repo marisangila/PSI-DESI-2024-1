@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+[class^="box-"]{
+    float:left;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.text{
+    font-size: 20px;
+    justify-content: center;
+}
+
+.radios-box{
+    display: flex;
+}
+
+input{
+    padding: 10px 10px;
+    border: 1px solid black;
+}
+
+select{
+    padding: 10px 10px;
+}
+
+body{
+    background-color: #6dccee;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.box-1 {width: 8.33%;}
+.box-2 {width: 16.66%;}
+.box-3 {width: 25%;}
+.box-4 {width: 33.33%;}
+.box-5 {width: 41.66%;}
+.box-6 {width: 50%;}
+.box-7 {width: 58.33%;}
+.box-8 {width: 66.66%;}
+.box-9 {width: 75%;}
+.box-10 {width: 83.33%;}
+.box-11 {width: 91.66%;}
+.box-12 {width: 100%;}
+
+
+.botao{
+    background-color: #537acf;
+    color:aliceblue;
+    width: 250px;
+    height: 50px;
+}
+
+.botao_botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    [class^="box-"]{
+    width: 50%;
+    
+    }
+}
+    
+@media screen and (max-width: 600px) {
+    [class^="box-"]{
+    width: 100%;
+    }
+}   

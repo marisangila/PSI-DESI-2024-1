@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script> 
+    <style class="bg-teste" type="text/css">
+        body {
+            background-color: white;
+        }
+        .container-fluid{
+            background-color: RGB(182, 218, 241);
+            height: 100vh;
+        }
+    </style>
+    <title>Atividade 12 - CSS - Responsivo</title>
+</head>
+
+<body>
+    <div class="container-fluid border border-5 border-white rounded-3">
+        <form>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-lg-12">
+                    <h2 class="mt-4">Formulário de Solicitação de Monitoria:</h2><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 p-2">
+                    <label class="form-label">Nome:</label><input type="text" placeholder="Nome" class="form-control">
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 p-2">
+                    <label class="form-label">Sobrenome:</label>
+                    <input type="text" placeholder="Nome" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                    <label class="form-label">CPF:</label>
+                    <input type="text" placeholder="Telefone" class="form-control">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                    <label class="form-label">E-mail:</label>
+                    <input type="text" placeholder="Telefone" class="form-control">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 p-2">
+                    <label class="form-label">Telefone:</label>
+                    <input type="text" placeholder="Telefone" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 p-2">
+                    <label class="form-check-label">Curso</label>
+                    <select class="form-select form-select">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="v1">Engenharia de Software</option>
+                        <option value="v2">Ciência da Computação</option>
+                        <option value="v3">Análise e Desenvolvimento de Sistemas</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="d-flex form-check justify-content-center p-2">
+                        <div class="form-check px-5 mt-4">
+                            <input type="radio" class="form-check-input">
+                            <label class="form-check-label">Matutino</label>
+                        </div>
+                        <div class="form-check px-5 mt-4">
+                            <input type="radio" class="form-check-input">
+                            <label class="form-check-label">Vespertino</label>
+                        </div>
+                        <div class="form-check px-5 mt-4">
+                            <input type="radio" class="form-check-input">
+                            <label class="form-check-label">Noturno</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-lg-12 d-flex justify-content-center p-3">
+                    <div class="d-grid gap-2 col-2 mx-auto">
+                        <button class="btn btn-primary" type="submit">Solicitar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

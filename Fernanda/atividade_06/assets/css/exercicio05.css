@@ -1,0 +1,47 @@
+.nav_bar{
+    background-color: rgb(214, 54, 54);
+    height: 100px;
+}
+
+.menu_esquerdo{
+    background-color: greenyellow;
+    display: inline-block;
+    height: 1000px;
+    width: 20%;
+}
+
+.cont_principal{
+    background-color: rgb(86, 86, 209);
+    display: inline-block;
+    height: 1000px;
+    width: 50%;
+    
+}
+
+.menu_direito_sup{
+    background-color: plum;
+    height: 500px;
+    width: 30%;
+    display: block;
+    position: relative;
+    left:70%;
+    bottom: 1000px;
+}
+
+.menu_direito_inf{
+    background-color: rgb(202, 150, 167);
+    height: 500px;
+    width: 30%;
+    display: block;
+    position: relative;
+    left:70%;
+    bottom: 1000px;
+}
+
+.rodape{
+    background-color: yellowgreen;
+    height: 100px;
+    position: relative;
+    bottom: 1000px;
+    margin:0;
+}
