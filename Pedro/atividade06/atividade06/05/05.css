@@ -1,0 +1,55 @@
+*{
+    max-width: 1900px;
+    height: 800px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: red;
+    height: 10%;
+    display: block;
+}
+
+.asideLeft{
+    background-color: greenyellow;
+    display: inline-block;
+    height: 80%;
+    width: 15%;
+    font-size: 16px;
+}
+
+.main{
+    background-color: blue;
+    display: inline-block;
+    height: 80%;
+    width: 70%;
+    font-size: 16px;
+}
+
+.asideRightUp
+{
+    float: right;
+    background-color: rosybrown;
+    height: 40%;
+    width: 100%;
+    font-size: 16px;
+}
+.asideRightDown{
+    background-color: rosybrown;
+    display:block;
+    height: 40%;
+    width: 100%;
+    font-size: 16px;
+}
+
+.content{
+    font-size: 0px;
+}
+
+.footer{
+    background-color: yellow;
+    display: inline-block;
+    height: 20%;
+}
