@@ -1,0 +1,15 @@
+.btn{
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    background-color: pink;
+    border: none;
+    border-radius: 2vh;
+    height: 4vh;
+    width: 12vh;
+}
+
+.btn:hover{
+    background-color: rgb(177, 120, 130);
+    cursor: pointer;
+}

@@ -1,0 +1,3 @@
+function alerta(){
+    alert("Parabéns")
+}

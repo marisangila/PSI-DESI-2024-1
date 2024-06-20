@@ -1,0 +1,96 @@
+<head> 
+    <title>Atividade 02 - Aplicações Web </title>
+    <meta charset="utf-8"/>
+</head>
+
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <h2>Preencha as informações</h2>
+
+    <form>
+        <fieldset>
+            <p>Dados Principais</p>
+            Insira uma imagem: <input type="file">
+            <br>
+
+            <br><label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome_user">
+            <br>
+            
+            <label for="sobrenome"><br>Sobrenome:</label>
+            <input type="text" id="sobrenome">
+            <br>
+
+            <label for="data_nascimento"><br>Data de Nascimento:</label>
+            <input type="date" id="data_nascimento">
+            <br>
+            
+            <label for="idade"><br>Idade:</label>
+            <input type="text" id="idade">
+            <br>
+
+            <label for="email"><br>E-mail:</label>
+            <input type="email" id="email">
+            <br>
+
+            
+            <span><br>Formação Acadêmica</span>
+            <br/>
+            <input type="radio"> Ensino Fundamental <br/>
+            <input type="radio"> Ensino Médio <br/>
+            <input type="radio"> Ensino Superior <br/>
+            <input type="radio"> Pós Graduação-Especialização <br/>
+            <input type="radio"> Pós Graduação-Mestrado <br/>
+            <input type="radio"> Pós Graduação-Doutorado <br/>
+
+            <br>Nome do curso: <select id="curso">
+                <option value="">Escolha um curso</option>
+                <option value="ads">Análise e Desenvolvimento de Sistemas</option>
+                <option value="es">Engenharia de Software</option>
+                <option value="ec">Engenharia da Computação</option>
+            </select>
+            
+            <span>Situação:<br/></span>
+            <input type="radio">Em andamento<br/>
+            <input type="radio">Conmpleto<br/>
+            <input type="radio">Incompleto<br/>
+            
+           <br>
+            Qual sua satisfação em relação ao curso?<br>
+        
+            pouco satisfeito
+            <input type="range" name="satisfacao" min="0" max="5">
+            muito satisfeito
+            
+            
+            <br><br>Descreva sua experiência até o momento:<br/>
+            <textarea></textarea>
+
+            <br>
+            <br>
+            Senha: <input type="password"><br/>
+            Confirme a senha: <input type="password">
+            
+            <br>
+            <br>
+
+            Confirme<br>
+            Você concorda com os termos?<input type ="checkbox"><br/>
+            Você aceita receber e-mails promocionais?<input type ="checkbox">
+            
+            <br><br>
+            <input type="submit" value="Salvar" onclick="msg()">
+            <script>
+                function msg() {
+                  alert("Dados salvos com sucesso!");
+                }
+                </script>
+        </fieldset>
+    </form>
+
+</body>
+
+<footer>
+    <br/>
+    <a href="../pages/pagina4.html">Página Anterior</a>
+</footer>

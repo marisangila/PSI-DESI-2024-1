@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!--ADC comentários-->
+<html lang="pt-br">
+
+<head> 
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Atividade 04 - Formulários com CSS </title>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Formulário de Contato</h1>
+        <form id="form">
+            <input type="text" placeholder="Nome" class="inputs"><br>
+            <input type="email" placeholder="E-mail" class="inputs"><br>
+            <input type="password" placeholder="Senha" class="inputs"><br>
+            <input type="number" placeholder="Idade" class="inputs"><br>
+            <textarea placeholder="Mensagem" rows="8" cols="30" class="inputs"></textarea>
+            <br>
+            <select id="Opcoes" name="Opcoes" class="inputs">
+                <option value="" disabled selected>Selecione um assunto</option>
+                <option value="sa">Compras</option>
+                <option value="rcl">Devoluções</option>
+                <option value="dvl">Reclamações</option>
+                <option value="sgt">Sugestões</option>
+            </select>
+            <br>
+                <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
