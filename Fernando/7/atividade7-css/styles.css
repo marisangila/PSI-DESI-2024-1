@@ -1,0 +1,144 @@
+
+.boxSizingBorderBox{
+    box-sizing: border-box;
+}
+.displayFlex{
+    display: flex;
+}
+.flexDirCol{
+    flex-direction:column;
+}
+.verticalAlign{
+    vertical-align: middle;
+}
+.flexWrap{
+    flex-wrap:wrap;
+}
+.flexFlow{
+    flex-flow:column-reverse;
+}
+.justifyContent{
+    justify-content: center;
+}
+.alignItens{
+    align-items: center;   
+}
+
+.dFlexDivWhiteCol >     div{
+    background-color: white;
+    padding-left: 10px;
+    width: 1800px;
+    height: 80px;
+}
+.dFlexDivWhiteSquare{
+    background-color: white;
+    padding-left: 10px;
+    width: 120px;
+    height: 80px;
+}
+.dFlexDivBlue1{
+    background-color: rgb(61, 61, 255);
+    width: 1900px;
+    height: 100px;
+
+}
+.dFlexDivBlue1 > div{
+    background-color: white;
+    padding-left: 10px;
+    width: 60px;
+    height: 70px;
+    margin: 10px;
+}
+.dFlexDivBlue2{
+    padding-top: 6px;
+    background-color: rgb(61, 61, 255);
+    width: 1900px;
+    height: 340px;
+    margin-top: 20px;
+
+
+}
+.dFlexDivBlue2 > div{
+    background-color: white;
+    padding-left: 10px;
+    width: 1860px;
+    height: 70px;
+    margin: 15px;
+}
+.dFlexDivBlue3{
+    padding-top: 6px;
+    background-color: rgb(61, 61, 255);
+    width: 1900px;
+    height: 340px;
+    margin-top: 20px;
+
+
+}
+.dFlexDivBlue3 > div{
+    background-color: white;
+    padding-left: 10px;
+    width: 130px;
+    height: 140px;
+    margin: 10px;
+}
+.dFlexDivBlue4{
+    padding-top: 6px;
+    background-color: rgb(61, 61, 255);
+    width: 1900px;
+    height: 940px;
+    margin-top: 20px;
+
+
+}
+.dFlexDivBlue4 > div{
+    background-color: white;
+    padding-left: 10px;
+    width: 1860px;
+    height: 70px;
+    margin: 15px;
+}
+.dFlexDivBlue5{
+    margin-top: 20px;
+    background-color: rgb(61, 61, 255);
+    width: 1900px;
+    height: 100px;
+
+}
+.dFlexDivBlue5 > div{
+    background-color: white;
+    padding-left: 10px;
+    width: 60px;
+    height: 70px;
+    margin: 10px;
+}
+.dFlexDivBlue6{
+    margin-top: 20px;
+    background-color: rgb(61, 61, 255);
+    width: 1900px;
+    height: 300px;
+
+}
+.dFlexDivBlue6 > div{
+    background-color: white;
+    padding-left: 10px;
+    width: 60px;
+    height: 270px;
+    margin: 10px;
+}
+.bodyaa{
+    width: 1920px;
+    height: 1080px;
+}
+.dFlexDivBlue7{
+    margin-top: 20px;
+    background-color: rgb(61, 61, 255);
+    width: 100%;
+    height: 100%;
+
+}
+.dFlexDivBlue7 > div{
+    background-color: white;
+    padding-left: 10px;
+    width: 100px;
+    height: 100px;
+}

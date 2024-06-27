@@ -1,0 +1,258 @@
+.q1class1 {
+    background-color: gray;
+}
+
+.q2class1 {
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.q3class1 {
+    margin: 20px;
+    padding: 10px;
+}
+
+.q4class1 {
+    text-align: center;
+}
+
+.q4class2 {
+    text-align: justify;
+}
+
+.q5class1 {
+    border-bottom: 3px solid black;
+}
+
+.q5class2 {
+    border-style: dashed;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.q6class1 {
+    background-color: black;
+    color: white;
+}
+
+.q6class2 {
+    background-color: gray;
+}
+
+.q7class1 {
+    color: blue;
+    border-bottom-style: dashed;
+    border-bottom-width: 1px;
+    cursor: pointer;
+}
+
+.q8class1 {
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(1, 153, 1);
+    border-color: rgb(1, 153, 1);
+    cursor: pointer;
+}
+
+.q10class1 {
+    background-image: linear-gradient(to left,
+    #1c03c9,
+    #1528d5,
+    #113ee1, 
+    #1450eb, 
+    #1f62f4,
+    #0077fb,
+    #008afe,
+    #009cff,
+    #00afff,
+    #00bbd2,
+    #00be82,
+    #00bb08);
+    width: 380px;
+    border-radius: 2%;
+    padding: 9px;
+    padding-left: 1px;
+    padding-right: 3px;
+}
+
+.q10class2 {
+    width: 280px;
+    color: rgb(253, 253, 253);
+    margin-left: 50px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 5%;
+    border-style:ridge;
+    backdrop-filter: saturate(80%);
+
+}
+
+.q10class3 {
+    width: 290px;
+    background-color: black;
+    color: white;
+    margin-left: 45px;
+    
+}
+.q10class4{
+    width: 280px;
+    color: white;
+    margin-left: 80px;
+    background-color: transparent;
+    border-color: white;
+    font-family: Arial;
+    font-size: 20px;
+    
+    
+}
+.q10class5{
+    width: 280px;
+    color: white;
+    margin-left: 50px;
+    resize: none;
+    background-color: transparent;
+    border-color: white;
+    border-style:ridge;
+    backdrop-filter: saturate(80%);
+}
+.q10class6{
+    width: 280px;
+    color: #ffffffa1;
+    margin-left: 50px;
+    resize: none;
+    background-color: transparent;
+    border-color: white;
+    border-style:ridge;
+    backdrop-filter: saturate(80%);
+}
+.q11class0{
+    background-color: rgba(184, 181, 181, 0.363);
+    height: 860px;
+    padding: 20px;
+    width:  570px;
+    padding-bottom: 30px;
+
+   
+}
+.q11class1{
+    padding-left: 30px;
+    position:absolute;
+    padding-right: 30px;
+    height: 470px;
+    padding-top: 40px;
+    border-radius: 2%;
+    background-color: white;
+}
+.q11class2p1{
+    margin-left: 110px;
+    font-family: Arial;
+    
+}
+.q11class2p2{
+    width: 500px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid rgb(158, 157, 157);
+}
+.q11class3{
+    width: 510px;
+    height: 30px;
+    background-color: rgb(226, 226, 226);
+    padding-right: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(158, 157, 157);
+    
+}
+.q11class4{
+    width: 510px;
+    height: 40px;
+    color: white;
+    background-color: #00bb08;  
+    border-radius: 10px;
+    border: 1px solid rgb(158, 157, 157);  
+}
+.q11class5{
+   margin-top: 530px;
+   background-color: white;
+   border-radius: 15px;
+   width: 570px;
+   height: 140px;
+   
+}
+.q11class6p1{
+    margin-left: 170px;
+    font-family: Arial;
+}
+.q11class6p2{
+    margin-left: 10px;
+    width: 540px;
+    font-family: Arial;
+    border: 1px solid gray;
+}
+.q11class6p3{
+    height: 30px;   
+    background-color: rgba(158, 157, 157, 0.253);;
+}
+.q11class6p4{
+    height: 30px; 
+    text-align: center;  
+}
+.q12c1{
+    background-color: rgba(128, 128, 128, 0.219);
+    width: 500px;
+    height: 890px;
+    border-top: 30px solid rgb(255, 255, 255);
+    
+}
+.q12c2{
+    text-align: center;
+    font-family: Arial;
+    background-color: white;
+    border-radius: 10px;
+    width: 500px;
+    height: 680px;
+   
+}
+.q12c2p3{
+    text-align: center;
+    background-color: #00bb08;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.534);
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.esquecir{
+    text-align: center;
+}
+.q13c1{
+    width: 700px;
+    height: 900px;
+    background-color: rgba(128, 128, 128, 0.534);
+    font-family: Arial;
+    
+}
+.q13c2{
+    margin-left: 3px;
+    border-top: 30px solid rgba(128, 128, 128, 0.534);
+    background-color: white;
+    border-radius: 20px;
+    width: 692px;
+    height: 400px;
+}
+.q13c3{
+    margin-left: 15px;
+}
+.q13c3a{
+    margin-left: 220px;
+}
+.q13c4{
+    margin-left: 15px;    
+}
+.q13c5{
+    margin-left: 220px;
+}

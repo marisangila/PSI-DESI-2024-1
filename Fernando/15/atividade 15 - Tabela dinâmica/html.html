@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="boody">
+    <h1>CARTÃO SEGURO</h1>
+    <h4>O lugar mais seguro para você<br>
+        salvar o seu cartão de crédito!</h4>
+    <div>
+        <div class="inputsDiv">
+            <div class="inputsDivItens">
+                <p class="row">
+                    <label for="nome" class="col-2 cartaoLabel">Nome:</label>
+                    <input type="text" id="nome" class="col-8 cartaoInput" placeholder="Francisco Seguro da Silva">
+                </p>
+                <p class="row ">
+                    <label for="numCartao" class="col-4 cartaoLabel">Número do Cartão:</label>
+                    <input type="text" id="numCartao" class="col-5 cartaoInput" placeholder="XXXX-XXXX-XXXX-XXXX">
+                </p>
+                <p class="row">
+                    <label for="dtValidade" class="col-4 cartaoLabel">Data de validade:</label>
+                    <input type="text" id="dtValidade" class="col-2 cartaoInput" placeholder="MM/AA">
+                </p>
+                <p class="row">
+                    <label for="codSeguranca" class="col-5 cartaoLabel">Codigo de Segurança:</label>
+                    <input type="text" id="codSeguranca" class="col-2 cartaoInput" placeholder="XXX">
+                </p>
+            </div>
+
+        </div>
+        <div class="botao">
+            <input type="button" id="btn" value="SALVAR" class="btn btn-primary" onclick="addCartao()">
+        </div>
+    </div>
+    <div class="divTable">
+        <div class="tabelinha row">
+            <table class="table table-bordered">
+                <thead id="thead">
+                    <tr>
+                        <th class="bgth">Nome</th>
+                        <th class="bgth">Número do Cartão</th>
+                        <th class="bgth">Data de Validade</th>
+                        <th class="bgth">Cód. de Segurança</th>
+                        <th class="bgth">Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

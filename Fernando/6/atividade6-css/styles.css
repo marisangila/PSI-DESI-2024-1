@@ -1,0 +1,331 @@
+.q1body{
+    position: relative;
+}
+.q1doc{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+.q1adress{  
+    right: 0px; 
+    top: 0px;  
+    position: absolute;
+}
+.q1main{
+    padding: 10px;
+    top: 70px;
+    left: 30px;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: block;
+    width: 95%;
+}
+.q1txt{
+    margin-left: 18px;
+}
+
+
+.q2body,html{
+    height: 100%;
+    display: relative;
+}
+.q2grayMenu{
+    top: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.856);
+    width: 270px;
+    height: 100%;
+    position:fixed;
+    left: 30px;
+}
+.q2tittle{
+    display: block;
+    position: absolute;
+    left: 360px;
+    top: 20 px;
+}
+.q2txtFormat{
+    position: absolute;
+    display: block;
+    left: 10%
+}
+.q2t{
+    font-size: 50px;
+}
+.q3body{
+    display: block;
+}
+.q3gBlock{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 3px solid black;
+    background-color: gray;
+}
+.q3oBlock{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+.q3posCenter{
+    top: 25%;
+    left: 25%;
+    position: absolute;
+}
+.q3posTopRight{
+    top:0px;
+    right: 0px;
+    position: absolute
+}
+.q3posBotRight{
+    bottom:0px;
+    right: 0px;
+    position: absolute
+}
+.q3posBotLeft{
+    bottom:0px;
+    left: 0px;
+    position: absolute
+}
+.q3blockFixedTop{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+}
+.q3blockFixedBot{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 200px;
+    height: 200px;
+}
+.q4body,html{
+    width: 100%;
+    height: 100%;
+}
+.q4nav{
+    text-align: center;
+    background-color: red;
+    display: inline-block;
+    width: 93%;
+    padding: 3%;
+}
+.q4menuL{
+    text-align: center ;
+    position: relative;
+    background-color: greenyellow;
+    display:inline-block;
+    width: 10%;
+    height: 100%;
+}
+.q4menuP{
+    display: inline-block;
+    text-align: center;
+    width: 89%;
+    height: 100%;
+    background-color: blue;
+}
+.q5body,html{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.q5nav{
+    box-sizing: border-box;
+    text-align: center;
+    background-color: red;
+    display: inline-block;
+    width: 98%;
+    padding: 3%;
+}
+.q5menuL{   
+    box-sizing: border-box;
+    text-align: center ;
+    position: relative;
+    background-color: greenyellow;
+    display:inline-block;
+    width: 10%;
+    height: 100%;
+}
+.q5menuP{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    width: 78%;
+    height: 100%;
+    background-color: blue;
+}
+.q5menuDS{
+    box-sizing: border-box;
+    position: inherit;
+    display: inline-block;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    background-color:rgba(255, 0, 0, 0.432);
+}
+.q5menuDI{
+    box-sizing: border-box;
+    position: absolute;
+    top: 60%
+}
+.q6body{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.q6title{
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, #54fd9d, #42fead, #2effbd, #18ffcb, #00ffd8, #00fae7, #00f4f3, #00eefc, #00e0ff, #00d0ff, #1bbfff, #53adff);
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    box-shadow: 0px 0px 6px rgb(153, 153, 153);
+}
+.q6itens{
+    box-shadow: 0px 0px 6px rgb(153, 153, 153);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+    height: 690px;
+    position: relative;
+    top: 130px;
+    background-color: rgb(240, 240, 240);
+}
+.q6titleTxt{
+    padding-left:40px;
+    position: absolute;
+    color: white;
+    
+}
+.q6iSubTitle{
+    position: absolute;
+    color: #30ecb1;
+    font-weight: bold;
+}
+.q6iInputsPessoal{
+    width:520px;
+    position: absolute;
+    top: 80px;
+    color: #2fcf9d;
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    box-shadow: 0px 0px 6px rgb(153, 153, 153);
+
+}
+input[type="file" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    align-items: baseline;
+    color: rgb(179, 179, 179);
+    text-overflow: ellipsis;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    white-space: pre;
+    overflow: hidden !important;
+}
+
+.q6iAll{
+    padding-left: 40px;
+}
+.q6divCredito{
+     box-shadow: 0px 0px 6px rgb(153, 153, 153);
+    background-color: white;
+    border-radius: 15px;
+    position: absolute;
+    height: 160px;
+    top: 800px;
+    width: 100%;
+    text-align: center; 
+}
+.q6credito{
+    color:  #109c7b;
+    font-family: Arial, Helvetica, sans-serif,italic;
+    font-size: 15px;
+}
+.q6inputisPad{
+    padding-left: 20px;
+}
+.q6inputBoxFormat{
+    border: 2px solid #2fcf9d;
+    color: rgb(179, 179, 179);
+
+}
+.q6others{
+    box-shadow: 0px 0px 6px rgb(153, 153, 153);
+    color: #2fcf9d;
+    position: absolute;
+    width: 900px;
+    height: 620px;
+    background-color: white;
+    border-radius: 10px;
+    right: 80px;
+}
+.q6othersDiv{
+    padding-top: 40px;
+    padding-left: 40px;
+}
+.q6verificacao{
+    box-shadow: 0px 0px 6px rgb(153, 153, 153);
+    top: 400px;
+    left: 40px;
+    color: #2fcf9d;
+    position: absolute;
+    width: 810px;
+    height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    right: 100px;
+   
+}
+.q6verificacaoDiv{
+    padding: 20px 0px 0px 20px;
+
+}
+.q6formatArea{
+    top: 380px;
+    position: absolute;
+    width: 800px;
+    height: 150px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #2fcf9d;
+    
+}
+.q6verificacaoSenha{
+    padding-top: 20px;
+}
+.q6verificacaotermos{
+    padding-top:40px;
+}
+.q6btnSave{
+    background-color: #7affb2;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid rgb(160, 160, 160);
+    position: absolute;
+    left: 520px;
+    bottom: 30px;
+    box-shadow: 0px 0px 6px rgb(153, 153, 153);
+    
+}
+.q6btnSave:hover{
+    background-color: #55af7b;
+    cursor: pointer;
+}
+
+.test{
+    background-color: red;
+}

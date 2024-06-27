@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário Dinâmico</title>
+<script src="scripts.js"></script>
+</head>
+<body>
+<label for="caixa">Selecione uma Frase:</label>
+<select id="caixa" onchange="q6ShowOption()">
+    <option value="">Selecione...</option>
+    <option value="option1">Frase motivacional</option>
+    <option value="option2">frase desmotivacional</option>
+</select>
+<div id="option1Campo" style="display: none;">
+    <h1>SE ESTIVER CANSADO, LEMBRE-SE: AMANHÃ TEM MAIS!</h1>
+</div>
+<div id="option2Campo" style="display: none;">
+    <h1>NÃO TEM MAIS FRASES MOTIVACIONAIS HAHA</h1>
+</div>
+
+</body>
+</html>

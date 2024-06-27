@@ -1,0 +1,69 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.c-health-box{
+    display: flex;
+    width: 81%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    
+}
+.c-health-div{
+    z-index: -1;
+    left: 11%;
+    border: 3px solid black;
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+}
+.c-health-bar{
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    background-color: rgb(0, 248, 33);
+}
+.c-icon{
+    z-index: 1;
+    left: 15%;
+    width: 20%;
+}
+.c-images-div{
+    top: 15%;
+    position: absolute;
+    left: 15%;
+    width: 50%;
+    border: 20px solid rgb(5, 5, 5)
+}
+.c-images{
+    width: 100%;
+    height: 30%;
+}
+.bg-12{
+    background-color: rgb(255, 255, 255);
+}
+.botoes-div{
+    left: 37%;
+    top: 80%;
+    position: absolute;
+}
+.btn{
+    font-weight: bolder;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(179, 176, 1);
+    width: 80%;
+    position: relative;
+    left: 30px;
+    padding: 10%;
+}
+.atk{
+    background-color: rgb(255, 55, 55);
+}
