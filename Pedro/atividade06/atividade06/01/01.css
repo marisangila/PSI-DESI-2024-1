@@ -1,0 +1,18 @@
+.head
+{
+    background-color: black;
+    height: 50px;
+}
+.inlineBlock{
+    padding-bottom: 50px;
+    display: inline-block;
+}
+.inlineBlock a{
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    margin-top: 10px;
+}

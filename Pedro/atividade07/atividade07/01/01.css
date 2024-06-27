@@ -1,0 +1,47 @@
+body{
+    font-size: 30px;
+    height: 100vh;
+}
+.container01{
+    background-color: dodgerblue;
+    display: flex;
+    margin-bottom: 10px;
+}
+.container02{
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.container03{
+    background-color: dodgerblue;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.container04{
+    background-color: dodgerblue;
+    display: flex;
+    flex-flow: column-reverse;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.container05{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.container06{
+    background-color: dodgerblue;
+    display: flex;
+    align-items:normal;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.square{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+}

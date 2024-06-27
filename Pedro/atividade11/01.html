@@ -1,0 +1,99 @@
+<!-- 
+
+    inspiração:
+    https://bootcamp.uxdesign.cc/form-design-best-practices-4df6002ae3ce
+
+
+
+    !!!!
+    Neste exercicio eu não coloquei o "row" para definir as linhas(antes tinha apenas um unico row) 
+    sendo posto agora na atividade 11 
+    !!!!
+
+    além de outros detalhes, de modo geral tive de um retrabalho para readquar o html e css
+
+
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <link rel="stylesheet" href="01.css">
+</head>
+<body>
+    <!--  -->
+    <div class="row">
+        <header class="col-12">
+            <h1>Formulario de solicitação de monitoria:</h1>
+        </header>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <label>Nome:</label>
+            <input class="all_space" type="text">
+        </div>
+        <div class="col-6">
+            <label>Sobrenome:</label>
+            <input class="all_space"  type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <label>CPF:</label>
+            <input class="all_space"  type="text">
+        </div>
+        <div class="col-3">
+            <label>E-mail:</label>
+            <input class="all_space"  type="text">
+        </div>
+        <div class="col-3">
+            <label>Telefone:</label>
+            <input class="all_space"  type="text">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <label>Curso:</label>
+            <div>
+                <select name="" id="" class="all_space">
+                    <option value="">Nada</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-6">
+            <label>Turno:</label>
+            <div class="alingn-checkbox">
+                <!-- 
+                    criei uma classe para alinhar os itens chamada alingn-checkbox
+
+                    !!!Mudança entre o html da entrega pasada e o atual!!!
+
+                    Alterei os proximos col, pois não funcionaria com col-3, dado que alguns campos acima também usam o mesmo comando
+                    e assim também os alteraria, por isto criei o col-2   
+
+                    removi os col-2 pois vi com ajuda de um colega(Paluski) que sem col- é melhor.
+                 -->
+                <div class="option">
+                    <input class="checkbox" type="radio">
+                    <label>Matutino</label>
+                </div>
+                <div class="option">
+                    <input class="checkbox" type="radio">
+                    <label>Vespertino</label>
+                </div>
+                <div class="option">
+                    <input class="checkbox" type="radio">
+                    <label>Notuno</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="butao_alinhamento col-12">
+            <button class="butao">Solicitar</button>
+        </div>
+    </div>
+</body>
+</html>

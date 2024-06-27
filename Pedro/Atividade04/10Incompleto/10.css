@@ -1,0 +1,56 @@
+.formulario 
+{
+    background: linear-gradient(90deg,lightgreen 0%,blue 100%);
+    position: relative;
+    border-radius: 5px;
+    width: 400px;
+    height: 450px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.formulario input
+{
+    border-radius: 5px;
+    position: relative;
+    margin-top: 10px;
+    width: 350px;
+    height: 35px;
+    color: white;
+}
+.titulo
+{
+    color: white;
+    text-align: center;
+}
+.formulario textarea
+{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: none;
+    width: 350px;
+    height: 50px;
+}
+.formulario select
+{
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    background: none;
+    color: white;
+    text-align: left; 
+    width: 350px;
+    height: 35px; 
+}
+.semBackground
+{
+    background: none;
+    border: 1px solid white;
+}
+.botao
+{
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border: none;
+}
