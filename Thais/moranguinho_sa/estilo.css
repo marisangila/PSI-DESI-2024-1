@@ -1,0 +1,173 @@
+body {
+    background: url(imagem/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+    opacity: 90%;
+    background-color: rgb(226, 151, 157);
+    border: 5px solid rgb(197, 77, 77);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#board img {
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px
+}
+
+.transparent {
+    background-color: transparent;
+    color: black;
+}
+
+.confirm {
+    background-color: rgb(157, 235, 187);
+    cursor: pointer;
+}
+
+#editar {
+    background-color: rgba(240, 42, 157, 0.548);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#editar:hover{
+    background-color: rgba(255, 96, 189, 0.856);
+    cursor: pointer;
+}
+
+#excluir {
+    background-color: rgb(199, 101, 101);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#excluir:hover{
+    background-color: rgb(192, 10, 10);
+}
+
+#play {
+    background-color: rgba(40, 163, 51, 0.795);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+#play:hover{
+    background-color: rgba(0, 255, 0, 0.692);
+}
+
+.pause {
+    background-color: rgb(211, 81, 81);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-center {
+    text-align: center;
+}
+
+#ranking-table {
+    width: 450px;
+    height: 450px;
+    opacity: 0.9;
+    background-color: rgb(226, 151, 157);
+    border: 5px solid rgb(197, 77, 77);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: height 0.3s, overflow-y 0.3s;
+}
+
+#ranking-table:hover {
+    height: auto;
+    overflow-y: auto;
+}
+
+#ranking-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+#ranking-table th, #ranking-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid rgb(197, 77, 77);
+}
+
+#ranking-table th {
+    background-color: rgb(226, 151, 157);
+    color: #333;
+    font-weight: bold;
+}
+
+@media print {
+    #ranking-table {
+        height: auto;
+        overflow: visible;
+    }
+}
+
+#return-to-registration {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#return-to-registration:hover {
+    background-color: limegreen;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    cursor: pointer;
+}
+
+.crud {
+    background-color: rgb(226, 151, 157);
+    border: 5px solid rgb(197, 77, 77);
+    width: auto; 
+    min-width: 250px; 
+    max-width: 10%; 
+    height: auto; 
+    min-height: 70vh; 
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto; 
+}
+
+.text{
+    margin: 8px;
+}
