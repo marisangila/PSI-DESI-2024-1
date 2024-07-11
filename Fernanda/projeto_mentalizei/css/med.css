@@ -1,0 +1,83 @@
+*{
+    font-family: Arial, Helvetica, sans-serif !important;
+    /* user-select: none; */
+}
+
+#tab_continuo{
+    width: 600px
+}
+
+#tab_pontual{
+    width: 600px;
+    display:flex !important;
+    flex-direction: column !important;
+}
+
+#tab_sintomas{
+    width: 500px !important;
+    display:flex !important;
+    flex-direction: column !important;
+    max-height: 300px!important;
+    overflow-y: auto;
+}
+
+#tab_frequencias{
+    width: 300px !important;
+    display:flex !important;
+    flex-direction: column !important;
+    max-height: 300px!important;
+    overflow-y: auto;
+}
+
+#titulo_tabela{
+    font-size: 20px !important;
+}
+
+#med_continuo_form{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+[class^="form-control"]{
+    width: 300px !important;
+}
+
+#btn-adc{
+    background-color: #477CA6!important;
+    width:100px !important;
+    color:white;
+}
+
+#btn-editar{
+    height: 35px;
+    background-color: #D5E5FF!important;
+}
+
+#btn-deletar{
+    height: 35px;
+    background-color: #477CA6!important;
+    color:white;
+}
+
+#card-tempo-tratamento{
+    width: 10% !important;
+    border: #616161 solid 1px !important;
+    border-radius: 0.5rem;
+}
+
+#editar-continuo{
+    cursor: pointer;
+}
+
+#tipo_med_cont{
+    width:300px !important;
+}
+
+#capsulas{
+    position: absolute;
+    right: 0 !important;
+    bottom: 0;
+    opacity: 0.5;
+}

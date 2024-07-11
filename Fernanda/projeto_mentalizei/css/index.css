@@ -1,0 +1,69 @@
+body{
+    background-color: #E9ECF1;
+    font-family: Arial !important;
+}
+
+#all-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#box-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5E5FF;
+    width: 400px;
+    height: 600px;
+    border-radius: 0.5rem;
+}
+
+#btn-cadastro{
+    width: 150px!important;
+}
+
+#box-div-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D5E5FF;
+    width: 420px;
+    height: 450px;
+    border-radius: 0.5rem;
+}
+
+#logo{
+    font-size: 30px;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#capsulas{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}
+
+#box-div-logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 450px;
+    height: 450px;
+    border-radius: 0.5rem;
+}
+
+#container-logout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
