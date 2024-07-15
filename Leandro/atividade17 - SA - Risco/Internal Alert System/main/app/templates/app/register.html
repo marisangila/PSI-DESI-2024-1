@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Análise de Riscos - Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/styles/confPadrao.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/telaRegistro.css' %}" >
+    
+</head>
+<body>
+    <img src="{% static 'images/bosch-graphic.png' %}" height="2%" width="100%" class="position-fixed" style="top:0%;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 login-form">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Cadastro</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="{% url 'register' %}" method="POST">
+                            {% csrf_token %}
+                            <div class="mb-3">
+                                <label for="edv" class="form-label">EDV:</label>
+                                <input type="text" class="form-control" id="edv" name="edv" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="sobrenome" class="form-label">Sobrenome:</label>
+                                <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="senha" class="form-label">Senha:</label>
+                                <input type="password" class="form-control" id="senha" name="senha" required>
+                            </div>
+                            <div class="mb-3"> 
+                                <label for="email" class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            <a href="{% url 'login' %}" class="btn btn-link mt-2">Voltar</a>
+                            {% if erro %}
+                                <div class="alert alert-danger mt-3 align-center" role="alert">Este EDV ja está cadastrado. <a href="#" class="btn-link">Clique aqui</a> para recuperação de acesso.</div>
+                            {% endif %}
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
