@@ -1,0 +1,22 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/styles/confPadrao.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/telaSuccess.css' %}">
+    <title>Formulário Concluído</title>
+</head>
+
+<body>
+    <div class="container">
+        <img src="{% static 'images/bosch-graphic.png' %}" height="2%" width="100%" class="position-fixed" style="top:0%;">
+        <h2>Formulário Concluído!</h2>
+        <p>Obrigado por enviar suas informações.</p>
+        <button class="button" onclick="window.location.href='/IAS/login';">Voltar ao Login</button>
+    </div>
+</body>
+
+</html>
