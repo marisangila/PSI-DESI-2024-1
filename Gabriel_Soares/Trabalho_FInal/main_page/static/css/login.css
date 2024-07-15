@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Bosch Sans Regular";
+}
+
+h2 {
+    font-size: 25px;
+    color: #006EAD;
+    font-family: "Bosch Sans Bold";
+}
+
+@font-face {
+    font-family: "Bosch Sans Regular";
+    src:url(../fonts/boschsans-v5_003/boschsans-v5_003/fonts-ttf/BoschSans-Regular-v5_003.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Bosch Sans Bold";
+    src: url(../fonts/boschsans-v5_003/boschsans-v5_003/fonts-ttf/BoschSans-Bold-v5_003.ttf);
+}
+
+.background {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-background {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    background: rgb(0, 123, 192);
+    background: linear-gradient(34deg, rgba(0, 123, 192, 1) 34%, rgba(0, 136, 212, 1) 80%);
+}
+
+.container-svg{
+    position: relative;
+    top: 285px;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+
+.input-login {
+    width: 70%;
+    height: 50px;
+    margin-top: 20px;
+    padding: 15px 15px 15px 50px;
+    border: none;
+    outline: none;
+    color: #71767C;
+    background-color: #EFF1F2;
+}
+
+.input-login:focus{
+    background-color: white;
+    border: 1px solid #71767C;
+}
+
+.button-login {
+    cursor: pointer;
+    width: 35%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: #007BC0;
+    color: white;
+    border: none;
+    font-family: "Bosch Sans Bold";
+}
+
+.button-login:hover {
+    background-color: #006EAD;
+}
+
+.icon-position{
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+
+.icon-user{
+    background-image: url(../media/user-icon-login.svg);
+}
+
+.icon-password{
+    background-image: url(../media/password-icon.svg);
+}
+
+.error{
+    margin-top: 10px;
+    color: #FF3A3A;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+    .container-background{
+        display: none;
+    }
+
+    .container-login{
+        width: 100%;
+    }
+
+}

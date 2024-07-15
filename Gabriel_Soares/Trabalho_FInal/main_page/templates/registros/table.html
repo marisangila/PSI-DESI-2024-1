@@ -1,0 +1,308 @@
+{% load static %}  
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Page</title>
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container-menu">
+            <div class="logo">
+                <svg width="178" height="71" viewBox="0 0 178 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_50_79)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M79.0546 35.0237C79.8861 34.7024 80.5995 34.1348 81.0992 33.3971C81.5989 32.6593 81.8612 31.7866 81.8508 30.8958C81.8508 27.1807 79.2135 25.339 75.5912 25.339H66.0907V45.534H76.4173C79.5948 45.534 82.7087 43.3113 82.7087 39.9137C82.7087 35.881 79.0546 35.0554 79.0546 35.0237ZM71.0475 29.5304H74.7333C74.9877 29.5151 75.2424 29.5538 75.4806 29.6442C75.7189 29.7345 75.9353 29.8743 76.1154 30.0544C76.2956 30.2344 76.4355 30.4507 76.5259 30.6888C76.6163 30.9268 76.6551 31.1814 76.6398 31.4356C76.6348 31.6896 76.5785 31.94 76.4741 32.1717C76.3697 32.4034 76.2194 32.6115 76.0324 32.7836C75.8454 32.9557 75.6254 33.0882 75.3857 33.173C75.1461 33.2578 74.8917 33.2933 74.638 33.2773H71.0475V29.5304ZM74.7651 41.3108H71.0475V37.3417H74.6697C76.4809 37.3417 77.3388 38.1355 77.3388 39.3104C77.3388 40.771 76.2585 41.3108 74.7651 41.3108Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M93.639 24.8309C87.7926 24.8309 84.3609 29.4986 84.3609 35.4047C84.3609 41.3426 87.7926 45.9785 93.639 45.9785C99.5173 45.9785 102.917 41.3426 102.917 35.4047C102.917 29.4986 99.5173 24.8309 93.639 24.8309ZM93.639 41.152C90.7794 41.152 89.3495 38.58 89.3495 35.4047C89.3495 32.2294 90.7794 29.6892 93.639 29.6892C96.4987 29.6892 97.9604 32.2612 97.9604 35.4047C97.9604 38.6118 96.4987 41.152 93.639 41.152Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M113.689 33.2773L112.99 33.1185C111.274 32.7692 109.908 32.3247 109.908 31.0863C109.908 29.7527 111.21 29.2129 112.354 29.2129C113.134 29.2251 113.904 29.3978 114.615 29.7201C115.325 30.0424 115.962 30.5075 116.485 31.0863L119.63 27.9745C118.201 26.3551 115.881 24.7992 112.259 24.7992C108.001 24.7992 104.76 27.1807 104.76 31.1498C104.76 34.7697 107.366 36.5479 110.543 37.2147L111.242 37.3734C113.879 37.9132 114.864 38.326 114.864 39.5962C114.864 40.8028 113.784 41.5966 112.132 41.5966C110.162 41.5966 108.382 40.7393 107.016 38.9928L103.807 42.1682C105.586 44.2956 107.842 45.9468 112.195 45.9468C115.976 45.9468 120.012 43.7876 120.012 39.3739C120.075 34.7697 116.58 33.8806 113.689 33.2773Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M131.323 41.152C129.099 41.152 126.78 39.3103 126.78 35.2777C126.78 31.6896 128.94 29.6891 131.196 29.6891C132.976 29.6891 134.024 30.5147 134.85 31.9436L138.918 29.2446C136.884 26.1645 134.469 24.8627 131.133 24.8627C125.032 24.8627 121.728 29.5939 121.728 35.3094C121.728 41.3108 125.382 46.0103 131.069 46.0103C135.073 46.0103 136.979 44.6131 139.045 41.6283L134.946 38.8658C134.12 40.1994 133.23 41.152 131.323 41.152Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M152.485 25.339V32.7692H146.353V25.339H141.046V45.534H146.353V37.5639H152.485V45.534H157.792V25.339H152.485Z"
+                            fill="#ED0007" />
+                        <path
+                            d="M35.5237 20.195C32.4947 20.195 29.5336 21.0926 27.0151 22.7744C24.4965 24.4561 22.5335 26.8464 21.3743 29.643C20.2151 32.4397 19.9118 35.517 20.5028 38.4859C21.0937 41.4548 22.5524 44.1819 24.6942 46.3223C26.8361 48.4627 29.565 49.9204 32.5359 50.5109C35.5068 51.1015 38.5861 50.7984 41.3846 49.64C44.1831 48.4816 46.575 46.5199 48.2579 44.003C49.9408 41.4861 50.839 38.5271 50.839 35.5C50.8368 31.4415 49.2225 27.5499 46.3508 24.6802C43.4792 21.8104 39.5849 20.1972 35.5237 20.195ZM35.5237 49.3761C32.7775 49.3761 30.0929 48.5623 27.8094 47.0376C25.526 45.5129 23.7463 43.3457 22.6953 40.8102C21.6444 38.2747 21.3694 35.4846 21.9052 32.7929C22.4409 30.1012 23.7634 27.6287 25.7053 25.6881C27.6472 23.7475 30.1213 22.4259 32.8148 21.8905C35.5083 21.3551 38.3002 21.6299 40.8375 22.6802C43.3747 23.7304 45.5433 25.5089 47.069 27.7909C48.5948 30.0728 49.4091 32.7556 49.4091 35.5C49.4054 39.179 47.9412 42.7063 45.338 45.3077C42.7348 47.9092 39.2052 49.3724 35.5237 49.3761Z"
+                            fill="black" />
+                        <path
+                            d="M41.8468 25.9423H40.7983V31.1816H30.281V25.9423H29.2006C27.6185 26.9857 26.3201 28.4049 25.4217 30.073C24.5234 31.741 24.0531 33.6057 24.0531 35.5C24.0531 37.3943 24.5234 39.259 25.4217 40.9271C26.3201 42.5951 27.6185 44.0144 29.2006 45.0577H30.281V39.8184H40.7983V45.0577H41.8468C43.429 44.0144 44.7274 42.5951 45.6258 40.9271C46.5241 39.259 46.9944 37.3943 46.9944 35.5C46.9944 33.6057 46.5241 31.741 45.6258 30.073C44.7274 28.4049 43.429 26.9857 41.8468 25.9423ZM28.8194 42.9938C27.7602 42.0532 26.9125 40.8991 26.332 39.6075C25.7515 38.3158 25.4513 36.916 25.4513 35.5C25.4513 34.0841 25.7515 32.6842 26.332 31.3926C26.9125 30.1009 27.7602 28.9468 28.8194 28.0063V42.9938ZM40.7983 38.3578H30.281V32.6105H40.7983V38.3578ZM42.2281 42.962V39.7867V31.1816V28.0063C43.2781 28.949 44.1178 30.1021 44.6925 31.3904C45.2673 32.6788 45.5644 34.0736 45.5644 35.4841C45.5644 36.8947 45.2673 38.2895 44.6925 39.5779C44.1178 40.8662 43.2781 42.0192 42.2281 42.962Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_50_79">
+                            <rect width="178" height="71" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="menu-items">
+                <ul class = "list">
+                    <li class="item"><a class = "link" href="{% url 'new_register' %}">Device Register</a></li>
+                    <li class="item"><a class = "link" href="{% url 'list_registers' %}">All devices</a></li>
+                </ul>
+                <a class = "link" href="http://127.0.0.1:8000/accounts/login/"><input type="button" class = "icon-logout icon-position button-logout" value = "Log out"></a>
+            </div>
+        </div>
+        <div class="container-background">
+            <div class="super-graphic">
+                <svg width="1628" height="6" viewBox="0 0 1628 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_257)">
+                    <path d="M1718 0H0V6H1718V0Z" fill="url(#paint0_linear_54_257)"/>
+                    <path d="M277.908 5.99997H489.729L415.979 3L277.908 5.99997Z" fill="url(#paint1_linear_54_257)"/>
+                    <path d="M850.672 0H743.375L685.112 3.00003L738.135 6H850.672V0Z" fill="url(#paint2_linear_54_257)"/>
+                    <path d="M497.584 0H497.506L415.979 3.00003L489.729 6L603.159 3.00003L497.584 0Z" fill="url(#paint3_linear_54_257)"/>
+                    <path d="M743.375 0H497.584L603.159 3.00003L489.729 6H738.135L685.112 3.00003L743.375 0Z" fill="url(#paint4_linear_54_257)"/>
+                    <path d="M275.794 0H132.179V1.85697L213.539 3.00003L132.179 4.14308V6H277.908L226.035 3.00003L275.794 0Z" fill="#AF1917"/>
+                    <path d="M497.506 0H275.794L415.979 3.00003L497.506 0Z" fill="url(#paint5_linear_54_257)"/>
+                    <path d="M132.179 0H0L132.179 1.85697V0Z" fill="#931813"/>
+                    <path d="M213.539 3.00005L132.179 1.85699V4.1431L213.539 3.00005Z" fill="#B12638"/>
+                    <path d="M0 5.99999H132.179V4.14307L0 5.99999Z" fill="#931813"/>
+                    <path d="M132.179 1.85697L0 0V6L132.179 4.14308V1.85697Z" fill="#942331"/>
+                    <path d="M275.794 0L226.035 3.00003L277.908 6L415.979 3.00003L275.794 0Z" fill="#D51317"/>
+                    <path d="M1524.33 5.08236C1528.49 4.5855 1548.16 4.01267 1568.98 3.40614C1572.31 3.30915 1575.69 3.21056 1579.07 3.11054C1575.69 3.00307 1572.3 2.89703 1568.97 2.79272C1548.15 2.14078 1528.48 1.5251 1524.33 0.99104C1521.11 0.576448 1527.69 0.266304 1545.55 -6.10352e-05H1436.47C1418.62 0.357695 1412.03 0.569369 1415.26 0.983961C1419.41 1.51797 1439.09 2.13368 1459.9 2.78559C1490.74 3.75129 1526.44 4.86455 1514.98 5.99993H1545.6C1527.71 5.752 1521.1 5.46848 1524.33 5.08236Z" fill="url(#paint6_linear_54_257)"/>
+                    <path d="M1459.9 2.78571C1439.08 2.1338 1419.41 1.51809 1415.26 0.984083C1412.03 0.569491 1418.62 0.357806 1436.47 6.10352e-05H1352.25C1365.7 1.05614 1343.27 2.08967 1319.92 3.26547C1306.3 3.95154 1292.2 4.66086 1288.55 5.23586C1285.92 5.64934 1289.42 5.87737 1292.8 6.00007H1514.98C1526.44 4.86468 1490.74 3.7514 1459.9 2.78571Z" fill="url(#paint7_linear_54_257)"/>
+                    <path d="M1579.07 3.1106C1575.69 3.21061 1572.31 3.30921 1568.98 3.4062C1548.16 4.01273 1528.49 4.58556 1524.33 5.08242C1521.1 5.46854 1527.71 5.75205 1545.6 6.00001H1624.01C1634.24 4.98719 1606.97 3.99786 1579.07 3.1106Z" fill="#169A39"/>
+                    <path d="M1616.9 0C1642.28 1.08346 1611.08 2.16195 1579.07 3.1106C1606.97 3.99787 1634.24 4.9872 1624.01 6H1718V0H1616.9Z" fill="url(#paint8_linear_54_257)"/>
+                    <path d="M1288.55 5.2358C1292.2 4.6608 1306.3 3.95148 1319.92 3.26541C1343.27 2.08961 1365.7 1.05608 1352.25 0H1183.98C1180.61 0.223425 1177.14 0.375605 1179.76 0.819242C1183.42 1.43722 1197.5 2.1996 1211.12 2.93695C1231.18 4.02252 1250.56 5.0681 1247.1 6H1292.79C1289.42 5.8773 1285.92 5.64928 1288.55 5.2358Z" fill="url(#paint9_linear_54_257)"/>
+                    <path d="M850.672 0V6L892.705 3.00003L850.672 0Z" fill="#283587"/>
+                    <path d="M1524.33 0.991101C1528.48 1.52516 1548.15 2.14083 1568.97 2.79279C1572.3 2.89709 1575.69 3.00313 1579.07 3.1106C1611.08 2.16195 1642.28 1.08346 1616.9 0H1545.54C1527.69 0.266365 1521.11 0.576509 1524.33 0.991101Z" fill="url(#paint10_linear_54_257)"/>
+                    <path d="M1211.13 2.93695C1197.5 2.1996 1183.42 1.43722 1179.77 0.819242C1177.14 0.375594 1180.62 0.223414 1183.98 0H1085.37C1088.99 0.786092 1081.8 1.66965 1068.84 3.1477C1061.37 3.99989 1049.82 5.31151 1052.13 6H1247.11C1250.56 5.06811 1231.19 4.02252 1211.13 2.93695Z" fill="url(#paint11_linear_54_257)"/>
+                    <path d="M850.672 0L892.705 3.00003L850.672 6H984.945L985.08 0H850.672Z" fill="url(#paint12_linear_54_257)"/>
+                    <path d="M1068.84 3.1477C1081.8 1.66965 1088.99 0.786092 1085.36 0H985.08L984.945 6H1052.13C1049.82 5.31151 1061.37 3.99989 1068.84 3.1477Z" fill="url(#paint13_linear_54_257)"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_54_257" x1="0" y1="3" x2="1718" y2="3" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#942331"/>
+                    <stop offset="0.0361" stop-color="#931813"/>
+                    <stop offset="0.0846" stop-color="#B12638"/>
+                    <stop offset="0.1237" stop-color="#AF1917"/>
+                    <stop offset="0.1257" stop-color="#B11917"/>
+                    <stop offset="0.1533" stop-color="#CB1517"/>
+                    <stop offset="0.1697" stop-color="#D51317"/>
+                    <stop offset="0.1755" stop-color="#CE1B24"/>
+                    <stop offset="0.1876" stop-color="#BB2742"/>
+                    <stop offset="0.205" stop-color="#9B326B"/>
+                    <stop offset="0.2142" stop-color="#88357F"/>
+                    <stop offset="0.2436" stop-color="#853580"/>
+                    <stop offset="0.2638" stop-color="#6E368C"/>
+                    <stop offset="0.2911" stop-color="#3A4190"/>
+                    <stop offset="0.3242" stop-color="#14387F"/>
+                    <stop offset="0.3926" stop-color="#2B2F75"/>
+                    <stop offset="0.4181" stop-color="#312A6F"/>
+                    <stop offset="0.4756" stop-color="#2A3281"/>
+                    <stop offset="0.494" stop-color="#283587"/>
+                    <stop offset="0.5581" stop-color="#1D61A1"/>
+                    <stop offset="0.5667" stop-color="#2169A5"/>
+                    <stop offset="0.6085" stop-color="#3D8FB6"/>
+                    <stop offset="0.6393" stop-color="#53A7BE"/>
+                    <stop offset="0.6556" stop-color="#5BB0C0"/>
+                    <stop offset="0.6748" stop-color="#53ADBE"/>
+                    <stop offset="0.6993" stop-color="#36A3BA"/>
+                    <stop offset="0.7266" stop-color="#0095B3"/>
+                    <stop offset="0.7426" stop-color="#008BAE"/>
+                    <stop offset="0.798" stop-color="#009490"/>
+                    <stop offset="0.8875" stop-color="#00A24C"/>
+                    <stop offset="1" stop-color="#00937D"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_54_257" x1="489.73" y1="4.49999" x2="277.908" y2="4.49999" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#88357F"/>
+                    <stop offset="0.3354" stop-color="#88357F"/>
+                    <stop offset="0.5997" stop-color="#8B2E64"/>
+                    <stop offset="0.871" stop-color="#8E284A"/>
+                    <stop offset="1" stop-color="#8F2540"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_54_257" x1="855.107" y1="0.0058448" x2="855.102" y2="4.07256" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#312A6F"/>
+                    <stop offset="0.2427" stop-color="#312A6F"/>
+                    <stop offset="0.418" stop-color="#2F2D72"/>
+                    <stop offset="0.6245" stop-color="#2B337A"/>
+                    <stop offset="0.8457" stop-color="#1E3E87"/>
+                    <stop offset="1" stop-color="#024995"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_54_257" x1="415.979" y1="3" x2="603.16" y2="3" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#6E368C"/>
+                    <stop offset="1" stop-color="#3A4190"/>
+                    </linearGradient>
+                    <linearGradient id="paint4_linear_54_257" x1="743.375" y1="3" x2="489.73" y2="3" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#14387F"/>
+                    <stop offset="0.2311" stop-color="#1D3880"/>
+                    <stop offset="0.5045" stop-color="#313881"/>
+                    <stop offset="0.7981" stop-color="#493984"/>
+                    <stop offset="1" stop-color="#5C3986"/>
+                    </linearGradient>
+                    <linearGradient id="paint5_linear_54_257" x1="499.203" y1="1.50001" x2="270.057" y2="1.50001" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#88357F"/>
+                    <stop offset="0.3354" stop-color="#88357F"/>
+                    <stop offset="0.5997" stop-color="#8B2E64"/>
+                    <stop offset="0.871" stop-color="#8E284A"/>
+                    <stop offset="1" stop-color="#8F2540"/>
+                    </linearGradient>
+                    <linearGradient id="paint6_linear_54_257" x1="1496.77" y1="-5.01449e-05" x2="1496.77" y2="5.99995" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#94BD55"/>
+                    <stop offset="0.3332" stop-color="#8CBC68"/>
+                    <stop offset="0.6886" stop-color="#85BB74"/>
+                    <stop offset="1" stop-color="#83BB78"/>
+                    </linearGradient>
+                    <linearGradient id="paint7_linear_54_257" x1="1270.49" y1="0.0637723" x2="1270.5" y2="6.38407" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00A24C"/>
+                    <stop offset="0.1984" stop-color="#00A150"/>
+                    <stop offset="0.4785" stop-color="#009D5C"/>
+                    <stop offset="0.8055" stop-color="#009770"/>
+                    <stop offset="1" stop-color="#00937D"/>
+                    </linearGradient>
+                    <linearGradient id="paint8_linear_54_257" x1="1648.53" y1="0" x2="1648.53" y2="6" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#699F60"/>
+                    <stop offset="0.096" stop-color="#5A9955"/>
+                    <stop offset="0.2648" stop-color="#449148"/>
+                    <stop offset="0.4524" stop-color="#318C40"/>
+                    <stop offset="0.6718" stop-color="#23893B"/>
+                    <stop offset="1" stop-color="#1D893A"/>
+                    </linearGradient>
+                    <linearGradient id="paint9_linear_54_257" x1="1267.57" y1="0" x2="1267.57" y2="6" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#00B5DD"/>
+                    <stop offset="0.2243" stop-color="#00B0D8"/>
+                    <stop offset="0.5483" stop-color="#00A3C9"/>
+                    <stop offset="0.9313" stop-color="#008FB3"/>
+                    <stop offset="1" stop-color="#008BAE"/>
+                    </linearGradient>
+                    <linearGradient id="paint10_linear_54_257" x1="1501.78" y1="2.44509" x2="1501.79" y2="0.3489" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#62B16E"/>
+                    <stop offset="1" stop-color="#86B857"/>
+                    </linearGradient>
+                    <linearGradient id="paint11_linear_54_257" x1="1024.85" y1="0.133617" x2="1024.87" y2="6.49072" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#009AD2"/>
+                    <stop offset="0.3786" stop-color="#19A1CD"/>
+                    <stop offset="1" stop-color="#5BB0C0"/>
+                    </linearGradient>
+                    <linearGradient id="paint12_linear_54_257" x1="917.876" y1="0" x2="917.876" y2="6" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#174290"/>
+                    <stop offset="0.2651" stop-color="#1C4D98"/>
+                    <stop offset="0.8022" stop-color="#2A6DAF"/>
+                    <stop offset="1" stop-color="#327AB9"/>
+                    </linearGradient>
+                    <linearGradient id="paint13_linear_54_257" x1="1035.62" y1="6" x2="1035.62" y2="0" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#3E9AC9"/>
+                    <stop offset="1" stop-color="#1D61A1"/>
+                    </linearGradient>
+                    <clipPath id="clip0_54_257">
+                    <rect width="1718" height="6" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </div>
+            <div class="container-main">
+                <form method="get" class="three-column">
+                    {% comment %} <select name="select" id="select" class = "input-format">
+                        <option value="0">Search by</option>
+                        <option value="1">Desktop</option>
+                        <option value="2">Laptop</option>
+                    </select> {% endcomment %}
+                    <input type="text" class = "input-format" name="search" placeholder="Search by Name">
+                    <input type="submit" class = "button-search" value = "Search">
+                </form>
+                <div class="body-table table-responsive">
+                    <table class="table-class">
+                        <thead>
+                            <tr>
+                                <th>User</th>
+                                <th>Device Name</th>
+                                <th>Serial Number</th>
+                                <th>Delivery Date</th>
+                                <th>Order Ticket</th>
+                                <th>Device Type</th>
+                                <th>Order Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for o in orders %}
+                            <tr>
+                                <td>{{ o.fk_user.user_name }}</td>
+                                <td>{{ o.fk_device.device_name}}</td>
+                                <td>{{ o.fk_device.device_serial_number }}</td>
+                                <td>{{ o.order_delivery_date }}</td>
+                                <td>{{ o.order_ticket_it }}</td>
+                                <td>{{ o.fk_device.fk_ds.ds_description }}</td>
+                                <td>{{ o.fk_order_status.os_description }}</td>
+                                <td>
+                                    <a href="{% url 'edit_register' o.order_id %}"><input type="button" class = "button-table edit-button"></a>
+                                    <input type="button" class = "open-modal button-table delete-button" onclick="openModal({{ o.order_id }})">
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class = "modal-confirmation">
+                <div class = "modal-background">
+                    <h4>Delete Device</h4>
+                        <p>Are you sure you want remove this device?</p>
+                    <div class = "buttons-popup">
+                        <input type="button" id="confirm_delete" value="Yes" class = "button-confirm btnClose" onclick="closeModal()">
+                        <input type="button" value="Cancel" class = "button-cancel btnClose" onclick="closeModal()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script> 
+    const modal = document.querySelector('.modal-confirmation')
+    const excluir = document.getElementById('confirm_delete');
+    var id_r
+
+    function openModal(id_register) {
+        modal.classList.add('active');
+        id_r = id_register;
+
+    }
+    
+    function closeModal() {
+      modal.classList.remove('active');
+    }
+
+    excluir.addEventListener('click', () => {
+        window.location.href = `http://127.0.0.1:8000/main_page/delete/${id_r}/`
+      })
+    
+  
+    {% comment %} excluir.addEventListener('click', () => {
+      const selectedId = getSelectedId();
+      if (selectedId !== null) {
+        window.location.href = `http://127.0.0.1:8000/main_page/delete/${selectedId}/`;
+      }else {
+        alert('Erro ao deletar');
+      }
+    })
+   {% endcomment %}
+
+    {% comment %} function getSelectedId() {
+      const botoes = document.querySelectorAll("#excluir_button");
+      console.log(botoes)
+      for (const botao of botoes) {
+        if (botao.click) {
+          return botao.value;
+        }
+      }
+      return null;
+    } {% endcomment %}
+</script>
+</html>
+{% endblock %}

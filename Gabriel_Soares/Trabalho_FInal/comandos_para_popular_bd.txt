@@ -1,0 +1,33 @@
+use it_inventory;
+
+insert into location(location_plant) values
+	('Joinville'),
+    ('Campinas'),
+    ('Pomerode'),
+    ('Curitiba');
+    
+insert into cost_center(cc_number) values
+	(3333),
+    (2222),
+    (4444),
+    (1111);
+    
+insert into users(user_edv, user_name, fk_location_id, fk_cc_id) values
+	(92903045, 'Lucas', 1, 1),
+	(92903012, 'Guilherme', 2, 2),
+	(92903011, 'Maria', 3, 3),
+	(92903010, 'Luiza', 4, 4);
+
+insert into device_status(ds_description) values
+	('Em reparo'),
+	('Observação'),
+	('Ok');
+    
+insert into device(device_name, device_serial_number, device_last_use, fk_ds_id) values
+	('Desktop', 'SC7854', '12/02/2024', 1); 
+    
+insert into order_status(os_description) values
+	('Entregue');
+    
+insert into orders(order_retrieval_date, order_delivery_date, order_ticket_it, order_ticket_user, fk_user, fk_device_id, fk_order_status) values
+	(STR_TO_DATE('24/06/2024', '%d/%m/%Y'), STR_TO_DATE('25/06/2024', '%d/%m/%Y'), 'SC123', 'SC345', 2, 1, 1);

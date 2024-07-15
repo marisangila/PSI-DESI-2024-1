@@ -1,0 +1,8 @@
+django
+pre-commit
+mysqlclient
+django-crispy-forms
+whitenoise
+django-bootstrap5
+tzdata
+django-extensions

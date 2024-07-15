@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Bosch Sans Regular";
+}
+
+@font-face {
+    font-family: "Bosch Sans Regular";
+    src:url(../fonts/boschsans-v5_003/boschsans-v5_003/fonts-ttf/BoschSans-Regular-v5_003.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Bosch Sans Bold";
+    src: url(../fonts/boschsans-v5_003/boschsans-v5_003/fonts-ttf/BoschSans-Bold-v5_003.ttf);
+}
+
+h2 {
+    font-size: 25px;
+    color: #006EAD;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Bosch Sans Bold";
+}
+
+.background {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-background {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    width: 85%;
+    background-color: #EFF1F2;
+}
+
+.super-graphic{
+    margin-top: -10px;
+    width: 100%;
+}
+.container-register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    height: 60%;
+    box-shadow: 1px 1px 5px #71767c17;
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+    height: 100%;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.one-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+}
+
+.input-format {
+    font-size: 16px;
+    width: 80%;
+    height: 40px;
+    margin: 10px 0px 0px 10px;
+    padding-left: 50px;
+    border: none;
+    outline: none;
+    color: #71767C;
+    background-color: #EFF1F2;
+}
+
+.input-format:focus {
+    background-color: white;
+    border: 1px solid #71767C;
+}
+
+
+.button-register {
+    cursor: pointer;
+    width: 35%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #007BC0;
+    color: white;
+    border: none;
+    font-family: "Bosch Sans Bold"
+}
+
+.button-register:hover {
+    background-color: #006EAD;
+}
+
+.icon-position {
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+
+.icon-user {
+    background-image: url(../media/user-desktop\ 1.svg);
+}
+
+.icon-edv {
+    background-image: url(../media/user-icon.svg);
+}
+
+.icon-device {
+    background-image: url(../media/desktop\ 1.svg);
+}
+
+.icon-device-equip {
+    background-image: url(../media/desktop-tablet-smartphone\ 1.svg);
+}
+
+.icon-serial {
+    background-image: url(../media/barcode\ 1.svg);
+}
+
+.icon-delivery {
+    background-image: url(../media/alert-info\ 1.svg);
+}
+
+.icon-status {
+    background-image: url(../media/wrench\ 1.svg);
+}
+
+.icon-order {
+    background-image: url(../media/ticket\ 1.svg);
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 15%;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.list{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.menu-items {
+    margin-top: 50px;
+}
+
+.item {
+    margin-bottom: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #71767C;
+}
+
+a:hover {
+    color: #007BC0;
+}
+
+.button-logout{
+    width: 150px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 550px;
+    color: #71767C;
+}
+
+.button-logout:focus{
+    color: #007BC0;
+}
+
+.icon-logout{
+    background-image: url(../media/logout\ 1.svg);
+}
+
+.icon-logout:focus{
+    background-image: url(../media/logout\ 1\ clicked.svg);
+}
+
+@media only screen and (min-width: 100px) and (max-width: 1000px) {
+    .container-register {
+        width: 80%;
+    }
+
+    .container-menu{
+        display: none;
+    }
+
+    .container-background{
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,298 @@
+{% load static %}  
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container-menu">
+            <div class="logo">
+                <svg width="178" height="71" viewBox="0 0 178 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_50_79)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M79.0546 35.0237C79.8861 34.7024 80.5995 34.1348 81.0992 33.3971C81.5989 32.6593 81.8612 31.7866 81.8508 30.8958C81.8508 27.1807 79.2135 25.339 75.5912 25.339H66.0907V45.534H76.4173C79.5948 45.534 82.7087 43.3113 82.7087 39.9137C82.7087 35.881 79.0546 35.0554 79.0546 35.0237ZM71.0475 29.5304H74.7333C74.9877 29.5151 75.2424 29.5538 75.4806 29.6442C75.7189 29.7345 75.9353 29.8743 76.1154 30.0544C76.2956 30.2344 76.4355 30.4507 76.5259 30.6888C76.6163 30.9268 76.6551 31.1814 76.6398 31.4356C76.6348 31.6896 76.5785 31.94 76.4741 32.1717C76.3697 32.4034 76.2194 32.6115 76.0324 32.7836C75.8454 32.9557 75.6254 33.0882 75.3857 33.173C75.1461 33.2578 74.8917 33.2933 74.638 33.2773H71.0475V29.5304ZM74.7651 41.3108H71.0475V37.3417H74.6697C76.4809 37.3417 77.3388 38.1355 77.3388 39.3104C77.3388 40.771 76.2585 41.3108 74.7651 41.3108Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M93.639 24.8309C87.7926 24.8309 84.3609 29.4986 84.3609 35.4047C84.3609 41.3426 87.7926 45.9785 93.639 45.9785C99.5173 45.9785 102.917 41.3426 102.917 35.4047C102.917 29.4986 99.5173 24.8309 93.639 24.8309ZM93.639 41.152C90.7794 41.152 89.3495 38.58 89.3495 35.4047C89.3495 32.2294 90.7794 29.6892 93.639 29.6892C96.4987 29.6892 97.9604 32.2612 97.9604 35.4047C97.9604 38.6118 96.4987 41.152 93.639 41.152Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M113.689 33.2773L112.99 33.1185C111.274 32.7692 109.908 32.3247 109.908 31.0863C109.908 29.7527 111.21 29.2129 112.354 29.2129C113.134 29.2251 113.904 29.3978 114.615 29.7201C115.325 30.0424 115.962 30.5075 116.485 31.0863L119.63 27.9745C118.201 26.3551 115.881 24.7992 112.259 24.7992C108.001 24.7992 104.76 27.1807 104.76 31.1498C104.76 34.7697 107.366 36.5479 110.543 37.2147L111.242 37.3734C113.879 37.9132 114.864 38.326 114.864 39.5962C114.864 40.8028 113.784 41.5966 112.132 41.5966C110.162 41.5966 108.382 40.7393 107.016 38.9928L103.807 42.1682C105.586 44.2956 107.842 45.9468 112.195 45.9468C115.976 45.9468 120.012 43.7876 120.012 39.3739C120.075 34.7697 116.58 33.8806 113.689 33.2773Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M131.323 41.152C129.099 41.152 126.78 39.3103 126.78 35.2777C126.78 31.6896 128.94 29.6891 131.196 29.6891C132.976 29.6891 134.024 30.5147 134.85 31.9436L138.918 29.2446C136.884 26.1645 134.469 24.8627 131.133 24.8627C125.032 24.8627 121.728 29.5939 121.728 35.3094C121.728 41.3108 125.382 46.0103 131.069 46.0103C135.073 46.0103 136.979 44.6131 139.045 41.6283L134.946 38.8658C134.12 40.1994 133.23 41.152 131.323 41.152Z"
+                            fill="#ED0007" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M152.485 25.339V32.7692H146.353V25.339H141.046V45.534H146.353V37.5639H152.485V45.534H157.792V25.339H152.485Z"
+                            fill="#ED0007" />
+                        <path
+                            d="M35.5237 20.195C32.4947 20.195 29.5336 21.0926 27.0151 22.7744C24.4965 24.4561 22.5335 26.8464 21.3743 29.643C20.2151 32.4397 19.9118 35.517 20.5028 38.4859C21.0937 41.4548 22.5524 44.1819 24.6942 46.3223C26.8361 48.4627 29.565 49.9204 32.5359 50.5109C35.5068 51.1015 38.5861 50.7984 41.3846 49.64C44.1831 48.4816 46.575 46.5199 48.2579 44.003C49.9408 41.4861 50.839 38.5271 50.839 35.5C50.8368 31.4415 49.2225 27.5499 46.3508 24.6802C43.4792 21.8104 39.5849 20.1972 35.5237 20.195ZM35.5237 49.3761C32.7775 49.3761 30.0929 48.5623 27.8094 47.0376C25.526 45.5129 23.7463 43.3457 22.6953 40.8102C21.6444 38.2747 21.3694 35.4846 21.9052 32.7929C22.4409 30.1012 23.7634 27.6287 25.7053 25.6881C27.6472 23.7475 30.1213 22.4259 32.8148 21.8905C35.5083 21.3551 38.3002 21.6299 40.8375 22.6802C43.3747 23.7304 45.5433 25.5089 47.069 27.7909C48.5948 30.0728 49.4091 32.7556 49.4091 35.5C49.4054 39.179 47.9412 42.7063 45.338 45.3077C42.7348 47.9092 39.2052 49.3724 35.5237 49.3761Z"
+                            fill="black" />
+                        <path
+                            d="M41.8468 25.9423H40.7983V31.1816H30.281V25.9423H29.2006C27.6185 26.9857 26.3201 28.4049 25.4217 30.073C24.5234 31.741 24.0531 33.6057 24.0531 35.5C24.0531 37.3943 24.5234 39.259 25.4217 40.9271C26.3201 42.5951 27.6185 44.0144 29.2006 45.0577H30.281V39.8184H40.7983V45.0577H41.8468C43.429 44.0144 44.7274 42.5951 45.6258 40.9271C46.5241 39.259 46.9944 37.3943 46.9944 35.5C46.9944 33.6057 46.5241 31.741 45.6258 30.073C44.7274 28.4049 43.429 26.9857 41.8468 25.9423ZM28.8194 42.9938C27.7602 42.0532 26.9125 40.8991 26.332 39.6075C25.7515 38.3158 25.4513 36.916 25.4513 35.5C25.4513 34.0841 25.7515 32.6842 26.332 31.3926C26.9125 30.1009 27.7602 28.9468 28.8194 28.0063V42.9938ZM40.7983 38.3578H30.281V32.6105H40.7983V38.3578ZM42.2281 42.962V39.7867V31.1816V28.0063C43.2781 28.949 44.1178 30.1021 44.6925 31.3904C45.2673 32.6788 45.5644 34.0736 45.5644 35.4841C45.5644 36.8947 45.2673 38.2895 44.6925 39.5779C44.1178 40.8662 43.2781 42.0192 42.2281 42.962Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_50_79">
+                            <rect width="178" height="71" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class="menu-items">
+                <ul>
+                    <li class="item"><a href="{% url 'new_register' %}">Device Register</a></li>
+                    <li class="item"><a href="{% url 'list_registers' %}">All devices</a></li>
+                </ul>
+                <a class = "link" href="http://127.0.0.1:8000/accounts/login/"><input type="button" class = "icon-logout icon-position button-logout" value = "Log out"></a>
+            </div>
+        </div>
+
+        <div class="container-background">
+            <div class="super-graphic">
+                <svg width="1628" height="6" viewBox="0 0 1628 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_54_168)">
+                        <path d="M1628 0H0V6H1628V0Z" fill="url(#paint0_linear_54_168)" />
+                        <path d="M263.349 5.99997H464.074L394.188 3L263.349 5.99997Z"
+                            fill="url(#paint1_linear_54_168)" />
+                        <path d="M806.108 0H704.432L649.221 3.00003L699.466 6H806.108V0Z"
+                            fill="url(#paint2_linear_54_168)" />
+                        <path d="M471.518 0H471.444L394.188 3.00003L464.074 6L571.562 3.00003L471.518 0Z"
+                            fill="url(#paint3_linear_54_168)" />
+                        <path d="M704.432 0H471.518L571.562 3.00003L464.074 6H699.466L649.221 3.00003L704.432 0Z"
+                            fill="url(#paint4_linear_54_168)" />
+                        <path
+                            d="M261.347 0H125.255V1.85697L202.353 3.00003L125.255 4.14308V6H263.349L214.193 3.00003L261.347 0Z"
+                            fill="#AF1917" />
+                        <path d="M471.444 0H261.347L394.188 3.00003L471.444 0Z" fill="url(#paint5_linear_54_168)" />
+                        <path d="M125.255 0H0L125.255 1.85697V0Z" fill="#931813" />
+                        <path d="M202.353 3.00005L125.255 1.85699V4.1431L202.353 3.00005Z" fill="#B12638" />
+                        <path d="M0 5.99999H125.255V4.14307L0 5.99999Z" fill="#931813" />
+                        <path d="M125.255 1.85697L0 0V6L125.255 4.14308V1.85697Z" fill="#942331" />
+                        <path d="M261.347 0L214.193 3.00003L263.349 6L394.188 3.00003L261.347 0Z" fill="#D51317" />
+                        <path
+                            d="M1444.48 5.08236C1448.42 4.5855 1467.06 4.01267 1486.79 3.40614C1489.94 3.30915 1493.15 3.21056 1496.34 3.11054C1493.14 3.00307 1489.94 2.89703 1486.78 2.79272C1467.05 2.14078 1448.41 1.5251 1444.47 0.99104C1441.42 0.576448 1447.66 0.266304 1464.58 -6.10352e-05H1361.22C1344.3 0.357695 1338.06 0.569369 1341.12 0.983961C1345.05 1.51797 1363.7 2.13368 1383.42 2.78559C1412.65 3.75129 1446.47 4.86455 1435.61 5.99993H1464.63C1447.68 5.752 1441.42 5.46848 1444.48 5.08236Z"
+                            fill="url(#paint6_linear_54_168)" />
+                        <path
+                            d="M1383.42 2.78571C1363.7 2.1338 1345.05 1.51809 1341.12 0.984083C1338.06 0.569491 1344.3 0.357806 1361.22 6.10352e-05H1281.41C1294.16 1.05614 1272.9 2.08967 1250.78 3.26547C1237.86 3.95154 1224.51 4.66086 1221.05 5.23586C1218.56 5.64934 1221.87 5.87737 1225.07 6.00007H1435.61C1446.47 4.86468 1412.65 3.7514 1383.42 2.78571Z"
+                            fill="url(#paint7_linear_54_168)" />
+                        <path
+                            d="M1496.34 3.1106C1493.15 3.21061 1489.94 3.30921 1486.79 3.4062C1467.06 4.01273 1448.42 4.58556 1444.48 5.08242C1441.42 5.46854 1447.68 5.75205 1464.63 6.00001H1538.93C1548.63 4.98719 1522.78 3.99786 1496.34 3.1106Z"
+                            fill="#169A39" />
+                        <path
+                            d="M1532.2 0C1556.25 1.08346 1526.68 2.16195 1496.34 3.1106C1522.78 3.99787 1548.63 4.9872 1538.94 6H1628V0H1532.2Z"
+                            fill="url(#paint8_linear_54_168)" />
+                        <path
+                            d="M1221.05 5.2358C1224.51 4.6608 1237.86 3.95148 1250.78 3.26541C1272.9 2.08961 1294.16 1.05608 1281.41 0H1121.96C1118.77 0.223425 1115.47 0.375605 1117.96 0.819242C1121.42 1.43722 1134.77 2.1996 1147.68 2.93695C1166.69 4.02252 1185.05 5.0681 1181.77 6H1225.07C1221.87 5.8773 1218.56 5.64928 1221.05 5.2358Z"
+                            fill="url(#paint9_linear_54_168)" />
+                        <path d="M806.108 0V6L845.939 3.00003L806.108 0Z" fill="#283587" />
+                        <path
+                            d="M1444.47 0.991101C1448.41 1.52516 1467.05 2.14083 1486.77 2.79279C1489.93 2.89709 1493.14 3.00313 1496.34 3.1106C1526.68 2.16195 1556.25 1.08346 1532.2 0H1464.58C1447.66 0.266365 1441.42 0.576509 1444.47 0.991101Z"
+                            fill="url(#paint10_linear_54_168)" />
+                        <path
+                            d="M1147.68 2.93695C1134.77 2.1996 1121.42 1.43722 1117.96 0.819242C1115.47 0.375594 1118.77 0.223414 1121.96 0H1028.51C1031.95 0.786092 1025.13 1.66965 1012.85 3.1477C1005.77 3.99989 994.824 5.31151 997.011 6H1181.78C1185.05 5.06811 1166.69 4.02252 1147.68 2.93695Z"
+                            fill="url(#paint11_linear_54_168)" />
+                        <path d="M806.108 0L845.939 3.00003L806.108 6H933.347L933.475 0H806.108Z"
+                            fill="url(#paint12_linear_54_168)" />
+                        <path
+                            d="M1012.85 3.1477C1025.13 1.66965 1031.94 0.786092 1028.51 0H933.475L933.347 6H997.011C994.823 5.31151 1005.76 3.99989 1012.85 3.1477Z"
+                            fill="url(#paint13_linear_54_168)" />
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_54_168" x1="0" y1="3" x2="1628" y2="3"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#942331" />
+                            <stop offset="0.0361" stop-color="#931813" />
+                            <stop offset="0.0846" stop-color="#B12638" />
+                            <stop offset="0.1237" stop-color="#AF1917" />
+                            <stop offset="0.1257" stop-color="#B11917" />
+                            <stop offset="0.1533" stop-color="#CB1517" />
+                            <stop offset="0.1697" stop-color="#D51317" />
+                            <stop offset="0.1755" stop-color="#CE1B24" />
+                            <stop offset="0.1876" stop-color="#BB2742" />
+                            <stop offset="0.205" stop-color="#9B326B" />
+                            <stop offset="0.2142" stop-color="#88357F" />
+                            <stop offset="0.2436" stop-color="#853580" />
+                            <stop offset="0.2638" stop-color="#6E368C" />
+                            <stop offset="0.2911" stop-color="#3A4190" />
+                            <stop offset="0.3242" stop-color="#14387F" />
+                            <stop offset="0.3926" stop-color="#2B2F75" />
+                            <stop offset="0.4181" stop-color="#312A6F" />
+                            <stop offset="0.4756" stop-color="#2A3281" />
+                            <stop offset="0.494" stop-color="#283587" />
+                            <stop offset="0.5581" stop-color="#1D61A1" />
+                            <stop offset="0.5667" stop-color="#2169A5" />
+                            <stop offset="0.6085" stop-color="#3D8FB6" />
+                            <stop offset="0.6393" stop-color="#53A7BE" />
+                            <stop offset="0.6556" stop-color="#5BB0C0" />
+                            <stop offset="0.6748" stop-color="#53ADBE" />
+                            <stop offset="0.6993" stop-color="#36A3BA" />
+                            <stop offset="0.7266" stop-color="#0095B3" />
+                            <stop offset="0.7426" stop-color="#008BAE" />
+                            <stop offset="0.798" stop-color="#009490" />
+                            <stop offset="0.8875" stop-color="#00A24C" />
+                            <stop offset="1" stop-color="#00937D" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_54_168" x1="464.074" y1="4.49999" x2="263.35" y2="4.49999"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#88357F" />
+                            <stop offset="0.3354" stop-color="#88357F" />
+                            <stop offset="0.5997" stop-color="#8B2E64" />
+                            <stop offset="0.871" stop-color="#8E284A" />
+                            <stop offset="1" stop-color="#8F2540" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_54_168" x1="810.311" y1="0.0058448" x2="810.305" y2="4.07255"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#312A6F" />
+                            <stop offset="0.2427" stop-color="#312A6F" />
+                            <stop offset="0.418" stop-color="#2F2D72" />
+                            <stop offset="0.6245" stop-color="#2B337A" />
+                            <stop offset="0.8457" stop-color="#1E3E87" />
+                            <stop offset="1" stop-color="#024995" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_54_168" x1="394.187" y1="3" x2="571.563" y2="3"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#6E368C" />
+                            <stop offset="1" stop-color="#3A4190" />
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_54_168" x1="704.432" y1="3" x2="464.074" y2="3"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#14387F" />
+                            <stop offset="0.2311" stop-color="#1D3880" />
+                            <stop offset="0.5045" stop-color="#313881" />
+                            <stop offset="0.7981" stop-color="#493984" />
+                            <stop offset="1" stop-color="#5C3986" />
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_54_168" x1="473.051" y1="1.50001" x2="255.909" y2="1.50001"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#88357F" />
+                            <stop offset="0.3354" stop-color="#88357F" />
+                            <stop offset="0.5997" stop-color="#8B2E64" />
+                            <stop offset="0.871" stop-color="#8E284A" />
+                            <stop offset="1" stop-color="#8F2540" />
+                        </linearGradient>
+                        <linearGradient id="paint6_linear_54_168" x1="1418.36" y1="-5.01449e-05" x2="1418.36"
+                            y2="5.99995" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#94BD55" />
+                            <stop offset="0.3332" stop-color="#8CBC68" />
+                            <stop offset="0.6886" stop-color="#85BB74" />
+                            <stop offset="1" stop-color="#83BB78" />
+                        </linearGradient>
+                        <linearGradient id="paint7_linear_54_168" x1="1203.93" y1="0.0637723" x2="1203.95" y2="6.38407"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00A24C" />
+                            <stop offset="0.1984" stop-color="#00A150" />
+                            <stop offset="0.4785" stop-color="#009D5C" />
+                            <stop offset="0.8055" stop-color="#009770" />
+                            <stop offset="1" stop-color="#00937D" />
+                        </linearGradient>
+                        <linearGradient id="paint8_linear_54_168" x1="1562.17" y1="0" x2="1562.17" y2="6"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#699F60" />
+                            <stop offset="0.096" stop-color="#5A9955" />
+                            <stop offset="0.2648" stop-color="#449148" />
+                            <stop offset="0.4524" stop-color="#318C40" />
+                            <stop offset="0.6718" stop-color="#23893B" />
+                            <stop offset="1" stop-color="#1D893A" />
+                        </linearGradient>
+                        <linearGradient id="paint9_linear_54_168" x1="1201.17" y1="0" x2="1201.17" y2="6"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#00B5DD" />
+                            <stop offset="0.2243" stop-color="#00B0D8" />
+                            <stop offset="0.5483" stop-color="#00A3C9" />
+                            <stop offset="0.9313" stop-color="#008FB3" />
+                            <stop offset="1" stop-color="#008BAE" />
+                        </linearGradient>
+                        <linearGradient id="paint10_linear_54_168" x1="1423.1" y1="2.44509" x2="1423.11" y2="0.348906"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#62B16E" />
+                            <stop offset="1" stop-color="#86B857" />
+                        </linearGradient>
+                        <linearGradient id="paint11_linear_54_168" x1="971.163" y1="0.133617" x2="971.178" y2="6.49072"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#009AD2" />
+                            <stop offset="0.3786" stop-color="#19A1CD" />
+                            <stop offset="1" stop-color="#5BB0C0" />
+                        </linearGradient>
+                        <linearGradient id="paint12_linear_54_168" x1="869.792" y1="0" x2="869.792" y2="6"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#174290" />
+                            <stop offset="0.2651" stop-color="#1C4D98" />
+                            <stop offset="0.8022" stop-color="#2A6DAF" />
+                            <stop offset="1" stop-color="#327AB9" />
+                        </linearGradient>
+                        <linearGradient id="paint13_linear_54_168" x1="981.371" y1="6" x2="981.371" y2="0"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#3E9AC9" />
+                            <stop offset="1" stop-color="#1D61A1" />
+                        </linearGradient>
+                        <clipPath id="clip0_54_168">
+                            <rect width="1628" height="6" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <div class = "container-main">
+                <form method="post" class="container-register" name="registro">
+                    {% csrf_token %}                    
+                    <h2>Device Register</h2>
+                    <div class="two-column">
+                        {% for field in form %}
+                            {% if field.name == 'user_edv' %}
+                                <select class="icon-edv icon-position input-format input-edv" name="{{ field.name }}" id="{{ field.id_for_label }}">
+                                    {% for edvs in field.field.queryset %}
+                                        <option value="{{ edvs.user_id }}">{{ edvs.user_edv }}</option>
+                                    {% endfor %}
+                                </select>
+                            {% endif %}
+                        {% endfor %}
+                        {% comment %} <input type="text" class="icon-edv icon-position input-format input-edv" name="edv" placeholder="EDV" {{ form.user_edv }}> {% endcomment %}
+                        <input type="text" class="icon-user icon-position input-format input-user" placeholder="Ticket IT" {{ form.order_ticket_it }}
+                    </div>
+                    <div class="two-column">
+                        <input type="text" class="icon-delivery icon-position input-format input-delivery" name="order_ticket_user"
+                            placeholder="Ticket User" {{ form.order_ticket_user }}
+                            {% for field in form %}
+                            {% if field.name == 'device_serial_number' %}
+                                <select class="icon-serial icon-position input-format input-serial" name="{{ field.name }}" id="{{ field.id_for_label }}">
+                                    {% for dev in field.field.queryset %}
+                                        <option value="{{ dev.device_id }}">{{ dev.device_serial_number }}</option>
+                                    {% endfor %}
+                                </select>
+                            {% endif %}
+                        {% endfor %}
+                        {% comment %} <input type="text" class="icon-serial icon-position input-format input-serial" name="device_number"
+                            placeholder="Device Serial Number" {{ form.device_serial_number }}> {% endcomment %}
+                    </div>
+                    <div class="one-column">
+                        <input type="text" onfocus="this.type= 'date'" onblur = "this.type='text'" class="icon-device-equip icon-position input-format input-equipment" name="order_retrieval_date"
+                            placeholder="Retrieval Date" {{ form.order_retrieval_date }}
+                        <input type="text" onfocus="this.type= 'date'" onblur = "this.type='text'" class="icon-delivery icon-position input-format input-delivery" name="order_delivery_date"
+                            placeholder="Delivery Date" {{ form.order_delivery_date }}
+                    </div>
+                    <div class="one-column">
+                        {% for field in form %}
+                            {% if field.name == 'os_description' %}
+                                <select class="icon-order icon-position input-format input-order" name="{{ field.name }}" id="{{ field.id_for_label }}">
+                                    {% for ordem in field.field.queryset %}
+                                        <option value="{{ ordem.os_id }}">{{ ordem.os_description }}</option>
+                                    {% endfor %}
+                                </select>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <input type="submit" value="Register" class="button-register" href="{% url 'list_registers' %}">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock %}

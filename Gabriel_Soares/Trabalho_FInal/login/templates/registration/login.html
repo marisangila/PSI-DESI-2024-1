@@ -1,0 +1,50 @@
+{% load static %}  
+{% block content %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITY Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container-background">
+            <div class="container-svg">
+                <svg width="1155" height="703" viewBox="0 0 1220 703" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_20_3)">
+                    <path d="M0 393.021C75.7369 380.106 162.294 391.03 256.645 446.299C402.692 531.852 505.828 344.828 683.972 665.238H0V393.021Z" fill="#D0D4D8"/>
+                    <path d="M1220 670.142H74.9023C74.9023 670.142 133.005 619.389 227.422 619.389C307.775 618.522 392.382 637.198 392.382 637.198C429.257 606.857 659.771 432.773 975.493 540.086C1064.04 570.185 1137.19 543.492 1220 556.257V670.142Z" fill="#D0D4D8"/>
+                    <path d="M0 613.959C132.531 529.949 228.429 602.991 354.247 556.724C682.47 436.027 901.089 591.996 939.424 626.12C939.424 626.12 1047.41 624.482 1130.95 625.457C1165.57 625.457 1195.61 635.107 1220 647.595V703H0V613.959Z" fill="#E0E2E5"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_20_3">
+                    <rect width="1220" height="703" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+            </div>
+        </div>
+        <form method="post" class="container-login">
+            {% csrf_token %}
+            <h2>Login Account</h2>
+            <label>Welcome to ITY!</label>
+            <input type="text" class="input-login icon-position icon-user" name="username" placeholder="User" required>
+            <input type="password" class="input-login icon-position icon-password" name="password" placeholder="Password" required>
+            {% if form.errors %}
+                <label class = "error" id="error">Incorrect user or password! Try again. </label>
+            {% endif %}
+            <input type="submit" name="" id="login" value="Login" class="button-login">
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

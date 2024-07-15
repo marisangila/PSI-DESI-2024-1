@@ -1,0 +1,125 @@
+
+
+-- -----------------------------------------------------
+-- Schema it_inventory
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema it_inventory
+-- -----------------------------------------------------
+CREATE database `it_inventory`;
+USE `it_inventory` ;
+
+-- -----------------------------------------------------
+-- Table `it_inventory`.`location`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `it_inventory`.`location` (
+  `location_id` INT NOT NULL AUTO_INCREMENT,
+  `location_plant` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`location_id`));
+
+
+-- -----------------------------------------------------
+-- Table `it_inventory`.`cost_center`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `it_inventory`.`cost_center` (
+  `cc_id` INT NOT NULL AUTO_INCREMENT,
+  `cc_number` INT UNSIGNED NOT NULL,
+  PRIMARY KEY (`cc_id`));
+
+
+-- -----------------------------------------------------
+-- Table `it_inventory`.`users`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `it_inventory`.`users` (
+  `user_id` INT NOT NULL AUTO_INCREMENT,
+  `user_edv` INT UNSIGNED NOT NULL,
+  `user_name` VARCHAR(45) NOT NULL,
+  `fk_location_id` INT NOT NULL,
+  `fk_cc_id` INT NOT NULL,
+  PRIMARY KEY (`user_id`),
+  INDEX `fk_user_location_idx` (`fk_location_id` ASC) VISIBLE,
+  INDEX `fk_user_cost_center1_idx` (`fk_cc_id` ASC) VISIBLE,
+  CONSTRAINT `fk_user_location`
+    FOREIGN KEY (`fk_location_id`)
+    REFERENCES `it_inventory`.`location` (`location_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_user_cost_center1`
+    FOREIGN KEY (`fk_cc_id`)
+    REFERENCES `it_inventory`.`cost_center` (`cc_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+
+-- -----------------------------------------------------
+-- Table `it_inventory`.`device_status`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `it_inventory`.`device_status` (
+  `ds_id` INT NOT NULL AUTO_INCREMENT,
+  `ds_description` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`ds_id`));
+
+
+
+-- -----------------------------------------------------
+-- Table `it_inventory`.`device`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `it_inventory`.`device` (
+  `device_id` INT NOT NULL AUTO_INCREMENT,
+  `device_name` VARCHAR(45) NOT NULL,
+  `device_serial_number` VARCHAR(45) NOT NULL,
+  `device_last_use` VARCHAR(45) NOT NULL,
+  `fk_ds_id` INT NOT NULL,
+  PRIMARY KEY (`device_id`),
+  INDEX `fk_device_device_status1_idx` (`fk_ds_id` ASC) VISIBLE,
+  CONSTRAINT `fk_device_device_status1`
+    FOREIGN KEY (`fk_ds_id`)
+    REFERENCES `it_inventory`.`device_status` (`ds_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
+
+
+
+-- -----------------------------------------------------
+-- Table `it_inventory`.`order_status`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `it_inventory`.`order_status` (
+  `os_id` INT NOT NULL AUTO_INCREMENT,
+  `os_description` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`os_id`));
+
+
+
+-- -----------------------------------------------------
+-- Table `it_inventory`.`orders`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `it_inventory`.`orders` (
+  `order_id` INT NOT NULL AUTO_INCREMENT,
+  `order_retrieval_date` VARCHAR(15) NOT NULL,
+  `order_delivery_date` VARCHAR(15) NOT NULL,
+  `order_ticket_it` VARCHAR(45) NOT NULL,
+  `order_ticket_user` VARCHAR(45) NOT NULL,
+  `fk_user` INT NOT NULL,
+  `fk_device_id` INT NOT NULL,
+  `fk_order_status` INT NOT NULL,
+  PRIMARY KEY (`order_id`),
+  INDEX `fk_order_user1_idx` (`fk_user` ASC) VISIBLE,
+  INDEX `fk_order_device1_idx` (`fk_device_id` ASC) VISIBLE,
+  INDEX `fk_order_order_status1_idx` (`fk_order_status` ASC) VISIBLE,
+  CONSTRAINT `fk_order_user1`
+    FOREIGN KEY (`fk_user`)
+    REFERENCES `it_inventory`.`users` (`user_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_order_device1`
+    FOREIGN KEY (`fk_device_id`)
+    REFERENCES `it_inventory`.`device` (`device_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_order_order_status1`
+    FOREIGN KEY (`fk_order_status`)
+    REFERENCES `it_inventory`.`order_status` (`os_id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
