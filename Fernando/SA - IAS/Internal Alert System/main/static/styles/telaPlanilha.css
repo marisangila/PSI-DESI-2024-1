@@ -1,0 +1,65 @@
+#btn-pesquisar{
+    width: 25%;
+}
+.checkbox-small{
+    width: 20px;
+    height: 20px;
+}
+td{
+    height: 60px !important;
+}
+th{
+    background-color: #0079db !important;
+    color: white !important;
+}
+.conteudo{
+    height: 70vh;
+}
+.table-container {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    max-height: 800px;
+    overflow: auto; 
+}
+.table-container table tbody tr.selected {
+    background-color: #f5f5f5;
+}
+.table-container table tbody tr.selected:hover {
+    background-color: #e0e0e0;
+}
+
+.table-container table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.table-container thead {
+    background-color: #007bff; 
+    color: #ffffff;
+    position: sticky; 
+    top: 0; 
+}
+
+.table-container th,
+.table-container td {
+    padding: 8px; 
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.btn-edit{
+    position: relative;
+    left: 50%;
+}
+.checkTodos-cb{
+    position: relative;
+    left: 45%;
+}
+.btn-excluir{
+    left:74%;
+}
+.cb-all{
+    left:20%
+}
