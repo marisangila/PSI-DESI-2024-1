@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moranguinho Game</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="crud" class="crud">
+        <form id="playerForm">
+            <input type="hidden" id="playerId" name="playerId">
+            <input type="text" id="name" class="text" name="name" placeholder="Nome do Jogador" required>
+            <input type="text" id="nationality" class="text" name="nationality" placeholder="Nacionalidade" required>
+            <input type="number" id="age" class="text" name="age" placeholder="Idade" required>
+            <input type="email" id="email" class="text" name="email" placeholder="E-mail" required>
+            <button type="submit" class="confirm">Adicionar Jogador</button>
+        </form>
+        <h2>Jogador(es)</h2>
+        <ul id="playerList"></ul>
+        <h3>Jogador Selecionado: <span id="selectedPlayer"></span></h3>
+        <button onclick="startGame()" class="button" id="play">Jogar</button><br>
+        <button onclick="editPlayer()" class="button" id="editar">Editar Jogador</button><br>
+        <button onclick="deletePlayer()" class="button" id="excluir">Excluir Jogador</button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <h1>Score: <span id="score">0</span></h1>
+        <h3 id="timer">Tempo Restante: 180 segundos</h3>
+        <div id="board"></div>
+    </div>
+    
+    <div id="ranking-table" style="display: none;">
+        <h2>Ranking</h2>
+        <table id="rank-table">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Nome</th>
+                    <th>Pontuação</th>
+                </tr>
+            </thead>
+            <tbody id="rank-body">
+            </tbody>
+        </table>
+        <button id="return-to-registration" style="display: none;" onclick="home()">Voltar ao Cadastro</button>
+    </div>
+    
+    <script src="estilo.js"></script>
+</body>
+</html>

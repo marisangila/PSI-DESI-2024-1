@@ -1,0 +1,39 @@
+.header{
+    background-color: red;
+    width: 800px;
+    height: 100px;
+}
+.header p{
+    text-align: center;
+    line-height: 100px;
+    margin: 0px;
+}
+.nav{
+    background-color: greenyellow;
+    width: 100px;
+    height: 800px;
+    display: inline-block;
+    margin-left: 0px;
+    font-size: 16px;
+}
+.nav{
+    text-align: center;
+}
+main{
+    background-color: blue;
+    display: inline-block;
+    width: 700px;
+    height: 800px;
+    margin-left: 0px;
+    font-size: 16px;
+}
+.main p{
+    text-align: left;
+    padding-left: 10px;
+}
+.serio{
+    font-size: 0px;
+}
+body{
+    margin: 0px;
+}

@@ -1,0 +1,81 @@
+.littlesquare01{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+.littlesquare02{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+}
+.littlesquare03{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 200px;
+}
+.littlesquare04{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+}
+.littlesquare05{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 200px;
+}
+.square01{
+    border: solid black 1px;
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+}
+.square02{
+    border: solid black 1px;
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+}
+.square03{
+    border: solid black 1px;
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+}
+.square04{
+    border: solid black 1px;
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+}
+.square05{
+    border: solid black 1px;
+    background-color: gray;
+    width: 400px;
+    height: 400px;
+}
+.fixed_square01{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 0px;
+    left: 450px;
+}
+.fixed_square02{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 800px;
+    left: 450px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World - Angular</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="helloWorldApp">
+  
+  <div ng-controller="HelloWorldController">
+    <h1>{{ greeting }}</h1>
+  </div>
+
+  <script>
+    angular.module('helloWorldApp', [])
+      .controller('HelloWorldController', function($scope) {
+        $scope.greeting = 'Hello, World! - Angular';
+      });
+  </script>
+
+</body>
+</html>

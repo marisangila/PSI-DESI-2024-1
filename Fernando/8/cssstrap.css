@@ -1,0 +1,363 @@
+/* CSSSTRAP - v1.0.0 */
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+.Arial {
+    font-family: Arial;
+}
+.Calibri {
+    font-family: "Calibri";
+}
+.TimesNewRoman {
+    font-family: "Times New Roman";
+}
+.Verdana {
+    font-family: Verdana;
+}
+.TrebuchetMS {
+    font-family: "Trebuchet MS";
+}
+.Impact {
+    font-family: Impact;
+}
+.Georgia {
+    font-family: Georgia;
+}
+.Garamond {
+    font-family: Garamond;
+}
+.CourierNew {
+    font-family: "Courier New";
+}
+.ArialBlack {
+    font-family: "Arial Black";
+}
+.ComicSansMS {
+    font-family: "Comic Sans MS";
+}
+.LucidaGrande {
+    font-family: "Lucida Grande";
+}
+.PalatinoLinotype {
+    font-family: "Palatino Linotype";
+}
+.Baskerville {
+    font-family: "Baskerville";
+}
+.CenturyGothic {
+    font-family: "Century Gothic";
+}
+.GillSans {
+    font-family: "Gill Sans";
+}
+.BookmanOldStyle {
+    font-family: "Bookman Old Style";
+}
+.Futura {
+    font-family: "Futura";
+}
+.BodoniMT {
+    font-family: "Bodoni MT";
+}
+.Bold{
+    font-weight: bolder;
+}
+
+
+
+
+
+.FC-Light-Red{
+    color: rgb(255, 64, 64);
+}
+.FC-Light-Blue{
+    color: rgb(59, 59, 255);
+}
+.FC-White{
+    color: White;
+}
+.FC-Black{
+    color: black;
+}
+.FC-Light-Green{
+    color: rgb(76, 255, 76);
+}
+.FC-Light-Yellow{
+    color: rgb(255, 255, 123);
+}
+.FC-Light-Pink{
+    color: rgb(255, 185, 197);
+}
+
+
+
+
+
+.FC-Dark-Red{
+    color: rgb(141, 35, 35);
+}
+.FC-Dark-Blue{
+    color: rgb(35, 35, 155);
+}
+.FC-Dark-Green{
+    color: rgb(35, 114, 35);
+}
+.FC-Dark-Yellow{
+    color: rgb(156, 156, 76);
+}
+.FC-Dark-Pink{
+    color: rgb(156, 116, 123);
+}
+
+
+
+
+
+.BGC-Light-Red{
+    background-color: rgb(255, 64, 64);
+}
+.BGC-Light-Blue{
+    background-color: rgb(59, 59, 255);
+}
+.BGC-White{
+    background-color: White;
+}
+.BGC-Black{
+    background-color: black;
+}
+.BGC-Light-Green{
+    background-color: rgb(76, 255, 76);
+}
+.BGC-Light-Yellow{
+    background-color: rgb(255, 255, 123);
+}
+.BGC-Light-Pink{
+    background-color: rgb(255, 185, 197);
+}
+
+
+
+
+
+.BGC-Dark-Red{
+    background-color: rgb(141, 35, 35);
+}
+.BGC-Dark-Blue{
+    background-color: rgb(35, 35, 155);
+}
+.BGC-Dark-Green{
+    background-color: rgb(35, 114, 35);
+}
+.BGC-Dark-Yellow{
+    background-color: rgb(156, 156, 76);
+}
+.BGC-Dark-Pink{
+    background-color: rgb(156, 116, 123);
+}
+
+
+.Btn{
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background-color: gray;
+    font-family: Arial;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.Btn:hover{
+    border-radius: 15px;
+    height: 40px;
+    background-color: rgb(160, 160, 160);
+}
+.Btn-Confirm{
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(0, 207, 45);
+    font-family: Arial;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.Btn-Confirm:hover{
+    height: 40px;
+    background-color: rgb(2, 228, 51);
+}
+.Btn-Cancel{
+    height: 40px;
+    font-size: 17px;
+    color: white;
+    background-color: rgb(207, 0, 0);
+    font-family: Arial;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.Btn-Cancel:hover{
+    height: 40px;
+    background-color: rgb(245, 0, 0);
+}
+.Btn-Confirm-Transparent{
+    height: 40px;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    background-color: rgba(0, 207, 45, 0);
+    font-family: Arial;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.Btn-Confirm-Transparent:hover{
+    border-radius: 15px;
+    height: 40px;
+    color: rgb(65, 65, 65);
+    background-color: rgba(2, 156, 35, 0.267);
+}
+.Btn-Cancel-Transparent{
+    border-radius: 15px;
+    height: 40px;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    background-color: rgba(207, 0, 0, 0);
+    font-family: Arial;
+    width: 100px;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+.Btn-Cancel-Transparent:hover{
+    border-radius: 15px;
+    height: 40px;
+    color: rgb(65, 65, 65);
+    background-color: rgba(245, 0, 0, 0.185);
+}
+.Btn-Big{
+    border-radius: 15px;
+    height: 40px;
+    width: 140px;
+    font-size: 25px;
+}
+.Btn-Small{
+    height: 40px;
+    width: 80px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+  .Check-Box{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    position: relative;
+  }
+  
+  .Check-Box:after{
+    content: '\00D7';
+    display: block;
+    background: rgb(255, 255, 255);
+    background-image: url('https://cdn0.iconfinder.com/data/icons/slim-square-icons-basics/100/basics-21-32.png');
+    pointer-events: none;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    color: transparent;
+    transition: .25s all ease-in-out;
+    border-radius: 3px;
+    line-height: 15px;
+    background-position: 0 15px;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+  }
+  .Check-Box:checked:after{
+    background-color: #95e0ac;
+    background-position: 0 0;
+  }
+  .Check-Box:hover:after{
+    border-color: #919191;
+  }
+  .Custom-Range-Blue{
+    width: 80px;
+    accent-color: #2248f1;
+    height: 38px;
+    cursor: pointer;
+    background: #0c1d2c;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 10px 0;
+  }
+  .Custom-Range-Blue::-webkit-slider-thumb{
+    width: 80px;
+    accent-color: #5cf7f9;
+    height: 38px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: #0c1d2c;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 10px 0;
+  }
+  .Custom-Range-Red{
+    width: 80px;
+    accent-color: #f12222;
+    height: 38px;
+    cursor: pointer;
+    background: #0c1d2c;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 10px 0;
+  }
+  .Custom-Range-Red::-webkit-slider-thumb{
+    width: 80px;
+    accent-color: #f95c5c;
+    height: 38px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000;
+    background: #0c1d2c;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 10px 0;
+  }
+  .Custom-Box{
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(224, 224, 224);
+  }
+  .Custom-Box:hover  {
+    background-color: rgb(190, 190, 190);
+    border: 1px solid rgb(224, 224, 224);
+  }
+ .custom-select {
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 30px 5px 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgb(245, 245, 245);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="%23333"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+}
+.custom-select option {
+    font-family: Arial, sans-serif;
+}
+.custom-select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+

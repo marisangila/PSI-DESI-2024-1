@@ -1,0 +1,54 @@
+.inputsDiv{
+    background-color: aqua;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+    border: 2px solid rgb(0, 104, 122);
+    box-shadow: 1px 5px 3px 4px rgb(206, 206, 206);
+}
+.inputsItem{
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+}
+.inputsDivItens{
+    left: 3%;
+    top: 20%;
+    position: relative;
+}
+.boody{
+    width: 80%;
+    position: relative;
+    left: 2%;
+}
+.cartaoLabel{
+    font-family: Arial;
+    font-size: 17px;
+}
+.cartaoInput{
+    background-color: rgba(255, 255, 255, 0.945);
+    border: 2px solid rgb(170, 170, 170);
+    border-radius: 9px;
+}
+.botao{
+    border-radius: 9px;
+    width: 80px;
+    position: relative;
+    top:15px;
+    left: 220px;
+    box-shadow: 1px 5px 3px 1px rgb(206, 206, 206);
+}
+.tabelinha{ 
+    text-align: center;
+    top: 40px;
+    position: relative;
+    width: 1700px;
+    border-radius: 5px;
+}
+.divTable{
+    width: 80%;
+}
+.bgth{
+    background-color: rgb(77, 204, 255)!important;
+    border-radius: 1px;
+}

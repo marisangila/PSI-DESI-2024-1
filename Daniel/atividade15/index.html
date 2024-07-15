@@ -14,40 +14,93 @@
             gap: 20px;
         }
 
+        main{
+            width: 110rem;
+            height: 100vh;
+        }
+
         .form-control{
             border: 1px solid rgba(0,0,0,.4) !important;
-            width: 23rem;
+        }
+
+        .modal-body{
+            gap: 20px;
         }
 
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body class="p-5 m-5" >
-    <main class="px-5 mx-5" >
-        <form class="py-5 d-flex align-items-center" id="formTable" method="POST" >
-            <label for="email" class="form-label">Name:</label>
-            <div>
-                <input type="text" class="form-control" id="nameInput" placeholder="Enter your name here" >
-            </div> 
-            <label for="email" class="form-label">Email address:</label>
-            <div>
-                <input type="email" class="form-control" id="emailInput" placeholder="Enter your email address here">
-            </div>
-             
-           <input type="submit" value="INSERT" class="btn btn-primary px-5">
-        </form>    
-        <table class="table table-striped table-hover" id="table">
-            <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col" colspan="2" class="d-flex justify-content-center">Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+<body class="" >
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 bg-dark px-5">
+            <h1 class="navbar-brand fs-1 text-white fw-bold px-5" href="#">Dynamic Table</h1>
+        </nav>
+    </header>
+    <main class="row pt-5" >
+        <section class="px-5 mx-5 row justify-content-center">
+            <section class="col-4">
+                <form class="py-5 row" id="formTable" method="POST">
+                    <h2 class="fw-bold">Create User</h2>
+                    <div>
+                        <label for="email" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="Enter your name here" >
+                    </div> 
+                    <div>
+                        <label for="email" class="form-label">Email address:</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="Enter your email address here">
+                    </div>
+                    <div>
+                        <input type="submit" value="INSERT" class="btn-submit-insert btn btn-primary px-5 my-3">
+                    </div>
+                </form>
+            </section>
+            <section class="col-7">
+                <div class="row px-5">
+                    <div class="px-5">
+                    <table class="table table-striped table-hover" id="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col" colspan="2" class="d-flex justify-content-center">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </section> 
+        </section>   
     </main>
+
+    
+    <div class="modal" tabindex="-1" id="modalEdit">
+        <div class="modal-dialog">
+            <form class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex flex-column">
+                    <div>
+                        <input type="text" class="form-control" id="nameInputModal" placeholder="Name" value="" required>
+                    </div> 
+                    
+                    <div>
+                        <input type="email" class="form-control" id="emailInputModal" placeholder="Email" value="" required>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-secondary" data-bs-dismiss="modal" id="closeModal" value="Close">
+                    <input type="submit" class="btn btn-primary" id="saveModal" value="Save changes">
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
 </body>

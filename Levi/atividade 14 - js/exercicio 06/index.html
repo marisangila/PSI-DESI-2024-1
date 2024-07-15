@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <label for="opcaoSelecionada">Selecione uma banda: </label>
+        <select id="opcaoSelecionada" onchange="mostrarCampos()">
+            <option value="opcao1">My Chemical Romance</option>
+            <option value="opcao2">The Neighbourhood</option>
+            <option value="opcao3">Chase Atlantic</option>
+        </select>
+
+        <div id="opcao1Campo" style="display: none;">
+            <label for="campo1">Insira uma música favorita do álbum Black Parade </label>
+            <input type="text" id="campo1">
+        </div>
+
+        <div id="opcao2Campo" style="display: none;">
+            <label for="campo2">Insira uma música favorita do álbum Wiped Out!</label>
+            <input type="text" id="campo2">
+        </div>
+
+        <div id="opcao3Campo" style="display: none;">
+            <label for="campo3">Insira uma música favorita do álbum Paradise - EP </label>
+            <input type="text" id="campo3">
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

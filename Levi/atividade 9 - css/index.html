@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container_principal {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+
+        .coluna {
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .main_div{
+            display: flex; 
+            padding: 50px; 
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>  
+    <h1 class="cabecalho-cor-escura">Cardápio com Participação Popular</h1>
+    <div class = "main_div"> 
+        <div class="coluna container" >
+            <div class="form-cor-escura input">
+                    <h2 class="cabecalho-cor-escura">Cadastro</h2>
+                    <label>Nome:</label>
+                    <br>
+                    <input class="" type="text">
+                    <br>
+                    <label>Sobrenome:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label>E-mail:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label>CPF:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label>Escolha uma senha forte:</label>
+                    <br>
+                    <input type="password">
+                    <br>
+                    <label>Confirme a senha:</label>
+                    <br>
+                    <input type="password">
+                    <br>
+                    <h2 class="cabecalho-cor-escura">Endereço</h2>
+                    <br>
+                    <label>CEP:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label>Logradouro:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label>Número:</label>
+                    <br>
+                    <input type="number">
+                    <br>
+                    <label>Bairro:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+                    <label>Complemento:</label>
+                    <br>
+                    <input type="text">
+                    <br>
+
+                    <label for="campo-selecao">Renda Média:</label>
+                    <div class="select">
+                        <select class="campo-selecao">
+                            <option value="opcao1">Menos de R$ 1.000,00</option>
+                            <option value="opcao2">R$ 1.000,00 - R$ 2.000,00</option>
+                            <option value="opcao3">R$ 2.001,00 - R$ 3.000,00</option>
+                            <option value="opcao4">R$ 3.001,00 - R$ 4.000,00</option>
+                            <option value="opcao5">Mais de R$ 4.000,00</option>
+                        </select>
+                    </div>
+            </div>
+        </div>
+
+        <div class="coluna container" >
+            <h2 class="cabecalho-cor-escura">Preferências alimentares</h2>
+            <p class = "paragrafo-cor-escura" >De acordo com a escala, quanto você está satisfeito com a alimentação servida?</p>
+            <div class="range">
+                <input type="range">
+            </div>
+            <br>
+            <label class = "paragrafo-cor-escura">Para qual refeição você costuma usar o restaurante?</label>
+            <br>
+            <br>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label>Não costumo ir ao restaurante</label><br>
+                <input type="checkbox">
+                <label>Café da Manhã</label><br>
+                <input type="checkbox">
+                <label>Almoço</label><br>
+                <input type="checkbox">
+                <label>Café da Tarde</label><br>
+                <input type="checkbox">
+                <label>Jantar</label><br>
+                <input type="checkbox">
+                <label>Lanche</label><br>
+                <input type="checkbox">
+                <label>Lanche Da Meia Noite</label><br>
+                <input type="checkbox">
+                <label>Ceia</label>
+                <br>
+                <br>
+                <label class = "paragrafo-cor-escura" >Normalmente, você come:</label><br>
+                <br>
+                <br>
+                <input type="radio" name="tipo">
+                <label>Doce</label>
+                <input type="radio" name="tipo">
+                <label>Salgado</label>
+                <input type="radio" name="tipo">
+                <label>Ambos</label>
+                <br>
+                <br>
+                <label class = "paragrafo-cor-escura" >Qual seu tipo de dieta?</label><br>
+                <br>
+                <br>
+                <input type="checkbox">
+                <label>Nenhuma restrição</label><br>
+                <input type="checkbox">
+                <label>Sem glúten</label><br>
+                <input type="checkbox">
+                <label>Sem sal</label><br>
+                <input type="checkbox">
+                <label>Sem açúcar</label><br>
+                <input type="checkbox">
+                <label>Sem lactose</label><br>
+                <input type="checkbox">
+                <label>Vegetariana</label><br>
+                <input type="checkbox">
+                <label>Vegana</label><br>
+                <input type="checkbox">
+                <label>Ovolactovegetariana</label><br>
+                <input type="checkbox">
+                <label>Outra</label>
+                <br>
+                <br>
+            </div>
+            <div class="card">
+                <textarea placeholder="Descreva suas restrições" rows="4" cols="80"></textarea>
+                <br>
+                <br>
+                <label class = "paragrafo-cor-escura">Normalmente, você utiliza qual dos seguintes métodos de pagamento?</label>
+                <br>
+                <div class="select">
+                    <select class="campo-selecao">
+                        <option>Dinheiro</option>
+                        <option>Cartão de Débito</option>
+                        <option>Cartão de Crédito</option>
+                        <option>Pix</option>
+                        <option>Fiado</option>
+                        <option>Dinheiro Emprestado</option>
+                        <option>Rolo</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class = "link">
+                <a href="">Acesse o cardápio da semana</a>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class ="button">
+            <button type="submit" class = "btn-confirm-large ">Enviar</button>
+            <button type="submit" class = "btn-confirm-large ">Voltar</button>
+            <button type="button" class = "btn-cancel-large ">Cancelar</button>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>

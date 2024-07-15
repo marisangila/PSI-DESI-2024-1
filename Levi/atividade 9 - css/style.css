@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+.btn-cancel-large,
+.btn-confirm-large {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #289bb8;
+    font-size: 16px;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 15px;
+    letter-spacing: 2px
+}
+
+.button button,
+.checkbox input {
+    cursor: pointer
+}
+
+.btn-cancel-large,
+.btn-confirm-large {
+    text-decoration: none;
+    position: relative
+}
+
+*,
+.container {
+    box-sizing: border-box
+}
+
+.button,
+.container h2 {
+    text-align: center
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container h2 {
+    color: #fff;
+    margin-bottom: 40px
+}
+
+.button button {
+    width: 240px;
+    margin-bottom: 60px;
+    border: 2px solid #000;
+    height: 40px;
+    border-radius: 10px
+}
+
+.btn-confirm-large {
+    margin-right: 15px;
+}
+
+.btn-cancel-large:hover,
+.btn-confirm-large:hover {
+    background: #289bb8;
+    color: #fff;
+    border-radius: 10px
+}
+
+.btn-cancel-large-sem-fundo,
+.btn-confirm-large-sem-fundo {
+    background-color: transparent;
+    width: 200px
+}
+
+.btn-cancel-small-sem-fundo,
+.btn-confirm-small-sem-fundo {
+    background-color: transparent;
+    width: 100px
+}
+
+.range input {
+    width: 100%
+}
+
+.link a {
+    text-decoration: none;
+    color: #286b98
+}
+
+.container {
+    color: #fff;
+    margin: 50px auto;
+    height: 1300px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    padding: 50px;
+    position: relative;
+    background: #152437
+}
+
+.form-cor-escura input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: 0;
+    background: 0 0
+}
+
+.cabecalho-cor-clara,
+.form-cor-clara label {
+    color: #ebe3ba
+}
+
+.form-cor-escura label {
+    color: #fff;
+    opacity: .5
+}
+
+.paragrafo-cor-clara {
+    color: #fff
+}
+
+.cabecalho-cor-escura,
+.paragrafo-cor-escura {
+    color: #fff;
+    text-align: center
+}
+
+body {
+    background: linear-gradient(#30142b, #2772a1); 
+}
+
+.campo-selecao {
+    width: 100%;
+    border-radius: 8px;
+    height: 25px;
+  }
+
+.campo-selecao option {
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+  }

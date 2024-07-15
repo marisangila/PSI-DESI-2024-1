@@ -1,0 +1,9 @@
+.titulo
+{
+    border-bottom: 2px solid black;
+}
+.paragrafo
+{
+    border: 2px dotted gray;
+    padding: 5px;
+}

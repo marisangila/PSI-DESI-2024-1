@@ -1,0 +1,23 @@
+body{
+    color:aliceblue;
+}
+
+.nav_bar{
+    background-color: rgb(216, 13, 13);
+    display: block;
+    height: 100px;
+}
+
+#text{
+    background-color: rgb(9, 255, 1);
+    display: inline-block;
+    height: 1000px;
+    width: 600px;  
+}
+
+#text2{
+    background-color: rgb(67, 100, 245);
+    display: inline-block;
+    height: 1000px;
+    width: 1283px;
+}

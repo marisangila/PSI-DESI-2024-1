@@ -1,0 +1,74 @@
+body{
+    background-color: #E9ECF1;
+    font-family: Arial !important;
+}
+
+#nav{
+    background-color: #d5e5ff;
+}
+
+.offcanvas-body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.dropdown.active .bi.bi-chevron-down {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+#user{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-right: 2rem;
+}
+
+#container-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-perfil{
+    background-color: #e6efff;
+    display: flex;
+    align-items: center;
+    width:450px;
+    height:500px;
+    margin-top: 5rem;
+}
+
+#foto-perfil{
+    background-image: url(../img/mr-fresh.png);
+    margin-top: 2rem;
+    width: 150px;
+    height: 150px;
+}
+
+#dados-perfil{
+    margin-top: 3rem;
+}
+
+.form-label{
+    font-size: 18px;
+}
+
+#buttons-perfil{
+    margin-top: 3rem;
+}
+
+#btn-editar{
+    background-color:#92B8E3!important;
+}
+
+#btn-salvar{
+    background-color: #477CA6!important;
+    color:white;
+}
+
+#capsulas{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+}

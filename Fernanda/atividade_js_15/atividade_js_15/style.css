@@ -1,0 +1,15 @@
+#conjunto{
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 500px;
+    align-items: center;
+    border-radius: 2rem;
+    border-color: black;
+}
+
+#form{
+    width: 300;
+    height: 300;
+}

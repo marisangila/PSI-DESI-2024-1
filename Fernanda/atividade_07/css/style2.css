@@ -1,0 +1,17 @@
+body{
+    background-color: aliceblue;
+}
+
+.principal{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: aliceblue;
+    height: 100px;
+    width: 100px;
+}

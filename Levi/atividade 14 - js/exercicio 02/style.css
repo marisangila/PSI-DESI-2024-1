@@ -1,0 +1,54 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+    font-weight: bold;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(247, 212, 219);
+    border: none;
+    height: 4vh;
+    width: 12vh;
+}
+
+.btn-menu{
+    display: flex;
+}
+
+.btn:active{
+    background-color: pink;
+    cursor: pointer;
+}
+
+.menu-decoration {
+    list-style-type: none;
+    margin-top: 0;
+    padding: 5px 5px 5px 5px;
+}
+
+.menu-info {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.menu-list{
+    margin-top: 10px;
+}
+
+.menu-info:hover{
+    cursor: pointer;
+    color: rgb(146, 85, 109);
+}
+
+.div-menu{
+    display: none;
+}
+
+#menu.show {
+    display: block;
+    background-color: rgb(247, 212, 219);
+    width: 25vh;
+    height: 12vh;
+}
+

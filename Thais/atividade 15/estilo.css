@@ -1,0 +1,28 @@
+body,html{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+body{
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    background-image: url(imagem/img.moranguinho.jpg);
+}
+.h-full{
+    height: 100%;
+}
+.w-full{
+    width: 100%;
+}
+#form{
+    backdrop-filter: blur(10px);
+}
+.color-White{
+    color: white;
+}
+.max-height-table{
+    max-height: 850px;
+    overflow: auto;
+}

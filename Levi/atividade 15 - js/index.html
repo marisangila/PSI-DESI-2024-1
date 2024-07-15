@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Dinâmica</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="background">
+    <div class="container-principal">
+
+        <div class="container-input">
+            <label class="label-text">Nome do personagem:</label>
+            <input class="input-text" type="text" id="nome">
+            <label class="label-text">Elemento do personagem:</label>
+            <select class="input-text" id="elemento">
+                <option>Anemo</option>
+                <option>Cryo</option>
+                <option>Dendro</option>
+                <option>Electro</option>
+                <option>Geo</option>
+                <option>Pyro</option>
+            </select>
+            <input class="input-btn" type="submit" id="enviar" value="Enviar" onclick="enviarPersonagem()">
+        </div>
+
+        <div class = "container-tabela">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Elemento</th>
+                    <th>Ação</th>
+                </tr>
+            <tbody>
+            </tbody>
+            </thead>
+        </table>
+    </div>
+    </div>
+</body>
+
+</html>
