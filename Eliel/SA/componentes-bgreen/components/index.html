@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1 class="titulo"> Botões</h1>
+    <div class="botoes">
+        <button type="submit" class="primary-button"> Primary button </button>
+        <button type="submit" class="secundary-button"> Secundary button </button>
+        <button type="submit" class="secundary-danger-button"> Danger button </button>
+    </div>
+    <h1 class="titulo"> Inputs </h1>
+    <div class="inputs">
+        <input type="text" class="text-input" placeholder="Insert text" required>
+        <input type="number" class="number-input" placeholder="Insert number" required>
+        <input type="date" class="date-input" placeholder="Insert date" required>
+        <input type="time" class="time-input" placeholder="Insert time" required>
+        <input type="email" class="email-input" placeholder="Insert e-mail" required>
+        <input type="password" class="password-input" placeholder="Insert password" required>
+
+        <div class="radio-container">
+            <label for="radio">
+              <input type="radio" id="radio" name="radio" required/>
+              <div class="custom-radio">
+                <span></span>
+              </div>
+              <label class="input-label"> First option </label>
+            </label>
+          </div>
+        
+        <label class="input-label"> Insert range </label>
+        <input type="range" class="range-input" required>
+
+
+        <input type="text" class="search-input" placeholder="Insert search" required>
+        
+        <input type="checkbox" class="cheackbox-input" required><span> Confirm? </span>
+    </div>
+</body>
+</html>

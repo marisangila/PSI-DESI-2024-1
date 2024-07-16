@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-light-color: #E7EDDB;
+    --primary-dark-color: #515C2C;
+    --primary-dark-color-hover:#38401E;
+    --light-background-color: #ffffff;
+    --secondary-dark-color: #000000;
+    --danger-color: #9E2A2A;
+}
+
+@font-face {
+    font-family: "Archive";
+    src: url(../fonts/Archive.otf) format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Glacial Indifference";
+    src:url(../fonts/GlacialIndifference-Regular.otf) format('truetype');
+}
+
+@font-face{
+    font-family: "Glacial Indifference Bold";
+    src:url(../fonts/GlacialIndifference-Bold.otf) format('truetype');
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header, .section{
+    height: 13vh;
+}
+
+.section-secondary{
+    height: 6.5vh;
+}
+
+.about-companies{
+    height: 50vh;
+    background-color: var(--primary-light-color);
+    margin-bottom: 12vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.justify-center{
+    justify-content: center;
+    display: flex;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.align-end{
+    display: flex;
+    align-items: end;
+}
+
+.margin-bottom{
+    margin-bottom: 4.5vh;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Archive";
+    font-size: 0.8vw;
+}
+
+.list li{
+    display: inline-block;
+}
+
+.list-link{
+    text-decoration: none;
+    color: var(--primary-dark-color);
+}
+
+.list-link:hover{
+    color: var(--primary-dark-color-hover);
+}
+
+.title,
+.company-name{
+    font-family: "Archive";
+    cursor: default;
+}
+
+.title{
+    font-size: 1.25vw;
+    color: var(--primary-dark-color);
+}
+
+.company-name{
+    font-size: 3vw;
+    color: var(--secondary-dark-color);
+}
+
+.about-company-title{
+    color: var(--secondary-dark-color);
+    font-family: "Glacial Indifference Bold";
+    font-size: 1.25vw;
+    margin-top: 4vh;
+}
+
+.paragraph-section{
+    width: 30.885vw;
+}
+
+.paragraph{
+    font-size: 1vw;
+    color: var(--secondary-dark-color);
+    font-family: "Glacial Indifference";
+    text-align: justify;
+    cursor: default;
+}
+
+.social-icon{
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.company-info{
+    width: 30vw;
+    height: 50vh;
+}
+
+.company-img{ 
+    width: 40vw;
+    height: 50vh;
+    max-height: 500px;
+}
+
+.padding-text{
+    padding: 1.5vw;
+}
+
+.text-div-margin-top{
+    margin-top: 7vh;
+}
+
+.paragraph-margin-top{
+    margin-top: 5vh;
+}
+
+.address-list{
+    list-style: disc;
+    padding:0;
+    margin-left: 1vw;
+    font-family: "Glacial Indifference";
+    font-size: 1vw;
+}
+
+.address-list li{
+    padding-top: 5vh;
+}
+
+.address-link{
+    color: var(--secondary-dark-color);
+    text-decoration: none;
+}
+
+.dropdown {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    left: 90vw;
+    padding: 5px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .dropdown-company {
+    display: block;
+  }
+  
+  .dropdown-content-company {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 5px;
+  }
+  
+  .dropdown-company:hover .dropdown-content-company {
+    display: flex; 
+    flex-direction: column;
+  }

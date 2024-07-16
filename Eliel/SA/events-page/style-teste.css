@@ -1,0 +1,82 @@
+:root{
+    --primary-light-color: #E7EDDB;
+    --primary-dark-color: #515C2C;
+    --primary-dark-color-hover:#38401E;
+    --light-background-color: #ffffff;
+    --secondary-dark-color: #000000;
+    --danger-color: #9E2A2A;
+}
+
+@font-face {
+    font-family: "Archive";
+    src: url(../fonts/Archive.otf) format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Glacial Indifference";
+    src:url(../fonts/GlacialIndifference-Regular.otf) format('truetype');
+}
+
+@font-face{
+    font-family: "Glacial Indifference Bold";
+    src:url(../fonts/GlacialIndifference-Bold.otf) format('truetype');
+}
+
+.buttons-row{
+    padding-bottom: 10vh;
+}
+
+.event-row{
+    height: max-content;
+}
+
+.event-col-left{
+    padding-top: 2.5vh;
+    display:flex;
+    justify-content: end;
+}
+
+.event-col-right{
+    padding-top: 2.5vh;
+    display:flex;
+    justify-content: start;
+}
+
+.event-card{
+    background-color: var(--primary-light-color);
+    width: 95%;
+    padding: 1vw;
+    border-radius: 5px;
+
+}
+
+.event-title{
+    text-align: center;
+    font-family: 'Archive';
+    font-size: 2.038vw;
+    padding: 1vw;
+    margin-bottom: 2vw;
+}
+
+.event-data{
+    font-family: 'Glacial Indifference';
+    font-size: 1.25vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+}
+
+.button-col{
+    display: flex;
+    justify-content: end;
+    padding-right: 1vw;
+    margin-top: 5vw;
+}
+
+.space-top{
+    padding-top: 10vh;
+}
+
+.space-sm{
+    padding-top: 5vh;
+}

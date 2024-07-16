@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-light-color: #E7EDDB;
+    --primary-dark-color: #515C2C;
+    --primary-dark-color-hover:#38401E;
+    --light-background-color: #ffffff;
+    --secondary-dark-color: #000000;
+    --danger-color: #9E2A2A;
+}
+
+@font-face {
+    font-family: "Archive";
+    src: url(../fonts/Archive.otf) format('truetype');
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Glacial Indifference";
+    src:url(../fonts/GlacialIndifference-Regular.otf) format('truetype');
+}
+
+@font-face{
+    font-family: "Glacial Indifference Bold";
+    src:url(../fonts/GlacialIndifference-Bold.otf) format('truetype');
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header, .section{
+    height: 13vh;
+}
+
+.section-secondary{
+    height: 6.5vh;
+}
+
+.about-bgreen{
+    height: 50vh;
+    background-color: var(--primary-light-color);
+    margin-bottom: 12vh;
+}
+
+.justify-center{
+    justify-content: center;
+    display: flex;
+}
+
+.justify-start{
+    justify-content: left;
+    margin-left: 2vw;
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.space-around{
+    display: flex;
+    justify-content: space-around;
+}
+
+.align-end{
+    display: flex;
+    align-items: end;
+}
+
+.margin-bottom{
+    margin-bottom: 4.5vh;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Archive";
+    font-size: 0.8vw;
+}
+
+.list li{
+    display: inline-block;
+}
+
+.list-link{
+    text-decoration: none;
+    color: var(--primary-dark-color);
+}
+
+.login-link{
+    text-decoration: none;
+}
+
+.list-link:hover{
+    color: var(--primary-dark-color-hover);
+}
+
+.title-sm,
+.title-lg{
+    color: var(--primary-dark-color);
+    font-family: "Archive";
+    cursor: default;
+}
+
+.title-sm{
+    font-size: 1.25vw;
+}
+
+.title-lg{
+    font-size: 2.083vw;
+}
+
+.paragraph-section{
+    width: 30.885vw;
+}
+
+.paragraph{
+    font-size: 1vw;
+    color: var(--secondary-dark-color);
+    font-family: "Glacial Indifference";
+    text-align: justify;
+    cursor: default;
+}
+
+.text-input,
+.number-input,
+.date-input,
+.time-input,
+.email-input,
+.file-input,
+.password-input,
+.search-input{
+    padding-bottom: 3px;
+    border: none;
+    border-bottom-style: solid; 
+    border-bottom-width: 0.5px;
+    border-color: #515C2C;
+    color: #515C2C;
+    width: 25vw;
+    margin: 20px;
+    font-family: 'Glacial Indifference Regular';
+    font-size: 1vw;
+    outline: none;
+}
+
+.text-input:focus,
+.number-input:focus
+.date-input:focus,
+.time-input:focus
+.email-input:focus,
+.file-input:focus,
+.password-input:focus,
+.search-input:focus{
+    border-color: var(--primary-dark-color);
+    color: var(--primary-dark-color);
+}
+
+.text-input::placeholder,
+.number-input::placeholder,
+.email-input::placeholder,
+.password-input::placeholder,
+.search-input::placeholder{
+    color: var(--primary-dark-color);
+}
+
+.number-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.date-input,
+.time-input{
+    cursor: text;
+}
+
+.form-style{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+}
+
+.primary-button{
+    background-color: var(--primary-dark-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--light-background-color);
+    font-family: 'Archive';
+    font-size: 1.45vh;
+    padding: 15px;
+    text-align: center;
+    width: 7vw;
+}
+
+.primary-button:hover{
+    background-color: var(--primary-dark-color-hover);
+}
+
+.primary-button:active{
+    background-color: var(--primary-dark-color);
+}
+
+.btn-reg-margin{
+    margin-top: 4vh;
+}
+
+.advice-margin{
+    margin-top: 8.5vh;
+}

@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-light-color: #E7EDDB;
+    --primary-dark-color: #515C2C;
+    --primary-dark-color-hover: #38401E;
+    --light-background-color: #ffffff;
+    --secondary-dark-color: #000000;
+    --danger-color: #9E2A2A;
+}
+
+@font-face {
+    font-family: "Archive";
+    src: url(../fonts/Archive.otf) format('truetype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Glacial Indifference";
+    src: url(../fonts/GlacialIndifference-Regular.otf) format('truetype');
+}
+
+@font-face {
+    font-family: "Glacial Indifference Bold";
+    src: url(../fonts/GlacialIndifference-Bold.otf) format('truetype');
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.header,
+.section {
+    height: 13vh;
+}
+
+.section-secondary {
+    height: 6.5vh;
+}
+
+.about-bgreen {
+    height: 50vh;
+    background-color: var(--primary-light-color);
+    margin-bottom: 12vh;
+}
+
+.justify-center {
+    justify-content: center;
+    display: flex;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.align-end {
+    display: flex;
+    align-items: end;
+}
+
+.margin-bottom {
+    margin-bottom: 4.5vh;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Archive";
+    font-size: 0.8vw;
+}
+
+.list li {
+    display: inline-block;
+}
+
+.list-link {
+    text-decoration: none;
+    color: var(--primary-dark-color);
+}
+
+.list-link:hover {
+    color: var(--primary-dark-color-hover);
+}
+
+.title {
+    font-size: 1.25vw;
+    color: var(--primary-dark-color);
+    font-family: "Archive";
+    cursor: default;
+}
+
+.paragraph-section {
+    width: 30.885vw;
+}
+
+.paragraph {
+    font-size: 1vw;
+    color: var(--secondary-dark-color);
+    font-family: "Glacial Indifference";
+    text-align: justify;
+    cursor: default;
+}
+
+.image {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
+.img-container {
+    width: 29.688vw;
+    height: 57vh;
+    perspective: 1000px;
+}
+
+.img-container:hover {
+    transform: translateY(-3vh);
+    transition: all 600ms;
+    cursor: pointer;
+}
+
+.img-container:not(:hover) {
+    transform: translateY(0);
+    transition: all 600ms;
+    cursor: pointer;
+}
+
+.img-card__inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.6s linear;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    overflow: hidden;
+    display: block;
+    transform: rotateY(180deg);
+    background-color: var(--primary-light-color);
+}
+
+.img-1,
+.img-2,
+.img-3,
+.back {
+    transition: all .5s linear;
+    background-repeat: no-repeat;
+}
+
+.back {
+    border-radius: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-info {
+    width: 40%;
+    height: 50%;
+    background-color: var();
+}
+
+/* Front Card */
+.img-1 {
+    background-image: url(../media/cardboard570.jpg);
+}
+
+.img-2 {
+    background-image: url(../media/envelope570.jpg);
+}
+
+.img-3 {
+    background-image: url(../media/bottlecap570.jpg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.line {
+    background-color: var(--secondary-dark-color);
+    height: 0.1vh;
+}
+
+.social-icon {
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    left: 90vw;
+    padding: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-company {
+    display: block;
+}
+
+.dropdown-content-company {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.dropdown-company:hover .dropdown-content-company {
+    display: flex;
+    flex-direction: column;
+}
+
+.flipcard-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Archive";
+}
+
+.flipcard-title >h1{
+    font-size: 3.0vw;
+    display: flex;
+    margin-top: 2.5vh;
+}
+
+.flipcard-component{
+    width: 15.5vw;
+    height: 35vh;
+    background-color: var(--primary-dark-color);
+    border-radius: 5px;
+}
+
+.flipcard-info{
+    font-family: "Archive";
+    font-size: 3vw;
+    margin-top: 7vh;
+}
