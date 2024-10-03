@@ -1,0 +1,5 @@
+DIAGRAMA DE ESTRUTURAS COMPOSTAS;
+
+Para que serve;
+Explicar como funciona;
+Exemplo;

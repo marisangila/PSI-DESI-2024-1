@@ -1,0 +1,31 @@
+@startuml
+!define RECTANGLE class
+
+node "Servidor Central" {
+    node "Servidor Web" {
+        artifact "Cliente Web"
+    }
+
+    node "Servidor de Aplicacao" {
+        artifact "Aplicação de E-commerce"
+    }
+}
+
+node "Banco de Dados na Nuvem" {
+    node "Banco de Dados" {
+        artifact "Banco de Dados de Produtos e Usuários"
+    }
+}
+
+node "Servico via API" {
+    node "Sistema de Pagamento"{
+        artifact "API de pagamento"
+    }
+}
+
+"Cliente Web" --> "Servidor Web"
+"Servidor Web" --> "Servidor de Aplicacao"
+"Servidor de Aplicacao" --> "Banco de Dados"
+"Servidor de Aplicacao" --> "Servico via API"
+
+@enduml
